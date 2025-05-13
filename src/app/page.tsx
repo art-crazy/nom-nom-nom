@@ -1,13 +1,68 @@
+import styles from './Home.module.scss';
+import RecipeCard from '../components/RecipeCard/RecipeCard';
 
 export default function Home() {
   return (
-    <div>
-      <main>
+    <div className={styles.home}>
+      <div className={styles.main}>
+        <h1 className={styles.h1}>Найдите, что приготовить за минуты.</h1>
+        <p className={styles.subtitle}>Ищите или изучайте ниже</p>
+        <div className={styles.iconWrap}>
+          <span className={styles.bigIcon}>🍲</span>
+        </div>
+      </div>
 
-      </main>
-      <footer >
-
-      </footer>
+      <div className={styles.container}>
+        <div className={styles.tags}>
+          <div>
+            <button className={styles.active}>🔥 Время гриля</button>
+            <button>Завтрак</button>
+            <button>Обед</button>
+            <button>Ужин</button>
+            <button>Перекус</button>
+            <button>Ещё</button>
+          </div>
+          <div>
+            <button className={styles.active}>🍝 Паста сегодня</button>
+            <button>Мясо</button>
+            <button>Курица</button>
+            <button>Рыба</button>
+            <button>Яйца</button>
+            <button>Ещё</button>
+          </div>
+          <div>
+            <button>Просто</button>
+            <button>Быстро (20 мин)</button>
+            <button>Средне</button>
+            <button>Многоэтапно</button>
+          </div>
+        </div>
+        <div className={styles.filters}>
+          <select>
+            <option>Выберите диету/цели</option>
+          </select>
+          <select>
+            <option>Выберите кухню</option>
+          </select>
+        </div>
+        <div className={styles.cardsSection}>
+          <div>
+            <RecipeCard
+              title="Quick Pasta Carbonara"
+              desc="Classic Italian pasta with eggs and pancetta"
+              tags={['Fast', 'Dinner']}
+            />
+          </div>
+          <div>
+            <h2>Быстро и просто</h2>
+            <RecipeCard
+              title="15-min Stir Fry"
+              desc="Quick vegetable stir fry"
+              tags={[]}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

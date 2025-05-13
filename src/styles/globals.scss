@@ -1,0 +1,12 @@
+:root {
+  --base-line-height: 1;
+}
+
+* {
+  line-height: var(--base-line-height);
+  color: red;
+}
+
+body {
+  background-color: red;
+}
