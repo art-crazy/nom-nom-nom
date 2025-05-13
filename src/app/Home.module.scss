@@ -3,23 +3,22 @@
 
   .main {
     background-color: rgba(250, 250, 250, 1);
-    padding: 48px 0;
+    padding: 46px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
   }
   .h1 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 8px;
-
   }
   .subtitle {
     text-align: center;
     color: #888;
-    margin-bottom: 24px;
   }
   .iconWrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
   }
   .bigIcon {
     font-size: 64px;
@@ -38,6 +37,7 @@
     padding: 0 96px;
   }
   .tags {
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     gap: 8px;
