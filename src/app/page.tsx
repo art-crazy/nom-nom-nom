@@ -48,16 +48,16 @@ export default function Home() {
         <div className={styles.cardsSection}>
           <div>
             <RecipeCard
-              title="Quick Pasta Carbonara"
-              desc="Classic Italian pasta with eggs and pancetta"
+              title="Бастрая паста карбонара"
+              desc="Классическая итальянская паста с яйцами и панчеттой"
               tags={['Fast', 'Dinner']}
             />
           </div>
           <div>
-            <h2>Быстро и просто</h2>
+            <h2 className={styles.h2}>Быстро и просто</h2>
             <RecipeCard
-              title="15-min Stir Fry"
-              desc="Quick vegetable stir fry"
+              title="Овощи на сковороде за 15 минут"
+              desc="Быстрый овощной стир фрай"
               tags={[]}
             />
           </div>
