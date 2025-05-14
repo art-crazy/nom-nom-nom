@@ -1,13 +1,29 @@
-export interface Category {
-  id: string;
-  name: string;
-  title: string;
-}
+/**
+ * Категория рецепта.
+ * @property en Англоязычное название для url (только латиница, без пробелов и спецсимволов,
+ * нижний регистр, через дефис)
+ */
+export const categories = {
+  'выпечка': { id: 'выпечка', name: 'выпечка', title: 'Выпечка', en: 'pastry' },
+  'хворост': { id: 'хворост', name: 'хворост', title: 'Хворост', en: 'khvorost' },
+  'на кефире': { id: 'на кефире', name: 'на кефире', title: 'На кефире', en: 'with-kefir' },
+  'жареное тесто': { id: 'жареное тесто', name: 'жареное тесто', title: 'Жареное тесто', en: 'fried-dough' },
+  'сладкое к чаю': { id: 'сладкое к чаю', name: 'сладкое к чаю', title: 'Сладкое к чаю', en: 'sweet-for-tea' },
+  'русская кухня': { id: 'русская кухня', name: 'русская кухня', title: 'Русская кухня', en: 'russian-cuisine' },
+  'десерт': { id: 'десерт', name: 'десерт', title: 'Десерт', en: 'dessert' },
+  'быстрый рецепт': { id: 'быстрый рецепт', name: 'быстрый рецепт', title: 'Быстрый рецепт', en: 'quick-recipe' },
+  'домашняя выпечка': { id: 'домашняя выпечка', name: 'домашняя выпечка', title: 'Домашняя выпечка', en: 'homemade-pastry' },
+  'дешево и вкусно': { id: 'дешево и вкусно', name: 'дешево и вкусно', title: 'Дешево и вкусно', en: 'cheap-and-tasty' },
+  'просто': { id: 'просто', name: 'просто', title: 'Просто', en: 'simple' },
+  'торт': { id: 'торт', name: 'торт', title: 'Торт', en: 'cake' },
+  'кофейный десерт': { id: 'кофейный десерт', name: 'кофейный десерт', title: 'Кофейный десерт', en: 'coffee-dessert' },
+  'маскарпоне': { id: 'маскарпоне', name: 'маскарпоне', title: 'Маскарпоне', en: 'mascarpone' },
+  'капучино': { id: 'капучино', name: 'капучино', title: 'Капучино', en: 'cappuccino' },
+  'праздничный торт': { id: 'праздничный торт', name: 'праздничный торт', title: 'Праздничный торт', en: 'festive-cake' },
+  'сладкое': { id: 'сладкое', name: 'сладкое', title: 'Сладкое', en: 'sweet' },
+  'к чаю': { id: 'к чаю', name: 'к чаю', title: 'К чаю', en: 'for-tea' },
+  'впечатляющий десерт': { id: 'впечатляющий десерт', name: 'впечатляющий десерт', title: 'Впечатляющий десерт', en: 'impressive-dessert' },
+  'выпечка на праздник': { id: 'выпечка на праздник', name: 'выпечка на праздник', title: 'Выпечка на праздник', en: 'holiday-pastry' },
+} as const;
 
-export const categories: Record<string, Category> = {
-  breakfast: { id: 'breakfast', name: 'breakfast', title: 'Завтрак' },
-  lunch: { id: 'lunch', name: 'lunch', title: 'Обед' },
-  dinner: { id: 'dinner', name: 'dinner', title: 'Ужин' },
-  snack: { id: 'snack', name: 'snack', title: 'Перекус' },
-  // Можно добавить другие категории
-}; 
+export type CategoryId = keyof typeof categories;

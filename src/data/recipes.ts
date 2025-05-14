@@ -1,3 +1,5 @@
+import type {CategoryId} from './categories';
+
 export interface Recipe {
   id: number;
   name: string;
@@ -17,7 +19,7 @@ export interface Recipe {
   prepSteps?: string[];
   steps: { title: string; text: string }[];
   images: string[];
-  categories: string[];
+  categories: CategoryId[];
 }
 
 export const recipes: Record<number, Recipe> = {
@@ -143,4 +145,4 @@ export const recipes: Record<number, Recipe> = {
       'торт', 'кофейный десерт', 'десерт', 'выпечка', 'маскарпоне', 'капучино', 'праздничный торт', 'сладкое', 'к чаю', 'впечатляющий десерт', 'выпечка на праздник'
     ],
   },
-}; 
+};
