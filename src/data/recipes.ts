@@ -20,6 +20,9 @@ export interface Recipe {
   steps: { title: string; text: string }[];
   images: string[];
   categories: CategoryId[];
+  rating: number;
+  reviews: number;
+  comments?: { user: string; date: string; text: string; likes: number; replies: number }[];
 }
 
 export const recipes: Record<number, Recipe> = {
@@ -72,9 +75,25 @@ export const recipes: Record<number, Recipe> = {
         text: 'Переложи хворост на блюдо и щедро посыпь сахарной пудрой. Подавай тёплым или полностью остывшим.'
       },
     ],
-    images: [],
+    images: [
+      '/main-image.png',
+      '/image1.png',
+      '/image2.png',
+      '/image3.png',
+    ],
     categories: [
       'выпечка', 'хворост', 'на кефире', 'жареное тесто', 'сладкое к чаю', 'русская кухня', 'десерт', 'быстрый рецепт', 'домашняя выпечка', 'дешево и вкусно', 'просто'
+    ],
+    rating: 4.5,
+    reviews: 128,
+    comments: [
+      {
+        user: 'Иван Иванов',
+        date: '2025-05-10',
+        text: 'Отличный рецепт! Пробовал вчера, получилось идеально.',
+        likes: 24,
+        replies: 3,
+      },
     ],
   },
   2: {
@@ -144,5 +163,7 @@ export const recipes: Record<number, Recipe> = {
     categories: [
       'торт', 'кофейный десерт', 'десерт', 'выпечка', 'маскарпоне', 'капучино', 'праздничный торт', 'сладкое', 'к чаю', 'впечатляющий десерт', 'выпечка на праздник'
     ],
+    rating: 4.8,
+    reviews: 57,
   },
 };
