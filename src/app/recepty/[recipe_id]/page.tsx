@@ -1,45 +1,17 @@
 import styles from './RecipePage.module.scss';
+import { recipes } from '@/data/recipes';
 
 export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
   const recipe_id = awaitedParams.recipe_id;
 
-  const [name, id] = (() => {
+  const id = (() => {
     const parts = recipe_id.split('-');
-    return [parts.slice(0, -1).join('-'), parts[parts.length - 1]];
+    return parts[parts.length - 1];
   })();
 
-  // Моковые данные (можно использовать name и id)
-  const recipe = {
-    title: name.replace(/-/g, ' '),
-    rating: 4.5,
-    reviews: 128,
-    servings: 4,
-    ingredients: [
-      '2 стакана овсяных хлопьев',
-      '1 стакан тёплой воды',
-      '2 ст.л. оливкового масла',
-    ],
-    steps: [
-      {
-        title: 'Шаг 1',
-        text: 'Смешайте овсяные хлопья и воду в большой миске до однородности.',
-      },
-      {
-        title: 'Шаг 2',
-        text: 'Вымешивайте кашу 10 минут до гладкости и эластичности.',
-      },
-    ],
-    comments: [
-      {
-        user: 'Иван Иванов',
-        date: '2025-05-10',
-        text: 'Отличный рецепт! Пробовал вчера, получилось идеально.',
-        likes: 24,
-        replies: 3,
-      },
-    ],
-  };
+  const recipe = recipes[Number(id)];
+  if (!recipe) return <div>Рецепт не найден</div>;
 
   return (
     <div className={styles.recipePage}>
@@ -53,10 +25,10 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
           </div>
         </div>
         <div className={styles.infoBlock}>
-          <h1>{recipe.title} (id: {id})</h1>
+          <h1>{recipe.title}</h1>
           <div className={styles.rating}>
             <span>★★★★☆</span>
-            <span className={styles.ratingText}>(4.5/5 — 128 отзывов)</span>
+            <span className={styles.ratingText}>({recipe.rating}/5 — {recipe.reviews} отзывов)</span>
           </div>
           <div className={styles.servingsBlock}>
             <button>-</button>
@@ -89,18 +61,20 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
         <h2>Комментарии</h2>
         <textarea className={styles.commentInput} placeholder="Напишите ваш комментарий..." />
         <button className={styles.postBtn}>Отправить</button>
-        <div className={styles.comment}>
-          <div className={styles.commentHeader}>
-            <span className={styles.avatar}>👤</span>
-            <span className={styles.userName}>Иван Иванов</span>
-            <span className={styles.commentDate}>2025-05-10</span>
+        {recipe.comments && recipe.comments.length > 0 && (
+          <div className={styles.comment}>
+            <div className={styles.commentHeader}>
+              <span className={styles.avatar}>👤</span>
+              <span className={styles.userName}>{recipe.comments[0].user}</span>
+              <span className={styles.commentDate}>{recipe.comments[0].date}</span>
+            </div>
+            <div className={styles.commentText}>{recipe.comments[0].text}</div>
+            <div className={styles.commentActions}>
+              <span>👍 {recipe.comments[0].likes}</span>
+              <span>💬 {recipe.comments[0].replies}</span>
+            </div>
           </div>
-          <div className={styles.commentText}>{recipe.comments[0].text}</div>
-          <div className={styles.commentActions}>
-            <span>👍 {recipe.comments[0].likes}</span>
-            <span>💬 {recipe.comments[0].replies}</span>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
