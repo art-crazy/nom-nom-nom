@@ -1,5 +1,6 @@
 import styles from './RecipePage.module.scss';
 import { recipes } from '@/data/recipes';
+import ServingsCalculator from '@/components/ServingsCalculator/ServingsCalculator';
 
 export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
@@ -30,17 +31,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
             <span>★★★★☆</span>
             <span className={styles.ratingText}>({recipe.rating}/5 — {recipe.reviews} отзывов)</span>
           </div>
-          <div className={styles.servingsBlock}>
-            <button>-</button>
-            <span>{recipe.servings} порции</span>
-            <button>+</button>
-          </div>
-          <div className={styles.ingredientsTitle}>Ингредиенты</div>
-          <ul className={styles.ingredientsList}>
-            {recipe.ingredients.map((item, i) => (
-              <li key={i}><input type="checkbox" /> {item.name} — {item.amount} {item.unit}</li>
-            ))}
-          </ul>
+          <ServingsCalculator recipe={recipe} />
           <div className={styles.actionBtns}>
             <button className={styles.saveBtn}>♡ Сохранить рецепт</button>
             <button className={styles.shareBtn}>Поделиться</button>
