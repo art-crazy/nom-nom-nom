@@ -1,9 +1,11 @@
 import styles from './RecipePage.module.scss';
 
-export default function RecipePage({ params }: { params: { slug: string } }) {
-  // slug = "ovsyanka-s-kornishinami-1"
+export default async function RecipePage({ params }: { params: { slug: string } }) {
+  const awaitedParams = await params;
+  const slug = awaitedParams.slug;
+
   const [name, id] = (() => {
-    const parts = params.slug.split('-');
+    const parts = slug.split('-');
     return [parts.slice(0, -1).join('-'), parts[parts.length - 1]];
   })();
 

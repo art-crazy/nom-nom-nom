@@ -1,5 +1,4 @@
-@import "./reset";
-@import "tailwindcss";
+@use './reset';
 
 :root {
   --base-line-height: 1;
