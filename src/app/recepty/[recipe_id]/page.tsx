@@ -1,11 +1,11 @@
 import styles from './RecipePage.module.scss';
 
-export default async function RecipePage({ params }: { params: { slug: string } }) {
+export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
-  const slug = awaitedParams.slug;
+  const recipe_id = awaitedParams.recipe_id;
 
   const [name, id] = (() => {
-    const parts = slug.split('-');
+    const parts = recipe_id.split('-');
     return [parts.slice(0, -1).join('-'), parts[parts.length - 1]];
   })();
 
