@@ -15,7 +15,7 @@ export interface Recipe {
   };
   cuisine: string;
   servings: number;
-  ingredients: string[];
+  ingredients: { name: string; amount: number; unit: string }[];
   prepSteps?: string[];
   steps: { title: string; text: string }[];
   images: string[];
@@ -42,14 +42,14 @@ export const recipes: Record<number, Recipe> = {
     cuisine: 'Русская',
     servings: 6,
     ingredients: [
-      'Кефир — 200 мл',
-      'Яйцо куриное — 1 шт.',
-      'Сахар — 1 ст. л.',
-      'Соль — 1 щепотка',
-      'Разрыхлитель — 1 ч. л.',
-      'Мука — 400 г',
-      'Масло растительное (для жарки) — 400 мл',
-      'Сахарная пудра (для посыпки) — по вкусу',
+      { name: 'Кефир', amount: 200, unit: 'мл' },
+      { name: 'Яйцо куриное', amount: 1, unit: 'шт.' },
+      { name: 'Сахар', amount: 1, unit: 'ст. л.' },
+      { name: 'Соль', amount: 1, unit: 'щепотка' },
+      { name: 'Разрыхлитель', amount: 1, unit: 'ч. л.' },
+      { name: 'Мука', amount: 400, unit: 'г' },
+      { name: 'Масло растительное (для жарки)', amount: 400, unit: 'мл' },
+      { name: 'Сахарная пудра (для посыпки)', amount: 0, unit: 'по вкусу' },
     ],
     prepSteps: [
       'Муку просеять заранее.',
@@ -112,22 +112,22 @@ export const recipes: Record<number, Recipe> = {
     cuisine: 'Европейская',
     servings: 8,
     ingredients: [
-      'Яйца — 4 шт.',
-      'Сахар — 180 г',
-      'Мука — 150 г',
-      'Разрыхлитель — 1 ч. л.',
-      'Кофе растворимый — 1 ч. л.',
-      'Кипяток — 1 ст. л.',
-      'Сливки 33% — 300 мл',
-      'Маскарпоне — 250 г',
-      'Сахарная пудра — 80 г',
-      'Растворимый кофе — 1 ч. л.',
-      'Кипяток — 1 ст. л.',
-      'Вода — 100 мл',
-      'Кофе — 1 ч. л.',
-      'Сахар — 1 ч. л.',
-      'Какао-порошок — по вкусу',
-      'Грецкие орехи — по вкусу',
+      { name: 'Яйца', amount: 4, unit: 'шт.' },
+      { name: 'Сахар', amount: 180, unit: 'г' },
+      { name: 'Мука', amount: 150, unit: 'г' },
+      { name: 'Разрыхлитель', amount: 1, unit: 'ч. л.' },
+      { name: 'Кофе растворимый', amount: 1, unit: 'ч. л.' },
+      { name: 'Кипяток', amount: 1, unit: 'ст. л.' },
+      { name: 'Сливки 33%', amount: 300, unit: 'мл' },
+      { name: 'Маскарпоне', amount: 250, unit: 'г' },
+      { name: 'Сахарная пудра', amount: 80, unit: 'г' },
+      { name: 'Растворимый кофе', amount: 1, unit: 'ч. л.' },
+      { name: 'Кипяток', amount: 1, unit: 'ст. л.' },
+      { name: 'Вода', amount: 100, unit: 'мл' },
+      { name: 'Кофе', amount: 1, unit: 'ч. л.' },
+      { name: 'Сахар', amount: 1, unit: 'ч. л.' },
+      { name: 'Какао-порошок', amount: 0, unit: 'по вкусу' },
+      { name: 'Грецкие орехи', amount: 0, unit: 'по вкусу' },
     ],
     prepSteps: [
       'Достать яйца за 30 минут до начала — они должны быть комнатной температуры.',

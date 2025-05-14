@@ -38,7 +38,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
           <div className={styles.ingredientsTitle}>Ингредиенты</div>
           <ul className={styles.ingredientsList}>
             {recipe.ingredients.map((item, i) => (
-              <li key={i}><input type="checkbox" /> {item}</li>
+              <li key={i}><input type="checkbox" /> {item.name} — {item.amount} {item.unit}</li>
             ))}
           </ul>
           <div className={styles.actionBtns}>
