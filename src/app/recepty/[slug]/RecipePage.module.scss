@@ -8,8 +8,13 @@
   gap: 32px;
   margin-bottom: 24px;
 }
-.mainImage {
+.imageColumn {
   flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mainImage {
   background: #eee;
   border-radius: 8px;
   min-height: 340px;
@@ -88,7 +93,6 @@
 .imagesRow {
   display: flex;
   gap: 16px;
-  margin-bottom: 32px;
 }
 .subImage {
   flex: 1;

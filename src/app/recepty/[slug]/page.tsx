@@ -42,7 +42,14 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
   return (
     <div className={styles.recipePage}>
       <div className={styles.topSection}>
-        <div className={styles.mainImage}>Главное изображение рецепта</div>
+        <div className={styles.imageColumn}>
+          <div className={styles.mainImage}>Главное изображение рецепта</div>
+          <div className={styles.imagesRow}>
+            <div className={styles.subImage}>Изображение 1</div>
+            <div className={styles.subImage}>Изображение 2</div>
+            <div className={styles.subImage}>Изображение 3</div>
+          </div>
+        </div>
         <div className={styles.infoBlock}>
           <h1>{recipe.title} (id: {id})</h1>
           <div className={styles.rating}>
@@ -65,11 +72,6 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             <button className={styles.shareBtn}>Поделиться</button>
           </div>
         </div>
-      </div>
-      <div className={styles.imagesRow}>
-        <div className={styles.subImage}>Изображение 1</div>
-        <div className={styles.subImage}>Изображение 2</div>
-        <div className={styles.subImage}>Изображение 3</div>
       </div>
       <div className={styles.instructions}>
         <h2>Инструкция</h2>
