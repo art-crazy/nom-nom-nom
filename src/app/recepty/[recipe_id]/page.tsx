@@ -28,7 +28,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
         <div className={styles.infoBlock}>
           <h1>{recipe.title}</h1>
           <div className={styles.rating}>
-            <span>★★★★☆</span>
+            <span>{'★'.repeat(Math.round(recipe.rating))}{'☆'.repeat(5 - Math.round(recipe.rating))}</span>
             <span className={styles.ratingText}>({recipe.rating}/5 — {recipe.reviews} отзывов)</span>
           </div>
           <ServingsCalculator recipe={recipe} />
