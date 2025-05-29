@@ -52,6 +52,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
             {step.image && (
               <div className={styles.stepImage}>
                 <Image
+                  className={styles.image}
                   src={step.image}
                   alt={`Шаг ${i + 1}: ${step.title}`}
                   width={600}

@@ -1,11 +1,11 @@
 .recipePage {
-  padding: 32px 96px 0 96px;
   margin: 64px 0;
+  padding: 46px 96px;
 }
 .topSection {
   display: flex;
-  gap: 32px;
-  margin-bottom: 24px;
+  gap: 48px;
+  margin-bottom: 48px;
 }
 .imageColumn {
   flex: 1.2;
@@ -14,33 +14,40 @@
   gap: 16px;
 }
 .mainImage {
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
   position: relative;
-  width: 800px;
-  height: 600px;
+  width: 750px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 .infoBlock {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+  align-items: center;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+  }
 }
 .rating {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 18px;
+  gap: 12px;
+  font-size: 20px;
+  color: #FFB800;
 }
 .ratingText {
-  color: #888;
-  font-size: 14px;
+  color: #666;
+  font-size: 15px;
 }
 .servingsBlock {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
 }
 .ingredientsTitle {
   font-size: 1.2rem;
@@ -57,7 +64,6 @@
 .actionBtns {
   display: flex;
   gap: 12px;
-  margin-top: 8px;
 }
 .saveBtn, .shareBtn {
   background: #222;
@@ -91,80 +97,126 @@
   font-size: 15px;
 }
 .instructions {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15vw;
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+    text-align: center;
+  }
 }
 .step {
-  background: #fafafa;
-  border-radius: 8px;
-  padding: 18px 18px 12px 18px;
-  margin-bottom: 18px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f0;
 }
 .stepTitle {
   font-weight: 600;
-  margin-bottom: 8px;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: #222;
 }
 .stepImage {
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   position: relative;
   width: 100%;
-  height: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+.image {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 .stepText {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
 }
 .commentsSection {
-  margin-bottom: 32px;
+  max-width: 800px;
+  margin-bottom: 48px;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+  }
 }
 .commentInput {
   width: 100%;
-  min-height: 60px;
-  border-radius: 8px;
+  min-height: 80px;
+  border-radius: 12px;
   border: 1px solid #eee;
-  padding: 10px 14px;
-  margin-bottom: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
   font-size: 15px;
+  resize: vertical;
+  transition: border-color 0.2s;
+
+  &:focus {
+    outline: none;
+    border-color: #222;
+  }
 }
 .postBtn {
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 8px 24px;
+  border-radius: 8px;
+  padding: 12px 32px;
   font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
-  margin-bottom: 18px;
+  transition: background-color 0.2s;
+  margin-bottom: 24px;
+
+  &:hover {
+    background: #333;
+  }
 }
 .comment {
   background: #fff;
-  border-radius: 8px;
-  padding: 14px 18px;
-  margin-bottom: 12px;
-  box-shadow: 0 1px 4px #eee;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f0;
 }
 .commentHeader {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 4px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 .avatar {
-  font-size: 22px;
+  font-size: 24px;
 }
 .userName {
   font-weight: 600;
+  color: #222;
 }
 .commentDate {
-  color: #aaa;
-  font-size: 13px;
+  color: #888;
+  font-size: 14px;
 }
 .commentText {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #444;
 }
 .commentActions {
   display: flex;
-  gap: 16px;
-  color: #888;
-  font-size: 15px;
+  gap: 20px;
+  color: #666;
+  font-size: 14px;
 }
