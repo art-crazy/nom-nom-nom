@@ -3,8 +3,7 @@ import { recipes } from '@/data/recipes';
 import ServingsCalculator from '@/components/ServingsCalculator/ServingsCalculator';
 import Image from 'next/image';
 import ShareButton from '@/components/ShareButton/ShareButton';
-import { Button } from '@/components/UI/Button/Button';
-import { HeartIcon } from '@/components/icons/HeartIcon';
+import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 
 export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
@@ -43,10 +42,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
           </div>
           <ServingsCalculator recipe={recipe} />
           <div className={styles.actionBtns}>
-            <Button>
-              <HeartIcon />
-              Сохранить рецепт
-            </Button>
+            <SaveRecipeButton recipeId={recipe_id} />
             <ShareButton
               url={`/recepty/${recipe_id}`}
               title={recipe.title}

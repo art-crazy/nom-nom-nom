@@ -8,19 +8,20 @@
   cursor: pointer;
   transition: all 0.2s ease;
   min-height: 42px;
+  min-width: 182px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   font-weight: 500;
   white-space: nowrap;
-  min-width: fit-content;
 
   svg {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
     transition: fill 0.2s ease;
+    fill: none;
   }
 
   &:hover {
@@ -34,5 +35,11 @@
 
   &:active {
     background: #e6e6e6;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    min-width: auto;
   }
 }
