@@ -1,18 +1,23 @@
 .recipePage {
   margin: 64px 0;
   padding: 46px 96px 0 96px;
+  position: relative;
+  overflow: hidden;
 }
+
 .topSection {
   display: flex;
   gap: 48px;
   margin-bottom: 48px;
 }
+
 .imageColumn {
   flex: 1.2;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .mainImage {
   border-radius: 16px;
   overflow: hidden;
@@ -20,19 +25,23 @@
   width: 750px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
+
 .infoBlock {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
+
   h1 {
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.2;
     margin: 0;
+    color: #222;
   }
 }
+
 .rating {
   display: flex;
   align-items: center;
@@ -40,45 +49,64 @@
   font-size: 20px;
   color: #FFB800;
 }
+
 .ratingText {
   color: #666;
   font-size: 15px;
 }
-.servingsBlock {
+
+.actionBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.servingsCalculator {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .ingredientsTitle {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .ingredientsList {
   list-style: none;
   padding: 0;
 }
+
 .ingredientsList li {
   margin-bottom: 5px;
 }
-.actionBtns {
+
+.actionButtons {
   display: flex;
   gap: 12px;
+  justify-content: center;
+  width: 100%;
 }
+
 .saveBtn {
   background: #222;
   color: #fff;
   border: none;
   border-radius: 6px;
-  padding: 10px 24px;
+  padding: 8px 16px;
   font-size: 15px;
   cursor: pointer;
   transition: background 0.2s;
+  min-height: 42px;
 }
+
 .imagesRow {
   display: flex;
   gap: 16px;
 }
+
 .subImage {
   flex: 1;
   background: #eee;
@@ -90,12 +118,14 @@
   color: #bbb;
   font-size: 15px;
 }
+
 .instructions {
   margin-bottom: 48px;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 15vw;
+
   h2 {
     font-size: 1.75rem;
     font-weight: 600;
@@ -104,6 +134,13 @@
     text-align: center;
   }
 }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .step {
   background: #fff;
   border-radius: 16px;
@@ -112,12 +149,14 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   border: 1px solid #f0f0f0;
 }
+
 .stepTitle {
   font-weight: 600;
   font-size: 1.25rem;
   margin-bottom: 16px;
   color: #222;
 }
+
 .stepImage {
   border-radius: 12px;
   overflow: hidden;
@@ -126,24 +165,28 @@
   width: 100%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
+
 .image {
   width: 100%;
   aspect-ratio: 16/9;
 }
+
 .stepText {
   font-size: 14px;
 }
+
 .commentsSection {
   max-width: 800px;
   margin-bottom: 48px;
-
-  h2 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 24px;
-    color: #222;
-  }
 }
+
+.commentsTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #222;
+}
+
 .commentInput {
   width: 100%;
   min-height: 80px;
@@ -160,6 +203,7 @@
     border-color: #222;
   }
 }
+
 .postBtn {
   background: #222;
   color: #fff;
@@ -176,6 +220,7 @@
     background: #333;
   }
 }
+
 .comment {
   background: #fff;
   border-radius: 12px;
@@ -184,28 +229,34 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   border: 1px solid #f0f0f0;
 }
+
 .commentHeader {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 12px;
 }
+
 .avatar {
   font-size: 24px;
 }
+
 .userName {
   font-weight: 600;
   color: #222;
 }
+
 .commentDate {
   color: #888;
   font-size: 14px;
 }
+
 .commentText {
   margin-bottom: 12px;
   line-height: 1.5;
   color: #444;
 }
+
 .commentActions {
   display: flex;
   gap: 20px;
@@ -213,16 +264,64 @@
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 650px) {
+  .recipePage {
+    margin: 64px 0;
+    padding: 46px 1rem;
+  }
+
   .topSection {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .imageColumn {
+    width: 100%;
   }
 
   .mainImage {
-    height: 400px;
+    width: 100%;
+    height: auto;
+  }
+
+  .infoBlock {
+    width: 100%;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .saveBtn {
+    width: 100%;
+  }
+
+  .instructions {
+    padding: 0;
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #222;
+      text-align: center;
+    }
+  }
+
+  .step {
+    padding: 1rem;
+    margin-bottom: 16px;
   }
 
   .stepImage {
-    height: 300px;
+    margin-bottom: 1rem;
   }
 }
