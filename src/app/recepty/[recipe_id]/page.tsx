@@ -65,25 +65,6 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
           </div>
         ))}
       </div>
-      <div className={styles.commentsSection}>
-        <h2>Комментарии</h2>
-        <textarea className={styles.commentInput} placeholder="Напишите ваш комментарий..." />
-        <button className={styles.postBtn}>Отправить</button>
-        {recipe.comments && recipe.comments.length > 0 && (
-          <div className={styles.comment}>
-            <div className={styles.commentHeader}>
-              <span className={styles.avatar}>👤</span>
-              <span className={styles.userName}>{recipe.comments[0].user}</span>
-              <span className={styles.commentDate}>{recipe.comments[0].date}</span>
-            </div>
-            <div className={styles.commentText}>{recipe.comments[0].text}</div>
-            <div className={styles.commentActions}>
-              <span>👍 {recipe.comments[0].likes}</span>
-              <span>💬 {recipe.comments[0].replies}</span>
-            </div>
-          </div>
-        )}
-      </div>
     </div>
   );
 }

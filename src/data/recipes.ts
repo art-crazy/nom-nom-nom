@@ -93,14 +93,5 @@ export const recipes: Record<number, Recipe> = {
     ],
     rating: 4.5,
     reviews: 128,
-    comments: [
-      {
-        user: 'Иван Иванов',
-        date: '2025-05-10',
-        text: 'Отличный рецепт! Пробовал вчера, получилось идеально.',
-        likes: 24,
-        replies: 3,
-      },
-    ],
   },
 };
