@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import { Button } from '../UI/Button/Button';
 import styles from './ShareButton.module.scss';
 import { VkIcon } from '../icons/VkIcon';
 import { TelegramIcon } from '../icons/TelegramIcon';
@@ -70,13 +71,10 @@ const ShareButton: React.FC<ShareButtonProps> = ({ url, title }) => {
 
   return (
     <div className={styles.container} ref={dropdownRef}>
-      <button
-        className={styles.shareBtn}
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <Button onClick={() => setIsOpen(!isOpen)}>
         <ShareIcon className={styles.shareIcon} />
         Поделиться
-      </button>
+      </Button>
 
       {isOpen && (
         <div className={styles.dropdown}>
