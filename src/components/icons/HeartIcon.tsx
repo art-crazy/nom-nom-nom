@@ -11,7 +11,7 @@ export const HeartIcon: React.FC<IconProps> = ({ className }) => (
     height="20" 
     className={className}
     viewBox="0 0 24 24"
-    fill="#FF3B30"
+    fill="none"
     stroke="#FF3B30"
     strokeWidth="2"
     strokeLinecap="round"

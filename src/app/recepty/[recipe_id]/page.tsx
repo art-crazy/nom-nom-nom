@@ -25,11 +25,12 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
           {recipe.imageMain && (
             <div className={styles.mainImage}>
               <Image
-                src={recipe.imageMain}
-                alt={recipe.title}
-                width={800}
-                height={600}
-                style={{ objectFit: 'cover' }}
+                  className={styles.imageMain}
+                  src={recipe.imageMain}
+                  alt={recipe.title}
+                  width={800}
+                  height={600}
+                  style={{ objectFit: 'cover' }}
               />
             </div>
           )}
@@ -46,7 +47,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
               <HeartIcon />
               Сохранить рецепт
             </Button>
-            <ShareButton 
+            <ShareButton
               url={`/recepty/${recipe_id}`}
               title={recipe.title}
             />
