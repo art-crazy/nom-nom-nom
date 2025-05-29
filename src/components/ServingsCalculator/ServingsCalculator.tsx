@@ -28,7 +28,7 @@ const ServingsCalculator: React.FC<ServingsCalculatorProps> = ({ recipe }) => {
         {recipe.ingredients.map((item, i) => {
           const adjustedAmount = (item.amount * servings) / recipe.servings;
           return (
-            <li key={i}><input type="checkbox" /> {item.name} — {adjustedAmount.toFixed(1)} {item.unit}</li>
+            <li key={i}>{item.name} — {adjustedAmount.toFixed(1)} {item.unit}</li>
           );
         })}
       </ul>

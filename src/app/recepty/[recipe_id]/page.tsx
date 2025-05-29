@@ -1,6 +1,7 @@
 import styles from './RecipePage.module.scss';
 import { recipes } from '@/data/recipes';
 import ServingsCalculator from '@/components/ServingsCalculator/ServingsCalculator';
+import Image from 'next/image';
 
 export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
@@ -18,12 +19,17 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
     <div className={styles.recipePage}>
       <div className={styles.topSection}>
         <div className={styles.imageColumn}>
-          <div className={styles.mainImage}>Главное изображение рецепта</div>
-          <div className={styles.imagesRow}>
-            <div className={styles.subImage}>Изображение 1</div>
-            <div className={styles.subImage}>Изображение 2</div>
-            <div className={styles.subImage}>Изображение 3</div>
-          </div>
+          {recipe.imageMain && (
+            <div className={styles.mainImage}>
+              <Image
+                src={recipe.imageMain}
+                alt={recipe.title}
+                width={800}
+                height={600}
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+          )}
         </div>
         <div className={styles.infoBlock}>
           <h1>{recipe.title}</h1>
@@ -43,7 +49,17 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
         {recipe.steps.map((step, i) => (
           <div className={styles.step} key={i}>
             <div className={styles.stepTitle}>{step.title}</div>
-            <div className={styles.stepImage}>Изображение шага {i + 1}</div>
+            {step.image && (
+              <div className={styles.stepImage}>
+                <Image
+                  src={step.image}
+                  alt={`Шаг ${i + 1}: ${step.title}`}
+                  width={600}
+                  height={400}
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            )}
             <div className={styles.stepText}>{step.text}</div>
           </div>
         ))}

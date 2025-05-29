@@ -14,14 +14,11 @@
   gap: 16px;
 }
 .mainImage {
-  background: #eee;
   border-radius: 8px;
-  min-height: 340px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bbb;
-  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+  height: 600px;
 }
 .infoBlock {
   flex: 1;
@@ -107,15 +104,12 @@
   margin-bottom: 8px;
 }
 .stepImage {
-  background: #e0e0e0;
   border-radius: 6px;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bbb;
-  font-size: 15px;
+  overflow: hidden;
   margin-bottom: 8px;
+  position: relative;
+  width: 100%;
+  height: 400px;
 }
 .stepText {
   font-size: 15px;
