@@ -2,18 +2,18 @@ import styles from './RecipePage.module.scss';
 import { recipes } from '@/data/recipes';
 import ServingsCalculator from '@/components/ServingsCalculator/ServingsCalculator';
 import Image from 'next/image';
-import ShareModal from '@/components/ShareModal/ShareModal';
-import { useState } from 'react';
 
-export default function RecipePage({ params }: { params: { recipe_id: string } }) {
-  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
-  const recipe = recipes.find(r => r.id === params.recipe_id);
+export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
+  const awaitedParams = await params;
+  const recipe_id = awaitedParams.recipe_id;
 
-  if (!recipe) {
-    return <div>Рецепт не найден</div>;
-  }
+  const id = (() => {
+    const parts = recipe_id.split('-');
+    return parts[parts.length - 1];
+  })();
 
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
+  const recipe = recipes[Number(id)];
+  if (!recipe) return <div>Рецепт не найден</div>;
 
   return (
     <div className={styles.recipePage}>
@@ -39,15 +39,8 @@ export default function RecipePage({ params }: { params: { recipe_id: string } }
           </div>
           <ServingsCalculator recipe={recipe} />
           <div className={styles.actionBtns}>
-            <button className={styles.saveBtn}>
-              <span>Сохранить</span>
-            </button>
-            <button 
-              className={styles.shareBtn}
-              onClick={() => setIsShareModalOpen(true)}
-            >
-              <span>Поделиться</span>
-            </button>
+            <button className={styles.saveBtn}>♡ Сохранить рецепт</button>
+            <button className={styles.shareBtn}>Поделиться</button>
           </div>
         </div>
       </div>
@@ -72,32 +65,25 @@ export default function RecipePage({ params }: { params: { recipe_id: string } }
           </div>
         ))}
       </div>
-      {/*<div className={styles.commentsSection}>*/}
-      {/*  <h2>Комментарии</h2>*/}
-      {/*  <textarea className={styles.commentInput} placeholder="Напишите ваш комментарий..." />*/}
-      {/*  <button className={styles.postBtn}>Отправить</button>*/}
-      {/*  {recipe.comments && recipe.comments.length > 0 && (*/}
-      {/*    <div className={styles.comment}>*/}
-      {/*      <div className={styles.commentHeader}>*/}
-      {/*        <span className={styles.avatar}>👤</span>*/}
-      {/*        <span className={styles.userName}>{recipe.comments[0].user}</span>*/}
-      {/*        <span className={styles.commentDate}>{recipe.comments[0].date}</span>*/}
-      {/*      </div>*/}
-      {/*      <div className={styles.commentText}>{recipe.comments[0].text}</div>*/}
-      {/*      <div className={styles.commentActions}>*/}
-      {/*        <span>👍 {recipe.comments[0].likes}</span>*/}
-      {/*        <span>💬 {recipe.comments[0].replies}</span>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*  )}*/}
-      {/*</div>*/}
-
-      <ShareModal
-        isOpen={isShareModalOpen}
-        onClose={() => setIsShareModalOpen(false)}
-        url={shareUrl}
-        title={recipe.title}
-      />
+      <div className={styles.commentsSection}>
+        <h2>Комментарии</h2>
+        <textarea className={styles.commentInput} placeholder="Напишите ваш комментарий..." />
+        <button className={styles.postBtn}>Отправить</button>
+        {recipe.comments && recipe.comments.length > 0 && (
+          <div className={styles.comment}>
+            <div className={styles.commentHeader}>
+              <span className={styles.avatar}>👤</span>
+              <span className={styles.userName}>{recipe.comments[0].user}</span>
+              <span className={styles.commentDate}>{recipe.comments[0].date}</span>
+            </div>
+            <div className={styles.commentText}>{recipe.comments[0].text}</div>
+            <div className={styles.commentActions}>
+              <span>👍 {recipe.comments[0].likes}</span>
+              <span>💬 {recipe.comments[0].replies}</span>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
