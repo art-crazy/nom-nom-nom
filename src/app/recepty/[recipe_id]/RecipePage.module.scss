@@ -65,7 +65,7 @@
   display: flex;
   gap: 12px;
 }
-.saveBtn, .shareBtn {
+.saveBtn {
   background: #222;
   color: #fff;
   border: none;
@@ -74,12 +74,6 @@
   font-size: 15px;
   cursor: pointer;
   transition: background 0.2s;
-}
-.saveBtn {
-  background: #222;
-}
-.shareBtn {
-  background: #222;
 }
 .imagesRow {
   display: flex;
@@ -137,9 +131,7 @@
   aspect-ratio: 16/9;
 }
 .stepText {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
+  font-size: 14px;
 }
 .commentsSection {
   max-width: 800px;
@@ -219,4 +211,18 @@
   gap: 20px;
   color: #666;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .topSection {
+    grid-template-columns: 1fr;
+  }
+
+  .mainImage {
+    height: 400px;
+  }
+
+  .stepImage {
+    height: 300px;
+  }
 }

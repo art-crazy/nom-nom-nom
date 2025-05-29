@@ -2,6 +2,7 @@ import styles from './RecipePage.module.scss';
 import { recipes } from '@/data/recipes';
 import ServingsCalculator from '@/components/ServingsCalculator/ServingsCalculator';
 import Image from 'next/image';
+import ShareButton from '@/components/ShareButton/ShareButton';
 
 export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
@@ -40,7 +41,10 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
           <ServingsCalculator recipe={recipe} />
           <div className={styles.actionBtns}>
             <button className={styles.saveBtn}>♡ Сохранить рецепт</button>
-            <button className={styles.shareBtn}>Поделиться</button>
+            <ShareButton 
+              url={`/recepty/${recipe_id}`}
+              title={recipe.title}
+            />
           </div>
         </div>
       </div>
