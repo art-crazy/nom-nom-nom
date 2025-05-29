@@ -18,11 +18,7 @@ const Header = () => {
       <Link href="/" className={styles.logo} onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
         🍴 QuickCook
       </Link>
-      <input className={styles.search} placeholder="Что будем готовить сегодня?" />
-      <div className={styles.icons}>
-        <span className={styles.heart}>♡</span>
-        <span className={styles.avatar}><img src="/avatar.png" alt="аватар" /></span>
-      </div>
+      <input className={styles.search} placeholder="Поиск по рецептам" />
     </header>
   );
 };
