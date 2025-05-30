@@ -1,12 +1,8 @@
 @import '@/styles/vars.scss';
 
-.homePage {
-  @include recipe-page;
-}
-
 .home {
   margin: 64px 0;
-  @include recipe-page;
+  @include page-container;
 
   .main {
     background-color: rgba(250, 250, 250, 1);
