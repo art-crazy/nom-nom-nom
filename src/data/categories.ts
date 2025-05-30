@@ -83,3 +83,115 @@ export const categories = {
 } as const;
 
 export type CategoryId = keyof typeof categories;
+
+// Категории блюд (уровень 1)
+export const dishCategories = {
+  breakfasts: {
+    id: 'breakfasts',
+    title: 'Завтраки',
+    subcategories: {
+      porridge: {
+        id: 'porridge',
+        title: 'Каши'
+      },
+      eggs: {
+        id: 'eggs',
+        title: 'Из яиц'
+      }
+    }
+  },
+  appetizers: {
+    id: 'appetizers',
+    title: 'Закуски',
+    subcategories: {
+      hot: {
+        id: 'hot',
+        title: 'Горячие закуски'
+      },
+      cold: {
+        id: 'cold',
+        title: 'Холодные закуски'
+      }
+    }
+  },
+  drinks: {
+    id: 'drinks',
+    title: 'Напитки',
+    subcategories: {
+      smoothies: {
+        id: 'smoothies',
+        title: 'Смузи'
+      },
+      cocktails: {
+        id: 'cocktails',
+        title: 'Коктейли'
+      }
+    }
+  },
+  mainDishes: {
+    id: 'mainDishes',
+    title: 'Основные блюда',
+    subcategories: {
+      cutlets: {
+        id: 'cutlets',
+        title: 'Котлеты'
+      },
+      casseroles: {
+        id: 'casseroles',
+        title: 'Запеканка'
+      }
+    }
+  }
+} as const;
+
+// Кухни (уровень 2)
+export const cuisineCategories = {
+  italian: {
+    id: 'italian',
+    title: 'Итальянская кухня'
+  },
+  japanese: {
+    id: 'japanese',
+    title: 'Японская кухня'
+  },
+  chinese: {
+    id: 'chinese',
+    title: 'Китайская кухня'
+  },
+  georgian: {
+    id: 'georgian',
+    title: 'Грузинская кухня'
+  }
+} as const;
+
+// Диеты (уровень 3)
+export const dietCategories = {
+  kidsMenu: {
+    id: 'kidsMenu',
+    title: 'Детское меню'
+  },
+  vegan: {
+    id: 'vegan',
+    title: 'Веганская диета'
+  },
+  keto: {
+    id: 'keto',
+    title: 'Кето-диета'
+  }
+} as const;
+
+// Типы для TypeScript
+export type DishCategory = typeof dishCategories[keyof typeof dishCategories];
+export type CuisineCategory = typeof cuisineCategories[keyof typeof cuisineCategories];
+export type DietCategory = typeof dietCategories[keyof typeof dietCategories];
+
+export type CategoryWithSubcategories = {
+  id: string;
+  title: string;
+  subcategories: {
+    [key: string]: {
+      id: string;
+      title: string;
+    };
+  };
+};

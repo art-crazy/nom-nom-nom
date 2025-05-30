@@ -3,11 +3,10 @@
 .recipesPage {
   padding: 2rem 0;
   background-color: #f8f9fa;
-  @include page-container;
-
 }
 
 .container {
+  @include page-container;
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 2rem;

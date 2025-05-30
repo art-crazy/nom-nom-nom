@@ -1,0 +1,44 @@
+@import '@/styles/vars.scss';
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #495057;
+  background-color: #fff;
+  transition: border-color 0.2s;
+  
+  &:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  &::placeholder {
+    color: #adb5bd;
+  }
+}
+
+.clearButton {
+  position: absolute;
+  right: 0.5rem;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+  color: #6c757d;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  
+  &:hover {
+    color: #495057;
+  }
+} 
