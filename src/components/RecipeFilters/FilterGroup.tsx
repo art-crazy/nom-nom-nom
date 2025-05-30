@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from './FilterGroup.module.scss';
 
 interface FilterGroupProps {
@@ -11,14 +11,9 @@ interface FilterGroupProps {
     slug: string;
   }>;
   currentPath: {
-    diet?: string;
-    cuisine?: string;
-    category?: string;
-    subcategory?: string;
+    [key: string]: string | undefined;
   };
-  type: 'diet' | 'cuisine' | 'category' | 'subcategory';
-  parentType?: 'diet' | 'cuisine' | 'category';
-  parentSlug?: string;
+  type: string;
   onSelect: (type: string, slug: string) => void;
   disabled?: boolean;
   placeholder?: string;
@@ -33,68 +28,104 @@ export function FilterGroup({
   disabled,
   placeholder
 }: FilterGroupProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const filterRef = useRef<HTMLDivElement>(null);
 
-  const selectedOption = options.find(option => {
-    const typeMap = {
-      diet: currentPath.diet,
-      cuisine: currentPath.cuisine,
-      category: currentPath.category,
-      subcategory: currentPath.subcategory
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
     };
-    return typeMap[type] === option.slug;
-  });
 
-  const handleClear = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    onSelect(type, '');
-  };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleClick = () => {
-    if (!disabled) {
-      setIsOpen(!isOpen);
+    if (disabled) return;
+    setIsOpen(!isOpen);
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (disabled) return;
+
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleClick();
+    } else if (event.key === 'Escape' && isOpen) {
+      setIsOpen(false);
     }
   };
 
+  const handleOptionClick = (slug: string) => {
+    onSelect(type, slug);
+    setIsOpen(false);
+  };
+
+  const handleClear = (event: React.MouseEvent) => {
+    event.stopPropagation();
+    onSelect(type, '');
+  };
+
+  const selectedOption = options.find(option => option.slug === currentPath[type]);
+
   return (
-    <div className={styles.filterSection}>
-      <div
-        className={`${styles.filterHeader} ${isOpen ? styles.active : ''} ${disabled ? styles.disabled : ''}`}
+    <div 
+      ref={filterRef}
+      className={styles.filterSection}
+      role="combobox"
+      aria-expanded={isOpen}
+      aria-haspopup="listbox"
+      aria-controls={`${type}-options`}
+    >
+      <div 
+        className={`${styles.filterHeader} ${disabled ? styles.disabled : ''}`}
         onClick={handleClick}
+        onKeyDown={handleKeyDown}
+        tabIndex={disabled ? -1 : 0}
+        role="button"
+        aria-label={`${title} filter`}
       >
         <div className={styles.filterTitle}>
           {title}
-          {selectedOption ? (
-            <span className={styles.selectedTag}>
+          {selectedOption && (
+            <span className={styles.selectedTags}>
               {selectedOption.name}
               <button
                 className={styles.clearButton}
                 onClick={handleClear}
-                type="button"
+                aria-label="Clear selection"
               >
-                ✕
+                ×
               </button>
             </span>
-          ) : placeholder && (
+          )}
+          {!selectedOption && placeholder && (
             <span className={styles.placeholder}>{placeholder}</span>
           )}
         </div>
-        <span className={styles.arrow}>▼</span>
       </div>
 
-      {isOpen && !disabled && (
-        <div className={styles.dropdown}>
-          <div className={styles.optionsList}>
+      {isOpen && (
+        <div 
+          className={`${styles.dropdown} ${isOpen ? styles.open : ''}`}
+          role="listbox"
+          id={`${type}-options`}
+        >
+          <ul className={styles.optionsList}>
             {options.map(option => (
-              <div
+              <li
                 key={option.id}
-                className={`${styles.option} ${selectedOption?.id === option.id ? styles.selected : ''}`}
-                onClick={() => onSelect(type, option.slug)}
+                className={`${styles.option} ${option.slug === currentPath[type] ? styles.selected : ''}`}
+                onClick={() => handleOptionClick(option.slug)}
+                role="option"
+                aria-selected={option.slug === currentPath[type]}
               >
                 {option.name}
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       )}
     </div>

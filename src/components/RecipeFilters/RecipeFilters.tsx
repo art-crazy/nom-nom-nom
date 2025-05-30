@@ -115,15 +115,13 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
 
   return (
     <div className={styles.filters}>
-      {filterGroups.map((group, index) => (
+      {filterGroups.map((group) => (
         <FilterGroup
           key={group.type}
           title={group.title}
           options={group.options}
           currentPath={selectedFilters}
           type={group.type}
-          parentType={index > 0 ? filterGroups[index - 1].type : undefined}
-          parentSlug={index > 0 ? selectedFilters[filterGroups[index - 1].type] : undefined}
           onSelect={handleFilterSelect}
           disabled={group.disabled}
         />
