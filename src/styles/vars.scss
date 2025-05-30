@@ -8,4 +8,9 @@ $background-color: #fafafa;
   margin: 64px 0;
   padding: 46px 96px 0 96px;
   position: relative;
+
+  @media screen and (max-width: 650px) {
+    margin: 64px 0;
+    padding: 46px 1rem 0;
+  }
 }
