@@ -24,13 +24,11 @@ interface FilterGroupProps {
   placeholder?: string;
 }
 
-export function FilterGroup({ 
-  title, 
-  options, 
-  currentPath, 
-  type, 
-  parentType, 
-  parentSlug,
+export function FilterGroup({
+  title,
+  options,
+  currentPath,
+  type,
   onSelect,
   disabled,
   placeholder
@@ -60,7 +58,7 @@ export function FilterGroup({
 
   return (
     <div className={styles.filterSection}>
-      <div 
+      <div
         className={`${styles.filterHeader} ${isOpen ? styles.active : ''} ${disabled ? styles.disabled : ''}`}
         onClick={handleClick}
       >
@@ -69,7 +67,7 @@ export function FilterGroup({
           {selectedOption ? (
             <span className={styles.selectedTag}>
               {selectedOption.name}
-              <button 
+              <button
                 className={styles.clearButton}
                 onClick={handleClear}
                 type="button"
@@ -83,13 +81,13 @@ export function FilterGroup({
         </div>
         <span className={styles.arrow}>▼</span>
       </div>
-      
+
       {isOpen && !disabled && (
         <div className={styles.dropdown}>
           <div className={styles.optionsList}>
             {options.map(option => (
-              <div 
-                key={option.id} 
+              <div
+                key={option.id}
                 className={`${styles.option} ${selectedOption?.id === option.id ? styles.selected : ''}`}
                 onClick={() => onSelect(type, option.slug)}
               >
@@ -101,4 +99,4 @@ export function FilterGroup({
       )}
     </div>
   );
-} 
+}
