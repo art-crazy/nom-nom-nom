@@ -1,17 +1,22 @@
 import React from 'react';
 import styles from './page.module.scss';
+import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default function HistoryPage() {
   return (
     <div className={styles.historyPage}>
       <div className={styles.container}>
+        <Breadcrumbs
+          title="Наша история"
+          paths={[]}
+        />
         <h1 className={styles.title}>Наша история</h1>
-        
+
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Как всё начиналось</h2>
           <p className={styles.sectionText}>
-            Nom Nom Nom родился из простой идеи: сделать кулинарию доступной и увлекательной для каждого. 
-            В 2023 году группа энтузиастов, объединенных любовью к еде и технологиям, решила создать платформу, 
+            Nom Nom Nom родился из простой идеи: сделать кулинарию доступной и увлекательной для каждого.
+            В 2023 году группа энтузиастов, объединенных любовью к еде и технологиям, решила создать платформу,
             где каждый может делиться своими рецептами и находить вдохновение для новых кулинарных экспериментов.
           </p>
         </section>
@@ -19,8 +24,8 @@ export default function HistoryPage() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Наша миссия</h2>
           <p className={styles.sectionText}>
-            Мы верим, что приготовление пищи — это не просто процесс, а настоящее искусство, 
-            которое объединяет людей. Наша цель — создать сообщество, где каждый может найти 
+            Мы верим, что приготовление пищи — это не просто процесс, а настоящее искусство,
+            которое объединяет людей. Наша цель — создать сообщество, где каждый может найти
             рецепты, поделиться своим опытом и вдохновить других на кулинарные открытия.
           </p>
         </section>
@@ -55,4 +60,4 @@ export default function HistoryPage() {
       </div>
     </div>
   );
-} 
+}

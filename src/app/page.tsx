@@ -1,9 +1,14 @@
 import styles from './Home.module.scss';
 import RecipeCard from '../components/RecipeCard/RecipeCard';
+import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default function Home() {
   return (
     <div className={styles.home}>
+      <Breadcrumbs
+        title="Главная"
+        paths={[]}
+      />
       <div className={styles.main}>
         <h1 className={styles.h1}>Найдите, что приготовить за минуты.</h1>
         <p className={styles.subtitle}>Ищите или изучайте ниже</p>

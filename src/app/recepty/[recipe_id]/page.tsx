@@ -4,6 +4,7 @@ import ServingsCalculator from '@/components/ServingsCalculator/ServingsCalculat
 import Image from 'next/image';
 import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
+import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
   const awaitedParams = await params;
@@ -19,6 +20,12 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
 
   return (
     <div className={styles.recipePage}>
+      <Breadcrumbs
+        title={recipe.title}
+        paths={[
+          { title: 'Рецепты', url: '/recepty' },
+        ]}
+      />
       <div className={styles.topSection}>
         <div className={styles.imageColumn}>
           {recipe.imageMain && (
