@@ -26,7 +26,7 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
   const handleFilterSelect = (type: string, slug: string) => {
     setSelectedFilters(prev => {
       const newFilters = { ...prev };
-
+      
       // Очищаем все фильтры после текущего
       if (type === 'diet') {
         delete newFilters.cuisine;
@@ -38,7 +38,7 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
       } else if (type === 'category') {
         delete newFilters.subcategory;
       }
-
+      
       if (slug) {
         newFilters[type as keyof typeof newFilters] = slug;
       } else {
@@ -64,7 +64,7 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
   // Получаем доступные подкатегории на основе выбранной категории
   const getAvailableSubcategories = () => {
     if (!selectedFilters.category) return [];
-
+    
     const category = dishCategories[selectedFilters.category as keyof typeof dishCategories];
     if (!category) return [];
 
@@ -107,11 +107,11 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
       title: 'Любое блюдо',
       type: 'subcategory' as const,
       options: getAvailableSubcategories(),
-      disabled: !selectedFilters.category,
+      disabled: !selectedFilters.category
     }
   ];
 
-  const hasChanges = JSON.stringify(selectedFilters) !== JSON.stringify(currentPath);
+  const hasFilters = Object.values(selectedFilters).some(Boolean);
 
   return (
     <div className={styles.filters}>
@@ -128,16 +128,15 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
           disabled={group.disabled}
         />
       ))}
-
+      
       <div className={styles.filterActions}>
-        {hasChanges && (
-          <button
-            className={styles.applyButton}
-            onClick={handleApplyFilters}
-          >
-            Применить фильтры
-          </button>
-        )}
+        <button 
+          className={`${styles.applyButton} ${!hasFilters ? styles.disabled : ''}`}
+          onClick={handleApplyFilters}
+          disabled={!hasFilters}
+        >
+          Найти рецепты
+        </button>
       </div>
     </div>
   );
