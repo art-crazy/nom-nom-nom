@@ -1,2 +1,8 @@
 // Colors
 $background-color: #fafafa;
+
+@mixin recipe-page {
+  margin: 64px 0;
+  padding: 46px 96px 0 96px;
+  position: relative;
+}
