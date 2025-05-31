@@ -19,7 +19,7 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
   if (!recipe) return <div>Рецепт не найден</div>;
 
   return (
-    <div className={styles.recipePage}>
+    <div className={styles.container}>
       <Breadcrumbs
         title={recipe.title}
         paths={[

@@ -1,13 +1,10 @@
 @import '@/styles/vars.scss';
 
-.recipesPage {
-  padding: 2rem 0;
-  background-color: #f8f9fa;
+.container {
   @include page-container;
-
 }
 
-.container {
+.container__grid {
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 2rem;
@@ -22,11 +19,7 @@
 }
 
 @media (max-width: 768px) {
-  .recipesPage {
-    padding: 1rem 0;
-  }
-
-  .container {
+  .container__grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }

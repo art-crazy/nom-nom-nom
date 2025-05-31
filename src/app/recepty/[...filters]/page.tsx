@@ -49,7 +49,7 @@ const getSubcategoryTitle = (category: string, subcategory: string): string | un
 export default function RecipesFiltersPage() {
   const params = useParams();
   const filters = Array.isArray(params.filters) ? params.filters : params.filters ? [params.filters] : [];
-  
+
   // Определяем типы всех фильтров
   const currentPath = {
     diet: filters.find(filter => filter in dietCategories),
@@ -57,7 +57,7 @@ export default function RecipesFiltersPage() {
     category: filters.find(filter => filter in dishCategories),
     subcategory: filters.find((filter, index) => {
       const prevFilter = filters[index - 1];
-      return prevFilter && prevFilter in dishCategories && 
+      return prevFilter && prevFilter in dishCategories &&
              filter in dishCategories[prevFilter as keyof typeof dishCategories].subcategories;
     })
   };
@@ -82,15 +82,15 @@ export default function RecipesFiltersPage() {
 
   // Определяем заголовок страницы
   const lastFilter = filters[filters.length - 1];
-  const pageTitle = getCategoryTitle(lastFilter) || 
-    (currentPath.category && currentPath.subcategory ? getSubcategoryTitle(currentPath.category, currentPath.subcategory) : undefined) || 
+  const pageTitle = getCategoryTitle(lastFilter) ||
+    (currentPath.category && currentPath.subcategory ? getSubcategoryTitle(currentPath.category, currentPath.subcategory) : undefined) ||
     "";
 
   // Убираем последний элемент из хлебных крошек, так как он будет в заголовке
   const finalBreadcrumbPaths = breadcrumbPaths.slice(0, -1);
 
   return (
-    <div className={styles.recipesPage}>
+    <div className={styles.container}>
       <Breadcrumbs
         title={pageTitle}
         paths={finalBreadcrumbPaths}

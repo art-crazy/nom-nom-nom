@@ -7,7 +7,7 @@ import styles from './page.module.scss';
 
 export default function RecipesPage() {
   return (
-    <div className={styles.recipesPage}>
+    <div className={styles.container}>
         <Breadcrumbs
           title="Рецепты"
           paths={[]}

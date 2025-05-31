@@ -1,8 +1,6 @@
 @import '@/styles/vars.scss';
 
-.recipesPage {
-  padding: 2rem 0;
-  background-color: #f8f9fa;
+.container {
   @include page-container;
 }
 
@@ -15,10 +13,6 @@
 }
 
 @media (max-width: 768px) {
-  .recipesPage {
-    padding: 1rem 0;
-  }
-
   .content {
     padding: 1rem;
   }
