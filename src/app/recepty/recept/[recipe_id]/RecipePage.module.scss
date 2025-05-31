@@ -20,14 +20,13 @@
 }
 
 .mainImage {
-  border-radius: 8px;
   position: relative;
   width: 750px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 .imageMain {
-  border-radius: 8px;
+  border-radius: $border-radius-m;
   object-fit: cover;
 }
 
@@ -148,7 +147,7 @@
 
 .step {
   background: #fff;
-  border-radius: 8px;
+  border-radius: $border-radius-m;
   padding: 32px;
   margin-bottom: 24px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
@@ -212,7 +211,7 @@
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: $border-radius-m;
   padding: 12px 32px;
   font-size: 15px;
   font-weight: 500;
