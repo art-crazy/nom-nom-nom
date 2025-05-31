@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={styles.section}>
             <b>О нас</b>
             <Link href="/istoriya">Наша история</Link>
-            <a href="#">Блог</a>
+            <Link href="/blog">Блог</Link>
             <Link href="/faq">Вопросы и ответы</Link>
         </div>
         <div className={styles.section}>

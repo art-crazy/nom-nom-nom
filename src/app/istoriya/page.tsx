@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './page.module.scss';
+import styles from '../shared/page.module.scss';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default function HistoryPage() {
   return (
-    <div className={styles.historyPage}>
+    <div className={styles.page}>
       <div className={styles.container}>
         <Breadcrumbs
           title="Наша история"

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './page.module.scss';
+import styles from '../shared/page.module.scss';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default function FAQPage() {
   return (
-    <div className={styles.faqPage}>
+    <div className={styles.page}>
       <div className={styles.container}>
         <Breadcrumbs
           title="Вопросы и ответы"
