@@ -7,6 +7,8 @@ import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import styles from './page.module.scss';
 import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
 
+const RECIPES_PATH = { title: "Рецепты", url: "/recepty", key: "/recepty" };
+
 // Определяем тип для категории с подкатегориями
 type CategoryWithSubcategories = {
   id: string;
@@ -17,6 +19,24 @@ type CategoryWithSubcategories = {
       title: string;
     };
   };
+};
+
+const getCategoryTitle = (filter: string): string | undefined => {
+  if (dietCategories[filter as keyof typeof dietCategories]) {
+    return dietCategories[filter as keyof typeof dietCategories].title;
+  }
+  if (cuisineCategories[filter as keyof typeof cuisineCategories]) {
+    return cuisineCategories[filter as keyof typeof cuisineCategories].title;
+  }
+  if (dishCategories[filter as keyof typeof dishCategories]) {
+    return dishCategories[filter as keyof typeof dishCategories].title;
+  }
+  return undefined;
+};
+
+const getSubcategoryTitle = (category: string, subcategory: string): string | undefined => {
+  const categoryData = dishCategories[category as keyof typeof dishCategories] as CategoryWithSubcategories;
+  return categoryData?.subcategories?.[subcategory]?.title;
 };
 
 export default function RecipesFiltersPage() {
@@ -30,46 +50,27 @@ export default function RecipesFiltersPage() {
 
   // Формируем пути для хлебных крошек
   const breadcrumbPaths = [
-    { title: "Рецепты", url: "/recepty", key: "/recepty" },
+    RECIPES_PATH,
     ...filters.map((filter, index) => {
       const path = `/recepty/${filters.slice(0, index + 1).join('/')}`;
-      let title = filter;
+      let title: string | undefined;
 
-      // Определяем правильный заголовок в зависимости от уровня фильтра
-      if (index === 0 && dietCategories[filter as keyof typeof dietCategories]) {
-        title = dietCategories[filter as keyof typeof dietCategories].title;
-      } else if (index === 1 && cuisineCategories[filter as keyof typeof cuisineCategories]) {
-        title = cuisineCategories[filter as keyof typeof cuisineCategories].title;
-      } else if (index === 2 && dishCategories[filter as keyof typeof dishCategories]) {
-        title = dishCategories[filter as keyof typeof dishCategories].title;
+      if (index === filters.length - 1 && category && subcategory) {
+        // Если это последний элемент и у нас есть категория и подкатегория
+        title = getSubcategoryTitle(category, filter);
+      } else {
+        title = getCategoryTitle(filter);
       }
 
-      return {
-        title,
-        url: path,
-        key: path
-      };
-    })
+      return title ? { title, url: path, key: path } : null;
+    }).filter((path): path is { title: string; url: string; key: string } => path !== null)
   ];
 
   // Определяем заголовок страницы
-  let pageTitle = "Рецепты";
   const lastFilter = filters[filters.length - 1];
-  
-  if (lastFilter) {
-    if (dietCategories[lastFilter as keyof typeof dietCategories]) {
-      pageTitle = dietCategories[lastFilter as keyof typeof dietCategories].title;
-    } else if (cuisineCategories[lastFilter as keyof typeof cuisineCategories]) {
-      pageTitle = cuisineCategories[lastFilter as keyof typeof cuisineCategories].title;
-    } else if (dishCategories[lastFilter as keyof typeof dishCategories]) {
-      pageTitle = dishCategories[lastFilter as keyof typeof dishCategories].title;
-    } else if (category && dishCategories[category as keyof typeof dishCategories]) {
-      const categoryData = dishCategories[category as keyof typeof dishCategories] as CategoryWithSubcategories;
-      if (categoryData.subcategories && lastFilter in categoryData.subcategories) {
-        pageTitle = categoryData.subcategories[lastFilter].title;
-      }
-    }
-  }
+  const pageTitle = getCategoryTitle(lastFilter) || 
+    (category && subcategory ? getSubcategoryTitle(category, subcategory) : undefined) || 
+    "";
 
   // Убираем последний элемент из хлебных крошек, так как он будет в заголовке
   const finalBreadcrumbPaths = breadcrumbPaths.slice(0, -1);
