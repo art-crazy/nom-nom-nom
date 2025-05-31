@@ -49,8 +49,15 @@ const getSubcategoryTitle = (category: string, subcategory: string): string | un
 export default function RecipesFiltersPage() {
   const params = useParams();
   const filters = Array.isArray(params.filters) ? params.filters : params.filters ? [params.filters] : [];
-  const [diet, cuisine, category, subcategory] = filters;
-  const currentPath = { diet, cuisine, category, subcategory };
+  
+  // Определяем тип категории для первого фильтра
+  const firstFilter = filters[0];
+  const currentPath = {
+    diet: firstFilter in dietCategories ? firstFilter : undefined,
+    cuisine: firstFilter in cuisineCategories ? firstFilter : undefined,
+    category: firstFilter in dishCategories ? firstFilter : undefined,
+    subcategory: filters[1]
+  };
 
   // Формируем пути для хлебных крошек
   const breadcrumbPaths = [
@@ -59,9 +66,9 @@ export default function RecipesFiltersPage() {
       const path = `/recepty/${filters.slice(0, index + 1).join('/')}`;
       let title: string | undefined;
 
-      if (index === filters.length - 1 && category && subcategory) {
+      if (index === filters.length - 1 && currentPath.category && currentPath.subcategory) {
         // Если это последний элемент и у нас есть категория и подкатегория
-        title = getSubcategoryTitle(category, filter);
+        title = getSubcategoryTitle(currentPath.category, filter);
       } else {
         title = getCategoryTitle(filter);
       }
@@ -73,7 +80,7 @@ export default function RecipesFiltersPage() {
   // Определяем заголовок страницы
   const lastFilter = filters[filters.length - 1];
   const pageTitle = getCategoryTitle(lastFilter) || 
-    (category && subcategory ? getSubcategoryTitle(category, subcategory) : undefined) || 
+    (currentPath.category && currentPath.subcategory ? getSubcategoryTitle(currentPath.category, currentPath.subcategory) : undefined) || 
     "";
 
   // Убираем последний элемент из хлебных крошек, так как он будет в заголовке
