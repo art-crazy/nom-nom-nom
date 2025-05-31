@@ -50,13 +50,16 @@ export default function RecipesFiltersPage() {
   const params = useParams();
   const filters = Array.isArray(params.filters) ? params.filters : params.filters ? [params.filters] : [];
   
-  // Определяем тип категории для первого фильтра
-  const firstFilter = filters[0];
+  // Определяем типы всех фильтров
   const currentPath = {
-    diet: firstFilter in dietCategories ? firstFilter : undefined,
-    cuisine: firstFilter in cuisineCategories ? firstFilter : undefined,
-    category: firstFilter in dishCategories ? firstFilter : undefined,
-    subcategory: filters[1]
+    diet: filters.find(filter => filter in dietCategories),
+    cuisine: filters.find(filter => filter in cuisineCategories),
+    category: filters.find(filter => filter in dishCategories),
+    subcategory: filters.find((filter, index) => {
+      const prevFilter = filters[index - 1];
+      return prevFilter && prevFilter in dishCategories && 
+             filter in dishCategories[prevFilter as keyof typeof dishCategories].subcategories;
+    })
   };
 
   // Формируем пути для хлебных крошек
