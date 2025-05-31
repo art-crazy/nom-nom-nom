@@ -4,7 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
-import styles from './page.module.scss';
+import styles from '../page.module.scss';
 import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
 
 const RECIPES_PATH = { title: "Рецепты", url: "/recepty", key: "/recepty" };
