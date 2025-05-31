@@ -9,7 +9,6 @@ import { dietCategories, cuisineCategories, dishCategories } from '@/data/catego
 
 const RECIPES_PATH = { title: "Рецепты", url: "/recepty", key: "/recepty" };
 
-// Определяем тип для категории с подкатегориями
 type CategoryWithSubcategories = {
   id: string;
   title: string;
@@ -21,15 +20,23 @@ type CategoryWithSubcategories = {
   };
 };
 
+type CategoryMap = {
+  [key: string]: {
+    id: string;
+    title: string;
+  };
+};
+
+const categoryMaps: Record<string, CategoryMap> = {
+  diet: dietCategories,
+  cuisine: cuisineCategories,
+  dish: dishCategories
+};
+
 const getCategoryTitle = (filter: string): string | undefined => {
-  if (dietCategories[filter as keyof typeof dietCategories]) {
-    return dietCategories[filter as keyof typeof dietCategories].title;
-  }
-  if (cuisineCategories[filter as keyof typeof cuisineCategories]) {
-    return cuisineCategories[filter as keyof typeof cuisineCategories].title;
-  }
-  if (dishCategories[filter as keyof typeof dishCategories]) {
-    return dishCategories[filter as keyof typeof dishCategories].title;
+  for (const categories of Object.values(categoryMaps)) {
+    const title = categories[filter]?.title;
+    if (title) return title;
   }
   return undefined;
 };
@@ -40,11 +47,8 @@ const getSubcategoryTitle = (category: string, subcategory: string): string | un
 };
 
 export default function RecipesFiltersPage() {
-  // Получаем массив фильтров из URL
   const params = useParams();
   const filters = Array.isArray(params.filters) ? params.filters : params.filters ? [params.filters] : [];
-
-  // Преобразуем фильтры в объект для передачи в RecipeFilters
   const [diet, cuisine, category, subcategory] = filters;
   const currentPath = { diet, cuisine, category, subcategory };
 
