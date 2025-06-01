@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { recipes, Recipe } from '@/data/recipes';
 import styles from './RecipeList.module.scss';
 
@@ -29,10 +30,10 @@ export function RecipeList({ filters }: RecipeListProps) {
     // Проверяем наличие категории в каждом списке
     return categoryLists.some(list => {
       if (!list) return false;
-
+      
       // Проверяем наличие категории по ключу
       if (list[categoryKey]) return true;
-
+      
       // Проверяем наличие категории по id
       return Object.values(list).some(category => category.id === categoryKey);
     });
@@ -49,10 +50,10 @@ export function RecipeList({ filters }: RecipeListProps) {
       const recipeData = recipe as Recipe;
 
       // Проверяем все возможные фильтры
-      const activeFilters = Object.entries(filters).filter(([_, value]) => value);
-
+      const activeFilters = Object.entries(filters).filter(([, value]) => value);
+      
       // Если есть активные фильтры, проверяем каждый
-      return activeFilters.every(([_, categoryKey]) => {
+      return activeFilters.every(([, categoryKey]) => {
         if (!categoryKey) return true;
         return hasCategory(recipeData, categoryKey);
       });
@@ -75,7 +76,14 @@ export function RecipeList({ filters }: RecipeListProps) {
         <div key={recipe.id} className={styles.recipeCard}>
           {recipe.imageMain && (
             <div className={styles.imageContainer}>
-              <img src={recipe.imageMain} alt={recipe.title} />
+              <Image
+                src={recipe.imageMain}
+                alt={recipe.title}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                style={{ objectFit: 'cover' }}
+                priority={false}
+              />
             </div>
           )}
           <div className={styles.recipeInfo}>
