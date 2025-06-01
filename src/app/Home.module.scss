@@ -1,6 +1,90 @@
 @use '@/styles/vars.scss' as *;
 
 .home {
-  margin: 64px 0;
   @include page-container;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+
+  // Секции с подборками
+  .section {
+    margin-bottom: 48px;
+
+    .sectionHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .sectionTitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .sectionLink {
+        color: #666;
+        text-decoration: none;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .cardsContainer {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      padding: 8px 0;
+      scrollbar-width: none; // Firefox
+      &::-webkit-scrollbar {
+        display: none; // Chrome, Safari
+      }
+
+      .card {
+        flex: 0 0 300px;
+        border-radius: $border-radius-m;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: translateY(-4px);
+        }
+
+        .cardImage {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .cardContent {
+          padding: 16px;
+
+          .cardTitle {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+          }
+
+          .cardDescription {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 12px;
+          }
+
+          .cardMeta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #888;
+          }
+        }
+      }
+    }
+  }
 }

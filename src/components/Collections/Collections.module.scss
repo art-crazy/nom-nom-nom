@@ -1,0 +1,166 @@
+@use '@/styles/vars.scss' as *;
+
+.section {
+  margin-bottom: 48px;
+
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .sectionTitle {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .sectionLink {
+      color: #666;
+      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .cardsContainer {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 8px 0;
+    scrollbar-width: none; // Firefox
+    &::-webkit-scrollbar {
+      display: none; // Chrome, Safari
+    }
+
+    .card {
+      flex: 0 0 300px;
+      border-radius: $border-radius-m;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      .cardImage {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .cardContent {
+        padding: 16px;
+
+        .cardTitle {
+          font-size: 1.1rem;
+          margin-bottom: 8px;
+        }
+
+        .cardDescription {
+          font-size: 0.9rem;
+          color: #666;
+          margin-bottom: 12px;
+        }
+
+        .cardMeta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 0.9rem;
+          color: #888;
+        }
+      }
+    }
+  }
+}
+
+// Featured collection styles
+.featuredSection {
+  margin-bottom: 80px;
+
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .sectionTitle {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .sectionLink {
+      color: #666;
+      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .featuredCardsContainer {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 8px 0;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .featuredCard {
+      flex: 0 0 800px;
+      position: relative;
+      border-radius: $border-radius-m;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: transform 0.2s;
+      aspect-ratio: 16/9;
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+
+      .featuredCardImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .featuredCardContent {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 32px;
+        background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+        color: white;
+
+        .featuredCardTitle {
+          font-size: 1.8rem;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+
+        .featuredCardDescription {
+          font-size: 1.1rem;
+          color: rgba(255,255,255,0.9);
+          margin-bottom: 16px;
+          line-height: 1.5;
+        }
+
+        .featuredCardMeta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.1rem;
+          color: rgba(255,255,255,0.8);
+        }
+      }
+    }
+  }
+} 
