@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { recipes } from '@/data/recipes';
+import { recipes, Recipe } from '@/data/recipes';
 import styles from './RecipeList.module.scss';
 
 interface RecipeListProps {
@@ -13,44 +13,8 @@ interface RecipeListProps {
   };
 }
 
-type Recipe = {
-  id: number;
-  name: string;
-  title: string;
-  description: string;
-  cookTime: string;
-  difficulty: string;
-  nutrition: {
-    calories: { value: number; unit: string };
-    protein: { value: number; unit: string };
-    fat: { value: number; unit: string };
-    carbs: { value: number; unit: string };
-  };
-  cuisine: string;
-  servings: number;
-  ingredients: { name: string; amount: number; unit: string }[];
-  steps: { title: string; text: string; image?: string }[];
-  imageMain?: string;
-  categories: string[];
-  rating: number;
-  reviews: number;
-  comments?: { user: string; date: string; text: string; likes: number; replies: number }[];
-  dishCategoriesList: { [key: string]: { id: string; title: string } };
-  dishCategoriesSubList: { [key: string]: { id: string; title: string } };
-  cuisineCategoriesList: { [key: string]: { id: string; title: string } };
-  dietCategoriesList: { [key: string]: { id: string; title: string } };
-};
-
-type RecipesWithCategories = {
-  [key: number]: Recipe;
-  dishCategoriesList: { [key: string]: { id: string; title: string } };
-  dishCategoriesSubList: { [key: string]: { id: string; title: string } };
-  cuisineCategoriesList: { [key: string]: { id: string; title: string } };
-  dietCategoriesList: { [key: string]: { id: string; title: string } };
-};
-
 export function RecipeList({ filters }: RecipeListProps) {
-  const recipesData = recipes as unknown as RecipesWithCategories;
+  const recipesData = recipes;
 
   // Функция для проверки наличия категории в любом из списков категорий рецепта
   const hasCategory = (recipe: Recipe, categoryKey: string): boolean => {
@@ -65,10 +29,10 @@ export function RecipeList({ filters }: RecipeListProps) {
     // Проверяем наличие категории в каждом списке
     return categoryLists.some(list => {
       if (!list) return false;
-      
+
       // Проверяем наличие категории по ключу
       if (list[categoryKey]) return true;
-      
+
       // Проверяем наличие категории по id
       return Object.values(list).some(category => category.id === categoryKey);
     });
@@ -86,7 +50,7 @@ export function RecipeList({ filters }: RecipeListProps) {
 
       // Проверяем все возможные фильтры
       const activeFilters = Object.entries(filters).filter(([_, value]) => value);
-      
+
       // Если есть активные фильтры, проверяем каждый
       return activeFilters.every(([_, categoryKey]) => {
         if (!categoryKey) return true;
@@ -127,4 +91,4 @@ export function RecipeList({ filters }: RecipeListProps) {
       ))}
     </div>
   );
-} 
+}
