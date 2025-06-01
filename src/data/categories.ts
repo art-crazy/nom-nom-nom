@@ -99,15 +99,15 @@ export const dishCategories = {
         title: 'Из яиц'
       },
       muesliGranola: {
-        id: 'muesliGranola',
+        id: 'muesli-granola',
         title: 'Мюсли и гранола'
       },
       syrnikiCasseroles: {
-        id: 'syrnikiCasseroles',
+        id: 'syrniki-casseroles',
         title: 'Сырники и запеканки'
       },
       vegetableDishes: {
-        id: 'vegetableDishes',
+        id: 'vegetable-dishes',
         title: 'Овощные блюда'
       }
     }
@@ -126,11 +126,11 @@ export const dishCategories = {
         title: 'Холодные закуски'
       },
       drinksSnacks: {
-        id: 'drinksSnacks',
+        id: 'drinks-snacks',
         title: 'Закуски к напиткам'
       },
       fastFood: {
-        id: 'fastFood',
+        id: 'fast-food',
         title: 'Фастфуд'
       },
       festive: {
@@ -141,7 +141,7 @@ export const dishCategories = {
   },
 
   mainDishes: {
-    id: 'mainDishes',
+    id: 'main-dishes',
     title: 'Основные блюда',
     subcategories: {
       lamb: {
@@ -157,7 +157,7 @@ export const dishCategories = {
         title: 'Блюда из курицы'
       },
       mixedMeatPoultry: {
-        id: 'mixedMeatPoultry',
+        id: 'mixed-meat-poultry',
         title: 'Блюда из мяса и птицы'
       },
       seafood: {
@@ -193,7 +193,7 @@ export const dishCategories = {
         title: 'Шашлыки'
       },
       grillBarbecue: {
-        id: 'grillBarbecue',
+        id: 'grill-barbecue',
         title: 'Гриль/барбекю'
       }
     }
@@ -249,7 +249,7 @@ export const dishCategories = {
         title: 'Вегетарианские салаты'
       },
       veganFasting: {
-        id: 'veganFasting',
+        id: 'vegan-fasting',
         title: 'Веганские и постные салаты'
       },
       classic: {
@@ -257,7 +257,7 @@ export const dishCategories = {
         title: 'Классические салаты'
       },
       meatFish: {
-        id: 'meatFish',
+        id: 'meat-fish',
         title: 'Мясные и рыбные салаты'
       },
       chicken: {
@@ -273,11 +273,11 @@ export const dishCategories = {
         title: 'Салаты с майонезом'
       },
       fruitVeggie: {
-        id: 'fruitVeggie',
+        id: 'fruit-veggie',
         title: 'Салаты с овощами и фруктами'
       },
       layeredFestive: {
-        id: 'layeredFestive',
+        id: 'layered-festive',
         title: 'Слоеные и праздничные салаты'
       },
       korean: {
@@ -335,7 +335,7 @@ export const dishCategories = {
         title: 'Маринад для рыбы'
       },
       soySauce: {
-        id: 'soySauce',
+        id: 'soy-sauce',
         title: 'Маринад с соевым соусом'
       },
       beef: {
@@ -350,7 +350,7 @@ export const dishCategories = {
   },
 
   bakingDesserts: {
-    id: 'bakingDesserts',
+    id: 'baking-desserts',
     title: 'Выпечка и десерты',
     subcategories: {
       pies: {
@@ -374,7 +374,7 @@ export const dishCategories = {
         title: 'Мармелад'
       },
       noBake: {
-        id: 'noBake',
+        id: 'no-bake',
         title: 'Десерты без выпечки'
       },
       curd: {
@@ -398,7 +398,7 @@ export const dishCategories = {
         title: 'Маффины'
       },
       bakingWithCurd: {
-        id: 'bakingWithCurd',
+        id: 'baking-with-curd',
         title: 'Выпечка с творогом'
       },
       buns: {
@@ -410,7 +410,7 @@ export const dishCategories = {
         title: 'Хлеб'
       },
       veganDesserts: {
-        id: 'veganDesserts',
+        id: 'vegan-desserts',
         title: 'Веганские десерты'
       }
     }
@@ -425,11 +425,11 @@ export const dishCategories = {
         title: 'Варенье и джемы'
       },
       vegetablesForWinter: {
-        id: 'vegetablesForWinter',
+        id: 'vegetables-for-winter',
         title: 'Овощи на зиму'
       },
       picklesCucumbers: {
-        id: 'picklesCucumbers',
+        id: 'pickles-cucumbers',
         title: 'Огурцы'
       },
       mushrooms: {
@@ -437,7 +437,7 @@ export const dishCategories = {
         title: 'Грибы'
       },
       saladsEtc: {
-        id: 'saladsEtc',
+        id: 'salads-etc',
         title: 'Салаты и прочее'
       }
     }
@@ -460,11 +460,11 @@ export const dishCategories = {
         title: 'Солянки'
       },
       creamPuree: {
-        id: 'creamPuree',
+        id: 'cream-puree',
         title: 'Крема и пюре'
       },
       meatVegetable: {
-        id: 'meatVegetable',
+        id: 'meat-vegetable',
         title: 'Мясные и овощные'
       },
       fish: {
@@ -495,14 +495,14 @@ export const dishCategories = {
         title: 'Коктейли'
       },
       coffeeTea: {
-        id: 'coffeeTea',
+        id: 'coffee-tea',
         title: 'Кофе и чай'
       }
     }
   },
 
   fastSlowCooking: {
-    id: 'fastSlowCooking',
+    id: 'fast-slow-cooking',
     title: 'Время приготовления',
     subcategories: {
       fast: {
@@ -517,7 +517,7 @@ export const dishCategories = {
   },
 
   seasonMoodHoliday: {
-    id: 'seasonMoodHoliday',
+    id: 'season-mood-holiday',
     title: 'Сезон, настроение, праздник',
     subcategories: {
       winter: {
@@ -541,7 +541,7 @@ export const dishCategories = {
         title: 'Рождество'
       },
       newYear: {
-        id: 'newYear',
+        id: 'new-year',
         title: 'Новый год'
       },
       valentines: {
@@ -553,22 +553,22 @@ export const dishCategories = {
         title: 'Пасха'
       },
       moodHappy: {
-        id: 'moodHappy',
+        id: 'mood-happy',
         title: 'Праздничное настроение'
       },
       moodComfort: {
-        id: 'moodComfort',
+        id: 'mood-comfort',
         title: 'Комфортное настроение'
       },
       moodEnergetic: {
-        id: 'moodEnergetic',
+        id: 'mood-energetic',
         title: 'Энергичное настроение'
       }
     }
   },
 
   mealsTime: {
-    id: 'mealsTime',
+    id: 'meals-time',
     title: 'Время приёма пищи',
     subcategories: {
       breakfast: {
@@ -1006,19 +1006,19 @@ export const dietCategories = {
     title: 'Вегетарианская диета'
   },
   glutenFree: {
-    id: 'glutenFree',
+    id: 'gluten-free',
     title: 'Безглютеновая диета'
   },
   dairyFree: {
-    id: 'dairyFree',
+    id: 'dairy-free',
     title: 'Безлактозная диета'
   },
   kidsMenu: {
-    id: 'kidsMenu',
+    id: 'kids-menu',
     title: 'Детское меню'
   },
   lowCalorie: {
-    id: 'lowCalorie',
+    id: 'low-calorie',
     title: 'Низкокалорийная диета'
   },
   lean: {
@@ -1030,7 +1030,7 @@ export const dietCategories = {
     title: 'Меню при диабете'
   },
   lowCarb: {
-    id: 'lowCarb',
+    id: 'low-carb',
     title: 'Низкоуглеводная диета'
   },
   mediterranean: {
