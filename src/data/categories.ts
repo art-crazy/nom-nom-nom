@@ -75,20 +75,20 @@ type Categories = {
 type DishCategories = {
   breakfasts: CategoryWithSubcategories;
   appetizers: CategoryWithSubcategories;
-  mainDishes: CategoryWithSubcategories;
+  'main-dishes': CategoryWithSubcategories;
   pasta: CategoryWithSubcategories;
   pizza: CategoryWithSubcategories;
   risotto: CategoryWithSubcategories;
   salads: CategoryWithSubcategories;
   sauces: CategoryWithSubcategories;
   marinades: CategoryWithSubcategories;
-  bakingDesserts: CategoryWithSubcategories;
+  'baking-desserts': CategoryWithSubcategories;
   preparations: CategoryWithSubcategories;
   soups: CategoryWithSubcategories;
   drinks: CategoryWithSubcategories;
-  fastSlowCooking: CategoryWithSubcategories;
-  seasonMoodHoliday: CategoryWithSubcategories;
-  mealsTime: CategoryWithSubcategories;
+  'fast-slow-cooking': CategoryWithSubcategories;
+  'season-mood-holiday': CategoryWithSubcategories;
+  'meals-time': CategoryWithSubcategories;
 };
 
 // Типы для категорий кухонь
