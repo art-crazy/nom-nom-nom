@@ -1,9 +1,219 @@
+// Базовые типы для категорий
+type BaseCategory = {
+  id: string;
+  title: string;
+};
+
+type CategoryWithEn = BaseCategory & {
+  name: string;
+  en: string;
+};
+
+type Subcategory = BaseCategory;
+
+type CategoryWithSubcategories = BaseCategory & {
+  subcategories: {
+    [key: string]: Subcategory;
+  };
+};
+
+// Типы для основных категорий
+type Categories = {
+  'выпечка': CategoryWithEn;
+  'хворост': CategoryWithEn;
+  'на кефире': CategoryWithEn;
+  'жареное тесто': CategoryWithEn;
+  'сладкое к чаю': CategoryWithEn;
+  'русская кухня': CategoryWithEn;
+  'десерт': CategoryWithEn;
+  'быстрый рецепт': CategoryWithEn;
+  'домашняя выпечка': CategoryWithEn;
+  'дешево и вкусно': CategoryWithEn;
+  'просто': CategoryWithEn;
+  'торт': CategoryWithEn;
+  'кофейный десерт': CategoryWithEn;
+  'маскарпоне': CategoryWithEn;
+  'капучино': CategoryWithEn;
+  'праздничный торт': CategoryWithEn;
+  'сладкое': CategoryWithEn;
+  'к чаю': CategoryWithEn;
+  'впечатляющий десерт': CategoryWithEn;
+  'выпечка на праздник': CategoryWithEn;
+  'голубцы': CategoryWithEn;
+  'блюда из кролика': CategoryWithEn;
+  'второе блюдо': CategoryWithEn;
+  'домашняя кухня': CategoryWithEn;
+  'интернациональная кухня': CategoryWithEn;
+  'мясные блюда': CategoryWithEn;
+  'тушёные блюда': CategoryWithEn;
+  'праздничное блюдо': CategoryWithEn;
+  'обед': CategoryWithEn;
+  'ужин': CategoryWithEn;
+  'низкокалорийное': CategoryWithEn;
+  'диетическое': CategoryWithEn;
+  'салат': CategoryWithEn;
+  'лобио': CategoryWithEn;
+  'грузинская кухня': CategoryWithEn;
+  'вегетарианское блюдо': CategoryWithEn;
+  'постное блюдо': CategoryWithEn;
+  'закуска': CategoryWithEn;
+  'фасоль': CategoryWithEn;
+  'грецкие орехи': CategoryWithEn;
+  'острое блюдо': CategoryWithEn;
+  'на обед': CategoryWithEn;
+  'на ужин': CategoryWithEn;
+  'оладьи': CategoryWithEn;
+  'кабачки': CategoryWithEn;
+  'на сковороде': CategoryWithEn;
+  'овощные блюда': CategoryWithEn;
+  'летние рецепты': CategoryWithEn;
+  'завтрак': CategoryWithEn;
+  'простые рецепты': CategoryWithEn;
+};
+
+// Типы для категорий блюд
+type DishCategories = {
+  breakfasts: CategoryWithSubcategories;
+  appetizers: CategoryWithSubcategories;
+  mainDishes: CategoryWithSubcategories;
+  pasta: CategoryWithSubcategories;
+  pizza: CategoryWithSubcategories;
+  risotto: CategoryWithSubcategories;
+  salads: CategoryWithSubcategories;
+  sauces: CategoryWithSubcategories;
+  marinades: CategoryWithSubcategories;
+  bakingDesserts: CategoryWithSubcategories;
+  preparations: CategoryWithSubcategories;
+  soups: CategoryWithSubcategories;
+  drinks: CategoryWithSubcategories;
+  fastSlowCooking: CategoryWithSubcategories;
+  seasonMoodHoliday: CategoryWithSubcategories;
+  mealsTime: CategoryWithSubcategories;
+};
+
+// Типы для категорий кухонь
+type CuisineCategories = {
+  italian: BaseCategory;
+  chinese: BaseCategory;
+  japanese: BaseCategory;
+  russian: BaseCategory;
+  georgian: BaseCategory;
+  indian: BaseCategory;
+  mexican: BaseCategory;
+  french: BaseCategory;
+  turkish: BaseCategory;
+  korean: BaseCategory;
+  armenian: BaseCategory;
+  azerbaijani: BaseCategory;
+  spanish: BaseCategory;
+  thai: BaseCategory;
+  mediterranean: BaseCategory;
+  greek: BaseCategory;
+  ukrainian: BaseCategory;
+  polish: BaseCategory;
+  british: BaseCategory;
+  german: BaseCategory;
+  lebanese: BaseCategory;
+  brazilian: BaseCategory;
+  vietnamese: BaseCategory;
+  swiss: BaseCategory;
+  finnish: BaseCategory;
+  scandinavian: BaseCategory;
+  dutch: BaseCategory;
+  czech: BaseCategory;
+  norwegian: BaseCategory;
+  swedish: BaseCategory;
+  austrian: BaseCategory;
+  hungarian: BaseCategory;
+  serbian: BaseCategory;
+  belarusian: BaseCategory;
+  moldovan: BaseCategory;
+  kazakh: BaseCategory;
+  uzbek: BaseCategory;
+  kyrgyz: BaseCategory;
+  turkmen: BaseCategory;
+  tajik: BaseCategory;
+  abkhazian: BaseCategory;
+  ossetian: BaseCategory;
+  bashkirian: BaseCategory;
+  cossack: BaseCategory;
+  kalmyk: BaseCategory;
+  chukchi: BaseCategory;
+  yakut: BaseCategory;
+  mari: BaseCategory;
+  udmurt: BaseCategory;
+  komi: BaseCategory;
+  sakha: BaseCategory;
+  slovak: BaseCategory;
+  croatian: BaseCategory;
+  montenegrin: BaseCategory;
+  bosnian: BaseCategory;
+  macedonian: BaseCategory;
+  albanian: BaseCategory;
+  maltese: BaseCategory;
+  cypriot: BaseCategory;
+  romanian: BaseCategory;
+  bulgarian: BaseCategory;
+  algerian: BaseCategory;
+  egyptian: BaseCategory;
+  syrian: BaseCategory;
+  israeli: BaseCategory;
+  palestinian: BaseCategory;
+  jordanian: BaseCategory;
+  tunisian: BaseCategory;
+  libyan: BaseCategory;
+  moroccan: BaseCategory;
+  ethiopian: BaseCategory;
+  somali: BaseCategory;
+  kenyan: BaseCategory;
+  nigerian: BaseCategory;
+  ghanaian: BaseCategory;
+  senegalese: BaseCategory;
+  southafrican: BaseCategory;
+  zimbabwean: BaseCategory;
+  malawian: BaseCategory;
+  iraqi: BaseCategory;
+  iranian: BaseCategory;
+  saudi: BaseCategory;
+  qatar: BaseCategory;
+  emirates: BaseCategory;
+  australian: BaseCategory;
+  newzealand: BaseCategory;
+  fiji: BaseCategory;
+  argentinian: BaseCategory;
+  peruvian: BaseCategory;
+  colombian: BaseCategory;
+  venezuelan: BaseCategory;
+  cuban: BaseCategory;
+  elven: BaseCategory;
+  dwarven: BaseCategory;
+  hobbit: BaseCategory;
+  wizard: BaseCategory;
+};
+
+// Типы для категорий диет
+type DietCategories = {
+  vegan: BaseCategory;
+  keto: BaseCategory;
+  paleo: BaseCategory;
+  vegetarian: BaseCategory;
+  glutenFree: BaseCategory;
+  dairyFree: BaseCategory;
+  kidsMenu: BaseCategory;
+  lowCalorie: BaseCategory;
+  lean: BaseCategory;
+  diabetic: BaseCategory;
+  lowCarb: BaseCategory;
+  mediterranean: BaseCategory;
+  detox: BaseCategory;
+};
+
 /**
  * Категория рецепта.
  * @property en Англоязычное название для url (только латиница, без пробелов и спецсимволов,
  * нижний регистр, через дефис)
  */
-export const categories = {
+export const categories: Categories = {
   'выпечка': { id: 'выпечка', name: 'выпечка', title: 'Выпечка', en: 'pastry' },
   'хворост': { id: 'хворост', name: 'хворост', title: 'Хворост', en: 'khvorost' },
   'на кефире': { id: 'на кефире', name: 'на кефире', title: 'На кефире', en: 'with-kefir' },
@@ -79,13 +289,10 @@ export const categories = {
   'летние рецепты': { id: 'летние рецепты', name: 'летние рецепты', title: 'Летние рецепты', en: 'summer-recipes' },
   'завтрак': { id: 'завтрак', name: 'завтрак', title: 'Завтрак', en: 'breakfast' },
   'простые рецепты': { id: 'простые рецепты', name: 'простые рецепты', title: 'Простые рецепты', en: 'easy-recipes' },
-
-} as const;
-
-export type CategoryId = keyof typeof categories;
+};
 
 // Категории блюд (уровень 1)
-export const dishCategories = {
+export const dishCategories: DishCategories = {
   breakfasts: {
     id: 'breakfasts',
     title: 'Завтраки',
@@ -589,10 +796,10 @@ export const dishCategories = {
       }
     }
   }
-} as const;
+};
 
 // Кухни (уровень 2)
-export const cuisineCategories = {
+export const cuisineCategories: CuisineCategories = {
   italian: {
     id: 'italian',
     title: 'Итальянская кухня'
@@ -985,10 +1192,10 @@ export const cuisineCategories = {
     id: 'wizard',
     title: 'Волшебная кухня'
   }
-} as const;
+};
 
 // Диеты (уровень 3)
-export const dietCategories = {
+export const dietCategories: DietCategories = {
   vegan: {
     id: 'vegan',
     title: 'Веганская диета'
@@ -1041,20 +1248,4 @@ export const dietCategories = {
     id: 'detox',
     title: 'Детокс-диета'
   }
-} as const;
-
-// Типы для TypeScript
-export type DishCategory = typeof dishCategories[keyof typeof dishCategories];
-export type CuisineCategory = typeof cuisineCategories[keyof typeof cuisineCategories];
-export type DietCategory = typeof dietCategories[keyof typeof dietCategories];
-
-export type CategoryWithSubcategories = {
-  id: string;
-  title: string;
-  subcategories: {
-    [key: string]: {
-      id: string;
-      title: string;
-    };
-  };
 };
