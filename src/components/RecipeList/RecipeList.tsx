@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { recipes, Recipe } from '@/data/recipes';
 import styles from './RecipeList.module.scss';
 
@@ -73,7 +74,11 @@ export function RecipeList({ filters }: RecipeListProps) {
   return (
     <div className={styles.recipeList}>
       {filteredRecipes.map((recipe) => (
-        <div key={recipe.id} className={styles.recipeCard}>
+        <Link 
+          key={recipe.id} 
+          href={`/recepty/recept/${recipe.name}-${recipe.id}`}
+          className={styles.recipeCard}
+        >
           {recipe.imageMain && (
             <div className={styles.imageContainer}>
               <Image
@@ -95,7 +100,7 @@ export function RecipeList({ filters }: RecipeListProps) {
               <span>Рейтинг: {recipe.rating}</span>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
