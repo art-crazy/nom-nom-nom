@@ -27,7 +27,7 @@
   .cardsContainer {
     display: flex;
     gap: 24px;
-    padding: 8px 0;
+    padding: 16px 0;
 
     .card {
       flex: 0 0 300px;
@@ -37,9 +37,12 @@
       overflow: hidden;
       transition: transform 0.2s ease-out;
       transform-origin: center;
+      position: relative;
+      z-index: 1;
 
       &:hover {
         transform: scale(1.05);
+        z-index: 2;
       }
 
       .cardImage {
@@ -87,7 +90,7 @@
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.2s, background-color 0.2s;
-    z-index: 1;
+    z-index: 3;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
     &:hover {
@@ -144,7 +147,7 @@
   .featuredCardsContainer {
     display: flex;
     gap: 32px;
-    padding: 8px 0;
+    padding: 24px 0;
 
     .featuredCard {
       flex: 0 0 800px;
@@ -156,9 +159,11 @@
       transition: transform 0.2s ease-out;
       aspect-ratio: 16/9;
       transform-origin: center;
+      z-index: 1;
 
       &:hover {
         transform: scale(1.05);
+        z-index: 2;
       }
 
       .featuredCardImage {
@@ -214,7 +219,7 @@
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.2s, background-color 0.2s;
-    z-index: 1;
+    z-index: 3;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 
     &:hover {
