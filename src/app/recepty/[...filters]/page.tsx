@@ -4,6 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
+import { RecipeList } from '@/components/RecipeList/RecipeList';
 import styles from '../page.module.scss';
 import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
 
@@ -97,7 +98,7 @@ export default function RecipesFiltersPage() {
       />
       <div className={styles.content}>
         <RecipeFilters currentPath={currentPath} />
-        {/* Здесь будет список рецептов по фильтрам */}
+        <RecipeList filters={currentPath} />
       </div>
     </div>
   );

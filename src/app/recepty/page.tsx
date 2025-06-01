@@ -1,21 +1,24 @@
 'use client';
 
 import React from 'react';
-import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
+import { RecipeList } from '@/components/RecipeList/RecipeList';
 import styles from './page.module.scss';
 
-export default function RecipesPage() {
+interface RecipesPageProps {
+  searchParams: {
+    diet?: string;
+    cuisine?: string;
+    category?: string;
+    subcategory?: string;
+  };
+}
+
+export default function RecipesPage({ searchParams }: RecipesPageProps) {
   return (
     <div className={styles.container}>
-        <Breadcrumbs
-          title="Рецепты"
-          paths={[]}
-        />
-        <div className={styles.content}>
-          <RecipeFilters currentPath={{}} />
-          {/* Здесь будет список всех рецептов */}
-        </div>
+      <RecipeFilters currentPath={searchParams} />
+      <RecipeList filters={searchParams} />
     </div>
   );
 }
