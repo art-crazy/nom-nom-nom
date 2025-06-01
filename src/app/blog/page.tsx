@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../shared/page.module.scss';
+import styles from '@/components/shared/page.module.scss';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default function BlogPage() {
@@ -11,12 +11,12 @@ export default function BlogPage() {
           paths={[]}
         />
         <h1 className={styles.title}>Блог QuickCook</h1>
-        
+
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Разместите свой блог у нас</h2>
           <p className={styles.sectionText}>
-            QuickCook предлагает уникальную возможность для блогеров и контент-мейкеров 
-            в сфере кулинарии и гастрономии. Размещая свой контент на нашей платформе, 
+            QuickCook предлагает уникальную возможность для блогеров и контент-мейкеров
+            в сфере кулинарии и гастрономии. Размещая свой контент на нашей платформе,
             вы получаете:
           </p>
           <ul className={styles.list}>
@@ -57,4 +57,4 @@ export default function BlogPage() {
       </div>
     </div>
   );
-} 
+}
