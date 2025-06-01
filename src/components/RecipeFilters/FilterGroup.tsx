@@ -3,6 +3,8 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './FilterGroup.module.scss';
 
+type FilterType = 'diet' | 'cuisine' | 'category' | 'subcategory';
+
 interface FilterGroupProps {
   title: string;
   options: Array<{
@@ -11,10 +13,10 @@ interface FilterGroupProps {
     slug: string;
   }>;
   currentPath: {
-    [key: string]: string | undefined;
+    [key in FilterType]?: string;
   };
-  type: string;
-  onSelect: (type: string, slug: string) => void;
+  type: FilterType;
+  onSelect: (type: FilterType, slug: string) => void;
   disabled?: boolean;
   placeholder?: string;
 }

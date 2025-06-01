@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nom Nom Nom - Приложение для управления рецептами
 
-## Getting Started
+Современное веб-приложение для управления и поиска рецептов, разработанное с использованием Next.js и TypeScript.
 
-First, run the development server:
+## Возможности
 
+- 🍳 Просмотр и фильтрация рецептов
+- 🔍 Расширенный поиск
+- 📱 Адаптивный дизайн
+- 🎨 Современный интерфейс с плавными анимациями
+- 📝 Блог с советами по готовке и статьями
+- 🏷️ Организация по категориям и подкатегориям
+- 🔄 Обновление фильтров в реальном времени
+
+## Технологический стек
+
+- **Фреймворк**: Next.js 15.3.2
+- **Язык программирования**: TypeScript
+- **Стилизация**: SASS Modules
+- **Иконки**: Lucide React
+- **Разработка**: Turbopack для ускорения процесса разработки
+
+## Начало работы
+
+### Требования
+
+- Node.js (рекомендуется последняя LTS версия)
+- npm или yarn
+
+### Установка
+
+1. Клонируйте репозиторий:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [url-репозитория]
+cd nom-nom-nom
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Установите зависимости:
+```bash
+npm install
+# или
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Запустите сервер разработки:
+```bash
+npm run dev
+# или
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Доступные команды
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Запуск сервера разработки с Turbopack
+- `npm run build` - Сборка приложения для продакшена
+- `npm run start` - Запуск продакшен-сервера
+- `npm run lint` - Запуск ESLint для проверки качества кода
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Структура проекта
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/              # Директория Next.js приложения
+├── components/       # Переиспользуемые React компоненты
+├── styles/          # Глобальные стили и переменные
+└── types/           # Определения типов TypeScript
+```
 
-## Deploy on Vercel
+## Участие в разработке
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Сделайте форк репозитория
+2. Создайте ветку для вашей функциональности (`git checkout -b feature/amazing-feature`)
+3. Зафиксируйте изменения (`git commit -m 'Добавлена новая функциональность'`)
+4. Отправьте изменения в ветку (`git push origin feature/amazing-feature`)
+5. Создайте Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Лицензия
+
+Этот проект распространяется под лицензией MIT.

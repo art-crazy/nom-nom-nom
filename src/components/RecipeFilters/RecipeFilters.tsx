@@ -15,6 +15,8 @@ interface RecipeFiltersProps {
   };
 }
 
+type FilterType = 'diet' | 'cuisine' | 'category' | 'subcategory';
+
 export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
   const router = useRouter();
   const [selectedFilters, setSelectedFilters] = useState(currentPath);
@@ -23,26 +25,20 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
     setSelectedFilters(currentPath);
   }, [currentPath]);
 
-  const handleFilterSelect = (type: string, slug: string) => {
+  const handleFilterSelect = (type: FilterType, slug: string) => {
     setSelectedFilters(prev => {
       const newFilters = { ...prev };
-      
-      // Очищаем все фильтры после текущего
-      if (type === 'diet') {
-        delete newFilters.cuisine;
-        delete newFilters.category;
-        delete newFilters.subcategory;
-      } else if (type === 'cuisine') {
-        delete newFilters.category;
-        delete newFilters.subcategory;
-      } else if (type === 'category') {
+
+      // Очищаем подкатегорию только если меняется категория
+      if (type === 'category') {
         delete newFilters.subcategory;
       }
-      
+
+      // Добавляем или удаляем фильтр
       if (slug) {
-        newFilters[type as keyof typeof newFilters] = slug;
+        newFilters[type] = slug;
       } else {
-        delete newFilters[type as keyof typeof newFilters];
+        delete newFilters[type];
       }
 
       return newFilters;
@@ -64,7 +60,7 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
   // Получаем доступные подкатегории на основе выбранной категории
   const getAvailableSubcategories = () => {
     if (!selectedFilters.category) return [];
-    
+
     const category = dishCategories[selectedFilters.category as keyof typeof dishCategories];
     if (!category) return [];
 
@@ -126,9 +122,9 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
           disabled={group.disabled}
         />
       ))}
-      
+
       <div className={styles.filterActions}>
-        <button 
+        <button
           className={`${styles.applyButton} ${!hasFilters ? styles.disabled : ''}`}
           onClick={handleApplyFilters}
           disabled={!hasFilters}

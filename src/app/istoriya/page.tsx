@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../shared/page.module.scss';
+import styles from '@/components/shared/page.module.scss';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
 export default function HistoryPage() {
