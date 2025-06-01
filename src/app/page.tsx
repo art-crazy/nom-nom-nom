@@ -13,7 +13,7 @@ export default function Home() {
     {
       title: 'Популярные рецепты',
       link: '/recipes/popular',
-      type: COLLECTION_TYPES.FEATURED,
+      type: COLLECTION_TYPES.DEFAULT,
       recipes: Array(11).fill(null).map((_, index) => ({
         ...premiereRecipe,
         id: premiereRecipe.id + index // Используем числовой id
@@ -22,7 +22,7 @@ export default function Home() {
     {
       title: 'Новые рецепты',
       link: '/recipes/new',
-      type: COLLECTION_TYPES.DEFAULT,
+      type: COLLECTION_TYPES.FEATURED,
       recipes: Array(11).fill(null).map((_, index) => ({
         ...premiereRecipe,
         id: premiereRecipe.id + index + 100 // Добавляем смещение для уникальности

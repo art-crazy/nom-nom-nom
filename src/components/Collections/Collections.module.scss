@@ -35,10 +35,11 @@
       background: white;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      transition: transform 0.2s;
+      transition: transform 0.2s ease-out;
+      transform-origin: center;
 
       &:hover {
-        transform: translateY(-4px);
+        transform: scale(1.05);
       }
 
       .cardImage {
@@ -152,11 +153,12 @@
       background: white;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       overflow: hidden;
-      transition: transform 0.2s;
+      transition: transform 0.2s ease-out;
       aspect-ratio: 16/9;
+      transform-origin: center;
 
       &:hover {
-        transform: translateY(-6px);
+        transform: scale(1.05);
       }
 
       .featuredCardImage {
