@@ -713,10 +713,6 @@ export const cuisineCategories = {
     id: 'swedish',
     title: 'Шведская кухня'
   },
-  finnish: {
-    id: 'finnish',
-    title: 'Финская кухня'
-  },
   austrian: {
     id: 'austrian',
     title: 'Австрийская кухня'
@@ -728,10 +724,6 @@ export const cuisineCategories = {
   serbian: {
     id: 'serbian',
     title: 'Сербская кухня'
-  },
-  polish: {
-    id: 'polish',
-    title: 'Польская кухня'
   },
   belarusian: {
     id: 'belarusian',
@@ -760,10 +752,6 @@ export const cuisineCategories = {
   tajik: {
     id: 'tajik',
     title: 'Таджикская кухня'
-  },
-  armenian: {
-    id: 'armenian',
-    title: 'Армянская кухня'
   },
   abkhazian: {
     id: 'abkhazian',
@@ -808,22 +796,6 @@ export const cuisineCategories = {
   sakha: {
     id: 'sakha',
     title: 'Саха кухня'
-  },
-  chukchi: {
-    id: 'chukchi',
-    title: 'Чукотская кухня'
-  },
-  kalmyk: {
-    id: 'kalmyk',
-    title: 'Калмыцкая кухня'
-  },
-  cossack: {
-    id: 'cossack',
-    title: 'Казачья кухня'
-  },
-  czech: {
-    id: 'czech',
-    title: 'Чешская кухня'
   },
   slovak: {
     id: 'slovak',
@@ -877,10 +849,6 @@ export const cuisineCategories = {
     id: 'syrian',
     title: 'Сирийская кухня'
   },
-  lebanese: {
-    id: 'lebanese',
-    title: 'Ливанская кухня'
-  },
   israeli: {
     id: 'israeli',
     title: 'Израильская кухня'
@@ -904,18 +872,6 @@ export const cuisineCategories = {
   moroccan: {
     id: 'moroccan',
     title: 'Марокканская кухня'
-  },
-  algerian: {
-    id: 'algerian',
-    title: 'Алжирская кухня'
-  },
-  tunisian: {
-    id: 'tunisian',
-    title: 'Тунисская кухня'
-  },
-  egyptian: {
-    id: 'egyptian',
-    title: 'Египетская кухня'
   },
   ethiopian: {
     id: 'ethiopian',
@@ -952,38 +908,6 @@ export const cuisineCategories = {
   malawian: {
     id: 'malawian',
     title: 'Малавийская кухня'
-  },
-  tunisian: {
-    id: 'tunisian',
-    title: 'Тунисская кухня'
-  },
-  senegalese: {
-    id: 'senegalese',
-    title: 'Сенегальская кухня'
-  },
-  ghanaian: {
-    id: 'ghanaian',
-    title: 'Ганская кухня'
-  },
-  ethiopian: {
-    id: 'ethiopian',
-    title: 'Эфиопская кухня'
-  },
-  somali: {
-    id: 'somali',
-    title: 'Сомалийская кухня'
-  },
-  kenyan: {
-    id: 'kenyan',
-    title: 'Кенийская кухня'
-  },
-  nigerian: {
-    id: 'nigerian',
-    title: 'Нигерийская кухня'
-  },
-  zimbabwean: {
-    id: 'zimbabwean',
-    title: 'Зимбабвийская кухня'
   },
 
   // Ближний Восток (частично добавлены, для полноты)
@@ -1042,74 +966,6 @@ export const cuisineCategories = {
   cuban: {
     id: 'cuban',
     title: 'Кубинская кухня'
-  },
-
-  // Восточная Европа и Балканы
-  bulgarian: {
-    id: 'bulgarian',
-    title: 'Болгарская кухня'
-  },
-  romanian: {
-    id: 'romanian',
-    title: 'Румынская кухня'
-  },
-  slovak: {
-    id: 'slovak',
-    title: 'Словацкая кухня'
-  },
-  croatian: {
-    id: 'croatian',
-    title: 'Хорватская кухня'
-  },
-  bosnian: {
-    id: 'bosnian',
-    title: 'Боснийская кухня'
-  },
-  montenegrin: {
-    id: 'montenegrin',
-    title: 'Черногорская кухня'
-  },
-  macedonian: {
-    id: 'macedonian',
-    title: 'Македонская кухня'
-  },
-  albanian: {
-    id: 'albanian',
-    title: 'Албанская кухня'
-  },
-
-  // Меньше известные и региональные кухни, включая вымышленные
-  cossack: {
-    id: 'cossack',
-    title: 'Казачья кухня'
-  },
-  kalmyk: {
-    id: 'kalmyk',
-    title: 'Калмыцкая кухня'
-  },
-  chukchi: {
-    id: 'chukchi',
-    title: 'Чукотская кухня'
-  },
-  yakut: {
-    id: 'yakut',
-    title: 'Якутская кухня'
-  },
-  mari: {
-    id: 'mari',
-    title: 'Марийская кухня'
-  },
-  udmurt: {
-    id: 'udmurt',
-    title: 'Удмуртская кухня'
-  },
-  komi: {
-    id: 'komi',
-    title: 'Кухня Коми'
-  },
-  sakha: {
-    id: 'sakha',
-    title: 'Саха кухня'
   },
 
   // Фантазийные (мифические) кухни — в самый конец
