@@ -42,7 +42,7 @@ export interface Recipe {
 export const recipes: Record<number, Recipe> = {
   1: {
     id: 1,
-    name: 'ovsyanka-s-kornishinami',
+    name: 'hvorost-na-kefire',
     title: 'Хворост на кефире',
     description: 'Хрустящий, румяный хворост на кефире — классическая выпечка для чаепития. Быстрое и простое угощение с минимальным набором ингредиентов.',
     cookTime: '40 минут',
