@@ -1,24 +1,31 @@
 'use client';
 
 import React from 'react';
+import { useSearchParams } from 'next/navigation';
+import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
 import styles from './page.module.scss';
 
-interface RecipesPageProps {
-  searchParams: {
-    diet?: string;
-    cuisine?: string;
-    category?: string;
-    subcategory?: string;
+export default function RecipesPage() {
+  const searchParams = useSearchParams();
+  const params = {
+    diet: searchParams.get('diet') || undefined,
+    cuisine: searchParams.get('cuisine') || undefined,
+    category: searchParams.get('category') || undefined,
+    subcategory: searchParams.get('subcategory') || undefined
   };
-}
 
-export default function RecipesPage({ searchParams }: RecipesPageProps) {
   return (
     <div className={styles.container}>
-      <RecipeFilters currentPath={searchParams} />
-      <RecipeList filters={searchParams} />
+      <Breadcrumbs
+        title="Рецепты"
+        paths={[]}
+      />
+      <div className={styles.content}>
+        <RecipeFilters currentPath={params} />
+        <RecipeList filters={params} />
+      </div>
     </div>
   );
 }
