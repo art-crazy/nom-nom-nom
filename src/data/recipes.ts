@@ -1,5 +1,3 @@
-// Enum для единиц измерения
-
 export enum Unit {
   g = 'г',
   ml = 'мл',
@@ -8,7 +6,6 @@ export enum Unit {
   tsp = 'ч. л.',
   to_taste = 'по вкусу',
 }
-
 
 // Интерфейс для питательной ценности
 interface Nutrition {
@@ -30,12 +27,16 @@ export interface Recipe {
   cuisine: string;
   servings: number;
   ingredients: { name: string; amount: number; unit: Unit }[];
-  steps: { title: string; text: string, image?: string }[];
+  steps: { title: string; text: string; image?: string }[];
   imageMain?: string;
   categories: string[];
   rating: number;
   reviews: number;
   comments?: { user: string; date: string; text: string; likes: number; replies: number }[];
+  dishCategoriesList: { [key: string]: { id: string; title: string } };
+  dishCategoriesSubList: { [key: string]: { id: string; title: string } };
+  cuisineCategoriesList: { [key: string]: { id: string; title: string } };
+  dietCategoriesList: { [key: string]: { id: string; title: string } };
 }
 
 // Рецепты
@@ -93,5 +94,29 @@ export const recipes: Record<number, Recipe> = {
     ],
     rating: 4.5,
     reviews: 128,
+    dishCategoriesList: {
+      breakfasts: {
+        id: 'breakfasts',
+        title: 'Завтраки'
+      }
+    },
+    dishCategoriesSubList: {
+      porridge: {
+        id: 'porridge',
+        title: 'Каши'
+      },
+    },
+    cuisineCategoriesList: {
+      italian: {
+        id: 'italian',
+        title: 'Итальянская кухня'
+      },
+    },
+    dietCategoriesList: {
+      vegan: {
+        id: 'vegan',
+        title: 'Веганская диета'
+      },
+    }
   },
 };
