@@ -2,6 +2,7 @@
 import styles from './Header.module.scss';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Search from './Search/Search';
 
 const Header = () => {
   const pathname = usePathname();
@@ -18,7 +19,7 @@ const Header = () => {
       <Link href="/" className={styles.logo} onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
         🍴 QuickCook
       </Link>
-      <input className={styles.search} placeholder="Поиск по рецептам" />
+      <Search />
     </header>
   );
 };
