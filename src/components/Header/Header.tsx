@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Search from './Search/Search';
+import MobileNav from './MobileNav/MobileNav';
 
 const Header = () => {
   const pathname = usePathname();
@@ -15,12 +16,15 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
-      <Link href="/" className={styles.logo} onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
-        🍴 QuickCook
-      </Link>
-      <Search />
-    </header>
+    <>
+      <header className={styles.header}>
+        <Link href="/" className={styles.logo} onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
+          🍴 QuickCook
+        </Link>
+        <Search />
+      </header>
+      <MobileNav />
+    </>
   );
 };
 
