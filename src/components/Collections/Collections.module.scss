@@ -11,28 +11,15 @@
     margin-bottom: 24px;
     padding-right: 96px;
 
-    @media screen and (max-width: 650px) {
-      padding-right: 1rem;
-      margin-bottom: 16px;
-    }
-
     .sectionTitle {
       font-size: 1.5rem;
       font-weight: 500;
-
-      @media screen and (max-width: 650px) {
-        font-size: 1.25rem;
-      }
     }
 
     .sectionLink {
       color: #666;
       text-decoration: none;
       font-size: 0.9rem;
-
-      @media screen and (max-width: 650px) {
-        font-size: 0.85rem;
-      }
 
       &:hover {
         color: #000;
@@ -140,10 +127,6 @@
   margin-bottom: 80px;
   position: relative;
 
-  @media screen and (max-width: 650px) {
-    margin-bottom: 48px;
-  }
-
   .sectionHeader {
     display: flex;
     justify-content: space-between;
@@ -151,28 +134,15 @@
     margin-bottom: 32px;
     padding-right: 96px;
 
-    @media screen and (max-width: 650px) {
-      padding-right: 1rem;
-      margin-bottom: 20px;
-    }
-
     .sectionTitle {
       font-size: 2rem;
       font-weight: 600;
-
-      @media screen and (max-width: 650px) {
-        font-size: 1.5rem;
-      }
     }
 
     .sectionLink {
       color: #666;
       text-decoration: none;
       font-size: 1rem;
-
-      @media screen and (max-width: 650px) {
-        font-size: 0.9rem;
-      }
 
       &:hover {
         color: #000;
@@ -185,11 +155,6 @@
     gap: 32px;
     padding: 24px 0;
 
-    @media screen and (max-width: 650px) {
-      gap: 16px;
-      padding: 16px 0;
-    }
-
     .featuredCard {
       flex: 0 0 800px;
       position: relative;
@@ -201,11 +166,6 @@
       aspect-ratio: 16/9;
       transform-origin: center;
       z-index: 1;
-
-      @media screen and (max-width: 650px) {
-        flex: 0 0 320px;
-        aspect-ratio: 4/3;
-      }
 
       &:hover {
         transform: scale(1.05);
@@ -227,19 +187,10 @@
         background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
         color: white;
 
-        @media screen and (max-width: 650px) {
-          padding: 20px;
-        }
-
         .featuredCardTitle {
           font-size: 1.8rem;
           font-weight: 600;
           margin-bottom: 12px;
-
-          @media screen and (max-width: 650px) {
-            font-size: 1.25rem;
-            margin-bottom: 8px;
-          }
         }
 
         .featuredCardDescription {
@@ -252,12 +203,6 @@
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
-
-          @media screen and (max-width: 650px) {
-            font-size: 0.9rem;
-            margin-bottom: 12px;
-            line-height: 1.4;
-          }
         }
 
         .featuredCardMeta {
@@ -266,10 +211,6 @@
           align-items: center;
           font-size: 1.1rem;
           color: rgba(255,255,255,0.8);
-
-          @media screen and (max-width: 650px) {
-            font-size: 0.85rem;
-          }
         }
       }
     }
@@ -323,6 +264,70 @@
   .section, .featuredSection {
     .scrollArrow {
       display: none;
+    }
+  }
+}
+
+// Мобильные стили
+@media screen and (max-width: 650px) {
+  .section {
+    .sectionHeader {
+      padding-right: 1rem;
+      margin-bottom: 16px;
+
+      .sectionTitle {
+        font-size: 1.25rem;
+      }
+
+      .sectionLink {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .featuredSection {
+    margin-bottom: 48px;
+
+    .sectionHeader {
+      padding-right: 1rem;
+      margin-bottom: 20px;
+
+      .sectionTitle {
+        font-size: 1.5rem;
+      }
+
+      .sectionLink {
+        font-size: 0.9rem;
+      }
+    }
+
+    .featuredCardsContainer {
+      gap: 16px;
+      padding: 16px 0;
+
+      .featuredCard {
+        flex: 0 0 320px;
+        aspect-ratio: 4/3;
+
+        .featuredCardContent {
+          padding: 20px;
+
+          .featuredCardTitle {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+          }
+
+          .featuredCardDescription {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+          }
+
+          .featuredCardMeta {
+            font-size: 0.85rem;
+          }
+        }
+      }
     }
   }
 }
