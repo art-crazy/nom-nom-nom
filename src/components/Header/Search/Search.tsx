@@ -12,7 +12,9 @@ const Search = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
-      router.push(`/recepty?q=${encodeURIComponent(query.trim())}`);
+      router.push(`/recepty?search=${encodeURIComponent(query.trim())}`);
+    } else {
+      router.push('/recepty');
     }
   };
 
