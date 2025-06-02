@@ -21,7 +21,7 @@ const Search = () => {
       <input
         type="text"
         className={styles.search}
-        placeholder="Поиск рецептов..."
+        placeholder="Поиск по рецептам"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
