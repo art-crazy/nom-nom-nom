@@ -13,13 +13,14 @@ export default function RecipesPage() {
     diet: searchParams.get('diet') || undefined,
     cuisine: searchParams.get('cuisine') || undefined,
     category: searchParams.get('category') || undefined,
-    subcategory: searchParams.get('subcategory') || undefined
+    subcategory: searchParams.get('subcategory') || undefined,
+    search: searchParams.get('search') || undefined
   };
 
   return (
     <div className={styles.container}>
       <Breadcrumbs
-        title="Рецепты"
+        title={params.search ? `Поиск: ${params.search}` : "Рецепты"}
         paths={[]}
       />
       <div className={styles.content}>

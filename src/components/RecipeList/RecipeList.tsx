@@ -12,6 +12,7 @@ interface RecipeListProps {
     cuisine?: string;
     category?: string;
     subcategory?: string;
+    search?: string;
   };
 }
 
@@ -41,24 +42,33 @@ export function RecipeList({ filters }: RecipeListProps) {
   };
 
   const getFilteredRecipes = () => {
-    // Если нет фильтров, возвращаем все рецепты
-    if (!Object.values(filters).some(Boolean)) {
-      return Object.values(recipesData).filter(recipe => typeof recipe === 'object' && 'id' in recipe) as Recipe[];
+    let filteredRecipes = Object.values(recipesData).filter(recipe => 
+      typeof recipe === 'object' && 'id' in recipe
+    ) as Recipe[];
+
+    // Применяем поиск по названию, если есть поисковый запрос
+    if (filters.search) {
+      const searchQuery = filters.search.toLowerCase();
+      filteredRecipes = filteredRecipes.filter(recipe => 
+        recipe.title.toLowerCase().includes(searchQuery)
+      );
     }
 
-    return Object.values(recipesData).filter(recipe => {
-      if (typeof recipe !== 'object' || !('id' in recipe)) return false;
-      const recipeData = recipe as Recipe;
+    // Если нет других фильтров, возвращаем отфильтрованные по поиску рецепты
+    if (!Object.entries(filters).some(([key, value]) => key !== 'search' && value)) {
+      return filteredRecipes;
+    }
 
-      // Проверяем все возможные фильтры
-      const activeFilters = Object.entries(filters).filter(([, value]) => value);
+    // Применяем остальные фильтры
+    return filteredRecipes.filter(recipe => {
+      const activeFilters = Object.entries(filters)
+        .filter(([key, value]) => key !== 'search' && value);
       
-      // Если есть активные фильтры, проверяем каждый
       return activeFilters.every(([, categoryKey]) => {
         if (!categoryKey) return true;
-        return hasCategory(recipeData, categoryKey);
+        return hasCategory(recipe, categoryKey);
       });
-    }) as Recipe[];
+    });
   };
 
   const filteredRecipes = getFilteredRecipes();
@@ -67,6 +77,44 @@ export function RecipeList({ filters }: RecipeListProps) {
     return (
       <div className={styles.noResults}>
         <p>По вашему запросу ничего не найдено</p>
+        {filters.search && (
+          <div className={styles.allRecipes}>
+            <h3>Все рецепты:</h3>
+            <div className={styles.recipeList}>
+              {Object.values(recipesData)
+                .filter(recipe => typeof recipe === 'object' && 'id' in recipe)
+                .map((recipe) => (
+                  <Link 
+                    key={recipe.id} 
+                    href={`/recepty/recept/${recipe.name}-${recipe.id}`}
+                    className={styles.recipeCard}
+                  >
+                    {recipe.imageMain && (
+                      <div className={styles.imageContainer}>
+                        <Image
+                          src={recipe.imageMain}
+                          alt={recipe.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          style={{ objectFit: 'cover' }}
+                          priority={false}
+                        />
+                      </div>
+                    )}
+                    <div className={styles.recipeInfo}>
+                      <h3>{recipe.title}</h3>
+                      <p>{recipe.description}</p>
+                      <div className={styles.recipeMeta}>
+                        <span>Время: {recipe.cookTime}</span>
+                        <span>Сложность: {recipe.difficulty}</span>
+                        <span>Рейтинг: {recipe.rating}</span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </div>
+        )}
       </div>
     );
   }

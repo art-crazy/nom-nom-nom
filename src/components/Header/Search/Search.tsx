@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './Search.module.scss';
 import SearchIcon from '../../icons/SearchIcon';
 
 const Search: React.FC = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/recepty?search=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
   return (
-    <div className={styles.searchContainer}>
-      <input className={styles.search} placeholder="Поиск по рецептам" />
+    <form className={styles.searchContainer} onSubmit={handleSearch}>
+      <input 
+        className={styles.search} 
+        placeholder="Поиск по рецептам" 
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
       <SearchIcon className={styles.searchIcon} />
-      <button className={styles.searchButton}>Найти</button>
-    </div>
+      <button type="submit" className={styles.searchButton}>Найти</button>
+    </form>
   );
 };
 
