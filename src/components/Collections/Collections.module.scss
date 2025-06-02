@@ -102,7 +102,7 @@
     }
 
     &.right {
-      right: -20px;
+      right: +40px;
     }
 
     svg {
@@ -231,7 +231,7 @@
     }
 
     &.right {
-      right: -24px;
+      right: 40px;
     }
 
     svg {
@@ -274,4 +274,4 @@
   .cardsContainer, .featuredCardsContainer {
     min-width: min-content;
   }
-} 
+}
