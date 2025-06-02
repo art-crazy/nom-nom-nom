@@ -1,8 +1,15 @@
 @use '@/styles/vars.scss' as *;
 
 .home {
-  @include page-container;
+  //@include page-container;
+  margin: 64px 0;
+  padding: 46px 0 0 96px;
+  position: relative;
 
+  @media screen and (max-width: 650px) {
+    margin: 64px 0;
+    padding: 46px 0 0;
+  }
   .main {
     display: flex;
     flex-direction: column;
