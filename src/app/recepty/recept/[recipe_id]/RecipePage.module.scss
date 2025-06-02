@@ -1,4 +1,4 @@
-@import '@/styles/vars';
+@use 'src/styles/vars' as *;
 
 .container {
   @include page-container;
