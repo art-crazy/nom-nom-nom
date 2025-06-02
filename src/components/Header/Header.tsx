@@ -27,8 +27,8 @@ const Header = () => {
         <div className={styles.headerRight}>
           <Search />
           <div className={styles.desktopNav}>
-            <NavItem type="recipes" className={styles.desktopNavItem} />
             <NavItem type="collections" className={styles.desktopNavItem} />
+            <NavItem type="recipes" className={styles.desktopNavItem} />
           </div>
         </div>
       </header>

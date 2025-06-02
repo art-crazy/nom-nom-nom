@@ -7,8 +7,8 @@ import NavItem from '@/components/Navigation/NavItem';
 const MobileNav: React.FC = () => {
   return (
     <nav className={styles.mobileNav}>
-      <NavItem type="recipes" className={styles.mobileNavItem} />
-      <NavItem type="collections" className={styles.mobileNavItem} />
+        <NavItem type="collections" className={styles.mobileNavItem} />
+        <NavItem type="recipes" className={styles.mobileNavItem} />
     </nav>
   );
 };
