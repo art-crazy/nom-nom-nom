@@ -11,33 +11,21 @@
 }
 
 .mobileNavItem {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4px;
-  text-decoration: none;
-  color: #666;
   padding: 8px;
   border-radius: 8px;
   transition: all 0.2s;
 
-  svg {
-    width: 24px;
-    height: 24px;
-  }
-
   span {
     font-size: 12px;
-    font-weight: 500;
   }
 
   &:hover {
-    color: #ff6b00;
     background: rgba(255, 107, 0, 0.05);
   }
 
   &.active {
-    color: #ff6b00;
     background: rgba(255, 107, 0, 0.05);
   }
 }
