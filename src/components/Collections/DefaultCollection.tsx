@@ -21,7 +21,7 @@ export default function DefaultCollection({ collection }: DefaultCollectionProps
       <ScrollableContainer scrollAmount={300}>
         <div className={styles.cardsContainer}>
           {collection.recipes.map((recipe) => (
-            <Link href={`/recipes/${recipe.id}`} key={recipe.id} className={styles.card}>
+            <Link href={`/recepty/recept/${recipe.name}-${recipe.id}`} key={recipe.id} className={styles.card}>
               {recipe.imageMain && (
                 <Image
                   src={recipe.imageMain}

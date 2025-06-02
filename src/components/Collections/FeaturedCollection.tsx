@@ -21,7 +21,7 @@ export default function FeaturedCollection({ collection }: FeaturedCollectionPro
       <ScrollableContainer scrollAmount={832}>
         <div className={styles.featuredCardsContainer}>
           {collection.recipes.map((recipe) => (
-            <Link href={`/recipes/${recipe.id}`} key={recipe.id} className={styles.featuredCard}>
+            <Link href={`/recepty/recept/${recipe.name}-${recipe.id}`} key={recipe.id} className={styles.featuredCard}>
               {recipe.imageMain && (
                 <Image
                   src={recipe.imageMain}
