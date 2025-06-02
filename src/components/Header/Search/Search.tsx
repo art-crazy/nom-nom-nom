@@ -11,6 +11,8 @@ const Search: React.FC = () => {
     e.preventDefault();
     if (searchQuery.trim()) {
       router.push(`/recepty?search=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      router.push('/recepty');
     }
   };
 
