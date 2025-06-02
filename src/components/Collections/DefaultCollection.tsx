@@ -40,6 +40,12 @@ export default function DefaultCollection({ collection }: DefaultCollectionProps
               </div>
             </Link>
           ))}
+          <Link href={collection.link} className={styles.showAllCard}>
+            <div className={styles.showAllContent}>
+              <span className={styles.showAllArrow}>→</span>
+              <span className={styles.showAllText}>Показать всё</span>
+            </div>
+          </Link>
         </div>
       </ScrollableContainer>
     </div>
