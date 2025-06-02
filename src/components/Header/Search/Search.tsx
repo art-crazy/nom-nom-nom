@@ -1,31 +1,34 @@
+'use client';
+
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Search.module.scss';
-import SearchIcon from '../../icons/SearchIcon';
+import SearchIcon from '@/components/icons/SearchIcon';
 
-const Search: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+const Search = () => {
+  const [query, setQuery] = useState('');
   const router = useRouter();
 
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      router.push(`/recepty?search=${encodeURIComponent(searchQuery.trim())}`);
-    } else {
-      router.push('/recepty');
+    if (query.trim()) {
+      router.push(`/recepty?q=${encodeURIComponent(query.trim())}`);
     }
   };
 
   return (
-    <form className={styles.searchContainer} onSubmit={handleSearch}>
-      <input 
-        className={styles.search} 
-        placeholder="Поиск по рецептам" 
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+    <form className={styles.searchContainer} onSubmit={handleSubmit}>
+      <input
+        type="text"
+        className={styles.search}
+        placeholder="Поиск рецептов..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
       />
       <SearchIcon className={styles.searchIcon} />
-      <button type="submit" className={styles.searchButton}>Найти</button>
+      <button type="submit" className={styles.searchButton}>
+        Найти
+      </button>
     </form>
   );
 };

@@ -14,7 +14,7 @@
   background: #fafafa;
   font-size: 14px;
   border-right: none;
-  
+
   &:focus {
     outline: none;
     border-color: #ddd;
@@ -51,6 +51,7 @@
 @media screen and (max-width: 650px) {
   .searchContainer {
     margin: 0 16px;
+    max-width: none;
   }
 
   .search {
@@ -61,4 +62,4 @@
   .searchButton {
     display: none;
   }
-} 
+}
