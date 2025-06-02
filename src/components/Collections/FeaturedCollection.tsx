@@ -3,6 +3,7 @@ import { Collection } from '@/types/collections';
 import Image from 'next/image';
 import Link from 'next/link';
 import ScrollableContainer from './ScrollableContainer';
+import ShowAllButton from './ShowAllButton';
 
 interface FeaturedCollectionProps {
   collection: Collection;
@@ -40,6 +41,7 @@ export default function FeaturedCollection({ collection }: FeaturedCollectionPro
               </div>
             </Link>
           ))}
+          <ShowAllButton link={collection.link} />
         </div>
       </ScrollableContainer>
     </div>

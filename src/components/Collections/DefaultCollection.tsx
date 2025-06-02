@@ -3,6 +3,7 @@ import { Collection } from '@/types/collections';
 import Image from 'next/image';
 import Link from 'next/link';
 import ScrollableContainer from './ScrollableContainer';
+import ShowAllButton from './ShowAllButton';
 
 interface DefaultCollectionProps {
   collection: Collection;
@@ -40,14 +41,9 @@ export default function DefaultCollection({ collection }: DefaultCollectionProps
               </div>
             </Link>
           ))}
-          <Link href={collection.link} className={styles.showAllCard}>
-            <div className={styles.showAllContent}>
-              <span className={styles.showAllArrow}>→</span>
-              <span className={styles.showAllText}>Показать всё</span>
-            </div>
-          </Link>
+          <ShowAllButton link={collection.link} />
         </div>
       </ScrollableContainer>
     </div>
   );
-} 
+}
