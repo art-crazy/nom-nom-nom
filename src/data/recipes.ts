@@ -120,7 +120,7 @@ export const recipes: Record<number, Recipe> = {
     }
   },
   2: {
-    id: 1,
+    id: 2,
     name: 'ovsyanka-s-kornishinami',
     title: 'Соль',
     description: 'Хрустящий, румяный хворост на кефире — классическая выпечка для чаепития. Быстрое и простое угощение с минимальным набором ингредиентов.',
@@ -198,7 +198,7 @@ export const recipes: Record<number, Recipe> = {
     }
   },
   3: {
-    id: 1,
+    id: 3,
     name: 'ovsyanka-s-kornishinami',
     title: 'Сахар',
     description: 'Хрустящий, румяный хворост на кефире — классическая выпечка для чаепития. Быстрое и простое угощение с минимальным набором ингредиентов.',
