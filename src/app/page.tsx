@@ -47,7 +47,7 @@ export default function Home() {
       }))
     }
   ];
-
+  console.log('test revert 1')
   return (
     <div className={styles.home}>
       <div className={styles.main}>
