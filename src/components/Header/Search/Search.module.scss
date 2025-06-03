@@ -1,3 +1,5 @@
+@import '@/styles/vars.scss';
+
 .searchContainer {
   position: relative;
   flex: 1;
@@ -33,9 +35,9 @@
 
 .searchButton {
   padding: 8px 24px;
-  background: #ff6b00;
+  background: $primary-color;
   color: white;
-  border: 1px solid #ff6b00;
+  border: 1px solid $primary-color;
   border-radius: 0 8px 8px 0;
   font-size: 14px;
   font-weight: 500;
