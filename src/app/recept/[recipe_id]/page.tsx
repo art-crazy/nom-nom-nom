@@ -5,6 +5,7 @@ import Image from 'next/image';
 import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
+import { notFound } from 'next/navigation';
 
 interface PageProps {
   params: Promise<{
@@ -22,7 +23,9 @@ export default async function RecipePage({ params }: PageProps) {
   })();
 
   const recipe = recipes[Number(id)];
-  if (!recipe) return <div>Рецепт не найден</div>;
+  if (!recipe) {
+    notFound();
+  }
 
   return (
     <div className={styles.container}>
