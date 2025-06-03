@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import styles from './error.module.scss';
+import styles from './not-found.module.scss';
 
 export default function GlobalError({
   error,
@@ -29,4 +29,4 @@ export default function GlobalError({
       </body>
     </html>
   );
-} 
+}
