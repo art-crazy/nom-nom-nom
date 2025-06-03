@@ -6,7 +6,13 @@ import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 
-export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
+interface PageProps {
+  params: Promise<{
+    recipe_id: string;
+  }>;
+}
+
+export default async function RecipePage({ params }: PageProps) {
   const awaitedParams = await params;
   const recipe_id = awaitedParams.recipe_id;
 
