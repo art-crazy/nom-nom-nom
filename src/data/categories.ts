@@ -197,13 +197,13 @@ type DietCategories = {
   keto: BaseCategory;
   paleo: BaseCategory;
   vegetarian: BaseCategory;
-  glutenFree: BaseCategory;
-  dairyFree: BaseCategory;
-  kidsMenu: BaseCategory;
-  lowCalorie: BaseCategory;
+  'gluten-free': BaseCategory;
+  'dairy-free': BaseCategory;
+  'kids-menu': BaseCategory;
+  'low-calorie': BaseCategory;
   lean: BaseCategory;
   diabetic: BaseCategory;
-  lowCarb: BaseCategory;
+  'low-carb': BaseCategory;
   mediterranean: BaseCategory;
   detox: BaseCategory;
 };
@@ -1212,19 +1212,19 @@ export const dietCategories: DietCategories = {
     id: 'vegetarian',
     title: 'Вегетарианская диета'
   },
-  glutenFree: {
+  'gluten-free': {
     id: 'gluten-free',
     title: 'Безглютеновая диета'
   },
-  dairyFree: {
+  'dairy-free': {
     id: 'dairy-free',
     title: 'Безлактозная диета'
   },
-  kidsMenu: {
+  'kids-menu': {
     id: 'kids-menu',
     title: 'Детское меню'
   },
-  lowCalorie: {
+  'low-calorie': {
     id: 'low-calorie',
     title: 'Низкокалорийная диета'
   },
@@ -1236,7 +1236,7 @@ export const dietCategories: DietCategories = {
     id: 'diabetic',
     title: 'Меню при диабете'
   },
-  lowCarb: {
+  'low-carb': {
     id: 'low-carb',
     title: 'Низкоуглеводная диета'
   },
