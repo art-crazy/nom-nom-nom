@@ -32,24 +32,24 @@ export function RecipeList({ filters }: RecipeListProps) {
     // Проверяем наличие категории в каждом списке
     return categoryLists.some(list => {
       if (!list) return false;
-      
+
       // Проверяем наличие категории по ключу
       if (list[categoryKey]) return true;
-      
+
       // Проверяем наличие категории по id
       return Object.values(list).some(category => category.id === categoryKey);
     });
   };
 
   const getFilteredRecipes = () => {
-    let filteredRecipes = Object.values(recipesData).filter(recipe => 
+    let filteredRecipes = Object.values(recipesData).filter(recipe =>
       typeof recipe === 'object' && 'id' in recipe
     ) as Recipe[];
 
     // Применяем поиск по названию, если есть поисковый запрос
     if (filters.search) {
       const searchQuery = filters.search.toLowerCase();
-      filteredRecipes = filteredRecipes.filter(recipe => 
+      filteredRecipes = filteredRecipes.filter(recipe =>
         recipe.title.toLowerCase().includes(searchQuery)
       );
     }
@@ -63,7 +63,7 @@ export function RecipeList({ filters }: RecipeListProps) {
     return filteredRecipes.filter(recipe => {
       const activeFilters = Object.entries(filters)
         .filter(([key, value]) => key !== 'search' && value);
-      
+
       return activeFilters.every(([, categoryKey]) => {
         if (!categoryKey) return true;
         return hasCategory(recipe, categoryKey);
@@ -84,9 +84,9 @@ export function RecipeList({ filters }: RecipeListProps) {
               {Object.values(recipesData)
                 .filter(recipe => typeof recipe === 'object' && 'id' in recipe)
                 .map((recipe) => (
-                  <Link 
-                    key={recipe.id} 
-                    href={`/recepty/recept/${recipe.name}-${recipe.id}`}
+                  <Link
+                    key={recipe.id}
+                    href={`/recept/${recipe.name}-${recipe.id}`}
                     className={styles.recipeCard}
                   >
                     {recipe.imageMain && (
@@ -122,9 +122,9 @@ export function RecipeList({ filters }: RecipeListProps) {
   return (
     <div className={styles.recipeList}>
       {filteredRecipes.map((recipe) => (
-        <Link 
-          key={recipe.id} 
-          href={`/recepty/recept/${recipe.name}-${recipe.id}`}
+        <Link
+          key={recipe.id}
+          href={`/recept/${recipe.name}-${recipe.id}`}
           className={styles.recipeCard}
         >
           {recipe.imageMain && (
