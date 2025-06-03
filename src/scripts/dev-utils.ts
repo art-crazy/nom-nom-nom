@@ -11,8 +11,8 @@ const sitemapDir = join(process.cwd(), 'public', 'sitemaps');
 // Создаем директорию для sitemap если её нет
 try {
     mkdirSync(sitemapDir, { recursive: true });
-} catch (error: any) {
-    if (error.code !== 'EEXIST') {
+} catch (error: unknown) {
+    if (error && typeof error === 'object' && 'code' in error && error.code !== 'EEXIST') {
         console.error('❌ Ошибка при создании директории sitemap:', error);
     }
 }
