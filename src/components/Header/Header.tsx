@@ -1,7 +1,12 @@
 'use client';
-import styles from './Header.module.scss';
-import { usePathname } from 'next/navigation';
+
+import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import styles from './Header.module.scss';
+import Search from './Search/Search';
+import MobileNav from './MobileNav/MobileNav';
+import NavItem from '@/components/Navigation/NavItem';
 
 const Header = () => {
   const pathname = usePathname();
@@ -14,12 +19,21 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
-      <Link href="/" className={styles.logo} onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
-        🍴 QuickCook
-      </Link>
-      <input className={styles.search} placeholder="Поиск по рецептам" />
-    </header>
+    <>
+      <header className={styles.header}>
+        <Link href="/" className={styles.logo} onClick={handleLogoClick}>
+          🍴 QuickCook
+        </Link>
+        <div className={styles.headerRight}>
+          <Search />
+          <div className={styles.desktopNav}>
+            <NavItem type="collections" className={styles.desktopNavItem} />
+            <NavItem type="recipes" className={styles.desktopNavItem} />
+          </div>
+        </div>
+      </header>
+      <MobileNav />
+    </>
   );
 };
 

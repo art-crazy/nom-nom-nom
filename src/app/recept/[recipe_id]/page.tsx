@@ -5,8 +5,15 @@ import Image from 'next/image';
 import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
+import { notFound } from 'next/navigation';
 
-export default async function RecipePage({ params }: { params: { recipe_id: string } }) {
+interface PageProps {
+  params: Promise<{
+    recipe_id: string;
+  }>;
+}
+
+export default async function RecipePage({ params }: PageProps) {
   const awaitedParams = await params;
   const recipe_id = awaitedParams.recipe_id;
 
@@ -16,7 +23,9 @@ export default async function RecipePage({ params }: { params: { recipe_id: stri
   })();
 
   const recipe = recipes[Number(id)];
-  if (!recipe) return <div>Рецепт не найден</div>;
+  if (!recipe) {
+    notFound();
+  }
 
   return (
     <div className={styles.container}>

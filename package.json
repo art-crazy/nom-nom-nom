@@ -2,11 +2,13 @@
   "name": "nom-nom-nom",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "create-sitemap": "node --loader ts-node/esm src/scripts/dev-utils.ts create-file"
   },
   "dependencies": {
     "lucide-react": "^0.511.0",
@@ -25,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
