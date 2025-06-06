@@ -6,6 +6,9 @@ import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { notFound } from 'next/navigation';
+import { generateMetadata } from './metadata';
+
+export { generateMetadata };
 
 interface PageProps {
   params: Promise<{
