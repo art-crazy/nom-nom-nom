@@ -4,8 +4,9 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { recipes } from '../data/recipes.js';
 import { dishCategories, cuisineCategories, dietCategories } from '../data/categories.js';
+import { siteConfig } from '../config/site.js';
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = siteConfig.url.current;
 const sitemapDir = join(process.cwd(), 'public', 'sitemaps');
 
 // Создаем директорию для sitemap если её нет

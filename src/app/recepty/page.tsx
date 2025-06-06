@@ -1,20 +1,31 @@
-'use client';
+import { metadata } from './metadata';
+export { metadata };
 
 import React, { Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
 import styles from './page.module.scss';
 
-function RecipesContent() {
-  const searchParams = useSearchParams();
+type SearchParams = {
+  diet?: string;
+  cuisine?: string;
+  category?: string;
+  subcategory?: string;
+  search?: string;
+};
+
+function RecipesContent({
+  searchParams,
+}: {
+  searchParams: SearchParams
+}) {
   const params = {
-    diet: searchParams.get('diet') || undefined,
-    cuisine: searchParams.get('cuisine') || undefined,
-    category: searchParams.get('category') || undefined,
-    subcategory: searchParams.get('subcategory') || undefined,
-    search: searchParams.get('search') || undefined
+    diet: searchParams.diet,
+    cuisine: searchParams.cuisine,
+    category: searchParams.category,
+    subcategory: searchParams.subcategory,
+    search: searchParams.search
   };
 
   return (
@@ -31,11 +42,15 @@ function RecipesContent() {
   );
 }
 
-export default function RecipesPage() {
+export default function RecipesPage({
+  searchParams,
+}: {
+  searchParams: SearchParams
+}) {
   return (
     <div className={styles.container}>
       <Suspense fallback={<div>Загрузка...</div>}>
-        <RecipesContent />
+        <RecipesContent searchParams={searchParams} />
       </Suspense>
     </div>
   );

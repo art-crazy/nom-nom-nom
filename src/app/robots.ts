@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { siteConfig } from '@/config/site';
 
 export default function robots(): MetadataRoute.Robots {
     return {
@@ -11,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
                 '/static/',
             ],
         },
-        sitemap: 'https://www.nom-nom-nom.ru/sitemap.xml',
-        host: 'https://www.nom-nom-nom.ru',
+        sitemap: `${siteConfig.url.production}${siteConfig.paths.sitemap}`,
+        host: siteConfig.url.production,
     };
 }

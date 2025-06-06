@@ -1,3 +1,6 @@
+import { metadata } from './metadata';
+export { metadata };
+
 import styles from './Home.module.scss';
 import { recipes } from '@/data/recipes';
 import { Collection, COLLECTION_TYPES } from '@/types/collections';
