@@ -10,12 +10,12 @@ export default function BlogPage() {
           title="Блог"
           paths={[]}
         />
-        <h1 className={styles.title}>Блог QuickCook</h1>
+        <h1 className={styles.title}>Блог «Что приготовить»</h1>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Разместите свой блог у нас</h2>
           <p className={styles.sectionText}>
-            QuickCook предлагает уникальную возможность для блогеров и контент-мейкеров
+            «Что приготовить» предлагает уникальную возможность для блогеров и контент-мейкеров
             в сфере кулинарии и гастрономии. Размещая свой контент на нашей платформе,
             вы получаете:
           </p>

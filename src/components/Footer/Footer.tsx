@@ -17,7 +17,7 @@ export default function Footer() {
             <a href="#">Условия</a>
         </div>
         <div className={styles.copyright}>
-            © 2025 QuickCook. Все права защищены.
+            © 2025 «Что приготовить». Все права защищены.
       </div>
     </footer>
   );

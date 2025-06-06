@@ -22,7 +22,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <Link href="/" className={styles.logo} onClick={handleLogoClick}>
-          🍴 QuickCook
+          🍴 Что приготовить
         </Link>
         <div className={styles.headerRight}>
           <Search />
