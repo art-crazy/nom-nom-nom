@@ -34,7 +34,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'пошаговый рецепт',
       'как приготовить',
       'кулинарный рецепт',
-      'рецепт с фото',
       'простой рецепт',
       'вкусный рецепт',
       'домашний рецепт',
@@ -71,4 +70,4 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     }
   };
-} 
+}

@@ -4,6 +4,9 @@ import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
 import styles from '../page.module.scss';
 import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
+import { generateMetadata } from './metadata';
+
+export { generateMetadata };
 
 const RECIPES_PATH = { title: "Рецепты", url: "/recepty", key: "/recepty" };
 
