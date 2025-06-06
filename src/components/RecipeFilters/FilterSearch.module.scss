@@ -1,4 +1,4 @@
-@import '@/styles/vars.scss';
+@use '@/styles/vars.scss' as *;
 
 .searchContainer {
   position: relative;
@@ -15,13 +15,13 @@
   color: #495057;
   background-color: #fff;
   transition: border-color 0.2s;
-  
+
   &:focus {
     outline: none;
     border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
-  
+
   &::placeholder {
     color: #adb5bd;
   }
@@ -37,8 +37,8 @@
   font-size: 0.875rem;
   cursor: pointer;
   transition: color 0.2s;
-  
+
   &:hover {
     color: #495057;
   }
-} 
+}
