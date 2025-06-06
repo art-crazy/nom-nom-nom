@@ -1,7 +1,7 @@
 import { metadata } from './metadata';
 export { metadata };
 
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
@@ -15,17 +15,18 @@ type SearchParams = {
   search?: string;
 };
 
-function RecipesContent({
+export default async function RecipesContent({
   searchParams,
 }: {
-  searchParams: SearchParams
+  searchParams: SearchParams;
 }) {
+  const resolvedParams = await searchParams;
   const params = {
-    diet: searchParams.diet,
-    cuisine: searchParams.cuisine,
-    category: searchParams.category,
-    subcategory: searchParams.subcategory,
-    search: searchParams.search
+    diet: resolvedParams.diet,
+    cuisine: resolvedParams.cuisine,
+    category: resolvedParams.category,
+    subcategory: resolvedParams.subcategory,
+    search: resolvedParams.search
   };
 
   return (
@@ -39,19 +40,5 @@ function RecipesContent({
         <RecipeList filters={params} />
       </div>
     </>
-  );
-}
-
-export default function RecipesPage({
-  searchParams,
-}: {
-  searchParams: SearchParams
-}) {
-  return (
-    <div className={styles.container}>
-      <Suspense fallback={<div>Загрузка...</div>}>
-        <RecipesContent searchParams={searchParams} />
-      </Suspense>
-    </div>
   );
 }

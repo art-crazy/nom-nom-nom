@@ -53,8 +53,9 @@ type PageProps = {
   };
 };
 
-export default function RecipesFiltersPage({ params }: PageProps) {
-  const filters = Array.isArray(params.filters) ? params.filters : params.filters ? [params.filters] : [];
+export default async function RecipesFiltersPage({ params }: PageProps) {
+  const resolvedParams = await params;
+  const filters = Array.isArray(resolvedParams.filters) ? resolvedParams.filters : resolvedParams.filters ? [resolvedParams.filters] : [];
 
   // Определяем типы всех фильтров
   const currentPath = {

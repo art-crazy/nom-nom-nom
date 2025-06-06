@@ -137,7 +137,8 @@ function generateMetadataForFilters(filters: string[]): {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const filters = Array.isArray(params.filters) ? params.filters : [params.filters];
+  const resolvedParams = await params;
+  const filters = Array.isArray(resolvedParams.filters) ? resolvedParams.filters : [resolvedParams.filters];
   const metadata = generateMetadataForFilters(filters);
   const canonicalUrl = `${siteConfig.url.current}/recepty/${filters.join('/')}`;
 
