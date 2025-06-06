@@ -30,7 +30,7 @@ export default async function RecipesContent({
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <Breadcrumbs
         title={params.search ? `Поиск: ${params.search}` : "Рецепты"}
         paths={[]}
@@ -39,6 +39,6 @@ export default async function RecipesContent({
         <RecipeFilters currentPath={params} />
         <RecipeList filters={params} />
       </div>
-    </>
+    </div>
   );
 }
