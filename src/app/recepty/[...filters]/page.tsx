@@ -1,7 +1,4 @@
-'use client';
-
 import React from 'react';
-import { useParams } from 'next/navigation';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
@@ -47,8 +44,13 @@ const getSubcategoryTitle = (category: string, subcategory: string): string | un
   return categoryData?.subcategories?.[subcategory]?.title;
 };
 
-export default function RecipesFiltersPage() {
-  const params = useParams();
+type PageProps = {
+  params: {
+    filters: string | string[];
+  };
+};
+
+export default function RecipesFiltersPage({ params }: PageProps) {
   const filters = Array.isArray(params.filters) ? params.filters : params.filters ? [params.filters] : [];
 
   // Определяем типы всех фильтров
