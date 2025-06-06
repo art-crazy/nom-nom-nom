@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.scss";
 import LayoutWrapper from "@/components/hoc/LayoutWrapper";
 import { metadata as rootMetadata } from "./metadata";
+import YandexMetrika from "@/components/YandexMetrika/YandexMetrika";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <html lang="ru" className={inter.variable}>
             <body className="antialiased">
                 <LayoutWrapper>{children}</LayoutWrapper>
+                <YandexMetrika />
             </body>
         </html>
     );
