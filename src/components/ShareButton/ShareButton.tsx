@@ -70,28 +70,30 @@ const ShareButton: React.FC<ShareButtonProps> = ({ url, title }) => {
   ];
 
   return (
-    <div className={styles.container} ref={dropdownRef}>
-      <Button onClick={() => setIsOpen(!isOpen)}>
-        <ShareIcon className={styles.shareIcon} />
+    <div className={styles.container} ref={dropdownRef} role="group" aria-label="Поделиться">
+      <Button onClick={() => setIsOpen(!isOpen)} aria-label="Открыть меню поделиться">
+        <ShareIcon className={styles.shareIcon} aria-hidden="true" />
         Поделиться
       </Button>
 
       {isOpen && (
-        <div className={styles.dropdown}>
+        <ul className={styles.dropdown}>
           {shareOptions.map((option, index) => (
-            <button
-              key={index}
-              className={styles.option}
-              onClick={() => {
-                option.action();
-                setIsOpen(false);
-              }}
-            >
-              <span className={styles.icon}>{option.icon}</span>
-              <span>{option.name}</span>
-            </button>
+            <li key={index}>
+              <button
+                className={styles.option}
+                onClick={() => {
+                  option.action();
+                  setIsOpen(false);
+                }}
+                aria-label={option.name}
+              >
+                <span className={styles.icon} aria-hidden="true">{option.icon}</span>
+                <span>{option.name}</span>
+              </button>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </div>
   );

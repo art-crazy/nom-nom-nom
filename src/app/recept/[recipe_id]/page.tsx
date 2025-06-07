@@ -73,7 +73,7 @@ export default async function RecipePage({ params }: PageProps) {
         <h2>Инструкция</h2>
         {recipe.steps.map((step, i) => (
           <div className={styles.step} key={i}>
-            <div className={styles.stepTitle}>{step.title}</div>
+            <h3 className={styles.stepTitle}>{step.title}</h3>
             {step.image && (
               <div className={styles.stepImage}>
                 <Image

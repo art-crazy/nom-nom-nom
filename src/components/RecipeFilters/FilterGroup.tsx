@@ -31,7 +31,7 @@ export function FilterGroup({
   placeholder
 }: FilterGroupProps) {
   const [isOpen, setIsOpen] = React.useState(false);
-  const filterRef = useRef<HTMLDivElement>(null);
+  const filterRef = useRef<HTMLFieldSetElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -73,23 +73,24 @@ export function FilterGroup({
   const selectedOption = options.find(option => option.slug === currentPath[type]);
 
   return (
-    <div 
+    <fieldset
       ref={filterRef}
       className={styles.filterSection}
-      role="combobox"
-      aria-expanded={isOpen}
-      aria-haspopup="listbox"
-      aria-controls={`${type}-options`}
+      disabled={disabled}
     >
-      <div 
+      {/*<legend className={styles.filterLegend}>{title}</legend>*/}
+      <button
         className={`${styles.filterHeader} ${disabled ? styles.disabled : ''}`}
         onClick={handleClick}
         onKeyDown={handleKeyDown}
         tabIndex={disabled ? -1 : 0}
-        role="button"
         aria-label={`${title} filter`}
+        aria-expanded={isOpen}
+        aria-controls={`${type}-options`}
+        disabled={disabled}
+        type="button"
       >
-        <div className={styles.filterTitle}>
+        <span className={styles.filterTitle}>
           {title}
           {selectedOption && (
             <span className={styles.selectedTags}>
@@ -97,7 +98,8 @@ export function FilterGroup({
               <button
                 className={styles.clearButton}
                 onClick={handleClear}
-                aria-label="Clear selection"
+                aria-label="Очистить фильтр"
+                type="button"
               >
                 ×
               </button>
@@ -106,30 +108,29 @@ export function FilterGroup({
           {!selectedOption && placeholder && (
             <span className={styles.placeholder}>{placeholder}</span>
           )}
-        </div>
-      </div>
+        </span>
+      </button>
 
       {isOpen && (
-        <div 
+        <ul
           className={`${styles.dropdown} ${isOpen ? styles.open : ''}`}
           role="listbox"
           id={`${type}-options`}
         >
-          <ul className={styles.optionsList}>
-            {options.map(option => (
-              <li
-                key={option.id}
-                className={`${styles.option} ${option.slug === currentPath[type] ? styles.selected : ''}`}
-                onClick={() => handleOptionClick(option.slug)}
-                role="option"
-                aria-selected={option.slug === currentPath[type]}
-              >
-                {option.name}
-              </li>
-            ))}
-          </ul>
-        </div>
+          {options.map(option => (
+            <li
+              key={option.id}
+              className={`${styles.option} ${option.slug === currentPath[type] ? styles.selected : ''}`}
+              onClick={() => handleOptionClick(option.slug)}
+              role="option"
+              aria-selected={option.slug === currentPath[type]}
+              tabIndex={0}
+            >
+              {option.name}
+            </li>
+          ))}
+        </ul>
       )}
-    </div>
+    </fieldset>
   );
 }

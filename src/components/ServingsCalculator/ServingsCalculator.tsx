@@ -18,12 +18,13 @@ const ServingsCalculator: React.FC<ServingsCalculatorProps> = ({ recipe }) => {
 
   return (
     <>
-      <div className={styles.servingsBlock}>
-        <button onClick={() => updateServings(servings - 1)}>-</button>
-        <span>Количество порций: {servings}</span>
-        <button onClick={() => updateServings(servings + 1)}>+</button>
-      </div>
-      <div className={styles.ingredientsTitle}>Ингредиенты</div>
+      <fieldset className={styles.servingsBlock} aria-label="Калькулятор порций">
+        <legend>Количество порций</legend>
+        <button onClick={() => updateServings(servings - 1)} aria-label="Уменьшить количество порций">-</button>
+        <span>{servings}</span>
+        <button onClick={() => updateServings(servings + 1)} aria-label="Увеличить количество порций">+</button>
+      </fieldset>
+      <h2 className={styles.ingredientsTitle}>Ингредиенты</h2>
       <ul className={styles.ingredientsList}>
         {recipe.ingredients.map((item, i) => {
           const adjustedAmount = (item.amount * servings) / recipe.servings;

@@ -35,8 +35,12 @@ export const SaveRecipeButton = ({ recipeId }: SaveRecipeButtonProps) => {
   };
 
   return (
-    <Button onClick={handleClick}>
-      <HeartIcon className={isSaved ? styles.filledHeart : ''} />
+    <Button
+      onClick={handleClick}
+      aria-label={isSaved ? 'Удалить из избранного' : 'Сохранить рецепт в избранное'}
+      aria-pressed={isSaved}
+    >
+      <HeartIcon className={isSaved ? styles.filledHeart : ''} aria-hidden="true" />
       {isSaved ? 'В избранном' : 'Сохранить рецепт'}
     </Button>
   );

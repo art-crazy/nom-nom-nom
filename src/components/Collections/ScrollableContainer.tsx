@@ -13,11 +13,11 @@ export default function ScrollableContainer({ children, scrollAmount }: Scrollab
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={styles.scrollableWrapper}>
+    <section className={styles.scrollableWrapper} role="region" aria-label="Горизонтальная галерея рецептов">
       <div ref={containerRef} className={styles.scrollableContent}>
         {children}
       </div>
       <ScrollArrows containerRef={containerRef} scrollAmount={scrollAmount} />
-    </div>
+    </section>
   );
-} 
+}

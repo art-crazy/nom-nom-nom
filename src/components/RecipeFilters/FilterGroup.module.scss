@@ -3,7 +3,7 @@
 .filterSection {
   position: relative;
   margin-bottom: 1rem;
-  
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -19,7 +19,7 @@
   border-radius: 0.375rem;
   cursor: pointer;
   transition: all 0.2s ease;
-
+  width: 100%;
   &:hover {
     background: #e9ecef;
   }
@@ -137,4 +137,4 @@
   text-align: center;
   color: #6c757d;
   font-size: 0.875rem;
-} 
+}

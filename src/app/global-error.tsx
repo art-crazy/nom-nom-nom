@@ -16,17 +16,13 @@ export default function GlobalError({
   }, [error]);
 
   return (
-    <html>
-      <body>
-        <div className={styles.container}>
-          <h1>500</h1>
-          <h2>Критическая ошибка</h2>
-          <p>Произошла непредвиденная ошибка в приложении</p>
-          <button onClick={reset} className={styles.button}>
-            Попробовать снова
-          </button>
-        </div>
-      </body>
-    </html>
+    <div className={styles.container}>
+      <h1>500</h1>
+      <h2>Критическая ошибка</h2>
+      <p>Произошла непредвиденная ошибка в приложении</p>
+      <button onClick={reset} className={styles.button}>
+        Попробовать снова
+      </button>
+    </div>
   );
 }

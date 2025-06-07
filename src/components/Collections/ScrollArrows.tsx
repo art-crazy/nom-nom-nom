@@ -30,7 +30,7 @@ export default function ScrollArrows({ containerRef, scrollAmount }: ScrollArrow
         onClick={() => scroll('left')}
         aria-label="Прокрутить влево"
       >
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
         </svg>
       </button>
@@ -39,7 +39,7 @@ export default function ScrollArrows({ containerRef, scrollAmount }: ScrollArrow
         onClick={() => scroll('right')}
         aria-label="Прокрутить вправо"
       >
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
         </svg>
       </button>

@@ -22,15 +22,15 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <Link href="/" className={styles.logo} onClick={handleLogoClick}>
-          🍴 Что приготовить
+          <span role="img" aria-label="Логотип">🍴</span> Что приготовить
         </Link>
-        <div className={styles.headerRight}>
+        <nav className={styles.headerRight} aria-label="Основная навигация">
           <Search />
           <div className={styles.desktopNav}>
             <NavItem type="collections" className={styles.desktopNavItem} />
             <NavItem type="recipes" className={styles.desktopNavItem} />
           </div>
-        </div>
+        </nav>
       </header>
       <MobileNav />
     </>

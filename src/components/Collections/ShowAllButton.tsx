@@ -9,11 +9,11 @@ interface ShowAllButtonProps {
 
 const ShowAllButton: React.FC<ShowAllButtonProps> = ({ link }) => {
   return (
-    <Link href={link} className={styles.showAllCard}>
+    <Link href={link} className={styles.showAllCard} aria-label="Показать все рецепты в подборке">
       <div className={styles.showAllArrow}>
-        <ArrowRightIcon className={styles.arrowIcon} />
+        <ArrowRightIcon className={styles.arrowIcon} aria-hidden="true" />
       </div>
-      <div className={styles.showAllText}>Показать всё</div>
+      <span className={styles.showAllText}>Показать всё</span>
     </Link>
   );
 };

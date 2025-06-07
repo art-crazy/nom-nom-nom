@@ -38,8 +38,10 @@ const NavItem: React.FC<NavItemProps> = ({ type, className, iconClassName }) => 
     <Link
       href={href}
       className={`${styles.navItem} ${isActive ? styles.active : ''} ${className || ''}`}
+      aria-label={label}
+      aria-current={isActive ? 'page' : undefined}
     >
-      <Icon className={`${styles.icon} ${iconClassName || ''}`} />
+      <Icon className={`${styles.icon} ${iconClassName || ''}`} aria-hidden="true" />
       <span>{label}</span>
     </Link>
   );

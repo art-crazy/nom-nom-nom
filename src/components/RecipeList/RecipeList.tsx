@@ -80,39 +80,40 @@ export function RecipeList({ filters }: RecipeListProps) {
         {filters.search && (
           <div className={styles.allRecipes}>
             <h3>Все рецепты:</h3>
-            <div className={styles.recipeList}>
+            <ul className={styles.recipeList}>
               {Object.values(recipesData)
                 .filter(recipe => typeof recipe === 'object' && 'id' in recipe)
                 .map((recipe) => (
-                  <Link
-                    key={recipe.id}
-                    href={`/recept/${recipe.name}-${recipe.id}`}
-                    className={styles.recipeCard}
-                  >
-                    {recipe.imageMain && (
-                      <div className={styles.imageContainer}>
-                        <Image
-                          src={recipe.imageMain}
-                          alt={recipe.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          style={{ objectFit: 'cover' }}
-                          priority={false}
-                        />
+                  <li key={recipe.id}>
+                    <Link
+                      href={`/recept/${recipe.name}-${recipe.id}`}
+                      className={styles.recipeCard}
+                    >
+                      {recipe.imageMain && (
+                        <div className={styles.imageContainer}>
+                          <Image
+                            src={recipe.imageMain}
+                            alt={recipe.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            style={{ objectFit: 'cover' }}
+                            priority={false}
+                          />
+                        </div>
+                      )}
+                      <div className={styles.recipeInfo}>
+                        <h3>{recipe.title}</h3>
+                        <p>{recipe.description}</p>
+                        <div className={styles.recipeMeta}>
+                          <span>Время: {recipe.cookTime}</span>
+                          <span>Сложность: {recipe.difficulty}</span>
+                          <span>Рейтинг: {recipe.rating}</span>
+                        </div>
                       </div>
-                    )}
-                    <div className={styles.recipeInfo}>
-                      <h3>{recipe.title}</h3>
-                      <p>{recipe.description}</p>
-                      <div className={styles.recipeMeta}>
-                        <span>Время: {recipe.cookTime}</span>
-                        <span>Сложность: {recipe.difficulty}</span>
-                        <span>Рейтинг: {recipe.rating}</span>
-                      </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
-            </div>
+            </ul>
           </div>
         )}
       </div>
@@ -120,36 +121,37 @@ export function RecipeList({ filters }: RecipeListProps) {
   }
 
   return (
-    <div className={styles.recipeList}>
+    <ul className={styles.recipeList}>
       {filteredRecipes.map((recipe) => (
-        <Link
-          key={recipe.id}
-          href={`/recept/${recipe.name}-${recipe.id}`}
-          className={styles.recipeCard}
-        >
-          {recipe.imageMain && (
-            <div className={styles.imageContainer}>
-              <Image
-                src={recipe.imageMain}
-                alt={recipe.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{ objectFit: 'cover' }}
-                priority={false}
-              />
+        <li key={recipe.id}>
+          <Link
+            href={`/recept/${recipe.name}-${recipe.id}`}
+            className={styles.recipeCard}
+          >
+            {recipe.imageMain && (
+              <div className={styles.imageContainer}>
+                <Image
+                  src={recipe.imageMain}
+                  alt={recipe.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                  priority={false}
+                />
+              </div>
+            )}
+            <div className={styles.recipeInfo}>
+              <h3>{recipe.title}</h3>
+              <p>{recipe.description}</p>
+              <div className={styles.recipeMeta}>
+                <span>Время: {recipe.cookTime}</span>
+                <span>Сложность: {recipe.difficulty}</span>
+                <span>Рейтинг: {recipe.rating}</span>
+              </div>
             </div>
-          )}
-          <div className={styles.recipeInfo}>
-            <h3>{recipe.title}</h3>
-            <p>{recipe.description}</p>
-            <div className={styles.recipeMeta}>
-              <span>Время: {recipe.cookTime}</span>
-              <span>Сложность: {recipe.difficulty}</span>
-              <span>Рейтинг: {recipe.rating}</span>
-            </div>
-          </div>
-        </Link>
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
