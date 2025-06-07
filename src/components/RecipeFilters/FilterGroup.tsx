@@ -31,12 +31,30 @@ export function FilterGroup({
   placeholder
 }: FilterGroupProps) {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [searchText, setSearchText] = React.useState('');
   const filterRef = useRef<HTMLFieldSetElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Открываем фильтр и фокусируемся на поле ввода
+  const openFilter = () => {
+    if (disabled) return;
+    setIsOpen(true);
+    // Даем время на рендер поля ввода
+    requestAnimationFrame(() => {
+      inputRef.current?.focus();
+    });
+  };
+
+  // Закрываем фильтр и очищаем поиск
+  const closeFilter = () => {
+    setIsOpen(false);
+    setSearchText('');
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
+        closeFilter();
       }
     };
 
@@ -44,25 +62,36 @@ export function FilterGroup({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleClick = () => {
-    if (disabled) return;
-    setIsOpen(!isOpen);
+  const handleHeaderClick = () => {
+    if (isOpen) {
+      closeFilter();
+    } else {
+      openFilter();
+    }
   };
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
     if (disabled) return;
 
-    if (event.key === 'Enter' || event.key === ' ') {
+    if (event.key === 'Escape') {
+      closeFilter();
+      return;
+    }
+
+    // Обрабатываем Enter и Space только если фокус на заголовке
+    if (event.target === event.currentTarget && (event.key === 'Enter' || event.key === ' ')) {
       event.preventDefault();
-      handleClick();
-    } else if (event.key === 'Escape' && isOpen) {
-      setIsOpen(false);
+      if (isOpen) {
+        closeFilter();
+      } else {
+        openFilter();
+      }
     }
   };
 
   const handleOptionClick = (slug: string) => {
     onSelect(type, slug);
-    setIsOpen(false);
+    closeFilter();
   };
 
   const handleClear = (event: React.MouseEvent) => {
@@ -70,7 +99,14 @@ export function FilterGroup({
     onSelect(type, '');
   };
 
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchText(event.target.value);
+  };
+
   const selectedOption = options.find(option => option.slug === currentPath[type]);
+  const filteredOptions = options.filter(option =>
+    option.name.toLowerCase().includes(searchText.toLowerCase())
+  );
 
   return (
     <fieldset
@@ -80,7 +116,7 @@ export function FilterGroup({
     >
       <div
         className={`${styles.filterHeader} ${disabled ? styles.disabled : ''}`}
-        onClick={handleClick}
+        onClick={handleHeaderClick}
         onKeyDown={handleKeyDown}
         tabIndex={disabled ? -1 : 0}
         role="button"
@@ -89,8 +125,19 @@ export function FilterGroup({
         aria-controls={`${type}-options`}
       >
         <span className={styles.filterTitle}>
-          {title}
-          {selectedOption && (
+          {!isOpen && title}
+          {isOpen ? (
+            <input
+              ref={inputRef}
+              type="text"
+              className={styles.searchInput}
+              value={searchText}
+              onChange={handleSearchChange}
+              onKeyDown={(e) => e.key === 'Escape' && closeFilter()}
+              placeholder={title}
+              aria-label={`Поиск в ${title.toLowerCase()}`}
+            />
+          ) : selectedOption ? (
             <span className={styles.selectedTags}>
               {selectedOption.name}
               <button
@@ -102,10 +149,9 @@ export function FilterGroup({
                 ×
               </button>
             </span>
-          )}
-          {!selectedOption && placeholder && (
+          ) : placeholder ? (
             <span className={styles.placeholder}>{placeholder}</span>
-          )}
+          ) : null}
         </span>
       </div>
 
@@ -115,18 +161,22 @@ export function FilterGroup({
           role="listbox"
           id={`${type}-options`}
         >
-          {options.map(option => (
-            <li
-              key={option.id}
-              className={`${styles.option} ${option.slug === currentPath[type] ? styles.selected : ''}`}
-              onClick={() => handleOptionClick(option.slug)}
-              role="option"
-              aria-selected={option.slug === currentPath[type]}
-              tabIndex={0}
-            >
-              {option.name}
-            </li>
-          ))}
+          {filteredOptions.length > 0 ? (
+            filteredOptions.map(option => (
+              <li
+                key={option.id}
+                className={`${styles.option} ${option.slug === currentPath[type] ? styles.selected : ''}`}
+                onClick={() => handleOptionClick(option.slug)}
+                role="option"
+                aria-selected={option.slug === currentPath[type]}
+                tabIndex={0}
+              >
+                {option.name}
+              </li>
+            ))
+          ) : (
+            <li className={styles.noResults}>Ничего не найдено</li>
+          )}
         </ul>
       )}
     </fieldset>
