@@ -78,17 +78,15 @@ export function FilterGroup({
       className={styles.filterSection}
       disabled={disabled}
     >
-      {/*<legend className={styles.filterLegend}>{title}</legend>*/}
-      <button
+      <div
         className={`${styles.filterHeader} ${disabled ? styles.disabled : ''}`}
         onClick={handleClick}
         onKeyDown={handleKeyDown}
         tabIndex={disabled ? -1 : 0}
+        role="button"
         aria-label={`${title} filter`}
         aria-expanded={isOpen}
         aria-controls={`${type}-options`}
-        disabled={disabled}
-        type="button"
       >
         <span className={styles.filterTitle}>
           {title}
@@ -109,7 +107,7 @@ export function FilterGroup({
             <span className={styles.placeholder}>{placeholder}</span>
           )}
         </span>
-      </button>
+      </div>
 
       {isOpen && (
         <ul
