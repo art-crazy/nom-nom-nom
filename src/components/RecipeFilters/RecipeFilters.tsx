@@ -107,8 +107,6 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
     }
   ];
 
-  const hasFilters = Object.values(selectedFilters).some(Boolean);
-
   return (
     <section className={styles.filters} aria-label="Фильтры рецептов">
       {filterGroups.map((group) => (
@@ -125,9 +123,8 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
 
       <div className={styles.filterActions} role="group" aria-label="Действия с фильтрами">
         <button
-          className={`${styles.applyButton} ${!hasFilters ? styles.disabled : ''}`}
+          className={styles.applyButton}
           onClick={handleApplyFilters}
-          disabled={!hasFilters}
           aria-label="Применить фильтры и найти рецепты"
         >
           Найти рецепты
