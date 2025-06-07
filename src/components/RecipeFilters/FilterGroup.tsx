@@ -89,12 +89,25 @@ export function FilterGroup({
     }
   };
 
-  const handleOptionClick = (slug: string) => {
+  const handleOptionClick = (slug: string, event: React.MouseEvent) => {
+    // Если клик был по крестику, только удаляем выбор
+    if ((event.target as HTMLElement).closest('button')) {
+      onSelect(type, '');
+      return;
+    }
+
+    // Если элемент уже выбран, удаляем выбор
+    if (slug === currentPath[type]) {
+      onSelect(type, '');
+      return;
+    }
+
+    // Иначе выбираем элемент и закрываем список
     onSelect(type, slug);
     closeFilter();
   };
 
-  const handleClear = (event: React.MouseEvent) => {
+  const handleOptionClear = (event: React.MouseEvent) => {
     event.stopPropagation();
     onSelect(type, '');
   };
@@ -142,7 +155,7 @@ export function FilterGroup({
               {selectedOption.name}
               <button
                 className={styles.clearButton}
-                onClick={handleClear}
+                onClick={handleOptionClear}
                 aria-label="Очистить фильтр"
                 type="button"
               >
@@ -166,12 +179,22 @@ export function FilterGroup({
               <li
                 key={option.id}
                 className={`${styles.option} ${option.slug === currentPath[type] ? styles.selected : ''}`}
-                onClick={() => handleOptionClick(option.slug)}
+                onClick={(e) => handleOptionClick(option.slug, e)}
                 role="option"
                 aria-selected={option.slug === currentPath[type]}
                 tabIndex={0}
               >
                 {option.name}
+                {option.slug === currentPath[type] && (
+                  <button
+                    className={styles.clearButton}
+                    onClick={handleOptionClear}
+                    aria-label="Удалить выбор"
+                    type="button"
+                  >
+                    ×
+                  </button>
+                )}
               </li>
             ))
           ) : (

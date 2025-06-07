@@ -140,6 +140,9 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &:hover {
     background-color: #f8f9fa;
@@ -148,6 +151,36 @@
   &.selected {
     background-color: #e9ecef;
     font-weight: 500;
+
+    .clearButton {
+      opacity: 1;
+    }
+  }
+
+  .clearButton {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: #6c757d;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 0.5rem;
+
+    &:hover {
+      background: #e9ecef;
+      color: #495057;
+    }
+  }
+
+  &:hover .clearButton {
+    opacity: 1;
   }
 }
 
