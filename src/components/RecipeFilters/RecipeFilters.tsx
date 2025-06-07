@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import styles from './RecipeFilters.module.scss';
 import { FilterGroup } from './FilterGroup';
 import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
@@ -19,7 +19,11 @@ type FilterType = 'diet' | 'cuisine' | 'category' | 'subcategory';
 
 export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
   const router = useRouter();
+  const pathname = usePathname();
   const [selectedFilters, setSelectedFilters] = useState(currentPath);
+  const hasFilters = Object.values(selectedFilters).some(Boolean);
+  const isOnRecipesPage = pathname === '/recepty';
+  const isButtonDisabled = isOnRecipesPage && !hasFilters;
 
   useEffect(() => {
     setSelectedFilters(currentPath);
@@ -123,8 +127,9 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
 
       <div className={styles.filterActions} role="group" aria-label="Действия с фильтрами">
         <button
-          className={styles.applyButton}
+          className={`${styles.applyButton} ${isButtonDisabled ? styles.disabled : ''}`}
           onClick={handleApplyFilters}
+          disabled={isButtonDisabled}
           aria-label="Применить фильтры и найти рецепты"
         >
           Найти рецепты
