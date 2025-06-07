@@ -8,7 +8,8 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const recipe_id = params.recipe_id;
+  const paramsConst = await params;
+  const recipe_id = paramsConst.recipe_id;
   const id = (() => {
     const parts = recipe_id.split('-');
     return parts[parts.length - 1];

@@ -75,7 +75,7 @@ export function RecipeList({ filters }: RecipeListProps) {
 
   if (filteredRecipes.length === 0) {
     return (
-      <div className={styles.noResults}>
+      <section aria-label="Список рецептов" className={styles.noResults}>
         <p>По вашему запросу ничего не найдено</p>
         {filters.search && (
           <div className={styles.allRecipes}>
@@ -116,42 +116,44 @@ export function RecipeList({ filters }: RecipeListProps) {
             </ul>
           </div>
         )}
-      </div>
+      </section>
     );
   }
 
   return (
-    <ul className={styles.recipeList}>
-      {filteredRecipes.map((recipe) => (
-        <li key={recipe.id}>
-          <Link
-            href={`/recept/${recipe.name}-${recipe.id}`}
-            className={styles.recipeCard}
-          >
-            {recipe.imageMain && (
-              <div className={styles.imageContainer}>
-                <Image
-                  src={recipe.imageMain}
-                  alt={recipe.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                  priority={false}
-                />
+    <section aria-label="Список рецептов">
+      <ul className={styles.recipeList}>
+        {filteredRecipes.map((recipe) => (
+          <li key={recipe.id}>
+            <Link
+              href={`/recept/${recipe.name}-${recipe.id}`}
+              className={styles.recipeCard}
+            >
+              {recipe.imageMain && (
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={recipe.imageMain}
+                    alt={recipe.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }}
+                    priority={false}
+                  />
+                </div>
+              )}
+              <div className={styles.recipeInfo}>
+                <h3>{recipe.title}</h3>
+                <p>{recipe.description}</p>
+                <div className={styles.recipeMeta}>
+                  <span>Время: {recipe.cookTime}</span>
+                  <span>Сложность: {recipe.difficulty}</span>
+                  <span>Рейтинг: {recipe.rating}</span>
+                </div>
               </div>
-            )}
-            <div className={styles.recipeInfo}>
-              <h3>{recipe.title}</h3>
-              <p>{recipe.description}</p>
-              <div className={styles.recipeMeta}>
-                <span>Время: {recipe.cookTime}</span>
-                <span>Сложность: {recipe.difficulty}</span>
-                <span>Рейтинг: {recipe.rating}</span>
-              </div>
-            </div>
-          </Link>
-        </li>
-      ))}
-    </ul>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

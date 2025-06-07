@@ -112,7 +112,7 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
   ];
 
   return (
-    <section className={styles.filters} aria-label="Фильтры рецептов">
+    <aside className={styles.filters} aria-label="Фильтры рецептов">
       {filterGroups.map((group) => (
         <FilterGroup
           key={group.type}
@@ -135,6 +135,6 @@ export function RecipeFilters({ currentPath }: RecipeFiltersProps) {
           Найти рецепты
         </button>
       </div>
-    </section>
+    </aside>
   );
 }
