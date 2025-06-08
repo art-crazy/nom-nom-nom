@@ -3,13 +3,14 @@ import { siteConfig } from '@/config/site';
 import { recipes } from '@/data/recipes';
 import { notFound } from 'next/navigation';
 
-type Props = {
-  params: { recipe_id: string }
-};
+interface PageProps {
+  params: Promise<{
+    recipe_id: string;
+  }>;
+}
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const paramsConst = await params;
-  const recipe_id = paramsConst.recipe_id;
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { recipe_id } = await params;
   const id = (() => {
     const parts = recipe_id.split('-');
     return parts[parts.length - 1];

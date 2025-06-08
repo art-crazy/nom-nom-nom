@@ -17,8 +17,7 @@ interface PageProps {
 }
 
 export default async function RecipePage({ params }: PageProps) {
-  const awaitedParams = await params;
-  const recipe_id = awaitedParams.recipe_id;
+  const { recipe_id } = await params;
 
   const id = (() => {
     const parts = recipe_id.split('-');
