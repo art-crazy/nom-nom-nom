@@ -50,22 +50,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '40 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 364.04, unit: Unit.ml },
-      protein: { value: 7.49, unit: Unit.g },
-      fat: { value: 13.81, unit: Unit.g },
-      carbs: { value: 50.47, unit: Unit.g },
+      calories: {value: 364.04, unit: Unit.ml},
+      protein: {value: 7.49, unit: Unit.g},
+      fat: {value: 13.81, unit: Unit.g},
+      carbs: {value: 50.47, unit: Unit.g},
     },
     cuisine: 'Русская',
     servings: 6,
     ingredients: [
-      { name: 'Кефир', amount: 200, unit: Unit.ml },
-      { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-      { name: 'Сахар', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 1, unit: Unit.to_taste },
-      { name: 'Разрыхлитель', amount: 1, unit: Unit.tsp },
-      { name: 'Мука', amount: 400, unit: Unit.g },
-      { name: 'Масло растительное (для жарки)', amount: 400, unit: Unit.ml },
-      { name: 'Сахарная пудра (для посыпки)', amount: 0, unit: Unit.to_taste },
+      {name: 'Кефир', amount: 200, unit: Unit.ml},
+      {name: 'Яйцо куриное', amount: 1, unit: Unit.pcs},
+      {name: 'Сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 1, unit: Unit.to_taste},
+      {name: 'Разрыхлитель', amount: 1, unit: Unit.tsp},
+      {name: 'Мука', amount: 400, unit: Unit.g},
+      {name: 'Масло растительное (для жарки)', amount: 400, unit: Unit.ml},
+      {name: 'Сахарная пудра (для посыпки)', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -128,22 +128,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '40 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 364.04, unit: Unit.ml },
-      protein: { value: 7.49, unit: Unit.g },
-      fat: { value: 13.81, unit: Unit.g },
-      carbs: { value: 50.47, unit: Unit.g },
+      calories: {value: 364.04, unit: Unit.ml},
+      protein: {value: 7.49, unit: Unit.g},
+      fat: {value: 13.81, unit: Unit.g},
+      carbs: {value: 50.47, unit: Unit.g},
     },
     cuisine: 'Русская',
     servings: 6,
     ingredients: [
-      { name: 'Кефир', amount: 200, unit: Unit.ml },
-      { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-      { name: 'Сахар', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 1, unit: Unit.to_taste },
-      { name: 'Разрыхлитель', amount: 1, unit: Unit.tsp },
-      { name: 'Мука', amount: 400, unit: Unit.g },
-      { name: 'Масло растительное (для жарки)', amount: 400, unit: Unit.ml },
-      { name: 'Сахарная пудра (для посыпки)', amount: 0, unit: Unit.to_taste },
+      {name: 'Кефир', amount: 200, unit: Unit.ml},
+      {name: 'Яйцо куриное', amount: 1, unit: Unit.pcs},
+      {name: 'Сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 1, unit: Unit.to_taste},
+      {name: 'Разрыхлитель', amount: 1, unit: Unit.tsp},
+      {name: 'Мука', amount: 400, unit: Unit.g},
+      {name: 'Масло растительное (для жарки)', amount: 400, unit: Unit.ml},
+      {name: 'Сахарная пудра (для посыпки)', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -206,22 +206,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '40 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 364.04, unit: Unit.ml },
-      protein: { value: 7.49, unit: Unit.g },
-      fat: { value: 13.81, unit: Unit.g },
-      carbs: { value: 50.47, unit: Unit.g },
+      calories: {value: 364.04, unit: Unit.ml},
+      protein: {value: 7.49, unit: Unit.g},
+      fat: {value: 13.81, unit: Unit.g},
+      carbs: {value: 50.47, unit: Unit.g},
     },
     cuisine: 'Русская',
     servings: 6,
     ingredients: [
-      { name: 'Кефир', amount: 200, unit: Unit.ml },
-      { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-      { name: 'Сахар', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 1, unit: Unit.to_taste },
-      { name: 'Разрыхлитель', amount: 1, unit: Unit.tsp },
-      { name: 'Мука', amount: 400, unit: Unit.g },
-      { name: 'Масло растительное (для жарки)', amount: 400, unit: Unit.ml },
-      { name: 'Сахарная пудра (для посыпки)', amount: 0, unit: Unit.to_taste },
+      {name: 'Кефир', amount: 200, unit: Unit.ml},
+      {name: 'Яйцо куриное', amount: 1, unit: Unit.pcs},
+      {name: 'Сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 1, unit: Unit.to_taste},
+      {name: 'Разрыхлитель', amount: 1, unit: Unit.tsp},
+      {name: 'Мука', amount: 400, unit: Unit.g},
+      {name: 'Масло растительное (для жарки)', amount: 400, unit: Unit.ml},
+      {name: 'Сахарная пудра (для посыпки)', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -284,22 +284,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '45 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 320, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 18, unit: Unit.g },
-      carbs: { value: 12, unit: Unit.g },
+      calories: {value: 320, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 12, unit: Unit.g},
     },
     cuisine: 'Русская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Сметана 20%', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
-      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-      { name: 'Зелень (укроп, петрушка)', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Сметана 20%', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Масло растительное', amount: 2, unit: Unit.tbsp},
+      {name: 'Зелень (укроп, петрушка)', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -350,22 +350,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '60 минут',
     difficulty: '4/5',
     nutrition: {
-      calories: { value: 450, unit: Unit.g },
-      protein: { value: 32, unit: Unit.g },
-      fat: { value: 28, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g },
+      calories: {value: 450, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g},
     },
     cuisine: 'Русская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 800, unit: Unit.g },
-      { name: 'Масло сливочное', amount: 100, unit: Unit.g },
-      { name: 'Яйцо', amount: 2, unit: Unit.pcs },
-      { name: 'Мука', amount: 100, unit: Unit.g },
-      { name: 'Сухари панировочные', amount: 200, unit: Unit.g },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
-      { name: 'Масло растительное', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Масло сливочное', amount: 100, unit: Unit.g},
+      {name: 'Яйцо', amount: 2, unit: Unit.pcs},
+      {name: 'Мука', amount: 100, unit: Unit.g},
+      {name: 'Сухари панировочные', amount: 200, unit: Unit.g},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Масло растительное', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -416,24 +416,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 380, unit: Unit.g },
-      protein: { value: 30, unit: Unit.g },
-      fat: { value: 22, unit: Unit.g },
-      carbs: { value: 18, unit: Unit.g },
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 30, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g},
     },
     cuisine: 'Индийская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Йогурт натуральный', amount: 200, unit: Unit.g },
-      { name: 'Томаты в собственном соку', amount: 400, unit: Unit.g },
-      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Специи (куркума, кумин, кориандр)', amount: 0, unit: Unit.to_taste },
-      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Йогурт натуральный', amount: 200, unit: Unit.g},
+      {name: 'Томаты в собственном соку', amount: 400, unit: Unit.g},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Специи (куркума, кумин, кориандр)', amount: 0, unit: Unit.to_taste},
+      {name: 'Масло растительное', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -484,22 +484,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '40 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 350, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 24, unit: Unit.g },
-      carbs: { value: 8, unit: Unit.g },
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 8, unit: Unit.g},
     },
     cuisine: 'Средиземноморская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Чеснок', amount: 6, unit: Unit.pcs },
-      { name: 'Яйцо', amount: 1, unit: Unit.pcs },
-      { name: 'Оливковое масло', amount: 100, unit: Unit.ml },
-      { name: 'Лимонный сок', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
-      { name: 'Петрушка', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Чеснок', amount: 6, unit: Unit.pcs},
+      {name: 'Яйцо', amount: 1, unit: Unit.pcs},
+      {name: 'Оливковое масло', amount: 100, unit: Unit.ml},
+      {name: 'Лимонный сок', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Петрушка', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -550,22 +550,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '35 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 320, unit: Unit.g },
-      protein: { value: 26, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 22, unit: Unit.g },
+      calories: {value: 320, unit: Unit.g},
+      protein: {value: 26, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g},
     },
     cuisine: 'Японская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Соус терияки', amount: 100, unit: Unit.ml },
-      { name: 'Мед', amount: 2, unit: Unit.tbsp },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Кунжут', amount: 2, unit: Unit.tbsp },
-      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-      { name: 'Зеленый лук', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Соус терияки', amount: 100, unit: Unit.ml},
+      {name: 'Мед', amount: 2, unit: Unit.tbsp},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Кунжут', amount: 2, unit: Unit.tbsp},
+      {name: 'Масло растительное', amount: 2, unit: Unit.tbsp},
+      {name: 'Зеленый лук', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -616,22 +616,22 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 20, unit: Unit.g },
-      carbs: { value: 14, unit: Unit.g },
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 14, unit: Unit.g},
     },
     cuisine: 'Венгерская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Паприка сладкая', amount: 2, unit: Unit.tbsp },
-      { name: 'Сметана 20%', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Паприка сладкая', amount: 2, unit: Unit.tbsp},
+      {name: 'Сметана 20%', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Масло растительное', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -682,23 +682,23 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '45 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 360, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 24, unit: Unit.g },
-      carbs: { value: 16, unit: Unit.g },
+      calories: {value: 360, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 16, unit: Unit.g},
     },
     cuisine: 'Индийская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Кокосовое молоко', amount: 400, unit: Unit.ml },
-      { name: 'Паста карри', amount: 2, unit: Unit.tbsp },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Кинза', amount: 0, unit: Unit.to_taste },
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 400, unit: Unit.ml},
+      {name: 'Паста карри', amount: 2, unit: Unit.tbsp},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Масло растительное', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Кинза', amount: 0, unit: Unit.to_taste},
     ],
     steps: [
       {
@@ -749,26 +749,26 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '40 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 27, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 24, unit: Unit.g },
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 27, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g},
     },
     cuisine: 'Китайская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Ананас', amount: 200, unit: Unit.g },
-      { name: 'Перец болгарский', amount: 2, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Соевый соус', amount: 2, unit: Unit.tbsp },
-      { name: 'Уксус', amount: 1, unit: Unit.tbsp },
-      { name: 'Сахар', amount: 1, unit: Unit.tbsp },
-      { name: 'Крахмал', amount: 1, unit: Unit.tbsp },
-      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-      { name: 'Рис', amount: 200, unit: Unit.g }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Ананас', amount: 200, unit: Unit.g},
+      {name: 'Перец болгарский', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Соевый соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Уксус', amount: 1, unit: Unit.tbsp},
+      {name: 'Сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Крахмал', amount: 1, unit: Unit.tbsp},
+      {name: 'Масло растительное', amount: 2, unit: Unit.tbsp},
+      {name: 'Рис', amount: 200, unit: Unit.g}
     ],
     steps: [
       {
@@ -819,24 +819,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '45 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 360, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 24, unit: Unit.g },
-      carbs: { value: 16, unit: Unit.g },
+      calories: {value: 360, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 16, unit: Unit.g},
     },
     cuisine: 'Тайская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Кокосовое молоко', amount: 400, unit: Unit.ml },
-      { name: 'Паста карри', amount: 2, unit: Unit.tbsp },
-      { name: 'Бамбуковые ростки', amount: 100, unit: Unit.g },
-      { name: 'Баклажан', amount: 1, unit: Unit.pcs },
-      { name: 'Лимонная трава', amount: 2, unit: Unit.pcs },
-      { name: 'Листья лайма', amount: 4, unit: Unit.pcs },
-      { name: 'Рыбный соус', amount: 1, unit: Unit.tbsp },
-      { name: 'Пальмовый сахар', amount: 1, unit: Unit.tbsp },
-      { name: 'Рис', amount: 200, unit: Unit.g }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 400, unit: Unit.ml},
+      {name: 'Паста карри', amount: 2, unit: Unit.tbsp},
+      {name: 'Бамбуковые ростки', amount: 100, unit: Unit.g},
+      {name: 'Баклажан', amount: 1, unit: Unit.pcs},
+      {name: 'Лимонная трава', amount: 2, unit: Unit.pcs},
+      {name: 'Листья лайма', amount: 4, unit: Unit.pcs},
+      {name: 'Рыбный соус', amount: 1, unit: Unit.tbsp},
+      {name: 'Пальмовый сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Рис', amount: 200, unit: Unit.g}
     ],
     steps: [
       {
@@ -887,24 +887,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '35 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 18, unit: Unit.g },
-      carbs: { value: 20, unit: Unit.g },
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 20, unit: Unit.g},
     },
     cuisine: 'Корейская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Паста гочуджан', amount: 2, unit: Unit.tbsp },
-      { name: 'Соевый соус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Кунжутное масло', amount: 1, unit: Unit.tbsp },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Кунжут', amount: 1, unit: Unit.tbsp },
-      { name: 'Зеленый лук', amount: 2, unit: Unit.pcs },
-      { name: 'Рис', amount: 200, unit: Unit.g }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Паста гочуджан', amount: 2, unit: Unit.tbsp},
+      {name: 'Соевый соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Кунжутное масло', amount: 1, unit: Unit.tbsp},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Кунжут', amount: 1, unit: Unit.tbsp},
+      {name: 'Зеленый лук', amount: 2, unit: Unit.pcs},
+      {name: 'Рис', amount: 200, unit: Unit.g}
     ],
     steps: [
       {
@@ -955,27 +955,27 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '60 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 320, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 22, unit: Unit.g },
+      calories: {value: 320, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g},
     },
     cuisine: 'Французская',
     servings: 4,
     // Общий вес блюда: 1200 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Клубника', amount: 300, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Тимьян', amount: 2, unit: Unit.tbsp },
-      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
-      { name: 'Сахар', amount: 1, unit: Unit.tsp },
-      { name: 'Крахмал', amount: 1, unit: Unit.tsp }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Клубника', amount: 300, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Тимьян', amount: 2, unit: Unit.tbsp},
+      {name: 'Масло оливковое', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp},
+      {name: 'Крахмал', amount: 1, unit: Unit.tsp}
     ],
     steps: [
       {
@@ -1054,27 +1054,27 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '90 минут',
     difficulty: '4/5',
     nutrition: {
-      calories: { value: 450, unit: Unit.g },
-      protein: { value: 32, unit: Unit.g },
-      fat: { value: 35, unit: Unit.g },
-      carbs: { value: 12, unit: Unit.g },
+      calories: {value: 450, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 35, unit: Unit.g},
+      carbs: {value: 12, unit: Unit.g},
     },
     cuisine: 'Грузинская',
     servings: 6,
     // Общий вес блюда: 1800 г
     ingredients: [
-      { name: 'Курица (целая)', amount: 1500, unit: Unit.g },
-      { name: 'Грецкие орехи', amount: 500, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 3, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 6, unit: Unit.pcs },
-      { name: 'Хмели-сунели', amount: 2, unit: Unit.tbsp },
-      { name: 'Шафран', amount: 1, unit: Unit.tsp },
-      { name: 'Корица', amount: 1, unit: Unit.tsp },
-      { name: 'Гвоздика', amount: 4, unit: Unit.pcs },
-      { name: 'Лавровый лист', amount: 2, unit: Unit.pcs },
-      { name: 'Уксус винный', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Курица (целая)', amount: 1500, unit: Unit.g},
+      {name: 'Грецкие орехи', amount: 500, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 3, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 6, unit: Unit.pcs},
+      {name: 'Хмели-сунели', amount: 2, unit: Unit.tbsp},
+      {name: 'Шафран', amount: 1, unit: Unit.tsp},
+      {name: 'Корица', amount: 1, unit: Unit.tsp},
+      {name: 'Гвоздика', amount: 4, unit: Unit.pcs},
+      {name: 'Лавровый лист', amount: 2, unit: Unit.pcs},
+      {name: 'Уксус винный', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1153,27 +1153,27 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '75 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 380, unit: Unit.g },
-      protein: { value: 30, unit: Unit.g },
-      fat: { value: 22, unit: Unit.g },
-      carbs: { value: 18, unit: Unit.g },
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 30, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g},
     },
     cuisine: 'Балканская',
     servings: 4,
     // Общий вес блюда: 1400 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Баклажаны', amount: 2, unit: Unit.pcs },
-      { name: 'Перец болгарский', amount: 3, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Томаты', amount: 3, unit: Unit.pcs },
-      { name: 'Масло оливковое', amount: 4, unit: Unit.tbsp },
-      { name: 'Уксус бальзамический', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
-      { name: 'Сахар', amount: 1, unit: Unit.tsp },
-      { name: 'Зелень (петрушка, базилик)', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Баклажаны', amount: 2, unit: Unit.pcs},
+      {name: 'Перец болгарский', amount: 3, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Томаты', amount: 3, unit: Unit.pcs},
+      {name: 'Масло оливковое', amount: 4, unit: Unit.tbsp},
+      {name: 'Уксус бальзамический', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp},
+      {name: 'Зелень (петрушка, базилик)', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1252,28 +1252,28 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 18, unit: Unit.g },
-      carbs: { value: 24, unit: Unit.g },
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g},
     },
     cuisine: 'Азиатская',
     servings: 4,
     // Общий вес блюда: 1300 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Манго', amount: 2, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 30, unit: Unit.g },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Перец чили', amount: 1, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Соевый соус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Лимонный сок', amount: 2, unit: Unit.tbsp },
-      { name: 'Масло кунжутное', amount: 2, unit: Unit.tbsp },
-      { name: 'Крахмал', amount: 1, unit: Unit.tsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Манго', amount: 2, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 30, unit: Unit.g},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Перец чили', amount: 1, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Соевый соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Лимонный сок', amount: 2, unit: Unit.tbsp},
+      {name: 'Масло кунжутное', amount: 2, unit: Unit.tbsp},
+      {name: 'Крахмал', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1352,28 +1352,28 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '65 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 350, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 20, unit: Unit.g },
-      carbs: { value: 18, unit: Unit.g },
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g},
     },
     cuisine: 'Кавказская',
     servings: 4,
     // Общий вес блюда: 1350 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Гранатовый сок', amount: 300, unit: Unit.ml },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Кориандр', amount: 1, unit: Unit.tbsp },
-      { name: 'Корица', amount: 1, unit: Unit.tsp },
-      { name: 'Гвоздика', amount: 3, unit: Unit.pcs },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
-      { name: 'Крахмал', amount: 1, unit: Unit.tsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
-      { name: 'Гранатовые зерна', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Гранатовый сок', amount: 300, unit: Unit.ml},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Кориандр', amount: 1, unit: Unit.tbsp},
+      {name: 'Корица', amount: 1, unit: Unit.tsp},
+      {name: 'Гвоздика', amount: 3, unit: Unit.pcs},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Масло оливковое', amount: 3, unit: Unit.tbsp},
+      {name: 'Крахмал', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Гранатовые зерна', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1452,28 +1452,28 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '70 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 380, unit: Unit.g },
-      protein: { value: 30, unit: Unit.g },
-      fat: { value: 22, unit: Unit.g },
-      carbs: { value: 20, unit: Unit.g },
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 30, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 20, unit: Unit.g},
     },
     cuisine: 'Карибская',
     servings: 4,
     // Общий вес блюда: 1400 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Ром', amount: 100, unit: Unit.ml },
-      { name: 'Ананас', amount: 300, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Корица', amount: 1, unit: Unit.tsp },
-      { name: 'Гвоздика', amount: 3, unit: Unit.pcs },
-      { name: 'Коричневый сахар', amount: 2, unit: Unit.tbsp },
-      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
-      { name: 'Масло оливковое', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Ром', amount: 100, unit: Unit.ml},
+      {name: 'Ананас', amount: 300, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Корица', amount: 1, unit: Unit.tsp},
+      {name: 'Гвоздика', amount: 3, unit: Unit.pcs},
+      {name: 'Коричневый сахар', amount: 2, unit: Unit.tbsp},
+      {name: 'Сливочное масло', amount: 50, unit: Unit.g},
+      {name: 'Масло оливковое', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1552,27 +1552,27 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 320, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 18, unit: Unit.g },
-      carbs: { value: 12, unit: Unit.g },
+      calories: {value: 320, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 12, unit: Unit.g},
     },
     cuisine: 'Французская',
     servings: 4,
     // Общий вес блюда: 1300 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Шампиньоны', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
-      { name: 'Белое вино', amount: 100, unit: Unit.ml },
-      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
-      { name: 'Мука', amount: 1, unit: Unit.tbsp },
-      { name: 'Тимьян', amount: 1, unit: Unit.tsp },
-      { name: 'Розмарин', amount: 1, unit: Unit.tsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Шампиньоны', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Сливочное масло', amount: 50, unit: Unit.g},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Тимьян', amount: 1, unit: Unit.tsp},
+      {name: 'Розмарин', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1651,26 +1651,26 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '45 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 24, unit: Unit.g },
-      carbs: { value: 8, unit: Unit.g },
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 8, unit: Unit.g},
     },
     cuisine: 'Мексиканская',
     servings: 4,
     // Общий вес блюда: 1200 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Авокадо', amount: 2, unit: Unit.pcs },
-      { name: 'Лайм', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Кинза', amount: 1, unit: Unit.bunch },
-      { name: 'Сливки 20%', amount: 100, unit: Unit.ml },
-      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
-      { name: 'Кумин', amount: 1, unit: Unit.tsp },
-      { name: 'Чили порошок', amount: 1, unit: Unit.tsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Авокадо', amount: 2, unit: Unit.pcs},
+      {name: 'Лайм', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Кинза', amount: 1, unit: Unit.bunch},
+      {name: 'Сливки 20%', amount: 100, unit: Unit.ml},
+      {name: 'Масло оливковое', amount: 3, unit: Unit.tbsp},
+      {name: 'Кумин', amount: 1, unit: Unit.tsp},
+      {name: 'Чили порошок', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1745,25 +1745,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '60 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 310, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 15, unit: Unit.g },
+      calories: {value: 310, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 15, unit: Unit.g},
     },
     cuisine: 'Итальянская',
     servings: 4,
     // Общий вес блюда: 1250 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Томаты в собственном соку', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Базилик', amount: 1, unit: Unit.bunch },
-      { name: 'Орегано', amount: 1, unit: Unit.tsp },
-      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
-      { name: 'Сахар', amount: 1, unit: Unit.tsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Томаты в собственном соку', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Орегано', amount: 1, unit: Unit.tsp},
+      {name: 'Масло оливковое', amount: 3, unit: Unit.tbsp},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1842,25 +1842,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 20, unit: Unit.g },
-      carbs: { value: 10, unit: Unit.g },
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 10, unit: Unit.g},
     },
     cuisine: 'Французская',
     servings: 4,
     // Общий вес блюда: 1300 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Шпинат замороженный', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
-      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
-      { name: 'Мускатный орех', amount: 0.5, unit: Unit.tsp },
-      { name: 'Мука', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Шпинат замороженный', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Сливочное масло', amount: 50, unit: Unit.g},
+      {name: 'Мускатный орех', amount: 0.5, unit: Unit.tsp},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -1939,25 +1939,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '65 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 19, unit: Unit.g },
-      carbs: { value: 22, unit: Unit.g },
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 19, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g},
     },
     cuisine: 'Азиатская',
     servings: 4,
     // Общий вес блюда: 1400 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Тыква', amount: 500, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Карри', amount: 1, unit: Unit.tbsp },
-      { name: 'Кокосовое молоко', amount: 200, unit: Unit.ml },
-      { name: 'Масло растительное', amount: 3, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Тыква', amount: 500, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Карри', amount: 1, unit: Unit.tbsp},
+      {name: 'Кокосовое молоко', amount: 200, unit: Unit.ml},
+      {name: 'Масло растительное', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2036,26 +2036,26 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '70 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 350, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 18, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g },
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g},
     },
     cuisine: 'Венгерская',
     servings: 4,
     // Общий вес блюда: 1350 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Сливы', amount: 500, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Корица', amount: 1, unit: Unit.tsp },
-      { name: 'Гвоздика', amount: 3, unit: Unit.pcs },
-      { name: 'Мед', amount: 2, unit: Unit.tbsp },
-      { name: 'Бальзамический уксус', amount: 1, unit: Unit.tbsp },
-      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Сливы', amount: 500, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Корица', amount: 1, unit: Unit.tsp},
+      {name: 'Гвоздика', amount: 3, unit: Unit.pcs},
+      {name: 'Мед', amount: 2, unit: Unit.tbsp},
+      {name: 'Бальзамический уксус', amount: 1, unit: Unit.tbsp},
+      {name: 'Масло оливковое', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2134,26 +2134,26 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '60 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 20, unit: Unit.g },
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 20, unit: Unit.g},
     },
     cuisine: 'Французская',
     servings: 4,
     // Общий вес блюда: 1300 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Яблоки', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Тимьян', amount: 1, unit: Unit.tsp },
-      { name: 'Розмарин', amount: 1, unit: Unit.tsp },
-      { name: 'Белое вино', amount: 100, unit: Unit.ml },
-      { name: 'Сливки 20%', amount: 100, unit: Unit.ml },
-      { name: 'Масло сливочное', amount: 50, unit: Unit.g },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Яблоки', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.tsp},
+      {name: 'Розмарин', amount: 1, unit: Unit.tsp},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Сливки 20%', amount: 100, unit: Unit.ml},
+      {name: 'Масло сливочное', amount: 50, unit: Unit.g},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2232,26 +2232,26 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '75 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 21, unit: Unit.g },
-      carbs: { value: 12, unit: Unit.g },
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 21, unit: Unit.g},
+      carbs: {value: 12, unit: Unit.g},
     },
     cuisine: 'Русская',
     servings: 4,
     // Общий вес блюда: 1400 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Грибы лесные', amount: 500, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Тимьян', amount: 1, unit: Unit.tsp },
-      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
-      { name: 'Белое вино', amount: 100, unit: Unit.ml },
-      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
-      { name: 'Мука', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Грибы лесные', amount: 500, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.tsp},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Сливочное масло', amount: 50, unit: Unit.g},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2330,25 +2330,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '45 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 320, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 22, unit: Unit.g },
-      carbs: { value: 8, unit: Unit.g },
+      calories: {value: 320, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 8, unit: Unit.g},
     },
     cuisine: 'Французская',
     servings: 4,
     // Общий вес блюда: 1200 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Сливки 20%', amount: 300, unit: Unit.ml },
-      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
-      { name: 'Зелень петрушки', amount: 1, unit: Unit.bunch },
-      { name: 'Зелень укропа', amount: 1, unit: Unit.bunch },
-      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
-      { name: 'Мука', amount: 1, unit: Unit.tbsp },
-      { name: 'Белое вино', amount: 100, unit: Unit.ml },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Сливки 20%', amount: 300, unit: Unit.ml},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Зелень петрушки', amount: 1, unit: Unit.bunch},
+      {name: 'Зелень укропа', amount: 1, unit: Unit.bunch},
+      {name: 'Сливочное масло', amount: 50, unit: Unit.g},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2427,25 +2427,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 310, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 15, unit: Unit.g },
+      calories: {value: 310, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 15, unit: Unit.g},
     },
     cuisine: 'Итальянская',
     servings: 4,
     // Общий вес блюда: 1300 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Томаты в собственном соку', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Базилик', amount: 1, unit: Unit.bunch },
-      { name: 'Орегано', amount: 1, unit: Unit.tsp },
-      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Сахар', amount: 1, unit: Unit.tsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Томаты в собственном соку', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Орегано', amount: 1, unit: Unit.tsp},
+      {name: 'Оливковое масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2524,24 +2524,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 20, unit: Unit.g },
-      carbs: { value: 10, unit: Unit.g },
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 10, unit: Unit.g},
     },
     cuisine: 'Французская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Шпинат замороженный', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
-      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
-      { name: 'Мускатный орех', amount: 0.5, unit: Unit.tsp },
-      { name: 'Мука', amount: 1, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Шпинат замороженный', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Сливочное масло', amount: 50, unit: Unit.g},
+      {name: 'Мускатный орех', amount: 0.5, unit: Unit.tsp},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2620,24 +2620,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '65 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 19, unit: Unit.g },
-      carbs: { value: 22, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 19, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g}
     },
     cuisine: 'Азиатская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Тыква', amount: 500, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Карри', amount: 1, unit: Unit.tbsp },
-      { name: 'Кокосовое молоко', amount: 200, unit: Unit.ml },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Тыква', amount: 500, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Карри', amount: 1, unit: Unit.tbsp},
+      {name: 'Кокосовое молоко', amount: 200, unit: Unit.ml},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2716,25 +2716,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 350, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 18, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Тайская',
     servings: 4,
     // Общий вес блюда: 1200 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Манго', amount: 2, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Чили', amount: 1, unit: Unit.pcs },
-      { name: 'Кокосовое молоко', amount: 200, unit: Unit.ml },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Манго', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Чили', amount: 1, unit: Unit.pcs},
+      {name: 'Кокосовое молоко', amount: 200, unit: Unit.ml},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2813,25 +2813,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 28, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 28, unit: Unit.g}
     },
     cuisine: 'Китайская',
     servings: 4,
     // Общий вес блюда: 1300 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Ананас консервированный', amount: 400, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Имбирь', amount: 20, unit: Unit.g },
-      { name: 'Соевый соус', amount: 3, unit: Unit.tbsp },
-      { name: 'Мед', amount: 2, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Ананас консервированный', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Соевый соус', amount: 3, unit: Unit.tbsp},
+      {name: 'Мед', amount: 2, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -2910,24 +2910,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '60 минут',
     difficulty: '3/5',
     nutrition: {
-      calories: { value: 360, unit: Unit.g },
-      protein: { value: 29, unit: Unit.g },
-      fat: { value: 22, unit: Unit.g },
-      carbs: { value: 20, unit: Unit.g }
+      calories: {value: 360, unit: Unit.g},
+      protein: {value: 29, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 20, unit: Unit.g}
     },
     cuisine: 'Кавказская',
     servings: 4,
     // Общий вес блюда: 1250 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Гранат', amount: 2, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Грецкие орехи', amount: 100, unit: Unit.g },
-      { name: 'Кинза', amount: 1, unit: Unit.bunch },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Гранат', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Грецкие орехи', amount: 100, unit: Unit.g},
+      {name: 'Кинза', amount: 1, unit: Unit.bunch},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3006,25 +3006,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Европейская',
     servings: 4,
     // Общий вес блюда: 1200 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Клюква замороженная', amount: 200, unit: Unit.g },
-      { name: 'Апельсин', amount: 1, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
-      { name: 'Мед', amount: 2, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Клюква замороженная', amount: 200, unit: Unit.g},
+      {name: 'Апельсин', amount: 1, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Розмарин', amount: 1, unit: Unit.bunch},
+      {name: 'Мед', amount: 2, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3103,24 +3103,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 23, unit: Unit.g }
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 23, unit: Unit.g}
     },
     cuisine: 'Русская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Облепиха замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Облепиха замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3195,25 +3195,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Скандинавская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Брусника замороженная', amount: 200, unit: Unit.g },
-      { name: 'Яблоко', amount: 1, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Корица', amount: 0.5, unit: Unit.tsp },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Брусника замороженная', amount: 200, unit: Unit.g},
+      {name: 'Яблоко', amount: 1, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Корица', amount: 0.5, unit: Unit.tsp},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3288,24 +3288,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 26, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 26, unit: Unit.g}
     },
     cuisine: 'Итальянская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Черника замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Базилик', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Черника замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Оливковое масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3380,25 +3380,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '45 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 26, unit: Unit.g }
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 26, unit: Unit.g}
     },
     cuisine: 'Французская',
     servings: 4,
     // Общий вес блюда: 1200 г
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Малина замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Мята', amount: 1, unit: Unit.bunch },
-      { name: 'Лимон', amount: 1, unit: Unit.pcs },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Сливочное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Малина замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Мята', amount: 1, unit: Unit.bunch},
+      {name: 'Лимон', amount: 1, unit: Unit.pcs},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Сливочное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3473,24 +3473,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Средиземноморская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Смородина черная замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Смородина черная замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Розмарин', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Оливковое масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3565,24 +3565,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 24, unit: Unit.g }
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
     },
     cuisine: 'Европейская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Крыжовник замороженный', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Крыжовник замороженный', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3657,24 +3657,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Средиземноморская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Ежевика замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Ежевика замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Розмарин', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Оливковое масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3749,25 +3749,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 24, unit: Unit.g }
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
     },
     cuisine: 'Европейская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Голубика замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
-      { name: 'Лимон', amount: 0.5, unit: Unit.pcs },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Голубика замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.bunch},
+      {name: 'Лимон', amount: 0.5, unit: Unit.pcs},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3842,25 +3842,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Европейская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Клюква замороженная', amount: 200, unit: Unit.g },
-      { name: 'Апельсин', amount: 1, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Клюква замороженная', amount: 200, unit: Unit.g},
+      {name: 'Апельсин', amount: 1, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Розмарин', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -3935,25 +3935,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 24, unit: Unit.g }
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
     },
     cuisine: 'Скандинавская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Брусника замороженная', amount: 200, unit: Unit.g },
-      { name: 'Яблоко', amount: 1, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Корица', amount: 0.5, unit: Unit.tsp },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Брусника замороженная', amount: 200, unit: Unit.g},
+      {name: 'Яблоко', amount: 1, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Корица', amount: 0.5, unit: Unit.tsp},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -4028,24 +4028,24 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '50 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 330, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 16, unit: Unit.g },
-      carbs: { value: 23, unit: Unit.g }
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 23, unit: Unit.g}
     },
     cuisine: 'Русская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Облепиха замороженная', amount: 200, unit: Unit.g },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Облепиха замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -4120,25 +4120,25 @@ export const recipes: Record<number, Recipe> = {
     cookTime: '55 минут',
     difficulty: '2/5',
     nutrition: {
-      calories: { value: 340, unit: Unit.g },
-      protein: { value: 28, unit: Unit.g },
-      fat: { value: 17, unit: Unit.g },
-      carbs: { value: 25, unit: Unit.g }
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 17, unit: Unit.g},
+      carbs: {value: 25, unit: Unit.g}
     },
     cuisine: 'Скандинавская',
     servings: 4,
     ingredients: [
-      { name: 'Куриное филе', amount: 600, unit: Unit.g },
-      { name: 'Брусника замороженная', amount: 200, unit: Unit.g },
-      { name: 'Яблоко', amount: 1, unit: Unit.pcs },
-      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-      { name: 'Корица', amount: 0.5, unit: Unit.tsp },
-      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
-      { name: 'Мед', amount: 1, unit: Unit.tbsp },
-      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
-      { name: 'Соль', amount: 0, unit: Unit.to_taste },
-      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Брусника замороженная', amount: 200, unit: Unit.g},
+      {name: 'Яблоко', amount: 1, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Корица', amount: 0.5, unit: Unit.tsp},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
     ],
     steps: [
       {
@@ -4201,6 +4201,3376 @@ export const recipes: Record<number, Recipe> = {
       scandinavian: {
         id: 'scandinavian',
         title: 'Скандинавская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  52: {
+    id: 52,
+    name: 'kurica-v-souse-iz-cherniki',
+    title: 'Курица в соусе из черники',
+    description: 'Нежная курица в кисло-сладком соусе из черники с розмарином и медом. Современная интерпретация классического блюда.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 335, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Черника замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Розмарин', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Розмарин нарежь. Чернику разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и розмарин. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину черники, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление черники',
+        text: 'За 5 минут до готовности добавь оставшуюся чернику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из черники с отварным рисом или картофельным пюре. Укрась свежим розмарином и ягодами черники.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  53: {
+    id: 53,
+    name: 'kurica-v-souse-iz-maliny',
+    title: 'Курица в соусе из малины',
+    description: 'Нежная курица в кисло-сладком соусе из малины с базиликом и медом. Современная интерпретация классического блюда.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 330, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 23, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Малина замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Базилик нарежь. Малину разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и базилик. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину малины, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление малины',
+        text: 'За 5 минут до готовности добавь оставшуюся малину.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из малины с отварным рисом или картофельным пюре. Укрась свежим базиликом и ягодами малины.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  54: {
+    id: 54,
+    name: 'kurica-v-souse-iz-klyukvy',
+    title: 'Курица в соусе из клюквы',
+    description: 'Нежная курица в кисло-сладком соусе из клюквы с тимьяном и медом. Современная интерпретация классического блюда.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 325, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Клюква замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Тимьян нарежь. Клюкву разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину клюквы, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление клюквы',
+        text: 'За 5 минут до готовности добавь оставшуюся клюкву.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из клюквы с отварным рисом или картофельным пюре. Укрась свежим тимьяном и ягодами клюквы.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  55: {
+    id: 55,
+    name: 'kurica-v-souse-iz-smorodiny',
+    title: 'Курица в соусе из смородины',
+    description: 'Нежная курица в кисло-сладком соусе из смородины с шалфеем и медом. Современная интерпретация классического блюда.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 328, unit: Unit.g},
+      protein: {value: 28, unit: Unit.g},
+      fat: {value: 16, unit: Unit.g},
+      carbs: {value: 23, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Смородина замороженная', amount: 200, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Шалфей', amount: 1, unit: Unit.bunch},
+      {name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Шалфей нарежь. Смородину разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и шалфей. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину смородины, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление смородины',
+        text: 'За 5 минут до готовности добавь оставшуюся смородину.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из смородины с отварным рисом или картофельным пюре. Укрась свежим шалфеем и ягодами смородины.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  56: {
+    id: 56,
+    name: 'kurica-v-gribnom-souse',
+    title: 'Курица в грибном соусе',
+    description: 'Нежная курица в ароматном грибном соусе с тимьяном и сливками. Классическое блюдо русской кухни.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 12, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Шампиньоны', amount: 300, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Тимьян', amount: 1, unit: Unit.bunch},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Сливочное масло', amount: 30, unit: Unit.g},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка грибов и овощей',
+        text: 'Шампиньоны нарежь пластинами. Лук нарежь кубиками, чеснок измельчи. Тимьян нарежь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей растительное масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь сливочное масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка грибов',
+        text: 'Добавь шампиньоны и обжаривай 5-7 минут до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 6: Добавление специй',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Влей сливки, перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в грибном соусе с отварным рисом или картофельным пюре. Укрась свежим тимьяном.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 95,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  57: {
+    id: 57,
+    name: 'kurica-v-tomatnom-souse',
+    title: 'Курица в томатном соусе',
+    description: 'Нежная курица в ароматном томатном соусе с базиликом и чесноком. Итальянская классика.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 320, unit: Unit.g},
+      protein: {value: 30, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 15, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Итальянская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Томаты в собственном соку', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Орегано', amount: 1, unit: Unit.tsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Базилик нарежь. Томаты разомни вилкой.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей растительное масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и орегано. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь томаты, сахар, перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Добавление базилика',
+        text: 'За 5 минут до готовности добавь базилик.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в томатном соусе с пастой или рисом. Укрась свежим базиликом.'
+      }
+    ],
+    categories: ['курица', 'итальянская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      italian: {
+        id: 'italian',
+        title: 'Итальянская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  58: {
+    id: 58,
+    name: 'zapechennaya-kurica-s-limonom',
+    title: 'Запеченная курица с лимоном',
+    description: 'Сочная курица, запеченная с лимоном, чесноком и травами. Классическое блюдо средиземноморской кухни.',
+    cookTime: '1 час 30 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 35, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 5, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1500 г
+    cuisine: 'Средиземноморская',
+    servings: 4,
+    ingredients: [
+      {name: 'Курица целая', amount: 1200, unit: Unit.g},
+      {name: 'Лимон', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 8, unit: Unit.pcs},
+      {name: 'Розмарин', amount: 2, unit: Unit.bunch},
+      {name: 'Тимьян', amount: 2, unit: Unit.bunch},
+      {name: 'Оливковое масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Картофель', amount: 800, unit: Unit.g},
+      {name: 'Морковь', amount: 300, unit: Unit.g}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Курицу промой, обсуши. Натри солью и перцем внутри и снаружи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка начинки',
+        text: 'Один лимон нарежь дольками. Чеснок очисти и разрежь зубчики пополам. Розмарин и тимьян нарежь.'
+      },
+      {
+        title: 'Шаг 3: Начинка курицы',
+        text: 'Внутрь курицы положи половину лимона, чеснока и трав.'
+      },
+      {
+        title: 'Шаг 4: Подготовка овощей',
+        text: 'Картофель и морковь очисти, нарежь крупными кусками. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 5: Подготовка формы',
+        text: 'Форму для запекания смажь оливковым маслом. Выложи овощи.'
+      },
+      {
+        title: 'Шаг 6: Подготовка курицы к запеканию',
+        text: 'Курицу смажь оливковым маслом, положи на овощи. Вокруг разложи оставшиеся лимон, чеснок и травы.'
+      },
+      {
+        title: 'Шаг 7: Запекание',
+        text: 'Разогрей духовку до 200°C. Запекай курицу 1 час 15 минут, периодически поливая выделившимся соком.'
+      },
+      {
+        title: 'Шаг 8: Проверка готовности',
+        text: 'Проверь готовность курицы, проткнув ножом в самом толстом месте - должен вытекать прозрачный сок.'
+      },
+      {
+        title: 'Шаг 9: Отдых',
+        text: 'Достань курицу из духовки и дай отдохнуть 10-15 минут.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Раздели курицу на порции, подавай с запеченными овощами. Укрась свежим розмарином и ягодами черники.'
+      }
+    ],
+    categories: ['курица', 'средиземноморская кухня', 'запеченное', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 105,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      mediterranean: {
+        id: 'mediterranean',
+        title: 'Средиземноморская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  59: {
+    id: 59,
+    name: 'kurica-gril',
+    title: 'Курица-гриль',
+    description: 'Ароматная курица-гриль с пряными травами и чесноком. Идеальное блюдо для летнего пикника.',
+    cookTime: '1 час',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 340, unit: Unit.g},
+      protein: {value: 38, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 3, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1400 г
+    cuisine: 'Американская',
+    servings: 4,
+    ingredients: [
+      {name: 'Курица целая', amount: 1200, unit: Unit.g},
+      {name: 'Чеснок', amount: 8, unit: Unit.pcs},
+      {name: 'Орегано', amount: 2, unit: Unit.tbsp},
+      {name: 'Паприка', amount: 1, unit: Unit.tbsp},
+      {name: 'Оливковое масло', amount: 4, unit: Unit.tbsp},
+      {name: 'Лимонный сок', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp},
+      {name: 'Горчица', amount: 1, unit: Unit.tbsp}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка маринада',
+        text: 'В миске смешай оливковое масло, лимонный сок, измельченный чеснок, орегано, паприку, горчицу, сахар, соль и перец.'
+      },
+      {
+        title: 'Шаг 2: Подготовка курицы',
+        text: 'Курицу промой, обсуши. Сделай несколько надрезов на коже для лучшего проникновения маринада.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Натри курицу маринадом внутри и снаружи. Накрой пищевой пленкой и оставь в холодильнике на 4-6 часов.'
+      },
+      {
+        title: 'Шаг 4: Подготовка гриля',
+        text: 'Разожги гриль и дождись, пока угли покроются белым пеплом.'
+      },
+      {
+        title: 'Шаг 5: Подготовка к жарке',
+        text: 'Достань курицу из маринада, дай стечь лишнему маринаду.'
+      },
+      {
+        title: 'Шаг 6: Жарка на гриле',
+        text: 'Положи курицу на решетку гриля и жарь 45-50 минут, периодически переворачивая и смазывая оставшимся маринадом.'
+      },
+      {
+        title: 'Шаг 7: Проверка готовности',
+        text: 'Проверь готовность курицы, проткнув ножом в самом толстом месте - должен вытекать прозрачный сок.'
+      },
+      {
+        title: 'Шаг 8: Отдых',
+        text: 'Сними курицу с гриля и дай отдохнуть 10-15 минут.'
+      },
+      {
+        title: 'Шаг 9: Нарезка',
+        text: 'Раздели курицу на порции.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу-гриль с овощным салатом и соусом барбекю. Укрась свежими травами.'
+      }
+    ],
+    categories: ['курица', 'американская кухня', 'гриль', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 98,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      american: {
+        id: 'american',
+        title: 'Американская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  60: {
+    id: 60,
+    name: 'kurica-v-klyare',
+    title: 'Курица в кляре',
+    description: 'Хрустящая курица в пивном кляре с пряными травами. Классическое блюдо пабной кухни.',
+    cookTime: '30 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 30, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1000 г
+    cuisine: 'Британская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Пиво светлое', amount: 200, unit: Unit.ml},
+      {name: 'Мука пшеничная', amount: 150, unit: Unit.g},
+      {name: 'Яйцо', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Паприка', amount: 1, unit: Unit.tsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste},
+      {name: 'Растительное масло', amount: 200, unit: Unit.ml},
+      {name: 'Лимон', amount: 1, unit: Unit.pcs}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Приготовление кляра',
+        text: 'В миске смешай муку, яйцо, измельченный чеснок, паприку, соль и перец. Постепенно влей пиво, помешивая до получения однородной массы.'
+      },
+      {
+        title: 'Шаг 3: Подготовка к жарке',
+        text: 'В глубокой сковороде или фритюрнице разогрей растительное масло до 180°C.'
+      },
+      {
+        title: 'Шаг 4: Обмакивание в кляр',
+        text: 'Каждый кусок курицы обмакни в кляр, дай стечь лишнему кляру.'
+      },
+      {
+        title: 'Шаг 5: Жарка',
+        text: 'Обжарь курицу в горячем масле до золотистой корочки (3-4 минуты с каждой стороны).'
+      },
+      {
+        title: 'Шаг 6: Удаление лишнего масла',
+        text: 'Выложи готовую курицу на бумажные полотенца, чтобы удалить лишнее масло.'
+      },
+      {
+        title: 'Шаг 7: Подготовка соуса',
+        text: 'Приготовь соус по вкусу (например, чесночный или горчичный).'
+      },
+      {
+        title: 'Шаг 8: Нарезка лимона',
+        text: 'Лимон нарежь дольками.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в кляре с соусом и дольками лимона. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'британская кухня', 'жареное', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      british: {
+        id: 'british',
+        title: 'Британская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  61: {
+    id: 61,
+    name: 'kurica-po-kitayski',
+    title: 'Курица по-китайски',
+    description: 'Острая курица в кисло-сладком соусе с имбирем и кунжутом. Классическое блюдо китайской кухни.',
+    cookTime: '40 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Китайская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Соевый соус', amount: 4, unit: Unit.tbsp},
+      {name: 'Мед', amount: 2, unit: Unit.tbsp},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Кунжут', amount: 2, unit: Unit.tbsp},
+      {name: 'Крахмал кукурузный', amount: 2, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Перец чили', amount: 1, unit: Unit.pcs},
+      {name: 'Зеленый лук', amount: 2, unit: Unit.bunch}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на небольшие кусочки.'
+      },
+      {
+        title: 'Шаг 2: Приготовление маринада',
+        text: 'В миске смешай 2 ст.л. соевого соуса, мед, измельченный имбирь и чеснок.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Замаринуй курицу в приготовленной смеси на 20-30 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка соуса',
+        text: 'В отдельной миске смешай оставшийся соевый соус, крахмал и 100 мл воды.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'В воке или глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки (5-7 минут).'
+      },
+      {
+        title: 'Шаг 6: Добавление специй',
+        text: 'Добавь нарезанный перец чили и обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Влей приготовленный соус, перемешай и туши 2-3 минуты до загустения.'
+      },
+      {
+        title: 'Шаг 8: Добавление кунжута',
+        text: 'Добавь кунжут и перемешай.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и остроту, при необходимости добавь соевый соус или перец.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу по-китайски с рисом. Укрась нарезанным зеленым луком и кунжутом.'
+      }
+    ],
+    categories: ['курица', 'китайская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 95,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      chinese: {
+        id: 'chinese',
+        title: 'Китайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  62: {
+    id: 62,
+    name: 'kurica-karri',
+    title: 'Курица карри',
+    description: 'Ароматная курица в пряном соусе карри с кокосовым молоком. Классическое блюдо индийской кухни.',
+    cookTime: '45 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 390, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 26, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Индийская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 400, unit: Unit.ml},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Порошок карри', amount: 2, unit: Unit.tbsp},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на небольшие кусочки.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка лука',
+        text: 'В глубокой сковороде разогрей масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 4: Добавление специй',
+        text: 'Добавь чеснок, имбирь, порошок карри и куркуму. Обжаривай 1-2 минуты до аромата.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'Добавь курицу и обжаривай 5-7 минут до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Влей кокосовое молоко, перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Уменьши огонь и туши 20-25 минут под крышкой, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 8: Проверка готовности',
+        text: 'Проверь готовность курицы - она должна быть мягкой и сочной.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу карри с рисом басмати и лепешками наан. Укрась свежей кинзой.'
+      }
+    ],
+    categories: ['курица', 'индийская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      indian: {
+        id: 'indian',
+        title: 'Индийская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  63: {
+    id: 63,
+    name: 'kurica-po-tayski',
+    title: 'Курица по-тайски',
+    description: 'Острая курица с арахисом и базиликом в сладком соусе. Классическое блюдо тайской кухни.',
+    cookTime: '35 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 360, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 16, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1000 г
+    cuisine: 'Тайская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Арахис', amount: 100, unit: Unit.g},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Перец чили', amount: 2, unit: Unit.pcs},
+      {name: 'Соевый соус', amount: 3, unit: Unit.tbsp},
+      {name: 'Устричный соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Лимонный сок', amount: 1, unit: Unit.tbsp}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на небольшие кусочки.'
+      },
+      {
+        title: 'Шаг 2: Подготовка ингредиентов',
+        text: 'Чеснок и перец чили измельчи. Базилик нарежь. Арахис обжарь на сухой сковороде до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 3: Приготовление соуса',
+        text: 'В миске смешай соевый соус, устричный соус, сахар и лимонный сок.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В воке или глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки (5-7 минут).'
+      },
+      {
+        title: 'Шаг 5: Добавление специй',
+        text: 'Добавь чеснок и перец чили. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Влей приготовленный соус, перемешай и туши 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 7: Добавление арахиса',
+        text: 'Добавь обжаренный арахис и перемешай.'
+      },
+      {
+        title: 'Шаг 8: Добавление базилика',
+        text: 'Добавь базилик и быстро перемешай.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и остроту, при необходимости добавь соевый соус или перец.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу по-тайски с рисом. Укрась свежим базиликом и арахисом.'
+      }
+    ],
+    categories: ['курица', 'тайская кухня', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      thai: {
+        id: 'thai',
+        title: 'Тайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  64: {
+    id: 64,
+    name: 'kurica-v-panirovke',
+    title: 'Курица в панировке',
+    description: 'Хрустящая курица в панировке из сухарей с травами. Классическое блюдо европейской кухни.',
+    cookTime: '30 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 16, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~900 г
+    cuisine: 'Европейская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Панировочные сухари', amount: 150, unit: Unit.g},
+      {name: 'Яйцо', amount: 2, unit: Unit.pcs},
+      {name: 'Молоко', amount: 100, unit: Unit.ml},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Сушеные травы', amount: 2, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 200, unit: Unit.ml},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на небольшие кусочки.'
+      },
+      {
+        title: 'Шаг 2: Приготовление панировки',
+        text: 'В миске смешай панировочные сухари, измельченный чеснок и сушеные травы.'
+      },
+      {
+        title: 'Шаг 3: Приготовление кляра',
+        text: 'В другой миске взбей яйца с молоком, солью и перцем.'
+      },
+      {
+        title: 'Шаг 4: Панировка курицы',
+        text: 'Обмакни каждый кусочек курицы сначала в кляр, затем в панировку.'
+      },
+      {
+        title: 'Шаг 5: Обжарка',
+        text: 'В глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки (5-7 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 6: Проверка готовности',
+        text: 'Проверь готовность курицы - она должна быть мягкой внутри и хрустящей снаружи.'
+      },
+      {
+        title: 'Шаг 7: Удаление лишнего масла',
+        text: 'Выложи готовую курицу на бумажные полотенца, чтобы удалить лишнее масло.'
+      },
+      {
+        title: 'Шаг 8: Финальный штрих',
+        text: 'Посоли и поперчи по вкусу.'
+      },
+      {
+        title: 'Шаг 9: Подача',
+        text: 'Подавай курицу в панировке с картофельным пюре и свежими овощами.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'жареное', 'основное блюдо'],
+    rating: 4.6,
+    reviews: 85,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  65: {
+    id: 65,
+    name: 'kurica-po-koreyski',
+    title: 'Курица по-корейски',
+    description: 'Острая курица в корейском стиле с кунжутом и зеленым луком. Классическое блюдо корейской кухни.',
+    cookTime: '40 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 14, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1000 г
+    cuisine: 'Корейская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Соевый соус', amount: 4, unit: Unit.tbsp},
+      {name: 'Кунжутное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Кунжут', amount: 2, unit: Unit.tbsp},
+      {name: 'Зеленый лук', amount: 1, unit: Unit.bunch},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Перец чили', amount: 2, unit: Unit.pcs},
+      {name: 'Мед', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на небольшие кусочки.'
+      },
+      {
+        title: 'Шаг 2: Приготовление маринада',
+        text: 'В миске смешай соевый соус, кунжутное масло, мед, измельченный чеснок, имбирь и перец чили.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Замаринуй курицу в приготовленном соусе на 20-30 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка зелени',
+        text: 'Зеленый лук нарежь тонкими кольцами.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'В воке или глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки (5-7 минут).'
+      },
+      {
+        title: 'Шаг 6: Добавление маринада',
+        text: 'Влей оставшийся маринад и туши 5-7 минут, пока соус не загустеет.'
+      },
+      {
+        title: 'Шаг 7: Добавление кунжута',
+        text: 'Добавь кунжут и перемешай.'
+      },
+      {
+        title: 'Шаг 8: Добавление зелени',
+        text: 'Добавь зеленый лук и быстро перемешай.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и остроту, при необходимости добавь соевый соус или перец.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу по-корейски с рисом. Укрась кунжутом и зеленым луком.'
+      }
+    ],
+    categories: ['курица', 'корейская кухня', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 90,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      korean: {
+        id: 'korean',
+        title: 'Корейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  66: {
+    id: 66,
+    name: 'kurica-v-duhovke',
+    title: 'Курица в духовке',
+    description: 'Сочная курица, запеченная в духовке с картофелем и овощами. Классическое блюдо европейской кухни.',
+    cookTime: '1 час 30 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 35, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1500 г
+    cuisine: 'Европейская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Картофель', amount: 600, unit: Unit.g},
+      {name: 'Морковь', amount: 300, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Растительное масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Сушеные травы', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Картофель и морковь очисти и нарежь крупными кусками. Лук нарежь кольцами.'
+      },
+      {
+        title: 'Шаг 3: Приготовление маринада',
+        text: 'В миске смешай растительное масло, измельченный чеснок, сушеные травы, соль и перец.'
+      },
+      {
+        title: 'Шаг 4: Маринование',
+        text: 'Замаринуй курицу в приготовленном соусе на 20-30 минут.'
+      },
+      {
+        title: 'Шаг 5: Подготовка формы',
+        text: 'В форму для запекания выложи овощи, посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 6: Выкладка курицы',
+        text: 'Сверху выложи замаринованную курицу.'
+      },
+      {
+        title: 'Шаг 7: Запекание',
+        text: 'Разогрей духовку до 180°C. Запекай 1 час, периодически поливая выделившимся соком.'
+      },
+      {
+        title: 'Шаг 8: Проверка готовности',
+        text: 'Проверь готовность курицы и овощей - они должны быть мягкими и сочными.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Дай блюду постоять 10 минут перед подачей.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу с запеченными овощами. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'запеченное', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 95,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  67: {
+    id: 67,
+    name: 'kurica-na-grile',
+    title: 'Курица на гриле',
+    description: 'Ароматная курица на гриле с травами и лимоном. Идеальное блюдо для летнего пикника.',
+    cookTime: '1 час',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 38, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 4, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Европейская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Лимон', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Оливковое масло', amount: 4, unit: Unit.tbsp},
+      {name: 'Сушеные травы', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Приготовление маринада',
+        text: 'В миске смешай оливковое масло, сок лимона, измельченный чеснок, сушеные травы, соль и перец.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Замаринуй курицу в приготовленном соусе на 30-40 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка гриля',
+        text: 'Разогрей гриль до средней температуры.'
+      },
+      {
+        title: 'Шаг 5: Обжарка',
+        text: 'Выложи курицу на решетку гриля и жарь 6-8 минут с каждой стороны.'
+      },
+      {
+        title: 'Шаг 6: Проверка готовности',
+        text: 'Проверь готовность курицы - она должна быть мягкой внутри и иметь аппетитную корочку снаружи.'
+      },
+      {
+        title: 'Шаг 7: Отдых',
+        text: 'Сними курицу с гриля и дай ей отдохнуть 5-10 минут.'
+      },
+      {
+        title: 'Шаг 8: Финальный штрих',
+        text: 'Посоли и поперчи по вкусу.'
+      },
+      {
+        title: 'Шаг 9: Подача',
+        text: 'Подавай курицу с запеченными овощами и свежим салатом.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'гриль', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  68: {
+    id: 68,
+    name: 'kurica-po-marokkanski',
+    title: 'Курица по-мароккански',
+    description: 'Ароматная курица в пряном марокканском соусе с кускусом и сухофруктами. Классическое блюдо марокканской кухни.',
+    cookTime: '1 час 20 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 35, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 28, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1500 г
+    cuisine: 'Марокканская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Кускус', amount: 200, unit: Unit.g},
+      {name: 'Изюм', amount: 50, unit: Unit.g},
+      {name: 'Курага', amount: 50, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Корица', amount: 1, unit: Unit.tsp},
+      {name: 'Кумин', amount: 1, unit: Unit.tsp},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Оливковое масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка специй',
+        text: 'В ступке измельчи чеснок, имбирь и специи до пастообразного состояния.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Смешай специи с оливковым маслом и натри курицу. Оставь мариноваться на 30 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка сухофруктов',
+        text: 'Изюм и курагу замочи в теплой воде на 15 минут.'
+      },
+      {
+        title: 'Шаг 5: Обжарка лука',
+        text: 'Лук нарежь полукольцами и обжарь до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 6: Обжарка курицы',
+        text: 'Добавь курицу к луку и обжарь до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Добавь специи, сухофрукты и немного воды. Доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Уменьши огонь и туши под крышкой 30-40 минут.'
+      },
+      {
+        title: 'Шаг 9: Приготовление кускуса',
+        text: 'Залей кускус кипятком, добавь соль и оставь на 5 минут.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу с кускусом, укрась свежей зеленью и орехами.'
+      }
+    ],
+    categories: ['курица', 'марокканская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 95,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      moroccan: {
+        id: 'moroccan',
+        title: 'Марокканская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  69: {
+    id: 69,
+    name: 'kurica-po-vetnamski',
+    title: 'Курица по-вьетнамски',
+    description: 'Острая курица с рисовой лапшой и овощами в кисло-сладком соусе. Классическое блюдо вьетнамской кухни.',
+    cookTime: '45 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 30, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Вьетнамская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Рисовая лапша', amount: 200, unit: Unit.g},
+      {name: 'Морковь', amount: 2, unit: Unit.pcs},
+      {name: 'Стручковая фасоль', amount: 200, unit: Unit.g},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Перец чили', amount: 2, unit: Unit.pcs},
+      {name: 'Соевый соус', amount: 3, unit: Unit.tbsp},
+      {name: 'Устричный соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Лимонный сок', amount: 2, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Коричневый сахар', amount: 1, unit: Unit.tbsp}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь тонкими полосками.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Морковь нарежь соломкой, фасоль нарежь на кусочки по 3-4 см.'
+      },
+      {
+        title: 'Шаг 3: Приготовление соуса',
+        text: 'Смешай соевый соус, устричный соус, лимонный сок и сахар.'
+      },
+      {
+        title: 'Шаг 4: Подготовка лапши',
+        text: 'Залей лапшу кипятком и оставь на 5 минут, затем промой холодной водой.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'В воке разогрей масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Добавление специй',
+        text: 'Добавь измельченный чеснок, имбирь и перец чили. Обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 7: Обжарка овощей',
+        text: 'Добавь морковь и фасоль, обжаривай 3-4 минуты.'
+      },
+      {
+        title: 'Шаг 8: Добавление соуса',
+        text: 'Влей приготовленный соус и перемешай.'
+      },
+      {
+        title: 'Шаг 9: Добавление лапши',
+        text: 'Добавь лапшу и прогрей все вместе 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим, укрась свежей зеленью и кунжутом.'
+      }
+    ],
+    categories: ['курица', 'вьетнамская кухня', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      vietnamese: {
+        id: 'vietnamese',
+        title: 'Вьетнамская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  70: {
+    id: 70,
+    name: 'kurica-po-grecheski',
+    title: 'Курица по-гречески',
+    description: 'Ароматная курица с лимоном, орегано и оливками, запеченная с овощами. Классическое блюдо греческой кухни.',
+    cookTime: '1 час 15 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 350, unit: Unit.g},
+      protein: {value: 38, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 12, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1400 г
+    cuisine: 'Греческая',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Картофель', amount: 600, unit: Unit.g},
+      {name: 'Помидоры', amount: 4, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Лимон', amount: 1, unit: Unit.pcs},
+      {name: 'Оливки', amount: 100, unit: Unit.g},
+      {name: 'Орегано', amount: 2, unit: Unit.tbsp},
+      {name: 'Оливковое масло', amount: 4, unit: Unit.tbsp},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Маринад',
+        text: 'Смешай оливковое масло, сок лимона, измельченный чеснок, орегано, соль и перец.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Натри курицу маринадом и оставь на 30 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка овощей',
+        text: 'Картофель нарежь крупными дольками, помидоры и лук - крупными кусками.'
+      },
+      {
+        title: 'Шаг 5: Формирование блюда',
+        text: 'В форму для запекания выложи овощи, сверху - курицу, добавь оливки.'
+      },
+      {
+        title: 'Шаг 6: Добавление жидкости',
+        text: 'Влей белое вино и оставшийся маринад.'
+      },
+      {
+        title: 'Шаг 7: Запекание',
+        text: 'Накрой фольгой и запекай при 180°C 40 минут.'
+      },
+      {
+        title: 'Шаг 8: Финальное запекание',
+        text: 'Сними фольгу и запекай еще 15-20 минут до румяной корочки.'
+      },
+      {
+        title: 'Шаг 9: Проверка готовности',
+        text: 'Проверь готовность курицы и картофеля.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим, укрась свежей зеленью и дольками лимона.'
+      }
+    ],
+    categories: ['курица', 'греческая кухня', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 102,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      greek: {
+        id: 'greek',
+        title: 'Греческая кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  71: {
+    id: 71,
+    name: 'kurica-po-meksikanski',
+    title: 'Курица по-мексикански',
+    description: 'Острая курица в томатном соусе с перцем чили и специями, подается с рисом и лепешками. Классическое блюдо мексиканской кухни.',
+    cookTime: '50 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 36, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1300 г
+    cuisine: 'Мексиканская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 700, unit: Unit.g},
+      {name: 'Рис', amount: 200, unit: Unit.g},
+      {name: 'Томаты в собственном соку', amount: 400, unit: Unit.g},
+      {name: 'Перец чили', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Кукурузная мука', amount: 2, unit: Unit.tbsp},
+      {name: 'Кумин', amount: 1, unit: Unit.tsp},
+      {name: 'Паприка', amount: 1, unit: Unit.tsp},
+      {name: 'Растительное масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь полукольцами, чеснок измельчи, перец чили нарежь тонкими кольцами.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 4: Обжарка овощей',
+        text: 'Добавь лук, чеснок и перец чили. Обжаривай 3-4 минуты.'
+      },
+      {
+        title: 'Шаг 5: Добавление специй',
+        text: 'Добавь кумин и паприку, перемешай.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь томаты, разомни их вилкой и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 7: Загущение соуса',
+        text: 'Разведи кукурузную муку в небольшом количестве воды и влей в соус.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Уменьши огонь и туши под крышкой 20-25 минут.'
+      },
+      {
+        title: 'Шаг 9: Приготовление риса',
+        text: 'Отвари рис до готовности.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу с рисом и лепешками, укрась свежей зеленью и ломтиками лайма.'
+      }
+    ],
+    categories: ['курица', 'мексиканская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 94,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      mexican: {
+        id: 'mexican',
+        title: 'Мексиканская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  72: {
+    id: 72,
+    name: 'kurica-po-yaponski',
+    title: 'Курица по-японски',
+    description: 'Нежная курица в соусе терияки с кунжутом и зеленым луком. Классическое блюдо японской кухни.',
+    cookTime: '40 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 360, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1100 г
+    cuisine: 'Японская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 600, unit: Unit.g},
+      {name: 'Рис', amount: 200, unit: Unit.g},
+      {name: 'Соевый соус', amount: 4, unit: Unit.tbsp},
+      {name: 'Мед', amount: 2, unit: Unit.tbsp},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Чеснок', amount: 2, unit: Unit.pcs},
+      {name: 'Кунжут', amount: 2, unit: Unit.tbsp},
+      {name: 'Зеленый лук', amount: 4, unit: Unit.pcs},
+      {name: 'Кукурузный крахмал', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь тонкими полосками.'
+      },
+      {
+        title: 'Шаг 2: Приготовление соуса',
+        text: 'Смешай соевый соус, мед, измельченный имбирь и чеснок.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Замаринуй курицу в половине соуса на 15 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка риса',
+        text: 'Отвари рис до готовности.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'В воке разогрей масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Добавление соуса',
+        text: 'Влей оставшийся соус и туши 5-7 минут.'
+      },
+      {
+        title: 'Шаг 7: Загущение соуса',
+        text: 'Разведи крахмал в воде и влей в соус, помешивая.'
+      },
+      {
+        title: 'Шаг 8: Добавление кунжута',
+        text: 'Добавь кунжут и перемешай.'
+      },
+      {
+        title: 'Шаг 9: Подготовка зеленого лука',
+        text: 'Зеленый лук нарежь тонкими кольцами.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу с рисом, укрась зеленым луком и дополнительным кунжутом.'
+      }
+    ],
+    categories: ['курица', 'японская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 96,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      japanese: {
+        id: 'japanese',
+        title: 'Японская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  73: {
+    id: 73,
+    name: 'kurica-po-indijski',
+    title: 'Курица по-индийски',
+    description: 'Ароматная курица в сливочном соусе с карри и специями. Классическое блюдо индийской кухни.',
+    cookTime: '55 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 450, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 26, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1400 г
+    cuisine: 'Индийская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 700, unit: Unit.g},
+      {name: 'Рис басмати', amount: 200, unit: Unit.g},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Томатная паста', amount: 2, unit: Unit.tbsp},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Порошок карри', amount: 2, unit: Unit.tbsp},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Гарам масала', amount: 1, unit: Unit.tsp},
+      {name: 'Растительное масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка специй',
+        text: 'Измельчи чеснок и имбирь до пастообразного состояния.'
+      },
+      {
+        title: 'Шаг 3: Обжарка лука',
+        text: 'Лук нарежь полукольцами и обжарь до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 4: Добавление специй',
+        text: 'Добавь чесночно-имбирную пасту, карри, куркуму и гарам масала. Обжаривай 1-2 минуты.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'Добавь курицу и обжаривай до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь томатную пасту и сливки, перемешай.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Доведи до кипения, уменьши огонь и туши под крышкой 20-25 минут.'
+      },
+      {
+        title: 'Шаг 8: Приготовление риса',
+        text: 'Отвари рис басмати до готовности.'
+      },
+      {
+        title: 'Шаг 9: Проверка готовности',
+        text: 'Проверь готовность курицы и консистенцию соуса.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу с рисом, укрась свежей зеленью и лепешками наан.'
+      }
+    ],
+    categories: ['курица', 'индийская кухня', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 108,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      indian: {
+        id: 'indian',
+        title: 'Индийская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  74: {
+    id: 74,
+    name: 'kurica-po-francuzski',
+    title: 'Курица по-французски',
+    description: 'Нежная курица в сливочном соусе с грибами и белым вином. Классическое блюдо французской кухни.',
+    cookTime: '1 час 10 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 36, unit: Unit.g},
+      fat: {value: 26, unit: Unit.g},
+      carbs: {value: 14, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1300 г
+    cuisine: 'Французская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Шампиньоны', amount: 300, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Сливки 20%', amount: 200, unit: Unit.ml},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Тимьян', amount: 2, unit: Unit.tbsp},
+      {name: 'Масло сливочное', amount: 50, unit: Unit.g},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка грибов',
+        text: 'Шампиньоны промой, обсуши и нарежь пластинками.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей смесь сливочного и растительного масла. Обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 4: Обжарка овощей',
+        text: 'Добавь нарезанный лук и чеснок. Обжаривай 3-4 минуты.'
+      },
+      {
+        title: 'Шаг 5: Добавление грибов',
+        text: 'Добавь шампиньоны и обжаривай 5-7 минут.'
+      },
+      {
+        title: 'Шаг 6: Добавление вина',
+        text: 'Влей белое вино и туши 5 минут.'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Добавь сливки, тимьян, соль и перец. Доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Загущение соуса',
+        text: 'Добавь муку, перемешанную с небольшим количеством воды. Вари 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 9: Тушение',
+        text: 'Уменьши огонь и туши под крышкой 20-25 минут.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с отварным рисом или картофельным пюре, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 112,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  75: {
+    id: 75,
+    name: 'kurica-po-italyanski',
+    title: 'Курица по-итальянски',
+    description: 'Ароматная курица с томатами, базиликом и моцареллой. Классическое блюдо итальянской кухни.',
+    cookTime: '1 час',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Итальянская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 700, unit: Unit.g},
+      {name: 'Томаты', amount: 4, unit: Unit.pcs},
+      {name: 'Моцарелла', amount: 200, unit: Unit.g},
+      {name: 'Базилик', amount: 1, unit: Unit.bunch},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Орегано', amount: 1, unit: Unit.tbsp},
+      {name: 'Оливковое масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Бальзамический уксус', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Маринад',
+        text: 'Смешай оливковое масло, измельченный чеснок, орегано, соль и перец.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Натри курицу маринадом и оставь на 20 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка томатов',
+        text: 'Томаты нарежь крупными дольками.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'В сковороде разогрей оливковое масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Добавление томатов',
+        text: 'Добавь томаты и обжаривай 3-4 минуты.'
+      },
+      {
+        title: 'Шаг 7: Добавление моцареллы',
+        text: 'Нарежь моцареллу ломтиками и выложи поверх курицы.'
+      },
+      {
+        title: 'Шаг 8: Запекание',
+        text: 'Накрой крышкой и запекай в духовке при 180°C 15-20 минут.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Добавь бальзамический уксус и нарезанный базилик.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с пастой или отварным рисом, укрась свежим базиликом.'
+      }
+    ],
+    categories: ['курица', 'итальянская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 98,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      italian: {
+        id: 'italian',
+        title: 'Итальянская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  76: {
+    id: 76,
+    name: 'kurica-po-ispanski',
+    title: 'Курица по-испански',
+    description: 'Ароматная курица с паприкой, оливками и томатами. Классическое блюдо испанской кухни.',
+    cookTime: '1 час 15 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 390, unit: Unit.g},
+      protein: {value: 35, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 16, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1300 г
+    cuisine: 'Испанская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Томаты', amount: 4, unit: Unit.pcs},
+      {name: 'Перец болгарский', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Оливки', amount: 100, unit: Unit.g},
+      {name: 'Паприка', amount: 2, unit: Unit.tbsp},
+      {name: 'Шафран', amount: 0.25, unit: Unit.tsp},
+      {name: 'Оливковое масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Белое вино', amount: 100, unit: Unit.ml},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Маринад',
+        text: 'Смешай оливковое масло, паприку, измельченный чеснок, соль и перец.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Натри курицу маринадом и оставь на 20 минут.'
+      },
+      {
+        title: 'Шаг 4: Подготовка овощей',
+        text: 'Томаты и перец нарежь крупными кусками, лук - полукольцами.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей оливковое масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Обжарка овощей',
+        text: 'Добавь лук и перец, обжаривай 5 минут.'
+      },
+      {
+        title: 'Шаг 7: Добавление томатов',
+        text: 'Добавь томаты и обжаривай 3-4 минуты.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Влей вино, добавь шафран и оливки. Туши под крышкой 20-25 минут.'
+      },
+      {
+        title: 'Шаг 9: Проверка готовности',
+        text: 'Проверь готовность курицы и консистенцию соуса.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с отварным рисом или картофелем, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'испанская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 95,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      spanish: {
+        id: 'spanish',
+        title: 'Испанская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  77: {
+    id: 77,
+    name: 'kurica-po-nemetski',
+    title: 'Курица по-немецки',
+    description: 'Сытная курица с картофелем и капустой в пивном соусе. Классическое блюдо немецкой кухни.',
+    cookTime: '1 час 30 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 450, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1600 г
+    cuisine: 'Немецкая',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Картофель', amount: 600, unit: Unit.g},
+      {name: 'Капуста белокочанная', amount: 400, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Тмин', amount: 1, unit: Unit.tsp},
+      {name: 'Лавровый лист', amount: 2, unit: Unit.pcs},
+      {name: 'Светлое пиво', amount: 200, unit: Unit.ml},
+      {name: 'Растительное масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Мука', amount: 1, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Картофель нарежь крупными дольками, капусту - крупными кусками, лук - полукольцами.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'Добавь лук и обжаривай до прозрачности.'
+      },
+      {
+        title: 'Шаг 5: Добавление специй',
+        text: 'Добавь измельченный чеснок, тмин и лавровый лист.'
+      },
+      {
+        title: 'Шаг 6: Добавление овощей',
+        text: 'Добавь картофель и капусту, перемешай.'
+      },
+      {
+        title: 'Шаг 7: Добавление пива',
+        text: 'Влей пиво и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Уменьши огонь и туши под крышкой 40-45 минут.'
+      },
+      {
+        title: 'Шаг 9: Загущение соуса',
+        text: 'Добавь муку, перемешанную с небольшим количеством воды. Вари 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'немецкая кухня', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      german: {
+        id: 'german',
+        title: 'Немецкая кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  78: {
+    id: 78,
+    name: 'kurica-po-turetski',
+    title: 'Курица по-турецки',
+    description: 'Ароматная курица с нутом и овощами в томатном соусе. Классическое блюдо турецкой кухни.',
+    cookTime: '1 час 20 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 22, unit: Unit.g},
+      carbs: {value: 28, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1500 г
+    cuisine: 'Турецкая',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Нут', amount: 200, unit: Unit.g},
+      {name: 'Томаты', amount: 4, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Перец чили', amount: 1, unit: Unit.pcs},
+      {name: 'Кумин', amount: 1, unit: Unit.tsp},
+      {name: 'Кориандр', amount: 1, unit: Unit.tsp},
+      {name: 'Оливковое масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Томатная паста', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste},
+      {name: 'Перец черный', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка нута',
+        text: 'Нут замочи на ночь, затем отвари до полуготовности.'
+      },
+      {
+        title: 'Шаг 2: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 3: Подготовка овощей',
+        text: 'Томаты нарежь кубиками, лук - полукольцами, чеснок и перец чили измельчи.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей оливковое масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 5: Обжарка овощей',
+        text: 'Добавь лук и обжаривай до прозрачности.'
+      },
+      {
+        title: 'Шаг 6: Добавление специй',
+        text: 'Добавь чеснок, перец чили, кумин и кориандр. Обжаривай 1-2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Добавление томатов',
+        text: 'Добавь томаты и томатную пасту, перемешай.'
+      },
+      {
+        title: 'Шаг 8: Добавление нута',
+        text: 'Добавь отваренный нут и немного воды. Доведи до кипения.'
+      },
+      {
+        title: 'Шаг 9: Тушение',
+        text: 'Уменьши огонь и туши под крышкой 30-35 минут.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом или лепешками, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'турецкая кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 94,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      turkish: {
+        id: 'turkish',
+        title: 'Турецкая кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  79: {
+    id: 79,
+    name: 'kurica-po-arabski',
+    title: 'Курица по-арабски',
+    description: 'Ароматная курица с рисом, орехами и сухофруктами. Классическое блюдо арабской кухни.',
+    cookTime: '1 час 30 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 480, unit: Unit.g},
+      protein: {value: 36, unit: Unit.g},
+      fat: {value: 26, unit: Unit.g},
+      carbs: {value: 32, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1600 г
+    cuisine: 'Арабская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Рис басмати', amount: 300, unit: Unit.g},
+      {name: 'Изюм', amount: 50, unit: Unit.g},
+      {name: 'Финики', amount: 50, unit: Unit.g},
+      {name: 'Миндаль', amount: 50, unit: Unit.g},
+      {name: 'Фисташки', amount: 50, unit: Unit.g},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Корица', amount: 1, unit: Unit.tsp},
+      {name: 'Кардамон', amount: 0.5, unit: Unit.tsp},
+      {name: 'Оливковое масло', amount: 3, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка сухофруктов',
+        text: 'Изюм и финики замочи в теплой воде на 15 минут.'
+      },
+      {
+        title: 'Шаг 3: Подготовка орехов',
+        text: 'Миндаль и фисташки обжарь на сухой сковороде до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей оливковое масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 5: Обжарка лука',
+        text: 'Добавь нарезанный лук и обжаривай до прозрачности.'
+      },
+      {
+        title: 'Шаг 6: Добавление специй',
+        text: 'Добавь измельченный чеснок, корицу и кардамон.'
+      },
+      {
+        title: 'Шаг 7: Приготовление риса',
+        text: 'Добавь рис и обжаривай 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 8: Добавление сухофруктов',
+        text: 'Добавь изюм и финики, залей водой и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 9: Тушение',
+        text: 'Уменьши огонь и туши под крышкой 20-25 минут.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим, укрась обжаренными орехами и свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'арабская кухня', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 106,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      arabic: {
+        id: 'arabic',
+        title: 'Арабская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  80: {
+    id: 80,
+    name: 'kurica-po-kitaiski',
+    title: 'Курица по-китайски',
+    description: 'Острая курица с овощами в кисло-сладком соусе. Классическое блюдо китайской кухни.',
+    cookTime: '45 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 380, unit: Unit.g},
+      protein: {value: 32, unit: Unit.g},
+      fat: {value: 18, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1200 г
+    cuisine: 'Китайская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Болгарский перец', amount: 2, unit: Unit.pcs},
+      {name: 'Морковь', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Соевый соус', amount: 3, unit: Unit.tbsp},
+      {name: 'Устричный соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Крахмал кукурузный', amount: 1, unit: Unit.tbsp},
+      {name: 'Кунжутное масло', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь тонкими полосками.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Болгарский перец и морковь нарежь соломкой, лук - полукольцами.'
+      },
+      {
+        title: 'Шаг 3: Подготовка соуса',
+        text: 'Смешай соевый соус, устричный соус и крахмал с небольшим количеством воды.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В воке разогрей растительное масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 5: Обжарка овощей',
+        text: 'Добавь лук, морковь и болгарский перец. Обжаривай 3-4 минуты.'
+      },
+      {
+        title: 'Шаг 6: Добавление специй',
+        text: 'Добавь измельченный чеснок и имбирь, обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 7: Добавление соуса',
+        text: 'Влей подготовленный соус и перемешай.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Туши на среднем огне 5-7 минут, пока соус не загустеет.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Добавь кунжутное масло и перемешай.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась кунжутом и зеленым луком.'
+      }
+    ],
+    categories: ['курица', 'китайская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 98,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      chinese: {
+        id: 'chinese',
+        title: 'Китайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  81: {
+    id: 81,
+    name: 'kurica-po-vetnamski',
+    title: 'Курица по-вьетнамски',
+    description: 'Ароматная курица с рисовой лапшой и овощами в рыбном соусе. Классическое блюдо вьетнамской кухни.',
+    cookTime: '50 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 420, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 20, unit: Unit.g},
+      carbs: {value: 28, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1400 г
+    cuisine: 'Вьетнамская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Рисовая лапша', amount: 200, unit: Unit.g},
+      {name: 'Морковь', amount: 2, unit: Unit.pcs},
+      {name: 'Огурцы', amount: 2, unit: Unit.pcs},
+      {name: 'Ростки бобов', amount: 100, unit: Unit.g},
+      {name: 'Чеснок', amount: 3, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Рыбный соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Лайм', amount: 1, unit: Unit.pcs},
+      {name: 'Кинза', amount: 1, unit: Unit.bunch},
+      {name: 'Мята', amount: 1, unit: Unit.bunch},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь тонкими полосками.'
+      },
+      {
+        title: 'Шаг 2: Подготовка лапши',
+        text: 'Рисовую лапшу замочи в горячей воде на 10 минут, затем откинь на дуршлаг.'
+      },
+      {
+        title: 'Шаг 3: Подготовка овощей',
+        text: 'Морковь и огурцы нарежь тонкой соломкой, чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В воке разогрей растительное масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 5: Добавление специй',
+        text: 'Добавь чеснок и имбирь, обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 6: Добавление овощей',
+        text: 'Добавь морковь и обжаривай 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 7: Добавление лапши',
+        text: 'Добавь рисовую лапшу и перемешай.'
+      },
+      {
+        title: 'Шаг 8: Добавление соуса',
+        text: 'Влей рыбный соус и сок лайма, перемешай.'
+      },
+      {
+        title: 'Шаг 9: Добавление зелени',
+        text: 'Добавь нарезанную кинзу, мяту и ростки бобов.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим, укрась дольками лайма и свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'вьетнамская кухня', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      vietnamese: {
+        id: 'vietnamese',
+        title: 'Вьетнамская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  82: {
+    id: 82,
+    name: 'kurica-po-indoneziiski',
+    title: 'Курица по-индонезийски',
+    description: 'Ароматная курица в соусе сате с арахисом и специями. Классическое блюдо индонезийской кухни.',
+    cookTime: '55 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 450, unit: Unit.g},
+      protein: {value: 36, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1300 г
+    cuisine: 'Индонезийская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Арахис', amount: 100, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 200, unit: Unit.ml},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Кориандр', amount: 1, unit: Unit.tsp},
+      {name: 'Тмин', amount: 0.5, unit: Unit.tsp},
+      {name: 'Коричневый сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка соуса',
+        text: 'Арахис обжарь и измельчи в блендере до пастообразного состояния.'
+      },
+      {
+        title: 'Шаг 3: Подготовка специй',
+        text: 'Лук, чеснок и имбирь измельчи в блендере до пасты.'
+      },
+      {
+        title: 'Шаг 4: Обжарка специй',
+        text: 'В глубокой сковороде разогрей масло и обжарь пасту из специй до аромата.'
+      },
+      {
+        title: 'Шаг 5: Добавление специй',
+        text: 'Добавь куркуму, кориандр и тмин, обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 6: Добавление курицы',
+        text: 'Добавь курицу и обжаривай до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 7: Добавление соуса',
+        text: 'Добавь арахисовую пасту, кокосовое молоко и сахар.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Туши на среднем огне 20-25 минут, пока соус не загустеет.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась измельченным арахисом и свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'индонезийская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 96,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      indonesian: {
+        id: 'indonesian',
+        title: 'Индонезийская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  83: {
+    id: 83,
+    name: 'kurica-po-malaiiski',
+    title: 'Курица по-малайзийски',
+    description: 'Ароматная курица в карри с кокосовым молоком и специями. Классическое блюдо малайзийской кухни.',
+    cookTime: '1 час',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 470, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 32, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1500 г
+    cuisine: 'Малайзийская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 400, unit: Unit.ml},
+      {name: 'Картофель', amount: 4, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Карри паста', amount: 2, unit: Unit.tbsp},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Кориандр', amount: 1, unit: Unit.tsp},
+      {name: 'Листья карри', amount: 10, unit: Unit.pcs},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Картофель очисти и нарежь кубиками, лук - полукольцами.'
+      },
+      {
+        title: 'Шаг 3: Подготовка специй',
+        text: 'Чеснок и имбирь измельчи в блендере до пасты.'
+      },
+      {
+        title: 'Шаг 4: Обжарка специй',
+        text: 'В глубокой сковороде разогрей масло и обжарь пасту из специй до аромата.'
+      },
+      {
+        title: 'Шаг 5: Добавление карри',
+        text: 'Добавь карри пасту, куркуму и кориандр, обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 6: Добавление курицы',
+        text: 'Добавь курицу и обжаривай до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 7: Добавление овощей',
+        text: 'Добавь картофель и лук, перемешай.'
+      },
+      {
+        title: 'Шаг 8: Добавление кокосового молока',
+        text: 'Влей кокосовое молоко и добавь листья карри.'
+      },
+      {
+        title: 'Шаг 9: Тушение',
+        text: 'Туши на среднем огне 30-35 минут, пока картофель не станет мягким.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'малайзийская кухня', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 104,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      malaysian: {
+        id: 'malaysian',
+        title: 'Малайзийская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  84: {
+    id: 84,
+    name: 'kurica-po-filippinski',
+    title: 'Курица по-филиппински',
+    description: 'Ароматная курица в соусе адобо с соевым соусом и уксусом. Классическое блюдо филиппинской кухни.',
+    cookTime: '1 час 10 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: {value: 390, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 24, unit: Unit.g},
+      carbs: {value: 18, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1400 г
+    cuisine: 'Филиппинская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Соевый соус', amount: 4, unit: Unit.tbsp},
+      {name: 'Яблочный уксус', amount: 3, unit: Unit.tbsp},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 6, unit: Unit.pcs},
+      {name: 'Лавровый лист', amount: 2, unit: Unit.pcs},
+      {name: 'Перец горошком', amount: 1, unit: Unit.tsp},
+      {name: 'Сахар', amount: 1, unit: Unit.tsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка маринада',
+        text: 'Смешай соевый соус, уксус, измельченный чеснок и перец горошком.'
+      },
+      {
+        title: 'Шаг 3: Маринование',
+        text: 'Замаринуй курицу в подготовленной смеси на 30 минут.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 5: Обжарка лука',
+        text: 'Добавь нарезанный лук и обжаривай до прозрачности.'
+      },
+      {
+        title: 'Шаг 6: Добавление маринада',
+        text: 'Влей маринад и добавь лавровый лист.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Доведи до кипения, затем убавь огонь и туши 30-35 минут.'
+      },
+      {
+        title: 'Шаг 8: Добавление сахара',
+        text: 'Добавь сахар и перемешай.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'филиппинская кухня', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      filipino: {
+        id: 'filipino',
+        title: 'Филиппинская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  85: {
+    id: 85,
+    name: 'kurica-po-singapurski',
+    title: 'Курица по-сингапурски',
+    description: 'Ароматная курица в соусе чили с имбирем и чесноком. Классическое блюдо сингапурской кухни.',
+    cookTime: '45 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 410, unit: Unit.g},
+      protein: {value: 36, unit: Unit.g},
+      fat: {value: 26, unit: Unit.g},
+      carbs: {value: 20, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1300 г
+    cuisine: 'Сингапурская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Перец чили', amount: 2, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 30, unit: Unit.g},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 1, unit: Unit.pcs},
+      {name: 'Соевый соус', amount: 3, unit: Unit.tbsp},
+      {name: 'Устричный соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Коричневый сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Крахмал кукурузный', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь тонкими полосками.'
+      },
+      {
+        title: 'Шаг 2: Подготовка соуса',
+        text: 'Смешай соевый соус, устричный соус, сахар и крахмал с небольшим количеством воды.'
+      },
+      {
+        title: 'Шаг 3: Подготовка специй',
+        text: 'Перец чили, имбирь, чеснок и лук измельчи.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В воке разогрей масло и обжарь курицу до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 5: Обжарка специй',
+        text: 'Добавь измельченные специи и обжаривай 1-2 минуты.'
+      },
+      {
+        title: 'Шаг 6: Добавление соуса',
+        text: 'Влей подготовленный соус и перемешай.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Туши на среднем огне 5-7 минут, пока соус не загустеет.'
+      },
+      {
+        title: 'Шаг 8: Финальный штрих',
+        text: 'Попробуй на соль и при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 9: Охлаждение',
+        text: 'Дай блюду настояться 5 минут.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась свежей зеленью и дольками перца чили.'
+      }
+    ],
+    categories: ['курица', 'сингапурская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 94,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      singaporean: {
+        id: 'singaporean',
+        title: 'Сингапурская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  86: {
+    id: 86,
+    name: 'kurica-po-bruneiski',
+    title: 'Курица по-брунейски',
+    description: 'Ароматная курица в соусе амбуят с тамариндом и специями. Классическое блюдо брунейской кухни.',
+    cookTime: '1 час 15 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 430, unit: Unit.g},
+      protein: {value: 34, unit: Unit.g},
+      fat: {value: 28, unit: Unit.g},
+      carbs: {value: 22, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1400 г
+    cuisine: 'Брунейская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Тамаринд', amount: 50, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 200, unit: Unit.ml},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Кориандр', amount: 1, unit: Unit.tsp},
+      {name: 'Коричневый сахар', amount: 1, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка тамаринда',
+        text: 'Тамаринд замочи в теплой воде на 15 минут, затем процеди.'
+      },
+      {
+        title: 'Шаг 3: Подготовка специй',
+        text: 'Лук, чеснок и имбирь измельчи в блендере до пасты.'
+      },
+      {
+        title: 'Шаг 4: Обжарка специй',
+        text: 'В глубокой сковороде разогрей масло и обжарь пасту из специй до аромата.'
+      },
+      {
+        title: 'Шаг 5: Добавление специй',
+        text: 'Добавь куркуму и кориандр, обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 6: Добавление курицы',
+        text: 'Добавь курицу и обжаривай до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 7: Добавление соуса',
+        text: 'Добавь тамаринд, кокосовое молоко и сахар.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Туши на среднем огне 30-35 минут, пока соус не загустеет.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'брунейская кухня', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      bruneian: {
+        id: 'bruneian',
+        title: 'Брунейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  87: {
+    id: 87,
+    name: 'kurica-po-kambodzhiiski',
+    title: 'Курица по-камбоджийски',
+    description: 'Ароматная курица в соусе амок с кокосовым молоком и специями. Классическое блюдо камбоджийской кухни.',
+    cookTime: '1 час 20 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: {value: 440, unit: Unit.g},
+      protein: {value: 36, unit: Unit.g},
+      fat: {value: 30, unit: Unit.g},
+      carbs: {value: 24, unit: Unit.g}
+    },
+    // Общая грамовка готового блюда: ~1500 г
+    cuisine: 'Камбоджийская',
+    servings: 4,
+    ingredients: [
+      {name: 'Куриное филе', amount: 800, unit: Unit.g},
+      {name: 'Кокосовое молоко', amount: 400, unit: Unit.ml},
+      {name: 'Лимонная трава', amount: 2, unit: Unit.pcs},
+      {name: 'Лук репчатый', amount: 2, unit: Unit.pcs},
+      {name: 'Чеснок', amount: 4, unit: Unit.pcs},
+      {name: 'Имбирь', amount: 20, unit: Unit.g},
+      {name: 'Куркума', amount: 1, unit: Unit.tsp},
+      {name: 'Кориандр', amount: 1, unit: Unit.tsp},
+      {name: 'Рыбный соус', amount: 2, unit: Unit.tbsp},
+      {name: 'Растительное масло', amount: 2, unit: Unit.tbsp},
+      {name: 'Соль', amount: 0, unit: Unit.to_taste}
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски.'
+      },
+      {
+        title: 'Шаг 2: Подготовка специй',
+        text: 'Лимонную траву нарежь, лук, чеснок и имбирь измельчи в блендере до пасты.'
+      },
+      {
+        title: 'Шаг 3: Обжарка специй',
+        text: 'В глубокой сковороде разогрей масло и обжарь пасту из специй до аромата.'
+      },
+      {
+        title: 'Шаг 4: Добавление специй',
+        text: 'Добавь куркуму и кориандр, обжаривай 1 минуту.'
+      },
+      {
+        title: 'Шаг 5: Добавление курицы',
+        text: 'Добавь курицу и обжаривай до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 6: Добавление кокосового молока',
+        text: 'Влей кокосовое молоко и добавь лимонную траву.'
+      },
+      {
+        title: 'Шаг 7: Добавление рыбного соуса',
+        text: 'Добавь рыбный соус и перемешай.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Туши на среднем огне 35-40 минут, пока соус не загустеет.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай горячим с рисом, укрась свежей зеленью и дольками лайма.'
+      }
+    ],
+    categories: ['курица', 'камбоджийская кухня', 'основное блюдо'],
+    rating: 4.9,
+    reviews: 98,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      cambodian: {
+        id: 'cambodian',
+        title: 'Камбоджийская кухня'
       }
     },
     dietCategoriesList: {}
