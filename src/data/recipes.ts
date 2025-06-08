@@ -5,6 +5,7 @@ export enum Unit {
   tbsp = 'ст. л.',
   tsp = 'ч. л.',
   to_taste = 'по вкусу',
+  bunch = 'пучок',
 }
 
 // Интерфейс для питательной ценности
@@ -275,953 +276,3933 @@ export const recipes: Record<number, Recipe> = {
       },
     }
   },
-4: {
-  id:  4,
-      name: 'pelmeni-klassicheskie',
-      title: 'Пельмени классические',
-      description: 'Традиционные русские пельмени с сочной мясной начинкой. Идеальное сочетание тонкого теста и ароматного фарша делает это блюдо любимым в каждой семье.',
-      cookTime: '120 минут',
-      difficulty: '3/5',
-      nutrition: {
-    calories: { value: 275.5, unit: Unit.g },
-    protein: { value: 14.8, unit: Unit.g },
-    fat: { value: 12.3, unit: Unit.g },
-    carbs: { value: 28.4, unit: Unit.g },
+  4: {
+    id: 4,
+    name: 'kurica-v-smetannom-souse',
+    title: 'Курица в сметанном соусе',
+    description: 'Нежное куриное филе в сливочном сметанном соусе с ароматными травами. Простое и вкусное блюдо, которое понравится всей семье.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 320, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 18, unit: Unit.g },
+      carbs: { value: 12, unit: Unit.g },
+    },
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Сметана 20%', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
+      { name: 'Зелень (укроп, петрушка)', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка ингредиентов',
+        text: 'Куриное филе нарежь на средние кусочки. Лук нарежь полукольцами, чеснок измельчи. Зелень мелко поруби.'
+      },
+      {
+        title: 'Шаг 2: Обжарка курицы',
+        text: 'В сковороде разогрей масло. Обжарь курицу до золотистой корочки со всех сторон. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 3: Приготовление соуса',
+        text: 'Добавь лук и чеснок к курице, обжарь до мягкости лука. Влей сметану, перемешай и туши под крышкой 15-20 минут на среднем огне.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Перед подачей посыпь блюдо свежей зеленью. Подавай с рисом или картофельным пюре.'
+      }
+    ],
+    categories: ['курица', 'сметанный соус', 'основное блюдо', 'русская кухня', 'семейный ужин'],
+    rating: 4.8,
+    reviews: 156,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
   },
-  cuisine: 'Русская',
-      servings: 8,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 500, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 2, unit: Unit.pcs },
-    { name: 'Вода', amount: 200, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Фарш говяжий', amount: 400, unit: Unit.g },
-    { name: 'Фарш свиной', amount: 400, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Замешиваем тесто',
-      text: 'В миску просейте муку, добавьте яйца, соль и воду. Замесите эластичное тесто и оставьте его отдохнуть под полотенцем на 30 минут.'
+  5: {
+    id: 5,
+    name: 'kurica-po-kievski',
+    title: 'Котлета по-киевски',
+    description: 'Классическое блюдо русской кухни - нежная куриная котлета с масляной начинкой в хрустящей панировке.',
+    cookTime: '60 минут',
+    difficulty: '4/5',
+    nutrition: {
+      calories: { value: 450, unit: Unit.g },
+      protein: { value: 32, unit: Unit.g },
+      fat: { value: 28, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g },
     },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Мелко нарежьте лук и смешайте его с говяжьим и свиным фаршем. Добавьте соль и перец по вкусу, тщательно перемешайте.'
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 800, unit: Unit.g },
+      { name: 'Масло сливочное', amount: 100, unit: Unit.g },
+      { name: 'Яйцо', amount: 2, unit: Unit.pcs },
+      { name: 'Мука', amount: 100, unit: Unit.g },
+      { name: 'Сухари панировочные', amount: 200, unit: Unit.g },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      { name: 'Масло растительное', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка масляной начинки',
+        text: 'Смешай размягченное сливочное масло с солью и перцем. Сформируй из масла небольшие шарики и заморозь их.'
+      },
+      {
+        title: 'Шаг 2: Подготовка котлет',
+        text: 'Куриное филе отбей в тонкий пласт. В центр каждого пласта положи замороженный шарик масла. Заверни филе, формируя котлету.'
+      },
+      {
+        title: 'Шаг 3: Панировка',
+        text: 'Обваляй котлеты в муке, затем в взбитом яйце и в панировочных сухарях. Повтори панировку еще раз для надежности.'
+      },
+      {
+        title: 'Шаг 4: Жарка',
+        text: 'Обжарь котлеты в большом количестве масла до золотистой корочки. Затем доведи до готовности в духовке при 180°C 15-20 минут.'
+      }
+    ],
+    categories: ['курица', 'котлета по-киевски', 'основное блюдо', 'русская кухня', 'праздничное блюдо'],
+    rating: 4.9,
+    reviews: 203,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
     },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто тонким слоем, вырежьте кружочки. На каждый кружочек положите начинку и защипните края, формируя пельмени.'
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
     },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Вскипятите подсоленную воду, добавьте лавровый лист. Варите пельмени 7-8 минут после всплытия. Подавайте со сметаной или маслом.'
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
     },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'второе блюдо', 'домашняя кухня', 'мясные блюда', 'традиционное блюдо', 'обед', 'ужин'
-  ],
-      rating: 4.8,
-      reviews: 256,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
+    dietCategoriesList: {}
   },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
+  6: {
+    id: 6,
+    name: 'kurica-tikka-masala',
+    title: 'Курица Тикка Масала',
+    description: 'Ароматное индийское блюдо с нежной курицей в пряном томатном соусе. Идеальное сочетание специй и сливочного вкуса.',
+    cookTime: '50 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 380, unit: Unit.g },
+      protein: { value: 30, unit: Unit.g },
+      fat: { value: 22, unit: Unit.g },
+      carbs: { value: 18, unit: Unit.g },
     },
+    cuisine: 'Индийская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Йогурт натуральный', amount: 200, unit: Unit.g },
+      { name: 'Томаты в собственном соку', amount: 400, unit: Unit.g },
+      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Специи (куркума, кумин, кориандр)', amount: 0, unit: Unit.to_taste },
+      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Маринад',
+        text: 'Нарежь курицу кубиками. Смешай йогурт с половиной специй, чесноком и имбирем. Замаринуй курицу на 30 минут.'
+      },
+      {
+        title: 'Шаг 2: Обжарка',
+        text: 'Обжарь курицу до золотистой корочки. Отложи в сторону. В той же сковороде обжарь лук до прозрачности.'
+      },
+      {
+        title: 'Шаг 3: Соус',
+        text: 'Добавь оставшиеся специи, томаты и туши 10 минут. Влей сливки и добавь курицу. Туши еще 15 минут.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Подавай с рисом басмати и свежей кинзой.'
+      }
+    ],
+    categories: ['курица', 'индийская кухня', 'карри', 'основное блюдо', 'пряное блюдо'],
+    rating: 4.7,
+    reviews: 189,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      indian: {
+        id: 'indian',
+        title: 'Индийская кухня'
+      }
+    },
+    dietCategoriesList: {}
   },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
+  7: {
+    id: 7,
+    name: 'kurica-v-ajoli',
+    title: 'Курица в соусе Айоли',
+    description: 'Сочная курица в чесночном соусе айоли с хрустящей корочкой. Средиземноморский рецепт, который покорит любого гурмана.',
+    cookTime: '40 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 350, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 24, unit: Unit.g },
+      carbs: { value: 8, unit: Unit.g },
     },
+    cuisine: 'Средиземноморская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Чеснок', amount: 6, unit: Unit.pcs },
+      { name: 'Яйцо', amount: 1, unit: Unit.pcs },
+      { name: 'Оливковое масло', amount: 100, unit: Unit.ml },
+      { name: 'Лимонный сок', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      { name: 'Петрушка', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Приготовление соуса',
+        text: 'Измельчи чеснок в блендере. Добавь яйцо, лимонный сок и взбивай, постепенно вливая оливковое масло до получения густого соуса.'
+      },
+      {
+        title: 'Шаг 2: Подготовка курицы',
+        text: 'Нарежь курицу на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка',
+        text: 'Обжарь курицу до золотистой корочки. Добавь соус айоли и туши под крышкой 15 минут.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Подавай с отварным рисом или картофелем, украсив свежей петрушкой.'
+      }
+    ],
+    categories: ['курица', 'средиземноморская кухня', 'чесночный соус', 'основное блюдо'],
+    rating: 4.6,
+    reviews: 145,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      mediterranean: {
+        id: 'mediterranean',
+        title: 'Средиземноморская кухня'
+      }
+    },
+    dietCategoriesList: {}
   },
-  dietCategoriesList: {
-    'kids-menu': {
-      id: 'kids-menu',
-          title: 'Детское меню'
+  8: {
+    id: 8,
+    name: 'kurica-teriyaki',
+    title: 'Курица Терияки',
+    description: 'Классическое японское блюдо - курица в сладком соусе терияки с кунжутом. Идеальное сочетание сладкого и соленого вкусов.',
+    cookTime: '35 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 320, unit: Unit.g },
+      protein: { value: 26, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 22, unit: Unit.g },
     },
+    cuisine: 'Японская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Соус терияки', amount: 100, unit: Unit.ml },
+      { name: 'Мед', amount: 2, unit: Unit.tbsp },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Кунжут', amount: 2, unit: Unit.tbsp },
+      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
+      { name: 'Зеленый лук', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Маринад',
+        text: 'Нарежь курицу на кусочки. Смешай соус терияки с медом, измельченным чесноком и имбирем. Замаринуй курицу на 15 минут.'
+      },
+      {
+        title: 'Шаг 2: Обжарка',
+        text: 'Обжарь курицу до золотистой корочки. Добавь маринад и туши под крышкой 10-15 минут.'
+      },
+      {
+        title: 'Шаг 3: Финальный штрих',
+        text: 'Посыпь кунжутом и мелко нарезанным зеленым луком.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Подавай с рисом и овощами.'
+      }
+    ],
+    categories: ['курица', 'японская кухня', 'терияки', 'основное блюдо', 'азиатская кухня'],
+    rating: 4.8,
+    reviews: 167,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      japanese: {
+        id: 'japanese',
+        title: 'Японская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  9: {
+    id: 9,
+    name: 'kurica-v-paprike',
+    title: 'Курица в паприке',
+    description: 'Венгерское блюдо - нежная курица в густом соусе с паприкой и сметаной. Ароматное и сытное блюдо для всей семьи.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 20, unit: Unit.g },
+      carbs: { value: 14, unit: Unit.g },
+    },
+    cuisine: 'Венгерская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Паприка сладкая', amount: 2, unit: Unit.tbsp },
+      { name: 'Сметана 20%', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка',
+        text: 'Нарежь курицу на кусочки. Лук нарежь полукольцами, чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 2: Обжарка',
+        text: 'Обжарь лук до прозрачности. Добавь паприку и быстро перемешай. Добавь курицу и обжарь до золотистой корочки.'
+      },
+      {
+        title: 'Шаг 3: Тушение',
+        text: 'Добавь сметану, чеснок, соль и перец. Туши под крышкой 20-25 минут на среднем огне.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Подавай с отварным рисом или картофельным пюре.'
+      }
+    ],
+    categories: ['курица', 'венгерская кухня', 'паприка', 'основное блюдо', 'семейный ужин'],
+    rating: 4.7,
+    reviews: 156,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      hungarian: {
+        id: 'hungarian',
+        title: 'Венгерская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  10: {
+    id: 10,
+    name: 'kurica-karri',
+    title: 'Курица Карри',
+    description: 'Ароматное блюдо индийской кухни - курица в пряном соусе карри с кокосовым молоком. Идеальное сочетание специй и нежного мяса.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 360, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 24, unit: Unit.g },
+      carbs: { value: 16, unit: Unit.g },
+    },
+    cuisine: 'Индийская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Кокосовое молоко', amount: 400, unit: Unit.ml },
+      { name: 'Паста карри', amount: 2, unit: Unit.tbsp },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Кинза', amount: 0, unit: Unit.to_taste },
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка',
+        text: 'Нарежь курицу на кусочки. Лук нарежь полукольцами, чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 2: Обжарка',
+        text: 'Обжарь лук до прозрачности. Добавь чеснок и имбирь, обжарь 1 минуту. Добавь пасту карри и обжарь еще 1 минуту.'
+      },
+      {
+        title: 'Шаг 3: Тушение',
+        text: 'Добавь курицу и обжарь до золотистой корочки. Влей кокосовое молоко, посоли и туши под крышкой 20-25 минут.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Подавай с рисом басмати, украсив свежей кинзой.'
+      }
+    ],
+    categories: ['курица', 'индийская кухня', 'карри', 'основное блюдо', 'пряное блюдо'],
+    rating: 4.7,
+    reviews: 178,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      indian: {
+        id: 'indian',
+        title: 'Индийская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  11: {
+    id: 11,
+    name: 'kurica-po-kitajski',
+    title: 'Курица по-китайски',
+    description: 'Классическое китайское блюдо с курицей в кисло-сладком соусе с ананасами и перцем. Идеальное сочетание сладкого и кислого вкуса.',
+    cookTime: '40 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 27, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 24, unit: Unit.g },
+    },
+    cuisine: 'Китайская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Ананас', amount: 200, unit: Unit.g },
+      { name: 'Перец болгарский', amount: 2, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Соевый соус', amount: 2, unit: Unit.tbsp },
+      { name: 'Уксус', amount: 1, unit: Unit.tbsp },
+      { name: 'Сахар', amount: 1, unit: Unit.tbsp },
+      { name: 'Крахмал', amount: 1, unit: Unit.tbsp },
+      { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
+      { name: 'Рис', amount: 200, unit: Unit.g }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка',
+        text: 'Нарежь курицу кубиками. Ананас нарежь кубиками. Перец и лук нарежь соломкой. Чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 2: Соус',
+        text: 'Смешай соевый соус, уксус, сахар и крахмал.'
+      },
+      {
+        title: 'Шаг 3: Обжарка',
+        text: 'Обжарь курицу до золотистой корочки. Добавь овощи и обжарь 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 4: Финальный штрих',
+        text: 'Добавь соус и ананас, туши 5 минут.'
+      }
+    ],
+    categories: ['курица', 'китайская кухня', 'кисло-сладкое блюдо', 'основное блюдо', 'азиатская кухня'],
+    rating: 4.8,
+    reviews: 167,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      chinese: {
+        id: 'chinese',
+        title: 'Китайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  12: {
+    id: 12,
+    name: 'kurica-po-tajski',
+    title: 'Курица по-тайски',
+    description: 'Ароматное тайское блюдо с курицей в кокосовом карри. Идеальное сочетание пряностей и кокосового вкуса.',
+    cookTime: '45 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 360, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 24, unit: Unit.g },
+      carbs: { value: 16, unit: Unit.g },
+    },
+    cuisine: 'Тайская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Кокосовое молоко', amount: 400, unit: Unit.ml },
+      { name: 'Паста карри', amount: 2, unit: Unit.tbsp },
+      { name: 'Бамбуковые ростки', amount: 100, unit: Unit.g },
+      { name: 'Баклажан', amount: 1, unit: Unit.pcs },
+      { name: 'Лимонная трава', amount: 2, unit: Unit.pcs },
+      { name: 'Листья лайма', amount: 4, unit: Unit.pcs },
+      { name: 'Рыбный соус', amount: 1, unit: Unit.tbsp },
+      { name: 'Пальмовый сахар', amount: 1, unit: Unit.tbsp },
+      { name: 'Рис', amount: 200, unit: Unit.g }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка',
+        text: 'Нарежь курицу кубиками. Баклажан нарежь кубиками. Лимонную траву нарежь тонкими кольцами.'
+      },
+      {
+        title: 'Шаг 2: Обжарка пряностей',
+        text: 'Обжарь пасту карри до появления аромата. Добавь лимонную траву и листья лайма.'
+      },
+      {
+        title: 'Шаг 3: Тушение',
+        text: 'Добавь курицу и обжарь до золотистой корочки. Влей кокосовое молоко, добавь овощи и туши 20-25 минут.'
+      },
+      {
+        title: 'Шаг 4: Финальный штрих',
+        text: 'Добавь рыбный соус и пальмовый сахар, туши еще 5 минут.'
+      }
+    ],
+    categories: ['курица', 'тайская кухня', 'карри', 'основное блюдо', 'азиатская кухня'],
+    rating: 4.9,
+    reviews: 189,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      thai: {
+        id: 'thai',
+        title: 'Тайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  13: {
+    id: 13,
+    name: 'kurica-po-korejski',
+    title: 'Курица по-корейски',
+    description: 'Острое корейское блюдо с курицей в соусе гочуджан. Идеальное сочетание остроты и сладости.',
+    cookTime: '35 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 18, unit: Unit.g },
+      carbs: { value: 20, unit: Unit.g },
+    },
+    cuisine: 'Корейская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Паста гочуджан', amount: 2, unit: Unit.tbsp },
+      { name: 'Соевый соус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Кунжутное масло', amount: 1, unit: Unit.tbsp },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Кунжут', amount: 1, unit: Unit.tbsp },
+      { name: 'Зеленый лук', amount: 2, unit: Unit.pcs },
+      { name: 'Рис', amount: 200, unit: Unit.g }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Маринад',
+        text: 'Смешай пасту гочуджан, соевый соус, мед, кунжутное масло, чеснок и имбирь. Замаринуй курицу на 15 минут.'
+      },
+      {
+        title: 'Шаг 2: Обжарка',
+        text: 'Обжарь курицу до золотистой корочки, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 3: Финальный штрих',
+        text: 'Добавь нарезанный зеленый лук и кунжут, обжарь еще 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 4: Подача',
+        text: 'Подавай с отварным рисом, украсив кунжутом и зеленым луком.'
+      }
+    ],
+    categories: ['курица', 'корейская кухня', 'острое блюдо', 'основное блюдо', 'азиатская кухня'],
+    rating: 4.8,
+    reviews: 156,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      korean: {
+        id: 'korean',
+        title: 'Корейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  14: {
+    id: 14,
+    name: 'kurica-v-klubnichnom-souse',
+    title: 'Курица в клубничном соусе',
+    description: 'Необычное сочетание нежной курицы и сладкого клубничного соуса с пряными нотками. Изысканное блюдо для особых случаев.',
+    cookTime: '60 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 320, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 22, unit: Unit.g },
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    // Общий вес блюда: 1200 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Клубника', amount: 300, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Тимьян', amount: 2, unit: Unit.tbsp },
+      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      { name: 'Сахар', amount: 1, unit: Unit.tsp },
+      { name: 'Крахмал', amount: 1, unit: Unit.tsp }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой под холодной водой и обсуши бумажным полотенцем. Нарежь на порционные куски толщиной 2-3 см.'
+      },
+      {
+        title: 'Шаг 2: Маринад',
+        text: 'В глубокой миске смешай оливковое масло, измельченный чеснок, тимьян, соль и перец. Обмажь курицу маринадом и оставь на 20 минут при комнатной температуре.'
+      },
+      {
+        title: 'Шаг 3: Подготовка клубники',
+        text: 'Клубнику промой, удали плодоножки и нарежь на четвертинки. 1/3 клубники отложи для украшения.'
+      },
+      {
+        title: 'Шаг 4: Приготовление соуса',
+        text: 'В блендере измельчи 2/3 клубники до состояния пюре. Процеди через сито, чтобы удалить семена.'
+      },
+      {
+        title: 'Шаг 5: Обжарка лука',
+        text: 'Лук нарежь тонкими полукольцами. В сотейнике разогрей 1 ст.л. оливкового масла и обжарь лук до прозрачности.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь клубничное пюре в сотейник с луком. Влей бальзамический уксус, добавь мед и сахар. Туши на среднем огне 10 минут.'
+      },
+      {
+        title: 'Шаг 7: Загущение соуса',
+        text: 'Разведи крахмал в 2 ст.л. холодной воды. Влей в соус, постоянно помешивая. Доведи до загустения.'
+      },
+      {
+        title: 'Шаг 8: Обжарка курицы',
+        text: 'В сковороде разогрей оставшееся масло. Обжарь курицу до золотистой корочки с обеих сторон (по 4-5 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 9: Тушение',
+        text: 'Переложи курицу в сотейник с соусом. Туши под крышкой на медленном огне 15-20 минут, пока курица не станет мягкой.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Добавь оставшиеся кусочки клубники в соус, аккуратно перемешай и прогрей 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в клубничном соусе с отварным рисом или картофельным пюре. Укрась свежими листиками тимьяна.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо', 'праздничное блюдо'],
+    rating: 4.7,
+    reviews: 89,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  15: {
+    id: 15,
+    name: 'kurica-v-orehovom-souse',
+    title: 'Курица в ореховом соусе',
+    description: 'Нежная курица в густом ореховом соусе с ароматом чеснока и специй. Традиционное грузинское блюдо сациви.',
+    cookTime: '90 минут',
+    difficulty: '4/5',
+    nutrition: {
+      calories: { value: 450, unit: Unit.g },
+      protein: { value: 32, unit: Unit.g },
+      fat: { value: 35, unit: Unit.g },
+      carbs: { value: 12, unit: Unit.g },
+    },
+    cuisine: 'Грузинская',
+    servings: 6,
+    // Общий вес блюда: 1800 г
+    ingredients: [
+      { name: 'Курица (целая)', amount: 1500, unit: Unit.g },
+      { name: 'Грецкие орехи', amount: 500, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 3, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 6, unit: Unit.pcs },
+      { name: 'Хмели-сунели', amount: 2, unit: Unit.tbsp },
+      { name: 'Шафран', amount: 1, unit: Unit.tsp },
+      { name: 'Корица', amount: 1, unit: Unit.tsp },
+      { name: 'Гвоздика', amount: 4, unit: Unit.pcs },
+      { name: 'Лавровый лист', amount: 2, unit: Unit.pcs },
+      { name: 'Уксус винный', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Курицу промой, обсуши и разрежь на порционные куски. Удали лишний жир.'
+      },
+      {
+        title: 'Шаг 2: Варка курицы',
+        text: 'В большой кастрюле вскипяти воду. Добавь соль, перец, лавровый лист и гвоздику. Опусти курицу и вари на медленном огне 40-45 минут.'
+      },
+      {
+        title: 'Шаг 3: Подготовка орехов',
+        text: 'Грецкие орехи очисти от перегородок и обжарь на сухой сковороде до появления аромата (5-7 минут).'
+      },
+      {
+        title: 'Шаг 4: Измельчение орехов',
+        text: 'Остывшие орехи измельчи в блендере до состояния мелкой крошки. Не допускай образования ореховой пасты.'
+      },
+      {
+        title: 'Шаг 5: Подготовка лука',
+        text: 'Лук нарежь тонкими полукольцами. Чеснок очисти и измельчи.'
+      },
+      {
+        title: 'Шаг 6: Обжарка лука',
+        text: 'В глубокой сковороде обжарь лук до золотистого цвета. Добавь чеснок и обжарь еще 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Добавь к луку измельченные орехи, хмели-сунели, корицу и шафран. Перемешай и прогрей 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 8: Соединение ингредиентов',
+        text: 'Влей 2 стакана бульона от варки курицы в соус. Добавь винный уксус. Перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 9: Тушение',
+        text: 'Уменьши огонь до минимума. Добавь курицу в соус и туши под крышкой 20-25 минут, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 10: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 30 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай сациви в теплом виде, украсив свежей зеленью и гранатовыми зернами.'
+      }
+    ],
+    categories: ['курица', 'грузинская кухня', 'ореховый соус', 'основное блюдо', 'праздничное блюдо'],
+    rating: 4.9,
+    reviews: 156,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      georgian: {
+        id: 'georgian',
+        title: 'Грузинская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  16: {
+    id: 16,
+    name: 'kurica-v-ajvarskom-souse',
+    title: 'Курица в соусе Айвар',
+    description: 'Нежная курица в густом соусе из запеченных баклажанов и перца по-балкански. Ароматное и сытное блюдо с характерным вкусом.',
+    cookTime: '75 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 380, unit: Unit.g },
+      protein: { value: 30, unit: Unit.g },
+      fat: { value: 22, unit: Unit.g },
+      carbs: { value: 18, unit: Unit.g },
+    },
+    cuisine: 'Балканская',
+    servings: 4,
+    // Общий вес блюда: 1400 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Баклажаны', amount: 2, unit: Unit.pcs },
+      { name: 'Перец болгарский', amount: 3, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Томаты', amount: 3, unit: Unit.pcs },
+      { name: 'Масло оливковое', amount: 4, unit: Unit.tbsp },
+      { name: 'Уксус бальзамический', amount: 1, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      { name: 'Сахар', amount: 1, unit: Unit.tsp },
+      { name: 'Зелень (петрушка, базилик)', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка овощей',
+        text: 'Баклажаны нарежь вдоль на пластины толщиной 1 см. Перец разрежь пополам и удали семена. Томаты нарежь дольками.'
+      },
+      {
+        title: 'Шаг 2: Запекание овощей',
+        text: 'Выложи баклажаны и перец на противень, смазанный маслом. Запекай в разогретой до 200°C духовке 20-25 минут до мягкости.'
+      },
+      {
+        title: 'Шаг 3: Приготовление айвара',
+        text: 'Запеченные овощи очисти от кожицы. Измельчи в блендере до состояния пюре. Добавь измельченный чеснок, соль, перец и сахар.'
+      },
+      {
+        title: 'Шаг 4: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 5: Обжарка лука',
+        text: 'Лук нарежь полукольцами. В глубокой сковороде разогрей 2 ст.л. масла и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 6: Обжарка курицы',
+        text: 'Добавь курицу к луку и обжарь до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Добавь айвар в сковороду, перемешай с курицей. Влей бальзамический уксус и 100 мл воды.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Добавь томаты, накрой крышкой и туши на медленном огне 20-25 минут, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Добавь мелко нарезанную зелень, перемешай и прогрей еще 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 10: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 10-15 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе айвар с отварным рисом или картофельным пюре. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'балканская кухня', 'соус', 'основное блюдо', 'семейный ужин'],
+    rating: 4.6,
+    reviews: 78,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      balkan: {
+        id: 'balkan',
+        title: 'Балканская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  17: {
+    id: 17,
+    name: 'kurica-v-mango-souse',
+    title: 'Курица в соусе из манго',
+    description: 'Экзотическое блюдо с курицей в сладком соусе из манго с нотками имбиря и чили. Изысканное сочетание вкусов.',
+    cookTime: '50 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 18, unit: Unit.g },
+      carbs: { value: 24, unit: Unit.g },
+    },
+    cuisine: 'Азиатская',
+    servings: 4,
+    // Общий вес блюда: 1300 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Манго', amount: 2, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 30, unit: Unit.g },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Перец чили', amount: 1, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Соевый соус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Лимонный сок', amount: 2, unit: Unit.tbsp },
+      { name: 'Масло кунжутное', amount: 2, unit: Unit.tbsp },
+      { name: 'Крахмал', amount: 1, unit: Unit.tsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка манго',
+        text: 'Манго очисти от кожуры и нарежь кубиками. 1/3 манго отложи для украшения.'
+      },
+      {
+        title: 'Шаг 2: Приготовление соуса',
+        text: '2/3 манго измельчи в блендере до состояния пюре. Добавь лимонный сок и мед, перемешай.'
+      },
+      {
+        title: 'Шаг 3: Подготовка специй',
+        text: 'Имбирь очисти и натри на мелкой терке. Чеснок измельчи. Чили нарежь тонкими кольцами.'
+      },
+      {
+        title: 'Шаг 4: Маринад',
+        text: 'Смешай соевый соус, кунжутное масло, половину имбиря и чеснока. Замаринуй курицу на 15 минут.'
+      },
+      {
+        title: 'Шаг 5: Подготовка курицы',
+        text: 'Куриное филе нарежь на тонкие полоски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 6: Обжарка лука',
+        text: 'Лук нарежь тонкими полукольцами. В воке или глубокой сковороде разогрей масло и обжарь лук до прозрачности.'
+      },
+      {
+        title: 'Шаг 7: Обжарка курицы',
+        text: 'Добавь курицу к луку и обжарь на сильном огне 5-7 минут, постоянно помешивая.'
+      },
+      {
+        title: 'Шаг 8: Приготовление соуса',
+        text: 'Добавь пюре из манго, оставшийся имбирь, чеснок и чили. Перемешай и прогрей 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 9: Загущение',
+        text: 'Разведи крахмал в 2 ст.л. холодной воды. Влей в соус, постоянно помешивая. Доведи до загустения.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Добавь оставшиеся кусочки манго, аккуратно перемешай и прогрей еще 1-2 минуты.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из манго с отварным рисом. Укрась свежей кинзой и кунжутом.'
+      }
+    ],
+    categories: ['курица', 'азиатская кухня', 'соус', 'основное блюдо', 'экзотическое блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      asian: {
+        id: 'asian',
+        title: 'Азиатская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  18: {
+    id: 18,
+    name: 'kurica-v-granatovom-souse',
+    title: 'Курица в гранатовом соусе',
+    description: 'Нежная курица в кисло-сладком соусе из гранатового сока с ароматом специй. Традиционное кавказское блюдо.',
+    cookTime: '65 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 350, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 20, unit: Unit.g },
+      carbs: { value: 18, unit: Unit.g },
+    },
+    cuisine: 'Кавказская',
+    servings: 4,
+    // Общий вес блюда: 1350 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Гранатовый сок', amount: 300, unit: Unit.ml },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Кориандр', amount: 1, unit: Unit.tbsp },
+      { name: 'Корица', amount: 1, unit: Unit.tsp },
+      { name: 'Гвоздика', amount: 3, unit: Unit.pcs },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
+      { name: 'Крахмал', amount: 1, unit: Unit.tsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste },
+      { name: 'Гранатовые зерна', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Маринад',
+        text: 'Смешай гранатовый сок с половиной измельченного чеснока, кориандром и корицей. Замаринуй курицу на 20 минут.'
+      },
+      {
+        title: 'Шаг 3: Подготовка лука',
+        text: 'Лук нарежь тонкими полукольцами. Оставшийся чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В глубокой сковороде разогрей масло. Обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка курицы',
+        text: 'Добавь курицу к луку и обжарь до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Влей маринад в сковороду, добавь гвоздику и мед. Перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Уменьши огонь до минимума. Накрой крышкой и туши 20-25 минут, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 8: Загущение',
+        text: 'Разведи крахмал в 2 ст.л. холодной воды. Влей в соус, постоянно помешивая. Доведи до загустения.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 10-15 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Добавь гранатовые зерна и аккуратно перемешай.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в гранатовом соусе с отварным рисом или картофельным пюре. Укрась свежими гранатовыми зернами.'
+      }
+    ],
+    categories: ['курица', 'кавказская кухня', 'соус', 'основное блюдо', 'праздничное блюдо'],
+    rating: 4.7,
+    reviews: 85,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      caucasian: {
+        id: 'caucasian',
+        title: 'Кавказская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  19: {
+    id: 19,
+    name: 'kurica-v-romovom-souse',
+    title: 'Курица в ромовом соусе',
+    description: 'Изысканное блюдо с курицей в сладком соусе из рома с ананасами и специями. Карибская кухня в лучших традициях.',
+    cookTime: '70 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 380, unit: Unit.g },
+      protein: { value: 30, unit: Unit.g },
+      fat: { value: 22, unit: Unit.g },
+      carbs: { value: 20, unit: Unit.g },
+    },
+    cuisine: 'Карибская',
+    servings: 4,
+    // Общий вес блюда: 1400 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Ром', amount: 100, unit: Unit.ml },
+      { name: 'Ананас', amount: 300, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Корица', amount: 1, unit: Unit.tsp },
+      { name: 'Гвоздика', amount: 3, unit: Unit.pcs },
+      { name: 'Коричневый сахар', amount: 2, unit: Unit.tbsp },
+      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
+      { name: 'Масло оливковое', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Маринад',
+        text: 'Смешай ром с половиной коричневого сахара, измельченным чесноком и имбирем. Замаринуй курицу на 30 минут.'
+      },
+      {
+        title: 'Шаг 3: Подготовка ананаса',
+        text: 'Ананас очисти и нарежь кубиками. 1/3 ананаса отложи для украшения.'
+      },
+      {
+        title: 'Шаг 4: Подготовка лука',
+        text: 'Лук нарежь тонкими полукольцами. Чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 5: Обжарка лука',
+        text: 'В глубокой сковороде разогрей смесь оливкового и сливочного масла. Обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 6: Обжарка курицы',
+        text: 'Добавь курицу к луку и обжарь до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 7: Приготовление соуса',
+        text: 'Влей маринад в сковороду, добавь корицу, гвоздику и оставшийся сахар. Перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Добавь 2/3 ананаса, накрой крышкой и туши на медленном огне 20-25 минут, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Добавь оставшиеся кусочки ананаса, аккуратно перемешай и прогрей еще 2-3 минуты.'
+      },
+      {
+        title: 'Шаг 10: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 10-15 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в ромовом соусе с отварным рисом. Укрась свежими кусочками ананаса и листиками мяты.'
+      }
+    ],
+    categories: ['курица', 'карибская кухня', 'соус', 'основное блюдо', 'праздничное блюдо'],
+    rating: 4.8,
+    reviews: 94,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      caribbean: {
+        id: 'caribbean',
+        title: 'Карибская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  20: {
+    id: 20,
+    name: 'kurica-v-souse-iz-shampinonov',
+    title: 'Курица в соусе из шампиньонов',
+    description: 'Нежная курица в сливочном соусе с шампиньонами и ароматными травами. Классическое французское блюдо.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 320, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 18, unit: Unit.g },
+      carbs: { value: 12, unit: Unit.g },
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    // Общий вес блюда: 1300 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Шампиньоны', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
+      { name: 'Белое вино', amount: 100, unit: Unit.ml },
+      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
+      { name: 'Мука', amount: 1, unit: Unit.tbsp },
+      { name: 'Тимьян', amount: 1, unit: Unit.tsp },
+      { name: 'Розмарин', amount: 1, unit: Unit.tsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка грибов',
+        text: 'Шампиньоны очисти, промой и нарежь пластинками. Лук нарежь кубиками, чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину сливочного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до прозрачности.'
+      },
+      {
+        title: 'Шаг 5: Обжарка грибов',
+        text: 'Добавь шампиньоны и обжаривай 5-7 минут, пока не испарится жидкость.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь чеснок, тимьян и розмарин. Обжаривай 1 минуту, затем влей вино и готовь, пока не испарится половина жидкости.'
+      },
+      {
+        title: 'Шаг 7: Загущение соуса',
+        text: 'Добавь муку, перемешай и готовь 1 минуту. Постепенно влей сливки, постоянно помешивая.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в грибном соусе с отварным рисом или картофельным пюре. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо'],
+    rating: 4.6,
+    reviews: 78,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  21: {
+    id: 21,
+    name: 'kurica-v-souse-iz-avokado',
+    title: 'Курица в соусе из авокадо',
+    description: 'Нежная курица в сливочном соусе из авокадо с лаймом и кинзой. Мексиканская кухня в современном исполнении.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 24, unit: Unit.g },
+      carbs: { value: 8, unit: Unit.g },
+    },
+    cuisine: 'Мексиканская',
+    servings: 4,
+    // Общий вес блюда: 1200 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Авокадо', amount: 2, unit: Unit.pcs },
+      { name: 'Лайм', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Кинза', amount: 1, unit: Unit.bunch },
+      { name: 'Сливки 20%', amount: 100, unit: Unit.ml },
+      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
+      { name: 'Кумин', amount: 1, unit: Unit.tsp },
+      { name: 'Чили порошок', amount: 1, unit: Unit.tsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли, поперчи и посыпь кумином.'
+      },
+      {
+        title: 'Шаг 2: Подготовка авокадо',
+        text: 'Авокадо очисти, удали косточку и нарежь кубиками. Сбрызни соком лайма, чтобы не потемнело.'
+      },
+      {
+        title: 'Шаг 3: Подготовка зелени',
+        text: 'Кинзу промой, обсуши и мелко нарежь. Чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 4: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 5: Приготовление соуса',
+        text: 'В блендере измельчи авокадо, чеснок, половину кинзы, сок лайма и сливки до однородной массы.'
+      },
+      {
+        title: 'Шаг 6: Соединение ингредиентов',
+        text: 'Добавь соус из авокадо к курице, перемешай и прогрей на медленном огне 5-7 минут.'
+      },
+      {
+        title: 'Шаг 7: Добавление специй',
+        text: 'Добавь чили порошок и оставшуюся кинзу, перемешай.'
+      },
+      {
+        title: 'Шаг 8: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из авокадо с отварным рисом или лепешками. Укрась дольками лайма и листиками кинзы.'
+      }
+    ],
+    categories: ['курица', 'мексиканская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      mexican: {
+        id: 'mexican',
+        title: 'Мексиканская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  22: {
+    id: 22,
+    name: 'kurica-v-souse-iz-tomatov',
+    title: 'Курица в соусе из томатов',
+    description: 'Нежная курица в ароматном томатном соусе с базиликом и чесноком. Итальянская кухня в лучших традициях.',
+    cookTime: '60 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 310, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 15, unit: Unit.g },
+    },
+    cuisine: 'Итальянская',
+    servings: 4,
+    // Общий вес блюда: 1250 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Томаты в собственном соку', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Базилик', amount: 1, unit: Unit.bunch },
+      { name: 'Орегано', amount: 1, unit: Unit.tsp },
+      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
+      { name: 'Сахар', amount: 1, unit: Unit.tsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Базилик промой, обсуши и мелко нарежь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка лука',
+        text: 'В глубокой сковороде разогрей масло. Обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 4: Обжарка чеснока',
+        text: 'Добавь чеснок и обжаривай 1 минуту, пока не появится аромат.'
+      },
+      {
+        title: 'Шаг 5: Добавление томатов',
+        text: 'Добавь томаты в собственном соку, разомни их ложкой. Добавь сахар, орегано и половину базилика.'
+      },
+      {
+        title: 'Шаг 6: Тушение соуса',
+        text: 'Доведи соус до кипения, уменьши огонь и туши 15-20 минут, периодически помешивая.'
+      },
+      {
+        title: 'Шаг 7: Обжарка курицы',
+        text: 'В отдельной сковороде обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны).'
+      },
+      {
+        title: 'Шаг 8: Соединение ингредиентов',
+        text: 'Переложи курицу в соус, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Добавь оставшийся базилик, перемешай и попробуй на соль и перец.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в томатном соусе с пастой или отварным рисом. Укрась свежими листиками базилика.'
+      }
+    ],
+    categories: ['курица', 'итальянская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 95,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      italian: {
+        id: 'italian',
+        title: 'Итальянская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  23: {
+    id: 23,
+    name: 'kurica-v-souse-iz-shpinata',
+    title: 'Курица в соусе из шпината',
+    description: 'Нежная курица в сливочном соусе из шпината с чесноком и мускатным орехом. Французская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 20, unit: Unit.g },
+      carbs: { value: 10, unit: Unit.g },
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    // Общий вес блюда: 1300 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Шпинат замороженный', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
+      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
+      { name: 'Мускатный орех', amount: 0.5, unit: Unit.tsp },
+      { name: 'Мука', amount: 1, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Шпинат разморозь и отожми лишнюю жидкость.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину сливочного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до прозрачности.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Добавление сливок',
+        text: 'Постепенно влей сливки, постоянно помешивая, чтобы не было комочков.'
+      },
+      {
+        title: 'Шаг 7: Добавление шпината',
+        text: 'Добавь шпинат, мускатный орех, соль и перец. Перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из шпината с отварным рисом или картофельным пюре. Укрась свежим шпинатом.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  24: {
+    id: 24,
+    name: 'kurica-v-souse-iz-tykvy',
+    title: 'Курица в соусе из тыквы',
+    description: 'Нежная курица в сливочном соусе из тыквы с имбирем и карри. Азиатская кухня в современном исполнении.',
+    cookTime: '65 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 19, unit: Unit.g },
+      carbs: { value: 22, unit: Unit.g },
+    },
+    cuisine: 'Азиатская',
+    servings: 4,
+    // Общий вес блюда: 1400 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Тыква', amount: 500, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Карри', amount: 1, unit: Unit.tbsp },
+      { name: 'Кокосовое молоко', amount: 200, unit: Unit.ml },
+      { name: 'Масло растительное', amount: 3, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка тыквы',
+        text: 'Тыкву очисти от кожуры и семян, нарежь кубиками. Лук нарежь кубиками, чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде обжарь лук до прозрачности.'
+      },
+      {
+        title: 'Шаг 5: Обжарка специй',
+        text: 'Добавь чеснок, имбирь и карри. Обжаривай 1 минуту, пока не появится аромат.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь тыкву, перемешай и обжаривай 5 минут. Влей кокосовое молоко, доведи до кипения.'
+      },
+      {
+        title: 'Шаг 7: Тушение тыквы',
+        text: 'Уменьши огонь и туши тыкву 15-20 минут под крышкой, пока она не станет мягкой.'
+      },
+      {
+        title: 'Шаг 8: Измельчение соуса',
+        text: 'Измельчи соус блендером до однородной массы.'
+      },
+      {
+        title: 'Шаг 9: Тушение курицы',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 10: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из тыквы с отварным рисом. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'азиатская кухня', 'соус', 'основное блюдо'],
+    rating: 4.6,
+    reviews: 76,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      asian: {
+        id: 'asian',
+        title: 'Азиатская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  25: {
+    id: 25,
+    name: 'kurica-v-souse-iz-sliv',
+    title: 'Курица в соусе из слив',
+    description: 'Нежная курица в кисло-сладком соусе из слив с корицей и гвоздикой. Венгерская кухня в лучших традициях.',
+    cookTime: '70 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 350, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 18, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g },
+    },
+    cuisine: 'Венгерская',
+    servings: 4,
+    // Общий вес блюда: 1350 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Сливы', amount: 500, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Корица', amount: 1, unit: Unit.tsp },
+      { name: 'Гвоздика', amount: 3, unit: Unit.pcs },
+      { name: 'Мед', amount: 2, unit: Unit.tbsp },
+      { name: 'Бальзамический уксус', amount: 1, unit: Unit.tbsp },
+      { name: 'Масло оливковое', amount: 3, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка слив',
+        text: 'Сливы промой, удали косточки и нарежь дольками. Лук нарежь тонкими полукольцами, чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Приготовление соуса',
+        text: 'Добавь чеснок, корицу и гвоздику. Обжаривай 1 минуту, пока не появится аромат.'
+      },
+      {
+        title: 'Шаг 6: Добавление слив',
+        text: 'Добавь сливы, мед и бальзамический уксус. Перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 7: Тушение соуса',
+        text: 'Уменьши огонь и туши сливы 15-20 минут, пока они не размягчатся и не начнут распадаться.'
+      },
+      {
+        title: 'Шаг 8: Соединение ингредиентов',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 10-15 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из слив с отварным рисом или картофельным пюре. Укрась свежими сливами и листиками мяты.'
+      }
+    ],
+    categories: ['курица', 'венгерская кухня', 'соус', 'основное блюдо', 'праздничное блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      hungarian: {
+        id: 'hungarian',
+        title: 'Венгерская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  26: {
+    id: 26,
+    name: 'kurica-v-souse-iz-ablok',
+    title: 'Курица в соусе из яблок',
+    description: 'Нежная курица в кисло-сладком соусе из яблок с тимьяном и розмарином. Французская кухня в лучших традициях.',
+    cookTime: '60 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 20, unit: Unit.g },
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    // Общий вес блюда: 1300 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Яблоки', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Тимьян', amount: 1, unit: Unit.tsp },
+      { name: 'Розмарин', amount: 1, unit: Unit.tsp },
+      { name: 'Белое вино', amount: 100, unit: Unit.ml },
+      { name: 'Сливки 20%', amount: 100, unit: Unit.ml },
+      { name: 'Масло сливочное', amount: 50, unit: Unit.g },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка яблок',
+        text: 'Яблоки очисти от кожуры и сердцевины, нарежь дольками. Лук нарежь тонкими полукольцами, чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину сливочного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка яблок',
+        text: 'Добавь яблоки и обжаривай 5 минут, пока они не начнут размягчаться.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь чеснок, тимьян и розмарин. Обжаривай 1 минуту, затем влей вино и готовь, пока не испарится половина жидкости.'
+      },
+      {
+        title: 'Шаг 7: Добавление сливок',
+        text: 'Влей сливки, перемешай и доведи до кипения.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из яблок с отварным рисом или картофельным пюре. Укрась свежими дольками яблок и веточками тимьяна.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 85,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  27: {
+    id: 27,
+    name: 'kurica-v-souse-iz-gribov',
+    title: 'Курица в соусе из грибов',
+    description: 'Нежная курица в сливочном соусе из лесных грибов с чесноком и тимьяном. Русская кухня в лучших традициях.',
+    cookTime: '75 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 21, unit: Unit.g },
+      carbs: { value: 12, unit: Unit.g },
+    },
+    cuisine: 'Русская',
+    servings: 4,
+    // Общий вес блюда: 1400 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Грибы лесные', amount: 500, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Тимьян', amount: 1, unit: Unit.tsp },
+      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
+      { name: 'Белое вино', amount: 100, unit: Unit.ml },
+      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
+      { name: 'Мука', amount: 1, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка грибов',
+        text: 'Грибы очисти, промой и нарежь пластинками. Лук нарежь кубиками, чеснок измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину сливочного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка грибов',
+        text: 'Добавь грибы и обжаривай 10-15 минут, пока не испарится жидкость и грибы не подрумянятся.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту, затем влей вино и готовь, пока не испарится половина жидкости.'
+      },
+      {
+        title: 'Шаг 7: Загущение соуса',
+        text: 'Добавь муку, перемешай и готовь 1 минуту. Постепенно влей сливки, постоянно помешивая.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 20-25 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 10-15 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в грибном соусе с отварным рисом или картофельным пюре. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 94,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  28: {
+    id: 28,
+    name: 'kurica-v-souse-iz-slivok',
+    title: 'Курица в сливочном соусе',
+    description: 'Нежная курица в сливочном соусе с чесноком и зеленью. Классическое французское блюдо.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 320, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 22, unit: Unit.g },
+      carbs: { value: 8, unit: Unit.g },
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    // Общий вес блюда: 1200 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Сливки 20%', amount: 300, unit: Unit.ml },
+      { name: 'Чеснок', amount: 4, unit: Unit.pcs },
+      { name: 'Зелень петрушки', amount: 1, unit: Unit.bunch },
+      { name: 'Зелень укропа', amount: 1, unit: Unit.bunch },
+      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
+      { name: 'Мука', amount: 1, unit: Unit.tbsp },
+      { name: 'Белое вино', amount: 100, unit: Unit.ml },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка зелени',
+        text: 'Чеснок измельчи, зелень мелко нарежь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей сливочное масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Приготовление соуса',
+        text: 'В той же сковороде обжарь чеснок до аромата (1-2 минуты).'
+      },
+      {
+        title: 'Шаг 5: Добавление вина',
+        text: 'Влей вино и готовь, пока не испарится половина жидкости.'
+      },
+      {
+        title: 'Шаг 6: Загущение соуса',
+        text: 'Добавь муку, перемешай и готовь 1 минуту. Постепенно влей сливки, постоянно помешивая.'
+      },
+      {
+        title: 'Шаг 7: Добавление зелени',
+        text: 'Добавь половину нарезанной зелени, перемешай.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в сливочном соусе с отварным рисом или картофельным пюре. Укрась оставшейся зеленью.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо'],
+    rating: 4.6,
+    reviews: 78,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  29: {
+    id: 29,
+    name: 'kurica-v-souse-iz-pomidorov',
+    title: 'Курица в томатном соусе',
+    description: 'Нежная курица в ароматном томатном соусе с базиликом и орегано. Итальянская кухня в лучших традициях.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 310, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 15, unit: Unit.g },
+    },
+    cuisine: 'Итальянская',
+    servings: 4,
+    // Общий вес блюда: 1300 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Томаты в собственном соку', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Базилик', amount: 1, unit: Unit.bunch },
+      { name: 'Орегано', amount: 1, unit: Unit.tsp },
+      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Сахар', amount: 1, unit: Unit.tsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок измельчи, базилик нарежь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей оливковое масло. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь томаты в собственном соку, разомни их ложкой. Добавь орегано и сахар.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 20-25 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Добавление базилика',
+        text: 'За 5 минут до готовности добавь половину нарезанного базилика.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в томатном соусе с пастой или рисом. Укрась оставшимся базиликом.'
+      }
+    ],
+    categories: ['курица', 'итальянская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      italian: {
+        id: 'italian',
+        title: 'Итальянская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  30: {
+    id: 30,
+    name: 'kurica-v-souse-iz-shpinata',
+    title: 'Курица в соусе из шпината',
+    description: 'Нежная курица в сливочном соусе из шпината с чесноком и мускатным орехом. Французская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 20, unit: Unit.g },
+      carbs: { value: 10, unit: Unit.g },
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Шпинат замороженный', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Сливки 20%', amount: 200, unit: Unit.ml },
+      { name: 'Сливочное масло', amount: 50, unit: Unit.g },
+      { name: 'Мускатный орех', amount: 0.5, unit: Unit.tsp },
+      { name: 'Мука', amount: 1, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Шпинат разморозь и отожми лишнюю жидкость.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину сливочного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь муку, перемешай и готовь 1 минуту. Постепенно влей сливки, постоянно помешивая.'
+      },
+      {
+        title: 'Шаг 7: Добавление шпината',
+        text: 'Добавь шпинат и мускатный орех, перемешай и готовь 5 минут.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Настаивание',
+        text: 'Выключи огонь и оставь блюдо под крышкой на 5-10 минут для настаивания.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из шпината с отварным рисом или картофельным пюре. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 86,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  31: {
+    id: 31,
+    name: 'kurica-v-souse-iz-tykvy',
+    title: 'Курица в соусе из тыквы',
+    description: 'Нежная курица в сливочном соусе из тыквы с имбирем и карри. Азиатская кухня в современном исполнении.',
+    cookTime: '65 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 19, unit: Unit.g },
+      carbs: { value: 22, unit: Unit.g }
+    },
+    cuisine: 'Азиатская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Тыква', amount: 500, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Карри', amount: 1, unit: Unit.tbsp },
+      { name: 'Кокосовое молоко', amount: 200, unit: Unit.ml },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Тыкву очисти от кожуры и семян, нарежь кубиками. Лук нарежь кубиками, чеснок и имбирь измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка специй',
+        text: 'Добавь чеснок, имбирь и карри. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь тыкву и обжаривай 5 минут, помешивая.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Влей кокосовое молоко, перемешай и доведи до кипения. Уменьши огонь и туши 20-25 минут под крышкой, пока тыква не станет мягкой.'
+      },
+      {
+        title: 'Шаг 8: Пюрирование',
+        text: 'Извлеки курицу из соуса. Пюрируй соус с тыквой блендером до однородной консистенции.'
+      },
+      {
+        title: 'Шаг 9: Финальное тушение',
+        text: 'Верни курицу в соус, перемешай и туши еще 5-10 минут.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из тыквы с отварным рисом или картофельным пюре. Укрась свежей зеленью.'
+      }
+    ],
+    categories: ['курица', 'азиатская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      asian: {
+        id: 'asian',
+        title: 'Азиатская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  32: {
+    id: 32,
+    name: 'kurica-v-souse-iz-mango',
+    title: 'Курица в соусе из манго',
+    description: 'Нежная курица в сладком соусе из манго с имбирем и чили. Тайская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 350, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 18, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Тайская',
+    servings: 4,
+    // Общий вес блюда: 1200 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Манго', amount: 2, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Чили', amount: 1, unit: Unit.pcs },
+      { name: 'Кокосовое молоко', amount: 200, unit: Unit.ml },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка фруктов и овощей',
+        text: 'Манго очисти от кожуры и нарежь кубиками. Лук нарежь кубиками, чеснок и имбирь измельчи, чили нарежь тонкими кольцами.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка специй',
+        text: 'Добавь чеснок, имбирь и чили. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину нарезанного манго и обжаривай 5 минут, помешивая.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Влей кокосовое молоко, перемешай и доведи до кипения. Уменьши огонь и туши 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Пюрирование',
+        text: 'Извлеки курицу из соуса. Пюрируй соус с манго блендером до однородной консистенции.'
+      },
+      {
+        title: 'Шаг 9: Финальное тушение',
+        text: 'Верни курицу в соус, добавь оставшееся манго, перемешай и туши еще 5-10 минут.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из манго с отварным рисом. Укрась свежей зеленью и дольками манго.'
+      }
+    ],
+    categories: ['курица', 'тайская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 94,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      thai: {
+        id: 'thai',
+        title: 'Тайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  33: {
+    id: 33,
+    name: 'kurica-v-souse-iz-ananasa',
+    title: 'Курица в соусе из ананаса',
+    description: 'Нежная курица в кисло-сладком соусе из ананаса с соевым соусом и медом. Китайская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 28, unit: Unit.g }
+    },
+    cuisine: 'Китайская',
+    servings: 4,
+    // Общий вес блюда: 1300 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Ананас консервированный', amount: 400, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Имбирь', amount: 20, unit: Unit.g },
+      { name: 'Соевый соус', amount: 3, unit: Unit.tbsp },
+      { name: 'Мед', amount: 2, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей',
+        text: 'Лук нарежь кубиками, чеснок и имбирь измельчи. Ананас нарежь кубиками.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка специй',
+        text: 'Добавь чеснок и имбирь. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь соевый соус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Добавление ананаса',
+        text: 'Добавь половину нарезанного ананаса и его сок, перемешай.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Финальное добавление ананаса',
+        text: 'За 5 минут до готовности добавь оставшийся ананас.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из ананаса с отварным рисом. Укрась свежей зеленью и дольками ананаса.'
+      }
+    ],
+    categories: ['курица', 'китайская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      chinese: {
+        id: 'chinese',
+        title: 'Китайская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  34: {
+    id: 34,
+    name: 'kurica-v-souse-iz-granata',
+    title: 'Курица в соусе из граната',
+    description: 'Нежная курица в кисло-сладком соусе из граната с грецкими орехами и кинзой. Кавказская кухня в современном исполнении.',
+    cookTime: '60 минут',
+    difficulty: '3/5',
+    nutrition: {
+      calories: { value: 360, unit: Unit.g },
+      protein: { value: 29, unit: Unit.g },
+      fat: { value: 22, unit: Unit.g },
+      carbs: { value: 20, unit: Unit.g }
+    },
+    cuisine: 'Кавказская',
+    servings: 4,
+    // Общий вес блюда: 1250 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Гранат', amount: 2, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Грецкие орехи', amount: 100, unit: Unit.g },
+      { name: 'Кинза', amount: 1, unit: Unit.bunch },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и фруктов',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Гранат очисти, отдели зерна. Грецкие орехи измельчи.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину зерен граната и их сок, перемешай.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 20-25 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Добавление орехов',
+        text: 'За 10 минут до готовности добавь измельченные грецкие орехи.'
+      },
+      {
+        title: 'Шаг 9: Финальное добавление граната',
+        text: 'За 5 минут до готовности добавь оставшиеся зерна граната.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из граната с отварным рисом. Укрась свежей кинзой и зернами граната.'
+      }
+    ],
+    categories: ['курица', 'кавказская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 92,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      caucasian: {
+        id: 'caucasian',
+        title: 'Кавказская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  35: {
+    id: 35,
+    name: 'kurica-v-souse-iz-klyukvy',
+    title: 'Курица в соусе из клюквы',
+    description: 'Нежная курица в кисло-сладком соусе из клюквы с апельсином и розмарином. Европейская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Европейская',
+    servings: 4,
+    // Общий вес блюда: 1200 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Клюква замороженная', amount: 200, unit: Unit.g },
+      { name: 'Апельсин', amount: 1, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
+      { name: 'Мед', amount: 2, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка фруктов и овощей',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Апельсин очисти, нарежь дольками. Клюкву разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и розмарин. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину клюквы и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Добавление апельсина',
+        text: 'Добавь дольки апельсина и их сок, перемешай.'
+      },
+      {
+        title: 'Шаг 8: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 9: Финальное добавление клюквы',
+        text: 'За 5 минут до готовности добавь оставшуюся клюкву.'
+      },
+      {
+        title: 'Шаг 10: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 11: Подача',
+        text: 'Подавай курицу в соусе из клюквы с отварным рисом или картофельным пюре. Укрась свежим розмарином и дольками апельсина.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 86,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  36: {
+    id: 36,
+    name: 'kurica-v-souse-iz-oblepihi',
+    title: 'Курица в соусе из облепихи',
+    description: 'Нежная курица в кисло-сладком соусе из облепихи с медом и тимьяном. Русская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 23, unit: Unit.g }
+    },
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Облепиха замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Тимьян нарежь. Облепиху разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину облепихи, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление облепихи',
+        text: 'За 5 минут до готовности добавь оставшуюся облепиху.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из облепихи с отварным рисом или картофельным пюре. Укрась свежим тимьяном и ягодами облепихи.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  37: {
+    id: 37,
+    name: 'kurica-v-souse-iz-brusniki',
+    title: 'Курица в соусе из брусники',
+    description: 'Нежная курица в кисло-сладком соусе из брусники с яблоком и корицей. Скандинавская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Скандинавская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Брусника замороженная', amount: 200, unit: Unit.g },
+      { name: 'Яблоко', amount: 1, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Корица', amount: 0.5, unit: Unit.tsp },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Яблоко очисти от кожуры и нарежь кубиками. Бруснику разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока и яблока',
+        text: 'Добавь чеснок и яблоко. Обжаривай 2-3 минуты до мягкости яблока.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину брусники, бальзамический уксус, мед и корицу, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление брусники',
+        text: 'За 5 минут до готовности добавь оставшуюся бруснику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из брусники с отварным рисом или картофельным пюре. Укрась свежими ягодами брусники и дольками яблока.'
+      }
+    ],
+    categories: ['курица', 'скандинавская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 86,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      scandinavian: {
+        id: 'scandinavian',
+        title: 'Скандинавская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  38: {
+    id: 38,
+    name: 'kurica-v-souse-iz-cherniki',
+    title: 'Курица в соусе из черники',
+    description: 'Нежная курица в сладком соусе из черники с базиликом и бальзамическим уксусом. Итальянская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 26, unit: Unit.g }
+    },
+    cuisine: 'Итальянская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Черника замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Базилик', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Базилик нарежь. Чернику разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину оливкового масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и базилик. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину черники, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление черники',
+        text: 'За 5 минут до готовности добавь оставшуюся чернику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из черники с отварным рисом или картофельным пюре. Укрась свежим базиликом и ягодами черники.'
+      }
+    ],
+    categories: ['курица', 'итальянская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      italian: {
+        id: 'italian',
+        title: 'Итальянская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  39: {
+    id: 39,
+    name: 'kurica-v-souse-iz-maliny',
+    title: 'Курица в соусе из малины',
+    description: 'Нежная курица в сладком соусе из малины с мятой и лимоном. Французская кухня в современном исполнении.',
+    cookTime: '45 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 26, unit: Unit.g }
+    },
+    cuisine: 'Французская',
+    servings: 4,
+    // Общий вес блюда: 1200 г
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Малина замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Мята', amount: 1, unit: Unit.bunch },
+      { name: 'Лимон', amount: 1, unit: Unit.pcs },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Сливочное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Мяту нарежь. Лимон нарежь дольками. Малину разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину сливочного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и половину мяты. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину малины, сок лимона и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление малины',
+        text: 'За 5 минут до готовности добавь оставшуюся малину.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из малины с отварным рисом или картофельным пюре. Укрась свежей мятой, ягодами малины и дольками лимона.'
+      }
+    ],
+    categories: ['курица', 'французская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 90,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      french: {
+        id: 'french',
+        title: 'Французская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  40: {
+    id: 40,
+    name: 'kurica-v-souse-iz-smorodiny',
+    title: 'Курица в соусе из смородины',
+    description: 'Нежная курица в кисло-сладком соусе из смородины с розмарином и чесноком. Средиземноморская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Средиземноморская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Смородина черная замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Розмарин нарежь. Смородину разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину оливкового масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и розмарин. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину смородины, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление смородины',
+        text: 'За 5 минут до готовности добавь оставшуюся смородину.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из смородины с отварным рисом или картофельным пюре. Укрась свежим розмарином и ягодами смородины.'
+      }
+    ],
+    categories: ['курица', 'средиземноморская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      mediterranean: {
+        id: 'mediterranean',
+        title: 'Средиземноморская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  41: {
+    id: 41,
+    name: 'kurica-v-souse-iz-kryzhovnika',
+    title: 'Курица в соусе из крыжовника',
+    description: 'Нежная курица в кисло-сладком соусе из крыжовника с тимьяном и чесноком. Европейская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 24, unit: Unit.g }
+    },
+    cuisine: 'Европейская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Крыжовник замороженный', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Тимьян нарежь. Крыжовник разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину крыжовника, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление крыжовника',
+        text: 'За 5 минут до готовности добавь оставшийся крыжовник.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из крыжовника с отварным рисом или картофельным пюре. Укрась свежим тимьяном и ягодами крыжовника.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'соус', 'основное блюдо'],
+    rating: 4.6,
+    reviews: 84,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  46: {
+    id: 46,
+    name: 'kurica-v-souse-iz-ezheviki',
+    title: 'Курица в соусе из ежевики',
+    description: 'Нежная курица в сладком соусе из ежевики с розмарином и чесноком. Средиземноморская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Средиземноморская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Ежевика замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 3, unit: Unit.pcs },
+      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Оливковое масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Розмарин нарежь. Ежевику разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину оливкового масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и розмарин. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину ежевики, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление ежевики',
+        text: 'За 5 минут до готовности добавь оставшуюся ежевику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из ежевики с отварным рисом или картофельным пюре. Укрась свежим розмарином и ягодами ежевики.'
+      }
+    ],
+    categories: ['курица', 'средиземноморская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 86,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      mediterranean: {
+        id: 'mediterranean',
+        title: 'Средиземноморская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  47: {
+    id: 47,
+    name: 'kurica-v-souse-iz-golubiki',
+    title: 'Курица в соусе из голубики',
+    description: 'Нежная курица в сладком соусе из голубики с тимьяном и лимоном. Европейская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 24, unit: Unit.g }
+    },
+    cuisine: 'Европейская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Голубика замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
+      { name: 'Лимон', amount: 0.5, unit: Unit.pcs },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Тимьян нарежь. Голубику разморозь. Лимон нарежь тонкими дольками.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину голубики, бальзамический уксус, мед и лимон, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление голубики',
+        text: 'За 5 минут до готовности добавь оставшуюся голубику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из голубики с отварным рисом или картофельным пюре. Укрась свежим тимьяном, ягодами голубики и дольками лимона.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'соус', 'основное блюдо'],
+    rating: 4.8,
+    reviews: 88,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  48: {
+    id: 48,
+    name: 'kurica-v-souse-iz-klyukvy',
+    title: 'Курица в соусе из клюквы',
+    description: 'Нежная курица в кисло-сладком соусе из клюквы с апельсином и розмарином. Европейская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Европейская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Клюква замороженная', amount: 200, unit: Unit.g },
+      { name: 'Апельсин', amount: 1, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Розмарин', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и фруктов',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Розмарин нарежь. Клюкву разморозь. Апельсин очисти от кожуры и нарежь дольками.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и розмарин. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину клюквы, бальзамический уксус, мед и апельсин, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление клюквы',
+        text: 'За 5 минут до готовности добавь оставшуюся клюкву.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из клюквы с отварным рисом или картофельным пюре. Укрась свежим розмарином, ягодами клюквы и дольками апельсина.'
+      }
+    ],
+    categories: ['курица', 'европейская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 86,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      european: {
+        id: 'european',
+        title: 'Европейская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  49: {
+    id: 49,
+    name: 'kurica-v-souse-iz-brusniki',
+    title: 'Курица в соусе из брусники',
+    description: 'Нежная курица в кисло-сладком соусе из брусники с яблоком и корицей. Скандинавская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 24, unit: Unit.g }
+    },
+    cuisine: 'Скандинавская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Брусника замороженная', amount: 200, unit: Unit.g },
+      { name: 'Яблоко', amount: 1, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Корица', amount: 0.5, unit: Unit.tsp },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Яблоко очисти от кожуры и нарежь кубиками. Бруснику разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока и яблока',
+        text: 'Добавь чеснок и яблоко. Обжаривай 2-3 минуты до мягкости яблока.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину брусники, бальзамический уксус, мед и корицу, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление брусники',
+        text: 'За 5 минут до готовности добавь оставшуюся бруснику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из брусники с отварным рисом или картофельным пюре. Укрась свежими ягодами брусники и дольками яблока.'
+      }
+    ],
+    categories: ['курица', 'скандинавская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 84,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      scandinavian: {
+        id: 'scandinavian',
+        title: 'Скандинавская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  50: {
+    id: 50,
+    name: 'kurica-v-souse-iz-oblepihi',
+    title: 'Курица в соусе из облепихи',
+    description: 'Нежная курица в кисло-сладком соусе из облепихи с медом и тимьяном. Русская кухня в современном исполнении.',
+    cookTime: '50 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 330, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 16, unit: Unit.g },
+      carbs: { value: 23, unit: Unit.g }
+    },
+    cuisine: 'Русская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Облепиха замороженная', amount: 200, unit: Unit.g },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Тимьян', amount: 1, unit: Unit.bunch },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Тимьян нарежь. Облепиху разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока',
+        text: 'Добавь чеснок и тимьян. Обжаривай 1 минуту до аромата.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину облепихи, бальзамический уксус и мед, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление облепихи',
+        text: 'За 5 минут до готовности добавь оставшуюся облепиху.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из облепихи с отварным рисом или картофельным пюре. Укрась свежим тимьяном и ягодами облепихи.'
+      }
+    ],
+    categories: ['курица', 'русская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 82,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      russian: {
+        id: 'russian',
+        title: 'Русская кухня'
+      }
+    },
+    dietCategoriesList: {}
+  },
+  51: {
+    id: 51,
+    name: 'kurica-v-souse-iz-brusniki',
+    title: 'Курица в соусе из брусники',
+    description: 'Нежная курица в кисло-сладком соусе из брусники с яблоком и корицей. Скандинавская кухня в современном исполнении.',
+    cookTime: '55 минут',
+    difficulty: '2/5',
+    nutrition: {
+      calories: { value: 340, unit: Unit.g },
+      protein: { value: 28, unit: Unit.g },
+      fat: { value: 17, unit: Unit.g },
+      carbs: { value: 25, unit: Unit.g }
+    },
+    cuisine: 'Скандинавская',
+    servings: 4,
+    ingredients: [
+      { name: 'Куриное филе', amount: 600, unit: Unit.g },
+      { name: 'Брусника замороженная', amount: 200, unit: Unit.g },
+      { name: 'Яблоко', amount: 1, unit: Unit.pcs },
+      { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
+      { name: 'Чеснок', amount: 2, unit: Unit.pcs },
+      { name: 'Корица', amount: 0.5, unit: Unit.tsp },
+      { name: 'Бальзамический уксус', amount: 2, unit: Unit.tbsp },
+      { name: 'Мед', amount: 1, unit: Unit.tbsp },
+      { name: 'Растительное масло', amount: 2, unit: Unit.tbsp },
+      { name: 'Соль', amount: 0, unit: Unit.to_taste },
+      { name: 'Перец черный', amount: 0, unit: Unit.to_taste }
+    ],
+    steps: [
+      {
+        title: 'Шаг 1: Подготовка курицы',
+        text: 'Куриное филе промой, обсуши и нарежь на порционные куски. Посоли и поперчи.'
+      },
+      {
+        title: 'Шаг 2: Подготовка овощей и ягод',
+        text: 'Лук нарежь кубиками, чеснок измельчи. Яблоко очисти от кожуры и нарежь кубиками. Бруснику разморозь.'
+      },
+      {
+        title: 'Шаг 3: Обжарка курицы',
+        text: 'В глубокой сковороде разогрей половину растительного масла. Обжарь курицу до золотистой корочки со всех сторон (по 4-5 минут с каждой стороны). Переложи в тарелку.'
+      },
+      {
+        title: 'Шаг 4: Обжарка лука',
+        text: 'В той же сковороде добавь оставшееся масло и обжарь лук до золотистого цвета.'
+      },
+      {
+        title: 'Шаг 5: Обжарка чеснока и яблока',
+        text: 'Добавь чеснок и яблоко. Обжаривай 2-3 минуты до мягкости яблока.'
+      },
+      {
+        title: 'Шаг 6: Приготовление соуса',
+        text: 'Добавь половину брусники, бальзамический уксус, мед и корицу, перемешай и готовь 2 минуты.'
+      },
+      {
+        title: 'Шаг 7: Тушение',
+        text: 'Верни курицу в сковороду, перемешай и туши на медленном огне 15-20 минут под крышкой.'
+      },
+      {
+        title: 'Шаг 8: Финальное добавление брусники',
+        text: 'За 5 минут до готовности добавь оставшуюся бруснику.'
+      },
+      {
+        title: 'Шаг 9: Финальный штрих',
+        text: 'Попробуй на соль и перец, при необходимости добавь.'
+      },
+      {
+        title: 'Шаг 10: Подача',
+        text: 'Подавай курицу в соусе из брусники с отварным рисом или картофельным пюре. Укрась свежими ягодами брусники и дольками яблока.'
+      }
+    ],
+    categories: ['курица', 'скандинавская кухня', 'соус', 'основное блюдо'],
+    rating: 4.7,
+    reviews: 84,
+    dishCategoriesList: {
+      'main-dishes': {
+        id: 'main-dishes',
+        title: 'Основные блюда'
+      }
+    },
+    dishCategoriesSubList: {
+      chicken: {
+        id: 'chicken',
+        title: 'Блюда из курицы'
+      }
+    },
+    cuisineCategoriesList: {
+      scandinavian: {
+        id: 'scandinavian',
+        title: 'Скандинавская кухня'
+      }
+    },
+    dietCategoriesList: {}
   }
-},
-5: {
-  id: 5,
-      name: 'pelmeni-s-telyatinoy',
-      title: 'Пельмени с телятиной',
-      description: 'Нежные пельмени с сочной телятиной и ароматными специями. Более диетический вариант классических пельменей, который сохраняет все лучшие качества традиционного блюда.',
-      cookTime: '90 минут',
-      difficulty: '3/5',
-      nutrition: {
-    calories: { value: 245.5, unit: Unit.g },
-    protein: { value: 16.8, unit: Unit.g },
-    fat: { value: 8.3, unit: Unit.g },
-    carbs: { value: 28.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-    { name: 'Вода', amount: 150, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Фарш телячий', amount: 500, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-    { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Укроп свежий', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Замешиваем тесто',
-      text: 'Просейте муку в миску, добавьте яйцо, соль и постепенно вливайте воду, замешивая эластичное тесто. Накройте пищевой пленкой и оставьте на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Измельчите лук и чеснок, смешайте с телячьим фаршем. Добавьте рубленый укроп, соль и перец по вкусу. Тщательно перемешайте.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Формируем пельмени',
-      text: 'Раскатайте тесто тонко, вырежьте кружочки. В центр каждого положите начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варка',
-      text: 'В кипящую подсоленную воду опустите пельмени. Варите 5-7 минут после всплытия. Подавайте со сметаной или сливочным маслом.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'второе блюдо', 'домашняя кухня', 'мясные блюда', 'телятина', 'обед', 'ужин', 'диетическое'
-  ],
-      rating: 4.7,
-      reviews: 184,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    'low-calorie': {
-      id: 'low-calorie',
-          title: 'Низкокалорийные блюда'
-    },
-  }
-},
-6: {
-  id: 6,
-      name: 'pelmeni-s-baraninou',
-      title: 'Пельмени с бараниной',
-      description: 'Сочные пельмени с ароматной бараниной и восточными специями. Оригинальный вариант классического блюда с насыщенным вкусом и неповторимым ароматом.',
-      cookTime: '100 минут',
-      difficulty: '4/5',
-      nutrition: {
-    calories: { value: 285.5, unit: Unit.g },
-    protein: { value: 15.8, unit: Unit.g },
-    fat: { value: 16.3, unit: Unit.g },
-    carbs: { value: 26.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-    { name: 'Вода', amount: 150, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Фарш из баранины', amount: 500, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-    { name: 'Чеснок', amount: 3, unit: Unit.pcs },
-    { name: 'Зира', amount: 1, unit: Unit.tsp },
-    { name: 'Кориандр молотый', amount: 1, unit: Unit.tsp },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Кинза свежая', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Готовим тесто',
-      text: 'Просейте муку, добавьте яйцо, соль и воду. Замесите эластичное тесто и оставьте его под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Приготовление начинки',
-      text: 'Измельчите лук и чеснок, добавьте к фаршу. Всыпьте зиру, кориандр, соль и перец. Добавьте мелко нарубленную кинзу. Тщательно перемешайте.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепка пельменей',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый выложите начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варка',
-      text: 'Варите пельмени в подсоленной воде 6-8 минут после всплытия. Подавайте с бараньим бульоном или сметаной.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'восточная кухня', 'второе блюдо', 'домашняя кухня', 'мясные блюда', 'баранина', 'обед', 'ужин'
-  ],
-      rating: 4.6,
-      reviews: 142,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    'high-protein': {
-      id: 'high-protein',
-          title: 'Высокобелковые блюда'
-    },
-  }
-},
-7: {
-  id: 7,
-      name: 'pelmeni-s-kuritsey',
-      title: 'Пельмени с курицей',
-      description: 'Легкие и диетические пельмени с куриным фаршем. Отличный вариант для тех, кто следит за фигурой или предпочитает более легкие блюда.',
-      cookTime: '80 минут',
-      difficulty: '2/5',
-      nutrition: {
-    calories: { value: 220.5, unit: Unit.g },
-    protein: { value: 18.8, unit: Unit.g },
-    fat: { value: 6.3, unit: Unit.g },
-    carbs: { value: 27.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-    { name: 'Вода', amount: 150, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Фарш куриный', amount: 500, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-    { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Петрушка свежая', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Замешиваем тесто',
-      text: 'В миску просейте муку, добавьте яйцо, соль и воду. Замесите эластичное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Измельчите лук и чеснок, смешайте с куриным фаршем. Добавьте рубленую петрушку, соль и перец по вкусу. Хорошо перемешайте.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто тонким слоем, вырежьте кружочки. На каждый положите начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'В кипящую подсоленную воду опустите пельмени. Варите 5-6 минут после всплытия. Подавайте со сметаной или куриным бульоном.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'второе блюдо', 'домашняя кухня', 'куриное мясо', 'диетическое', 'обед', 'ужин'
-  ],
-      rating: 4.7,
-      reviews: 198,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    'low-calorie': {
-      id: 'low-calorie',
-          title: 'Низкокалорийные блюда'
-    },
-  }
-},
-8: {
-  id: 8,
-      name: 'pelmeni-s-ryboi',
-      title: 'Пельмени с рыбой',
-      description: 'Оригинальные пельмени с нежной рыбной начинкой. Прекрасная альтернатива мясным пельменям, особенно актуальная в пост или для любителей морепродуктов.',
-      cookTime: '90 минут',
-      difficulty: '3/5',
-      nutrition: {
-    calories: { value: 235.5, unit: Unit.g },
-    protein: { value: 17.8, unit: Unit.g },
-    fat: { value: 7.3, unit: Unit.g },
-    carbs: { value: 27.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-    { name: 'Вода', amount: 150, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Филе трески', amount: 400, unit: Unit.g },
-    { name: 'Филе лосося', amount: 200, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-    { name: 'Укроп свежий', amount: 1, unit: Unit.tbsp },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Масло сливочное', amount: 50, unit: Unit.g },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Готовим тесто',
-      text: 'Просейте муку, добавьте яйцо, соль и воду. Замесите эластичное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Измельчите рыбное филе и лук в мясорубке. Добавьте размягченное масло, укроп, соль и перец. Тщательно перемешайте.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый положите рыбную начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Варите пельмени в подсоленной воде 4-5 минут после всплытия. Подавайте с растопленным сливочным маслом и зеленью.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'рыбные блюда', 'второе блюдо', 'домашняя кухня', 'морепродукты', 'постное', 'обед', 'ужин'
-  ],
-      rating: 4.5,
-      reviews: 156,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    lean: {
-      id: 'lean',
-          title: 'Постные блюда'
-    },
-  }
-},
-9: {
-  id: 9,
-      name: 'pelmeni-s-gribami',
-      title: 'Пельмени с грибами',
-      description: 'Ароматные постные пельмени с грибной начинкой. Идеальное блюдо для вегетарианцев и постящихся, которое не уступает по вкусу классическим мясным пельменям.',
-      cookTime: '100 минут',
-      difficulty: '3/5',
-      nutrition: {
-    calories: { value: 198.5, unit: Unit.g },
-    protein: { value: 6.8, unit: Unit.g },
-    fat: { value: 4.3, unit: Unit.g },
-    carbs: { value: 34.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Вода', amount: 200, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Грибы шампиньоны', amount: 500, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-    { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-    { name: 'Масло растительное', amount: 3, unit: Unit.tbsp },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Тимьян свежий', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Замешиваем тесто',
-      text: 'Просейте муку, добавьте соль и воду. Замесите эластичное постное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Мелко нарежьте грибы и лук. Обжарьте лук до золотистого цвета, добавьте грибы и чеснок. Жарьте до испарения жидкости. В конце добавьте тимьян, соль и перец.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый положите грибную начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Варите пельмени в подсоленной воде 4-5 минут после всплытия. Подавайте с растительным маслом и зеленью.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'грибные блюда', 'второе блюдо', 'домашняя кухня', 'постное', 'вегетарианское', 'обед', 'ужин'
-  ],
-      rating: 4.6,
-      reviews: 167,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    vegetarian: {
-      id: 'vegetarian',
-          title: 'Вегетарианские блюда'
-    },
-  }
-},
-10: {
-  id: 10,
-      name: 'pelmeni-s-tykvoi',
-      title: 'Пельмени с тыквой',
-      description: 'Необычные сладковатые пельмени с тыквенной начинкой. Яркое и полезное блюдо, которое понравится и взрослым, и детям. Отличный способ разнообразить постное меню.',
-      cookTime: '90 минут',
-      difficulty: '3/5',
-      nutrition: {
-    calories: { value: 205.5, unit: Unit.g },
-    protein: { value: 5.8, unit: Unit.g },
-    fat: { value: 3.3, unit: Unit.g },
-    carbs: { value: 41.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Вода', amount: 200, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Тыква', amount: 600, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 1, unit: Unit.pcs },
-    { name: 'Масло растительное', amount: 2, unit: Unit.tbsp },
-    { name: 'Корица молотая', amount: 0.5, unit: Unit.tsp },
-    { name: 'Мускатный орех', amount: 0.25, unit: Unit.tsp },
-    { name: 'Сахар', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Готовим тесто',
-      text: 'Просейте муку, добавьте соль и воду. Замесите эластичное постное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Нарежьте тыкву кубиками и припустите с небольшим количеством воды до мягкости. Обжарьте лук до золотистого цвета. Измельчите тыкву в пюре, добавьте лук, специи и сахар.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый положите тыквенную начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Варите пельмени в подсоленной воде 4-5 минут после всплытия. Подавайте с растительным маслом или медом.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'овощные блюда', 'второе блюдо', 'домашняя кухня', 'постное', 'вегетарианское', 'обед', 'ужин'
-  ],
-      rating: 4.4,
-      reviews: 132,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    vegetarian: {
-      id: 'vegetarian',
-          title: 'Вегетарианские блюда'
-    },
-  }
-},
-11: {
-  id: 11,
-      name: 'pelmeni-s-kartoshkoi',
-      title: 'Пельмени с картошкой',
-      description: 'Сытные постные пельмени с картофельной начинкой. Простое и экономичное блюдо, которое напомнит вкус бабушкиных вареников.',
-      cookTime: '80 минут',
-      difficulty: '2/5',
-      nutrition: {
-    calories: { value: 225.5, unit: Unit.g },
-    protein: { value: 5.8, unit: Unit.g },
-    fat: { value: 2.3, unit: Unit.g },
-    carbs: { value: 47.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Вода', amount: 200, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Картофель', amount: 600, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-    { name: 'Масло растительное', amount: 3, unit: Unit.tbsp },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Укроп свежий', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Замешиваем тесто',
-      text: 'Просейте муку, добавьте соль и воду. Замесите эластичное постное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Отварите картофель, сделайте пюре. Обжарьте лук до золотистого цвета, добавьте к картофелю вместе с укропом, солью и перцем. Тщательно перемешайте.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый положите картофельную начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Варите пельмени в подсоленной воде 4-5 минут после всплытия. Подавайте с обжаренным луком и растительным маслом.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'овощные блюда', 'второе блюдо', 'домашняя кухня', 'постное', 'вегетарианское', 'обед', 'ужин', 'экономное'
-  ],
-      rating: 4.5,
-      reviews: 178,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    vegetarian: {
-      id: 'vegetarian',
-          title: 'Вегетарианские блюда'
-    },
-  }
-},
-12: {
-  id: 12,
-      name: 'pelmeni-s-kapustoy',
-      title: 'Пельмени с капустой',
-      description: 'Постные пельмени с сочной капустной начинкой. Легкое и полезное блюдо, которое особенно актуально в пост или для вегетарианского меню.',
-      cookTime: '90 минут',
-      difficulty: '3/5',
-      nutrition: {
-    calories: { value: 195.5, unit: Unit.g },
-    protein: { value: 4.8, unit: Unit.g },
-    fat: { value: 2.3, unit: Unit.g },
-    carbs: { value: 39.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Вода', amount: 200, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Капуста белокочанная', amount: 700, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 2, unit: Unit.pcs },
-    { name: 'Морковь', amount: 1, unit: Unit.pcs },
-    { name: 'Масло растительное', amount: 3, unit: Unit.tbsp },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Укроп свежий', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Готовим тесто',
-      text: 'Просейте муку, добавьте соль и воду. Замесите эластичное постное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Нашинкуйте капусту, натрите морковь, нарежьте лук. Обжарьте овощи до мягкости, добавьте соль, перец и укроп. Остудите начинку.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый положите капустную начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Варите пельмени в подсоленной воде 4-5 минут после всплытия. Подавайте с растительным маслом и свежей зеленью.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'овощные блюда', 'второе блюдо', 'домашняя кухня', 'постное', 'вегетарианское', 'обед', 'ужин'
-  ],
-      rating: 4.3,
-      reviews: 145,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    vegetarian: {
-      id: 'vegetarian',
-          title: 'Вегетарианские блюда'
-    },
-  }
-},
-13: {
-  id: 13,
-      name: 'pelmeni-s-syrom',
-      title: 'Пельмени с сыром',
-      description: 'Оригинальные пельмени с сырной начинкой. Сытное и вкусное блюдо, которое особенно понравится любителям сыра и детям.',
-      cookTime: '70 минут',
-      difficulty: '2/5',
-      nutrition: {
-    calories: { value: 285.5, unit: Unit.g },
-    protein: { value: 14.8, unit: Unit.g },
-    fat: { value: 15.3, unit: Unit.g },
-    carbs: { value: 27.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 6,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 400, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 1, unit: Unit.pcs },
-    { name: 'Вода', amount: 150, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Сыр твердый', amount: 300, unit: Unit.g },
-    { name: 'Сыр плавленый', amount: 200, unit: Unit.g },
-    { name: 'Масло сливочное', amount: 50, unit: Unit.g },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.to_taste },
-    { name: 'Зелень петрушки', amount: 1, unit: Unit.tbsp },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Замешиваем тесто',
-      text: 'В миску просейте муку, добавьте яйцо, соль и воду. Замесите эластичное тесто и оставьте его отдохнуть под пленкой на 30 минут.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Готовим начинку',
-      text: 'Натрите твердый сыр, нарежьте плавленый сыр. Смешайте сыры с размягченным сливочным маслом, добавьте рубленую петрушку, соль и перец.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Лепим пельмени',
-      text: 'Раскатайте тесто, вырежьте кружочки. На каждый положите сырную начинку и защипните края, формируя пельмени.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варим',
-      text: 'Варите пельмени в подсоленной воде 3-4 минуты после всплытия. Подавайте со сливочным маслом и свежей зеленью.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'второе блюдо', 'домашняя кухня', 'вегетарианское', 'сырные блюда', 'обед', 'ужин'
-  ],
-      rating: 4.7,
-      reviews: 189,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    vegetarian: {
-      id: 'vegetarian',
-          title: 'Вегетарианские блюда'
-    },
-  }
-},
-14: {
-  id: 14,
-      name: 'pelmeni-po-sibirski',
-      title: 'Пельмени по-сибирски (старый рецепт)',
-      description: 'Традиционные сибирские пельмени по старинному рецепту. Сочная мясная начинка в тонком тесте - классика русской кухни, которая никогда не выходит из моды.',
-      cookTime: '150 минут',
-      difficulty: '4/5',
-      nutrition: {
-    calories: { value: 282.5, unit: Unit.g },
-    protein: { value: 15.8, unit: Unit.g },
-    fat: { value: 12.3, unit: Unit.g },
-    carbs: { value: 29.4, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 8,
-      ingredients: [
-    { name: 'Мука пшеничная', amount: 1500, unit: Unit.g },
-    { name: 'Яйцо куриное', amount: 3, unit: Unit.pcs },
-    { name: 'Вода', amount: 500, unit: Unit.ml },
-    { name: 'Соль', amount: 1, unit: Unit.tsp },
-    { name: 'Фарш говяжий', amount: 1000, unit: Unit.g },
-    { name: 'Фарш свиной', amount: 500, unit: Unit.g },
-    { name: 'Лук репчатый', amount: 1000, unit: Unit.g },
-    { name: 'Перец черный молотый', amount: 1, unit: Unit.tsp },
-    { name: 'Чеснок', amount: 2, unit: Unit.pcs },
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Подготовка фарша',
-      text: 'Пропустите через мясорубку говядину, свинину и репчатый лук. Добавьте измельченный чеснок, соль и перец. Тщательно перемешайте начинку до однородного состояния.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Замешиваем тесто',
-      text: 'В глубокой миске смешайте муку с солью. Взбейте яйца с водой и постепенно вливайте в муку, замешивая крутое тесто. Вымешивайте не менее 10-12 минут до эластичного состояния.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Раскатываем и лепим',
-      text: 'Разделите тесто на части. Раскатайте каждую часть в тонкий пласт. Вырежьте кружочки, выложите начинку и защипните края, формируя пельмени. Важно хорошо залепить края, чтобы начинка не вытекала при варке.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Варка',
-      text: 'Опустите пельмени в кипящую подсоленную воду. После всплытия варите 8 минут на среднем огне. Подавайте горячими со сметаной, маслом или бульоном.'
-    },
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'пельмени', 'русская кухня', 'сибирская кухня', 'второе блюдо', 'домашняя кухня', 'мясные блюда', 'традиционное блюдо', 'обед', 'ужин'
-  ],
-      rating: 4.9,
-      reviews: 272,
-      dishCategoriesList: {
-    'main-dishes': {
-      id: 'main-dishes',
-          title: 'Основные блюда'
-    }
-  },
-  dishCategoriesSubList: {
-    dumplings: {
-      id: 'dumplings',
-          title: 'Пельмени'
-    },
-  },
-  cuisineCategoriesList: {
-    russian: {
-      id: 'russian',
-          title: 'Русская кухня'
-    },
-  },
-  dietCategoriesList: {
-    'traditional': {
-      id: 'traditional',
-          title: 'Традиционная кухня'
-    },
-  }
-},
-15: {
-  id: 15,
-      name: 'shaurma-shashlychnaya',
-      title: 'Шаурма «Шашлычная»',
-      description: 'Аппетитная домашняя шаурма с сочным шашлыком из свинины и свежими овощами. Идеальное сочетание традиционного шашлыка в современной подаче - отличный вариант для пикника или домашнего обеда.',
-      cookTime: '60 минут',
-      difficulty: '2/5',
-      nutrition: {
-    calories: { value: 139.57, unit: Unit.g },
-    protein: { value: 5.97, unit: Unit.g },
-    fat: { value: 9.07, unit: Unit.g },
-    carbs: { value: 8.22, unit: Unit.g },
-  },
-  cuisine: 'Русская',
-      servings: 2,
-      ingredients: [
-    { name: 'Огурец', amount: 120, unit: Unit.g },
-    { name: 'Помидор', amount: 90, unit: Unit.g },
-    { name: 'Салат айсберг', amount: 20, unit: Unit.g },
-    { name: 'Майонез постный', amount: 16, unit: Unit.g },
-    { name: 'Сыр твердый', amount: 20, unit: Unit.g },
-    { name: 'Свинина для шашлыка', amount: 80, unit: Unit.g },
-    { name: 'Сок лимонный', amount: 20, unit: Unit.ml },
-    { name: 'Лепешка пшеничная', amount: 40, unit: Unit.g }
-  ],
-      steps: [
-    {
-      image: '/hvorost/hvorost-na-kefire-1.webp',
-      title: 'Шаг 1: Подготовка овощей',
-      text: 'Тщательно вымойте все овощи. Нарежьте половину огурца, измельчите салат айсберг, нарежьте половину помидора. Сложите овощи в салатник.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-2.webp',
-      title: 'Шаг 2: Приготовление начинки',
-      text: 'Заправьте овощи постным майонезом. Натрите сыр на мелкой терке и добавьте к овощам. Сбрызните все лимонным соком и перемешайте.'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-5.webp',
-      title: 'Шаг 3: Добавление мяса',
-      text: 'Готовый шашлык из свинины нарежьте небольшими кусочками и добавьте к овощной смеси. Шашлык должен быть предварительно приготовлен на мангале (30-40 минут).'
-    },
-    {
-      image: '/hvorost/hvorost-na-kefire-6.webp',
-      title: 'Шаг 4: Сборка шаурмы',
-      text: 'В центр пшеничной лепешки выложите 1-2 ложки начинки. Сверните шаурму удобным способом, постепенно добавляя оставшуюся начинку.'
-    }
-  ],
-      imageMain: '/hvorost/hvorost-na-kefire-main-image-final.webp',
-      categories: [
-    'закуски', 'уличная еда', 'фастфуд', 'шаурма', 'мясные блюда', 'для пикника', 'обед', 'перекус'
-  ],
-      rating: 4.7,
-      reviews: 19,
-      dishCategoriesList: {
-    'snacks': {
-      id: 'snacks',
-          title: 'Закуски'
-    }
-  },
-  dishCategoriesSubList: {
-    'street-food': {
-      id: 'street-food',
-          title: 'Уличная еда'
-    }
-  },
-  cuisineCategoriesList: {
-    'fusion': {
-      id: 'fusion',
-          title: 'Фьюжн'
-    }
-  },
-  dietCategoriesList: {
-    'meat': {
-      id: 'meat',
-          title: 'Мясные блюда'
-    }
-  }
-},
 };
