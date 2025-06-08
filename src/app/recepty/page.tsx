@@ -7,13 +7,13 @@ import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
 import styles from './page.module.scss';
 
-type SearchParams = {
+type SearchParams = Promise<{
   diet?: string;
   cuisine?: string;
   category?: string;
   subcategory?: string;
   search?: string;
-};
+}>;
 
 export default async function RecipesContent({
   searchParams,

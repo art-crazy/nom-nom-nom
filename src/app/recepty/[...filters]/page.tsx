@@ -48,9 +48,9 @@ const getSubcategoryTitle = (category: string, subcategory: string): string | un
 };
 
 type PageProps = {
-  params: {
+  params: Promise<{
     filters: string | string[];
-  };
+  }>;
 };
 
 export default async function RecipesFiltersPage({ params }: PageProps) {
