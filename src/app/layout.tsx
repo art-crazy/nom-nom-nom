@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "@/styles/globals.scss";
 import LayoutWrapper from "@/components/hoc/LayoutWrapper";
 import { metadata as rootMetadata } from "./metadata";
@@ -23,7 +24,9 @@ export default function RootLayout({
         <html lang="ru" className={inter.variable}>
             <body className="antialiased">
                 <LayoutWrapper>{children}</LayoutWrapper>
-                <YandexMetrika />
+                <Suspense fallback={null}>
+                    <YandexMetrika />
+                </Suspense>
             </body>
         </html>
     );
