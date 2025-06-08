@@ -4,7 +4,7 @@ import { dietCategories, cuisineCategories, dishCategories } from '@/data/catego
 import { notFound } from 'next/navigation';
 
 type Props = {
-  params: { filters: string[] }
+  params: Promise<{ filters: string[] }>
 };
 
 type CategoryWithSubcategories = {
