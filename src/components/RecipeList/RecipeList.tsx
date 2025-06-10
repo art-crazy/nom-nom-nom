@@ -62,6 +62,14 @@ export function RecipeList({ filters, recipes, fallbackTriggered }: RecipeListPr
     );
   }
 
+  if (!recipes?.length) {
+      return (
+          <section aria-label="Список рецептов" className={styles.noResults}>
+              <p>По вашему запросу ничего не найдено</p>
+          </section>
+      );
+  }
+
   return (
     <section aria-label="Список рецептов">
       <ul className={styles.recipeList}>
