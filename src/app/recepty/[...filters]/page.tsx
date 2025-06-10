@@ -2,8 +2,11 @@ import React from 'react';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
 import { RecipeFilters } from '@/components/RecipeFilters/RecipeFilters';
 import { RecipeList } from '@/components/RecipeList/RecipeList';
+import { Pagination } from '@/components/Pagination/Pagination';
+import { getRecipes } from '@/services/api';
 import styles from '../page.module.scss';
 import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
+import { LIMIT } from '@/config/limit.constants';
 import { generateMetadata } from './metadata';
 
 export { generateMetadata };
@@ -47,15 +50,21 @@ const getSubcategoryTitle = (category: string, subcategory: string): string | un
   return categoryData?.subcategories?.[subcategory]?.title;
 };
 
-type PageProps = {
+type Props = {
   params: Promise<{
-    filters: string | string[];
+    filters: string[];
+  }>;
+  searchParams: Promise<{
+    search?: string;
+    page?: string;
   }>;
 };
 
-export default async function RecipesFiltersPage({ params }: PageProps) {
+export default async function FilteredRecipesContent({ params, searchParams }: Props) {
   const resolvedParams = await params;
-  const filters = Array.isArray(resolvedParams.filters) ? resolvedParams.filters : resolvedParams.filters ? [resolvedParams.filters] : [];
+  const resolvedSearchParams = await searchParams;
+  const currentPage = Number(resolvedSearchParams.page) || 1;
+  const filters = resolvedParams.filters;
 
   // Определяем типы всех фильтров
   const currentPath = {
@@ -66,8 +75,23 @@ export default async function RecipesFiltersPage({ params }: PageProps) {
       const prevFilter = filters[index - 1];
       return prevFilter && prevFilter in dishCategories &&
              filter in dishCategories[prevFilter as keyof typeof dishCategories].subcategories;
-    })
+    }),
+    search: resolvedSearchParams.search
   };
+
+  // Формируем параметры для API
+  const apiParams = {
+    diet_categories: currentPath.diet,
+    cuisine_categories: currentPath.cuisine,
+    dish_categories: currentPath.category,
+    subcategories: currentPath.subcategory,
+    search: currentPath.search,
+    page: currentPage,
+    limit: LIMIT
+  };
+
+  const { items: recipes, total, page, limit, fallbackTriggered } = await getRecipes(apiParams);
+  const totalPages = Math.ceil(total / limit);
 
   // Формируем пути для хлебных крошек
   const breadcrumbPaths = [
@@ -104,7 +128,15 @@ export default async function RecipesFiltersPage({ params }: PageProps) {
       />
       <div className={styles.content}>
         <RecipeFilters currentPath={currentPath} />
-        <RecipeList filters={currentPath} />
+        <RecipeList filters={currentPath} recipes={recipes} fallbackTriggered={fallbackTriggered} />
+        {totalPages > 1 && (
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            baseUrl={`/recepty/${filters.join('/')}`}
+            searchParams={{ search: currentPath.search }}
+          />
+        )}
       </div>
     </div>
   );
