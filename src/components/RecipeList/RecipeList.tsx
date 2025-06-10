@@ -18,7 +18,7 @@ interface RecipeListProps {
   fallbackTriggered?: boolean;
 }
 
-export function RecipeList({ filters, recipes, fallbackTriggered }: RecipeListProps) {
+export function RecipeList({ recipes, fallbackTriggered }: RecipeListProps) {
   if (fallbackTriggered) {
     return (
       <section aria-label="Список рецептов" className={styles.noResults}>

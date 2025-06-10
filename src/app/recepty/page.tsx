@@ -41,7 +41,7 @@ export default async function RecipesContent({
     limit: LIMIT,
   };
 
-  const { items: recipes, total, page, limit, fallbackTriggered } = await getRecipes(apiParams);
+  const { items: recipes, total, limit, fallbackTriggered } = await getRecipes(apiParams);
   const totalPages = Math.ceil(total / limit);
 
   return (
