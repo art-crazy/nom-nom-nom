@@ -1,6 +1,6 @@
 import { RecipeResponse, RecipeFilters } from '@/types/recipe';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'https://chto-prigotovit.ru/api';
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 1000;
 
