@@ -6,6 +6,10 @@ export interface Recipe {
   subcategoryId: number;
   cuisineCategoryId: number;
   dietCategoryId: number;
+  imageMain?: string;
+  cookTime?: string;
+  difficulty?: string;
+  rating?: number;
 }
 
 export interface RecipeResponse {
