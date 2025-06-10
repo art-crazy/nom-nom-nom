@@ -53,7 +53,6 @@ export default function Home() {
 
   return (
     <div className={styles.home}>
-      <h1 className={styles.pageTitle}>Что приготовить — лучшие подборки рецептов</h1>
       <div className={styles.main}>
         {collections.map((collection) => (
           collection.type === COLLECTION_TYPES.FEATURED ? (
