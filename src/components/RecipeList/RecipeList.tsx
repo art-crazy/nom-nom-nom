@@ -36,7 +36,7 @@ export function RecipeList({ recipes, fallbackTriggered }: RecipeListProps) {
                     <div className={styles.imageContainer}>
                       <Image
                         src={recipe.imageMain}
-                        alt={recipe.name}
+                        alt={recipe.title}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         style={{ objectFit: 'cover' }}
@@ -45,7 +45,7 @@ export function RecipeList({ recipes, fallbackTriggered }: RecipeListProps) {
                     </div>
                   )}
                   <div className={styles.recipeInfo}>
-                    <h3>{recipe.name}</h3>
+                    <h3>{recipe.title}</h3>
                     <p>{recipe.description}</p>
                     <div className={styles.recipeMeta}>
                       <span>Время: {recipe.cookTime}</span>
@@ -83,7 +83,7 @@ export function RecipeList({ recipes, fallbackTriggered }: RecipeListProps) {
                 <div className={styles.imageContainer}>
                   <Image
                     src={recipe.imageMain}
-                    alt={recipe.name}
+                    alt={recipe.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
@@ -92,7 +92,7 @@ export function RecipeList({ recipes, fallbackTriggered }: RecipeListProps) {
                 </div>
               )}
               <div className={styles.recipeInfo}>
-                <h3>{recipe.name}</h3>
+                <h3>{recipe.title}</h3>
                 <p>{recipe.description}</p>
                 <div className={styles.recipeMeta}>
                   <span>Время: {recipe.cookTime}</span>

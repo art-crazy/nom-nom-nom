@@ -1,5 +1,6 @@
 export interface Recipe {
   id: number;
+  title: string;
   name: string;
   description: string;
   dishCategoryId: number;
@@ -28,4 +29,4 @@ export interface RecipeFilters {
   subcategories?: string;
   cuisine_categories?: string;
   diet_categories?: string;
-} 
+}
