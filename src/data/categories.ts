@@ -343,6 +343,10 @@ export const dishCategories: DishCategories = {
       festive: {
         id: 'festive',
         title: 'Праздничные закуски'
+      },
+      'picnic-snacks': {
+        id: 'picnic-snacks',
+        title: 'Лёгкие закуски для пикника'
       }
     }
   },
@@ -619,6 +623,10 @@ export const dishCategories: DishCategories = {
       'vegan-desserts': {
         id: 'vegan-desserts',
         title: 'Веганские десерты'
+      },
+      'homemade-ice-cream': {
+        id: 'homemade-ice-cream',
+        title: 'Домашнее мороженое и сорбеты'
       }
     }
   },
@@ -704,6 +712,10 @@ export const dishCategories: DishCategories = {
       'coffee-tea': {
         id: 'coffee-tea',
         title: 'Кофе и чай'
+      },
+      lemonade: {
+        id: 'lemonade',
+        title: 'Освежающие напитки и лимонады'
       }
     }
   },
