@@ -44,7 +44,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: nom-nom-nom-build
-          path: .
+          path: deploy-source
 
       - name: Configure SSH
         run: |
@@ -67,15 +67,13 @@ jobs:
 
       - name: Deploy files
         run: |
-          mkdir -p deploy
-          cp -r .next package.json package-lock.json public node_modules deploy/
-          cd deploy
+          cd deploy-source
           tar -czf ../deploy.tar.gz .
           cd ..
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
             "tar -xzf /tmp/deploy.tar.gz -C $DEPLOY_PATH && rm /tmp/deploy.tar.gz"
-          rm -rf deploy deploy.tar.gz
+          rm deploy.tar.gz
 
       - name: Set correct permissions
         run: |
