@@ -22,11 +22,11 @@ export interface Recipe {
   subcategoryId: number;
   cuisineCategoryId: number;
   dietCategoryId: number;
-  imageMain?: string;
-  cookTime?: string;
-  difficulty?: string;
-  rating?: number;
-  reviews?: number;
+  imageMain: string;
+  cookTime: string;
+  difficulty: string;
+  rating: number;
+  reviews: number;
   steps: RecipeStep[];
   nutrition: Nutrition;
   cuisine: string;

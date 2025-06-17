@@ -38,6 +38,7 @@ export interface Recipe {
   steps: Array<{
     title: string;
     text: string;
+    image?: string;
   }>;
   imageMain: string;
   categories: string[];

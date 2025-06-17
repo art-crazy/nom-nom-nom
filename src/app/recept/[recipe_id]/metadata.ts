@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         },
       }
     };
-  } catch (error) {
+  } catch {
     notFound();
   }
 }
