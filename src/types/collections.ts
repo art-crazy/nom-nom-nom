@@ -19,7 +19,7 @@ interface CollectionCategories {
   name: string;
   title: string;
   description: string;
-  imageMain: string;
+  imageMain?: string;
   cookTime?: string;
   rating?: string;
   link: string;

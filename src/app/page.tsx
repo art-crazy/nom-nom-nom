@@ -32,7 +32,6 @@ export default function Home() {
           name: 'chinese-cuisine',
           title: 'Китайская кухня',
           description: 'Традиционные рецепты китайской кухни',
-          imageMain: '',
           link: '/recepty/chinese'
         },
         {
@@ -40,7 +39,6 @@ export default function Home() {
           name: 'soups',
           title: 'Супы',
           description: 'Разнообразные рецепты супов',
-          imageMain: '',
           link: '/recepty/soups'
         },
         {
@@ -48,7 +46,6 @@ export default function Home() {
           name: 'vegetarian',
           title: 'Вегетарианские блюда',
           description: 'Блюда без мяса',
-          imageMain: '',
           link: '/recepty/vegetarian'
         },
         {
@@ -56,7 +53,6 @@ export default function Home() {
           name: 'fast-cooking',
           title: 'Быстрые рецепты',
           description: 'Блюда, которые можно приготовить быстро',
-          imageMain: '',
           link: '/recepty/fast-slow-cooking'
         },
         {
@@ -64,7 +60,6 @@ export default function Home() {
           name: 'baking-desserts',
           title: 'Выпечка и десерты',
           description: 'Сладкие блюда и выпечка',
-          imageMain: '',
           link: '/recepty/baking-desserts'
         },
         {
@@ -72,7 +67,6 @@ export default function Home() {
           name: 'low-calorie',
           title: 'Низкокалорийные блюда',
           description: 'Блюда для поддержания формы',
-          imageMain: '',
           link: '/recepty/low-calorie'
         },
         {
@@ -80,7 +74,6 @@ export default function Home() {
           name: 'kids-menu',
           title: 'Детское меню',
           description: 'Блюда для детей',
-          imageMain: '',
           link: '/recepty/kids-menu'
         },
         {
@@ -88,7 +81,6 @@ export default function Home() {
           name: 'main-dishes',
           title: 'Основные блюда',
           description: 'Основные блюда для любого случая',
-          imageMain: '',
           link: '/recepty/main-dishes'
         }
       ]
