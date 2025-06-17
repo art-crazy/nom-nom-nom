@@ -1,4 +1,4 @@
-import { RecipeResponse, RecipeFilters } from '@/types/recipe';
+import { RecipeResponse, RecipeFilters, Recipe } from '@/types/recipe';
 
 const API_URL = 'https://chto-prigotovit.ru/api';
 const MAX_RETRIES = 3;
@@ -47,6 +47,18 @@ export const getRecipes = async (filters: RecipeFilters = {}): Promise<RecipeRes
   } catch (error) {
     if (error instanceof ApiError) {
       throw new Error(`Failed to fetch recipes: ${error.message}`);
+    }
+    throw new Error('An unexpected error occurred');
+  }
+};
+
+export const getRecipeById = async (id: string): Promise<Recipe> => {
+  try {
+    const response = await fetchWithRetry(`${API_URL}/recipes/${id}`);
+    return response.json();
+  } catch (error) {
+    if (error instanceof ApiError) {
+      throw new Error(`Failed to fetch recipe: ${error.message}`);
     }
     throw new Error('An unexpected error occurred');
   }

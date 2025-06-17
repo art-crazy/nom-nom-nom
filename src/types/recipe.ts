@@ -1,3 +1,9 @@
+export interface RecipeStep {
+  title: string;
+  text: string;
+  image?: string;
+}
+
 export interface Recipe {
   id: number;
   title: string;
@@ -11,6 +17,8 @@ export interface Recipe {
   cookTime?: string;
   difficulty?: string;
   rating?: number;
+  reviews?: number;
+  steps: RecipeStep[];
 }
 
 export interface RecipeResponse {
