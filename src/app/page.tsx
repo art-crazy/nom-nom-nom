@@ -12,13 +12,13 @@ export default function Home() {
   const collections: Collection[] = [
     {
       title: 'Летние супы без заморочек: 6 рецептов на каждый день',
-      link: '/recipes/summer-soups',
+      link: '/recepty',
       type: COLLECTION_TYPES.DEFAULT,
       recipes: [364, 365, 366, 367, 368, 369].map(id => recipes[id])
     },
     {
       title: '6 быстрых блюд на даче: готовим на мангале и плите',
-      link: '/recipes/dacha-recipes',
+      link: '/recepty',
       type: COLLECTION_TYPES.DEFAULT,
       recipes: [370, 371, 372, 373, 374, 375].map(id => recipes[id])
     },
