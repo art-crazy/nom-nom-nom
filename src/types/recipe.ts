@@ -1,7 +1,16 @@
+import { Unit } from '@/data/recipes';
+
 export interface RecipeStep {
   title: string;
   text: string;
   image?: string;
+}
+
+export interface Nutrition {
+  calories: { value: number; unit: Unit };
+  protein: { value: number; unit: Unit };
+  fat: { value: number; unit: Unit };
+  carbs: { value: number; unit: Unit };
 }
 
 export interface Recipe {
@@ -19,6 +28,20 @@ export interface Recipe {
   rating?: number;
   reviews?: number;
   steps: RecipeStep[];
+  nutrition: Nutrition;
+  cuisine: string;
+  servings: number;
+  ingredients: Array<{
+    name: string;
+    amount: number;
+    unit: Unit;
+  }>;
+  categories: string[];
+  dishCategoriesList: Record<string, { id: string; title: string }>;
+  dishCategoriesSubList: Record<string, { id: string; title: string }>;
+  cuisineCategoriesList: Record<string, { id: string; title: string }>;
+  dietCategoriesList: Record<string, { id: string; title: string }>;
+  link?: string;
 }
 
 export interface RecipeResponse {
