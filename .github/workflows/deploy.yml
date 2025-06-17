@@ -67,11 +67,15 @@ jobs:
 
       - name: Deploy files
         run: |
-          tar -czf deploy.tar.gz .
+          mkdir -p deploy
+          cp -r .next package.json package-lock.json public node_modules deploy/
+          cd deploy
+          tar -czf ../deploy.tar.gz .
+          cd ..
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
             "tar -xzf /tmp/deploy.tar.gz -C $DEPLOY_PATH && rm /tmp/deploy.tar.gz"
-          rm deploy.tar.gz
+          rm -rf deploy deploy.tar.gz
 
       - name: Set correct permissions
         run: |
