@@ -17,12 +17,12 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run build -- --base=/
+          npm run build
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: nom-nom-nom-build
-          path: dist/
+          path: .next/
 
   deploy:
     needs: build
