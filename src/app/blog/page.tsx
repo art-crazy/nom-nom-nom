@@ -47,11 +47,11 @@ export default function BlogPage() {
           </p>
           <div className={styles.contactInfo}>
             <p className={styles.contactText}>
-              Email: <a href="mailto:partners@quickcook.ru" className={styles.contactLink}>partners@quickcook.ru</a>
+              Email: <a href="mailto:info@chto-prigotovit.ru" className={styles.contactLink}>info@chto-prigotovit.ru</a>
             </p>
-            <p className={styles.contactText}>
-              Телефон: <a href="tel:+78001234567" className={styles.contactLink}>8 (800) 123-45-67</a>
-            </p>
+            {/*<p className={styles.contactText}>*/}
+            {/*  Телефон: <a href="tel:+78001234567" className={styles.contactLink}>8 (800) 123-45-67</a>*/}
+            {/*</p>*/}
           </div>
         </section>
       </div>

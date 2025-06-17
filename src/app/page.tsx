@@ -2,52 +2,96 @@ import { metadata } from './metadata';
 export { metadata };
 
 import styles from './Home.module.scss';
-import { recipes } from '@/data/recipes';
+import { recipes } from '@/data';
 import { Collection, COLLECTION_TYPES } from '@/types/collections';
 import DefaultCollection from '@/components/Collections/DefaultCollection';
 import FeaturedCollection from '@/components/Collections/FeaturedCollection';
 
 export default function Home() {
-  // Получаем первый рецепт для премьеры
-  const premiereRecipe = recipes[1];
-
   // Создаем подборки рецептов
   const collections: Collection[] = [
     {
-      title: 'Популярные рецепты',
-      link: '/recipes/popular',
+      title: 'Летние супы без заморочек: 6 рецептов на каждый день',
+      link: '/recipes/summer-soups',
       type: COLLECTION_TYPES.DEFAULT,
-      recipes: Array(11).fill(null).map((_, index) => ({
-        ...premiereRecipe,
-        id: premiereRecipe.id + index // Используем числовой id
-      }))
+      recipes: [364, 365, 366, 367, 368, 369].map(id => recipes[id])
     },
     {
-      title: 'Новые рецепты',
-      link: '/recipes/new',
+      title: '6 быстрых блюд на даче: готовим на мангале и плите',
+      link: '/recipes/dacha-recipes',
+      type: COLLECTION_TYPES.DEFAULT,
+      recipes: [370, 371, 372, 373, 374, 375].map(id => recipes[id])
+    },
+    {
+      title: 'Подборка категорий',
+      link: '/recepty',
       type: COLLECTION_TYPES.FEATURED,
-      recipes: Array(11).fill(null).map((_, index) => ({
-        ...premiereRecipe,
-        id: premiereRecipe.id + index + 100 // Добавляем смещение для уникальности
-      }))
-    },
-    {
-      title: 'Рецепты на завтрак',
-      link: '/recipes/breakfast',
-      type: COLLECTION_TYPES.DEFAULT,
-      recipes: Array(11).fill(null).map((_, index) => ({
-        ...premiereRecipe,
-        id: premiereRecipe.id + index + 200 // Добавляем смещение для уникальности
-      }))
-    },
-    {
-      title: 'Рецепты на обед',
-      link: '/recipes/lunch',
-      type: COLLECTION_TYPES.DEFAULT,
-      recipes: Array(11).fill(null).map((_, index) => ({
-        ...premiereRecipe,
-        id: premiereRecipe.id + index + 300 // Добавляем смещение для уникальности
-      }))
+      recipes: [
+        {
+          id: 12345678,
+          name: 'chinese-cuisine',
+          title: 'Китайская кухня',
+          description: 'Традиционные рецепты китайской кухни',
+          imageMain: '',
+          link: '/recepty/chinese'
+        },
+        {
+          id: 23456789,
+          name: 'soups',
+          title: 'Супы',
+          description: 'Разнообразные рецепты супов',
+          imageMain: '',
+          link: '/recepty/soups'
+        },
+        {
+          id: 34567890,
+          name: 'vegetarian',
+          title: 'Вегетарианские блюда',
+          description: 'Блюда без мяса',
+          imageMain: '',
+          link: '/recepty/vegetarian'
+        },
+        {
+          id: 45678901,
+          name: 'fast-cooking',
+          title: 'Быстрые рецепты',
+          description: 'Блюда, которые можно приготовить быстро',
+          imageMain: '',
+          link: '/recepty/fast-slow-cooking'
+        },
+        {
+          id: 56789012,
+          name: 'baking-desserts',
+          title: 'Выпечка и десерты',
+          description: 'Сладкие блюда и выпечка',
+          imageMain: '',
+          link: '/recepty/baking-desserts'
+        },
+        {
+          id: 67890123,
+          name: 'low-calorie',
+          title: 'Низкокалорийные блюда',
+          description: 'Блюда для поддержания формы',
+          imageMain: '',
+          link: '/recepty/low-calorie'
+        },
+        {
+          id: 78901234,
+          name: 'kids-menu',
+          title: 'Детское меню',
+          description: 'Блюда для детей',
+          imageMain: '',
+          link: '/recepty/kids-menu'
+        },
+        {
+          id: 89012345,
+          name: 'main-dishes',
+          title: 'Основные блюда',
+          description: 'Основные блюда для любого случая',
+          imageMain: '',
+          link: '/recepty/main-dishes'
+        }
+      ]
     }
   ];
 

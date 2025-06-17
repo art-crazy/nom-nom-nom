@@ -11,5 +11,16 @@ export interface Collection {
   title: string;
   link: string;
   type: CollectionType;
-  recipes: Recipe[];
+  recipes: Recipe[] | CollectionCategories[];
+}
+
+interface CollectionCategories {
+  id: number;
+  name: string;
+  title: string;
+  description: string;
+  imageMain: string;
+  cookTime?: string;
+  rating?: string;
+  link: string;
 }

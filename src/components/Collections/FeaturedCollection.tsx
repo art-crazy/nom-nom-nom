@@ -1,5 +1,5 @@
 import styles from './Collections.module.scss';
-import { Collection } from '@/types/collections';
+import {Collection} from '@/types/collections';
 import Image from 'next/image';
 import Link from 'next/link';
 import ScrollableContainer from './ScrollableContainer';
@@ -21,27 +21,29 @@ export default function FeaturedCollection({ collection }: FeaturedCollectionPro
       <ScrollableContainer scrollAmount={832}>
         <ul className={styles.featuredCardsContainer}>
           {collection.recipes.map((recipe) => (
-            <li key={recipe.id} className={styles.featuredCard}>
-              <Link href={`/recept/${recipe.name}-${recipe.id}`}>
-                {recipe.imageMain && (
-                  <Image
-                    src={recipe.imageMain}
-                    alt={recipe.title}
-                    width={400}
-                    height={300}
-                    className={styles.featuredCardImage}
-                  />
-                )}
-                <div className={styles.featuredCardContent}>
-                  <h3 className={styles.featuredCardTitle}>{recipe.title}</h3>
-                  <p className={styles.featuredCardDescription}>{recipe.description}</p>
-                  <div className={styles.featuredCardMeta}>
-                    <span>{recipe.cookTime}</span>
-                    <span>★ {recipe.rating}</span>
-                  </div>
+              <Link href={recipe?.link ? recipe?.link : `/recept/${recipe.name}-${recipe.id}`}
+                    key={recipe.id}
+                    className={styles.featuredCard}>
+                  <div>{recipe.imageMain &&
+                      <Image
+                          src={recipe.imageMain}
+                          alt={recipe.title}
+                          width={400}
+                          height={300}
+                          className={styles.featuredCardImage}
+                      />}
+                      <div className={styles.featuredCardContent}>
+                          <h3 className={styles.featuredCardTitle}>{recipe.title}</h3>
+                          <p className={styles.featuredCardDescription}>{recipe.description}</p>
+                          <div className={styles.featuredCardMeta}>
+                              <span>{recipe?.cookTime}</span>
+                              {recipe?.rating &&
+                                <span>★ {recipe?.rating}</span>
+                              }
+                          </div>
+                      </div>
                 </div>
               </Link>
-            </li>
           ))}
           <li><ShowAllButton link={collection.link} /></li>
         </ul>
