@@ -62,8 +62,8 @@ jobs:
       - name: Prepare server directory
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "sudo mkdir -p $DEPLOY_PATH && \
-             sudo chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} $DEPLOY_PATH"
+            "mkdir -p $DEPLOY_PATH && \
+             chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} $DEPLOY_PATH"
 
       - name: Deploy files
         run: |
@@ -76,14 +76,14 @@ jobs:
       - name: Set correct permissions
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "sudo chown -R www-data:www-data $DEPLOY_PATH && \
-             sudo find $DEPLOY_PATH -type d -exec chmod 755 {} \; && \
-             sudo find $DEPLOY_PATH -type f -exec chmod 644 {} \;"
+            "chown -R www-data:www-data $DEPLOY_PATH && \
+             find $DEPLOY_PATH -type d -exec chmod 755 {} \; && \
+             find $DEPLOY_PATH -type f -exec chmod 644 {} \;"
 
       - name: Configure Nginx
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
-          sudo tee /etc/nginx/sites-available/nom-nom-nom.conf > /dev/null << 'EOF'
+          tee /etc/nginx/sites-available/nom-nom-nom.conf > /dev/null << 'EOF'
           server {
               listen 80;
               server_name nom-nom-nom.ru www.nom-nom-nom.ru;
@@ -116,8 +116,8 @@ jobs:
           }
           EOF
 
-          sudo ln -sf /etc/nginx/sites-available/nom-nom-nom.conf /etc/nginx/sites-enabled/
-          sudo nginx -t && sudo systemctl restart nginx
+          ln -sf /etc/nginx/sites-available/nom-nom-nom.conf /etc/nginx/sites-enabled/
+          nginx -t && systemctl restart nginx
           EOT
 
       - name: Start Next.js application
