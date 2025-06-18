@@ -20,20 +20,24 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          npm run build
-          echo "Checking build output:"
+          NODE_ENV=production npm run build
+          echo "Build output:"
           ls -la .next
+
+      - name: Create deployment package
+        run: |
+          mkdir -p deploy
+          cp -r .next package.json package-lock.json public next.config.ts deploy/
+          cd deploy
+          tar -czf ../deploy.tar.gz .
+          cd ..
+          ls -la deploy.tar.gz
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: nom-nom-nom-build
-          path: |
-            .next
-            package.json
-            package-lock.json
-            public
-            next.config.ts
+          path: deploy.tar.gz
 
   deploy:
     needs: build
@@ -43,14 +47,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: nom-nom-nom-build
-          path: deploy-source
-
-      - name: Check deploy source
-        run: |
-          echo "Contents of deploy-source:"
-          ls -la deploy-source
-          echo "Checking for .next directory:"
-          ls -la deploy-source/.next || echo ".next directory not found"
+          path: .
 
       - name: Configure SSH
         run: |
@@ -62,7 +59,6 @@ jobs:
 
       - name: Deploy and Verify
         run: |
-          tar -czf deploy.tar.gz -C deploy-source .
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
             "mkdir -p /var/www/nom-nom-nom && \
