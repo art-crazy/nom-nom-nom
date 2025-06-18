@@ -56,6 +56,7 @@ jobs:
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
             "mkdir -p /var/www/nom-nom-nom && \
+             rm -rf /var/www/nom-nom-nom/* && \
              tar -xzf /tmp/deploy.tar.gz -C /var/www/nom-nom-nom && \
              chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} /var/www/nom-nom-nom && \
              rm /tmp/deploy.tar.gz && \
