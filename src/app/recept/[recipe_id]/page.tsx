@@ -89,7 +89,7 @@ export default async function RecipePage({ params }: PageProps) {
                   <Image
                     className={styles.image}
                     src={step.image}
-                    alt={`Шаг ${i + 1}: ${step.title}`}
+                    alt={`${step.title}`}
                     width={600}
                     height={400}
                     style={{ objectFit: 'cover' }}
