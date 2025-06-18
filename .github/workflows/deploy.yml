@@ -20,23 +20,20 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
-          echo "Current directory structure before build:"
-          ls -la
           npm run build
-          echo "Current directory structure after build:"
-          ls -la
-          echo "Checking .next directory:"
-          ls -la .next/
+          echo "Checking build output:"
+          ls -la .next
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: nom-nom-nom-build
           path: |
-            .next/
+            .next
             package.json
             package-lock.json
-            public/
+            public
+            next.config.ts
 
   deploy:
     needs: build
