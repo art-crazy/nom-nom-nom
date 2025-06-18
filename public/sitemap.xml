@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-main.xml</loc>
-    <lastmod>2025-06-03T13:30:22.843Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-main.xml</loc>
+    <lastmod>2025-06-18T12:55:43.684Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-recipes.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-categories.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-categories.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-subcategories.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-subcategories.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-cuisines.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-cuisines.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-diets.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-diets.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-1.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-1.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-2.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-2.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-3.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-3.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-4.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-4.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-5.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-5.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-6.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-6.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-7.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-7.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-8.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-8.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-9.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
   <sitemap>
-    <loc>http://localhost:3000/sitemaps/sitemap-combinations-9.xml</loc>
-    <lastmod>2025-06-03T13:30:22.844Z</lastmod>
+    <loc>https://chto-prigotovit.ru/sitemaps/sitemap-combinations-10.xml</loc>
+    <lastmod>2025-06-18T12:55:43.685Z</lastmod>
   </sitemap>
 </sitemapindex>

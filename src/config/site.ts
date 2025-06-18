@@ -7,9 +7,7 @@ export const siteConfig = {
         // URL для разработки
         development: 'http://localhost:3000',
         // Текущий URL (будет определен в зависимости от окружения)
-        current: process.env.NODE_ENV === 'production'
-            ? 'https://chto-prigotovit..ru'
-            : 'http://localhost:3000'
+        current: 'https://chto-prigotovit.ru'
     },
 
     // Пути сайта
