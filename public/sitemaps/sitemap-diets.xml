@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000/recepty/vegan</loc>
+    <loc>https://chto-prigotovit.ru/recepty/vegan</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/keto</loc>
+    <loc>https://chto-prigotovit.ru/recepty/keto</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/paleo</loc>
+    <loc>https://chto-prigotovit.ru/recepty/paleo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/vegetarian</loc>
+    <loc>https://chto-prigotovit.ru/recepty/vegetarian</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/gluten-free</loc>
+    <loc>https://chto-prigotovit.ru/recepty/gluten-free</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/dairy-free</loc>
+    <loc>https://chto-prigotovit.ru/recepty/dairy-free</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/kids-menu</loc>
+    <loc>https://chto-prigotovit.ru/recepty/kids-menu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/low-calorie</loc>
+    <loc>https://chto-prigotovit.ru/recepty/low-calorie</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/lean</loc>
+    <loc>https://chto-prigotovit.ru/recepty/lean</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/diabetic</loc>
+    <loc>https://chto-prigotovit.ru/recepty/diabetic</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/low-carb</loc>
+    <loc>https://chto-prigotovit.ru/recepty/low-carb</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/mediterranean</loc>
+    <loc>https://chto-prigotovit.ru/recepty/mediterranean</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:3000/recepty/detox</loc>
+    <loc>https://chto-prigotovit.ru/recepty/detox</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
