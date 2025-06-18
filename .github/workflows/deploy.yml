@@ -72,15 +72,16 @@ jobs:
           cd ..
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "tar -xzf /tmp/deploy.tar.gz -C $DEPLOY_PATH && rm /tmp/deploy.tar.gz"
+            "rm -rf $DEPLOY_PATH/node_modules && \
+             tar -xzf /tmp/deploy.tar.gz -C $DEPLOY_PATH && rm /tmp/deploy.tar.gz"
           rm deploy.tar.gz
 
       - name: Set correct permissions
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "find $DEPLOY_PATH -path '*/node_modules' -prune -o -exec chown ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} {} \; && \
-             find $DEPLOY_PATH -path '*/node_modules' -prune -o -type d -exec chmod 755 {} \; && \
-             find $DEPLOY_PATH -path '*/node_modules' -prune -o -type f -exec chmod 644 {} \;"
+            "chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} $DEPLOY_PATH && \
+             find $DEPLOY_PATH -type d -exec chmod 755 {} \; && \
+             find $DEPLOY_PATH -type f -exec chmod 644 {} \;"
 
       - name: Configure Nginx
         run: |
