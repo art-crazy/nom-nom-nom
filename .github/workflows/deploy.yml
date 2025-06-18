@@ -78,7 +78,7 @@ jobs:
       - name: Set correct permissions
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} $DEPLOY_PATH && \
+            "find $DEPLOY_PATH -path '*/node_modules' -prune -o -exec chown ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} {} \; && \
              find $DEPLOY_PATH -path '*/node_modules' -prune -o -type d -exec chmod 755 {} \; && \
              find $DEPLOY_PATH -path '*/node_modules' -prune -o -type f -exec chmod 644 {} \;"
 
