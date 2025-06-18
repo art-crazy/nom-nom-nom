@@ -21,6 +21,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          ls -la .next/
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -61,7 +62,9 @@ jobs:
              tar -xzf /tmp/deploy.tar.gz -C /var/www/nom-nom-nom && \
              chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} /var/www/nom-nom-nom && \
              rm /tmp/deploy.tar.gz && \
-             ls -la /var/www/nom-nom-nom"
+             ls -la /var/www/nom-nom-nom && \
+             echo 'Checking .next directory:' && \
+             ls -la /var/www/nom-nom-nom/.next"
           rm deploy.tar.gz
 
       - name: Start Next.js application
