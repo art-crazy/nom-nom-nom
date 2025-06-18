@@ -20,7 +20,12 @@ jobs:
       - name: Install and Build
         run: |
           npm ci
+          echo "Current directory structure before build:"
+          ls -la
           npm run build
+          echo "Current directory structure after build:"
+          ls -la
+          echo "Checking .next directory:"
           ls -la .next/
 
       - name: Upload artifacts
@@ -42,6 +47,13 @@ jobs:
         with:
           name: nom-nom-nom-build
           path: deploy-source
+
+      - name: Check deploy source
+        run: |
+          echo "Contents of deploy-source:"
+          ls -la deploy-source
+          echo "Checking for .next directory:"
+          ls -la deploy-source/.next || echo ".next directory not found"
 
       - name: Configure SSH
         run: |
