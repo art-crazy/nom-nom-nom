@@ -1,31 +1,27 @@
-name: Nom-nom-nom Deployment
+name: Build and Deploy Nom-nom-nom
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'npm'
-          
-      - name: Install dependencies
-        run: npm ci
-        
-      - name: Build application
-        run: npm run build
-        
-      - name: List build output
-        run: ls -la .next/
-        
+
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -35,11 +31,11 @@ jobs:
             package.json
             package-lock.json
             public/
-            node_modules/
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -54,87 +50,24 @@ jobs:
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Set deployment variables
+      - name: Deploy and Verify
         run: |
-          echo "DEPLOY_PATH=/var/www/nom-nom-nom" >> $GITHUB_ENV
-          echo "DEPLOY_DOMAIN=nom-nom-nom.ru" >> $GITHUB_ENV
-
-      - name: Prepare server directory
-        run: |
-          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "mkdir -p $DEPLOY_PATH && \
-             chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} $DEPLOY_PATH"
-
-      - name: Deploy files
-        run: |
-          cd deploy-source
-          tar -czf ../deploy.tar.gz .
-          cd ..
+          tar -czf deploy.tar.gz -C deploy-source .
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "rm -rf $DEPLOY_PATH/node_modules && \
-             tar -xzf /tmp/deploy.tar.gz -C $DEPLOY_PATH && rm /tmp/deploy.tar.gz"
+            "mkdir -p /var/www/nom-nom-nom && \
+             tar -xzf /tmp/deploy.tar.gz -C /var/www/nom-nom-nom && \
+             chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} /var/www/nom-nom-nom && \
+             rm /tmp/deploy.tar.gz && \
+             ls -la /var/www/nom-nom-nom"
           rm deploy.tar.gz
-
-      - name: Set correct permissions
-        run: |
-          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} $DEPLOY_PATH && \
-             find $DEPLOY_PATH -type d -exec chmod 755 {} \; && \
-             find $DEPLOY_PATH -type f -exec chmod 644 {} \;"
-
-      - name: Configure Nginx
-        run: |
-          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
-          tee /etc/nginx/sites-available/nom-nom-nom.conf > /dev/null << 'EOF'
-          server {
-              listen 80;
-              server_name nom-nom-nom.ru www.nom-nom-nom.ru;
-              return 301 https://$host$request_uri;
-          }
-
-          server {
-              listen 443 ssl http2;
-              server_name nom-nom-nom.ru www.nom-nom-nom.ru;
-
-              ssl_certificate /etc/letsencrypt/live/nom-nom-nom.ru/fullchain.pem;
-              ssl_certificate_key /etc/letsencrypt/live/nom-nom-nom.ru/privkey.pem;
-              include /etc/letsencrypt/options-ssl-nginx.conf;
-              ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-
-              location / {
-                  proxy_pass http://localhost:3000;
-                  proxy_http_version 1.1;
-                  proxy_set_header Upgrade $http_upgrade;
-                  proxy_set_header Connection 'upgrade';
-                  proxy_set_header Host $host;
-                  proxy_cache_bypass $http_upgrade;
-                  proxy_set_header X-Real-IP $remote_addr;
-                  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                  proxy_set_header X-Forwarded-Proto $scheme;
-              }
-
-              access_log /var/log/nginx/nom-nom-nom.access.log;
-              error_log /var/log/nginx/nom-nom-nom.error.log;
-          }
-          EOF
-
-          ln -sf /etc/nginx/sites-available/nom-nom-nom.conf /etc/nginx/sites-enabled/
-          nginx -t && systemctl restart nginx
-          EOT
 
       - name: Start Next.js application
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
-          cd $DEPLOY_PATH
+          cd /var/www/nom-nom-nom
           npm ci --production
           pm2 delete nom-nom-nom || true
           pm2 start npm --name "nom-nom-nom" -- start
           pm2 save
           EOT
-
-      - name: Verify deployment
-        run: |
-          echo "Testing deployment at $DEPLOY_DOMAIN"
-          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "curl -vk https://$DEPLOY_DOMAIN || echo 'Verification failed'"
