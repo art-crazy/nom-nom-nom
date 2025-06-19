@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import ScrollArrows from './ScrollArrows';
 import styles from './Collections.module.scss';
+import ENV from "@/config/env.constants";
 
 interface ScrollableContainerProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ interface ScrollableContainerProps {
 export default function ScrollableContainer({ children, scrollAmount }: ScrollableContainerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
+  console.log('ENV', ENV)
   return (
     <section className={styles.scrollableWrapper} role="region" aria-label="Горизонтальная галерея рецептов">
       <div ref={containerRef} className={styles.scrollableContent}>
