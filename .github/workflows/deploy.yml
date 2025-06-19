@@ -57,27 +57,15 @@ jobs:
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Deploy and Verify
+      - name: Deploy and Build on Server
         run: |
-          scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
+          scp -i ~/.ssh/id_rsa -r . ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/var/www/nom-nom-nom-tmp
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} \
-            "mkdir -p /var/www/nom-nom-nom && \
-             sudo chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} /var/www/nom-nom-nom && \
-             rm -rf /var/www/nom-nom-nom/* && \
-             tar -xzf /tmp/deploy.tar.gz -C /var/www/nom-nom-nom && \
-             chown -R ${{ secrets.SSH_USER }}:${{ secrets.SSH_USER }} /var/www/nom-nom-nom && \
-             rm /tmp/deploy.tar.gz && \
-             ls -la /var/www/nom-nom-nom && \
-             echo 'Checking .next directory:' && \
-             ls -la /var/www/nom-nom-nom/.next"
-          rm deploy.tar.gz
-
-      - name: Start Next.js application
-        run: |
-          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
-          cd /var/www/nom-nom-nom
-          npm ci --production
-          pm2 delete nom-nom-nom || true
-          pm2 start npm --name "nom-nom-nom" -- start
-          pm2 save
-          EOT
+            "rm -rf /var/www/nom-nom-nom && \
+             mv /var/www/nom-nom-nom-tmp /var/www/nom-nom-nom && \
+             cd /var/www/nom-nom-nom && \
+             npm ci --production && \
+             npm run build && \
+             pm2 delete nom-nom-nom || true && \
+             pm2 start npm --name 'nom-nom-nom' -- start && \
+             pm2 save"
