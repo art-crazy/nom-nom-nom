@@ -13,7 +13,7 @@ interface ScrollableContainerProps {
 export default function ScrollableContainer({ children, scrollAmount }: ScrollableContainerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  console.log('ENV', ENV)
+  console.log('ENV2', ENV)
   return (
     <section className={styles.scrollableWrapper} role="region" aria-label="Горизонтальная галерея рецептов">
       <div ref={containerRef} className={styles.scrollableContent}>
