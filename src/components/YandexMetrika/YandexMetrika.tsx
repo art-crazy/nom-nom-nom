@@ -13,6 +13,7 @@ export default function YandexMetrika() {
     const pathName = usePathname();
     const searchParams = useSearchParams();
 
+    console.log('YM!')
     useEffect(() => {
         if (ENV !== 'dev') {
             ym(YM_ID, 'hit', window.location.href);
