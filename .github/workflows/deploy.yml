@@ -57,6 +57,10 @@ jobs:
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
+      - name: Create target directory on server
+        run: |
+          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} "mkdir -p /var/www/nom-nom-nom-tmp"
+
       - name: Deploy and Build on Server
         run: |
           scp -i ~/.ssh/id_rsa -r . ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/var/www/nom-nom-nom-tmp
