@@ -14,12 +14,12 @@ export default function YandexMetrika() {
     const searchParams = useSearchParams();
 
     useEffect(() => {
-        if (ENV === 'prod') {
+        if (ENV !== 'dev') {
             ym(YM_ID, 'hit', window.location.href);
         }
     }, [pathName, searchParams]);
 
-    if (ENV !== 'prod') {
+    if (ENV === 'dev') {
         return null;
     }
 
