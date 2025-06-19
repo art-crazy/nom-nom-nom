@@ -15,8 +15,6 @@ export default function YandexMetrika() {
 
     useEffect(() => {
         if (ENV !== 'dev') {
-            console.log('HIT!')
-
             ym(YM_ID, 'hit', window.location.href);
         }
     }, [pathName, searchParams]);
