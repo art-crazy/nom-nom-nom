@@ -32,56 +32,64 @@ export default function Home() {
           name: 'chinese-cuisine',
           title: 'Китайская кухня',
           description: 'Традиционные рецепты китайской кухни',
-          link: '/recepty/chinese'
+          link: '/recepty/chinese',
+          imageMain: '/recepies/kitayskaya.webp'
         },
         {
           id: 23456789,
           name: 'soups',
           title: 'Супы',
           description: 'Разнообразные рецепты супов',
-          link: '/recepty/soups'
+          link: '/recepty/soups',
+          imageMain: '/recepies/sup2.jpg'
         },
         {
           id: 34567890,
           name: 'vegetarian',
           title: 'Вегетарианские блюда',
           description: 'Блюда без мяса',
-          link: '/recepty/vegetarian'
+          link: '/recepty/vegetarian',
+          imageMain: '/recepies/vegan.jpg'
         },
         {
           id: 45678901,
           name: 'fast-cooking',
           title: 'Быстрые рецепты',
           description: 'Блюда, которые можно приготовить быстро',
-          link: '/recepty/fast-slow-cooking'
+          link: '/recepty/fast-slow-cooking',
+          imageMain: '/recepies/bistro.png'
         },
         {
           id: 56789012,
           name: 'baking-desserts',
           title: 'Выпечка и десерты',
           description: 'Сладкие блюда и выпечка',
-          link: '/recepty/baking-desserts'
+          link: '/recepty/baking-desserts',
+          imageMain: '/recepies/vipechka.jpg'
         },
         {
           id: 67890123,
           name: 'low-calorie',
           title: 'Низкокалорийные блюда',
           description: 'Блюда для поддержания формы',
-          link: '/recepty/low-calorie'
+          link: '/recepty/low-calorie',
+          imageMain: '/recepies/lowkkal.jpg'
         },
         {
           id: 78901234,
           name: 'kids-menu',
           title: 'Детское меню',
           description: 'Блюда для детей',
-          link: '/recepty/kids-menu'
+          link: '/recepty/kids-menu',
+          imageMain: '/recepies/children.jpg'
         },
         {
           id: 89012345,
           name: 'main-dishes',
           title: 'Основные блюда',
           description: 'Основные блюда для любого случая',
-          link: '/recepty/main-dishes'
+          link: '/recepty/main-dishes',
+          imageMain: '/recepies/maineat.jpg'
         }
       ]
     }

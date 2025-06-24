@@ -36,7 +36,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Смешайте все ингредиенты в большой миске.' },
             { title: 'Шаг 5.', text: 'Залейте кефиром, добавьте соль по вкусу и охладите в холодильнике.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/okroshka_na_kefire.jpg',
         categories: ['холодные супы', 'окрошка', 'кефир', 'летние блюда', 'русская кухня'],
         rating: 4.7,
         reviews: 128,
@@ -77,7 +77,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Смешайте все ингредиенты в большой миске.' },
             { title: 'Шаг 5.', text: 'Залейте кефиром, добавьте соль по вкусу и охладите в холодильнике.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/svekolnik.jpg',
         categories: ['холодные супы', 'свекольник', 'кефир', 'летние блюда', 'русская кухня'],
         rating: 4.6,
         reviews: 95,
@@ -119,7 +119,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Смешайте все ингредиенты в большой миске.' },
             { title: 'Шаг 5.', text: 'Залейте квасом, добавьте соль по вкусу и охладите в холодильнике.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/bitvinia.jpg',
         categories: ['холодные супы', 'ботвинья', 'квас', 'летние блюда', 'русская кухня'],
         rating: 4.8,
         reviews: 75,
@@ -161,7 +161,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Добавьте масло, уксус, соль и перец.' },
             { title: 'Шаг 5.', text: 'Охладите в холодильнике минимум 2 часа.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/gospacho.jpg',
         categories: ['холодные супы', 'гаспачо', 'испанская кухня', 'летние блюда', 'вегетарианское'],
         rating: 4.9,
         reviews: 112,
@@ -201,7 +201,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Смешайте все ингредиенты.' },
             { title: 'Шаг 5.', text: 'Охладите в холодильнике.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/tarator.jpg',
         categories: ['холодные супы', 'таратор', 'болгарская кухня', 'летние блюда', 'вегетарианское'],
         rating: 4.7,
         reviews: 88,
@@ -241,7 +241,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Добавьте масло и уксус.' },
             { title: 'Шаг 5.', text: 'Охладите в холодильнике и подавайте с виноградом.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/ahoblanco.jpg',
         categories: ['холодные супы', 'ахобланко', 'испанская кухня', 'летние блюда', 'вегетарианское'],
         rating: 4.8,
         reviews: 65,
@@ -283,7 +283,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Замаринуйте мясо на 1-2 часа.' },
             { title: 'Шаг 5.', text: 'Жарьте на углях до готовности.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/shashlik_is_svinini.webp',
         categories: ['шашлык', 'свинина', 'гриль', 'дачные рецепты', 'летние блюда'],
         rating: 4.9,
         reviews: 245,
@@ -324,7 +324,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Наденьте курицу на вертел.' },
             { title: 'Шаг 5.', text: 'Жарьте на гриле 1-1.5 часа, периодически поливая маринадом.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/kurica_na_grile.jpg',
         categories: ['гриль', 'курица', 'дачные рецепты', 'летние блюда'],
         rating: 4.8,
         reviews: 189,
@@ -366,7 +366,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Выложите овощи на решетку гриля.' },
             { title: 'Шаг 5.', text: 'Жарьте до готовности, периодически переворачивая.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/ovoshi_na_grile.jpg',
         categories: ['гриль', 'овощи', 'вегетарианское', 'дачные рецепты', 'летние блюда'],
         rating: 4.7,
         reviews: 156,
@@ -405,7 +405,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Заверните картофель в фольгу с маслом.' },
             { title: 'Шаг 5.', text: 'Запекайте на углях 30-40 минут.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/kartoshka_v_folge.jpg',
         categories: ['гарниры', 'картофель', 'дачные рецепты', 'летние блюда'],
         rating: 4.8,
         reviews: 178,
@@ -444,7 +444,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Заверните в фольгу.' },
             { title: 'Шаг 5.', text: 'Жарьте на гриле 15-20 минут.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/kukuruza_na_grile.jpg',
         categories: ['гриль', 'кукуруза', 'вегетарианское', 'дачные рецепты', 'летние блюда'],
         rating: 4.9,
         reviews: 203,
@@ -486,7 +486,7 @@ export const summerRecipes: Record<number, Recipe> = {
             { title: 'Шаг 4.', text: 'Нанизайте на шампуры, чередуя ингредиенты.' },
             { title: 'Шаг 5.', text: 'Жарьте на гриле 15-20 минут.' }
         ],
-        imageMain: '',
+        imageMain: '/recepies/shampur_s_ovoshami.png',
         categories: ['гриль', 'овощи', 'тофу', 'вегетарианское', 'дачные рецепты'],
         rating: 4.7,
         reviews: 145,
@@ -1018,4 +1018,4 @@ export const summerRecipes: Record<number, Recipe> = {
         cuisineCategoriesList: { mexican: { id: 'mexican', title: 'Мексиканская кухня' } },
         dietCategoriesList: { vegan: { id: 'vegan', title: 'Веганская диета' } }
     }
-}; 
+};
