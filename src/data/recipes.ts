@@ -49,6 +49,7 @@ export interface Recipe {
   cuisineCategoriesList: Record<string, { id: string; title: string }>;
   dietCategoriesList: Record<string, { id: string; title: string }>;
   link?: string;
+  videoUrl?: string;
 }
 
 // Рецепты будут импортированы позже

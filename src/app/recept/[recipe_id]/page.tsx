@@ -4,6 +4,7 @@ import Image from 'next/image';
 import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
+import { VideoPlayer } from '@/components/VideoPlayer/VideoPlayer';
 import { notFound } from 'next/navigation';
 import { generateMetadata } from './metadata';
 import { getRecipeById } from '@/services/api';
@@ -30,6 +31,7 @@ export default async function RecipePage({ params }: PageProps) {
     if (!recipe) {
       notFound();
     }
+    console.log('recipe', recipe)
 
     return (
       <div className={styles.container}>
@@ -79,6 +81,14 @@ export default async function RecipePage({ params }: PageProps) {
             </div>
           </div>
         </article>
+        
+        {recipe.videoUrl && (
+          <section className={styles.videoSection}>
+            <h2>Видео рецепта</h2>
+            <VideoPlayer videoUrl={recipe.videoUrl} title={recipe.title} />
+          </section>
+        )}
+
         <section className={styles.instructions}>
           <h2>Инструкция</h2>
           {recipe.steps.map((step, i) => (
