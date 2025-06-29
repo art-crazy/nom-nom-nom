@@ -20,7 +20,7 @@ export default function Home() {
       title: '6 быстрых блюд на даче: готовим на мангале и плите',
       link: '/recepty',
       type: COLLECTION_TYPES.DEFAULT,
-      recipes: [370, 371, 372, 373, 374, 375].map(id => recipes[id])
+      recipes: [370, 371, 372, 373, 374, 409].map(id => recipes[id])
     },
     {
       title: 'Подборка категорий',
