@@ -107,7 +107,7 @@ type CuisineCategories = {
   azerbaijani: BaseCategory;
   spanish: BaseCategory;
   thai: BaseCategory;
-  mediterranean: BaseCategory;
+  'mediterranean-cuisine': BaseCategory;
   greek: BaseCategory;
   ukrainian: BaseCategory;
   polish: BaseCategory;
@@ -204,7 +204,7 @@ type DietCategories = {
   lean: BaseCategory;
   diabetic: BaseCategory;
   'low-carb': BaseCategory;
-  mediterranean: BaseCategory;
+  'mediterranean-diet': BaseCategory;
   detox: BaseCategory;
 };
 
@@ -868,8 +868,8 @@ export const cuisineCategories: CuisineCategories = {
     id: 'thai',
     title: 'Тайская кухня'
   },
-  mediterranean: {
-    id: 'mediterranean',
+  'mediterranean-cuisine': {
+    id: 'mediterranean-cuisine',
     title: 'Средиземноморская кухня'
   },
   greek: {
@@ -1252,8 +1252,8 @@ export const dietCategories: DietCategories = {
     id: 'low-carb',
     title: 'Низкоуглеводная диета'
   },
-  mediterranean: {
-    id: 'mediterranean',
+  'mediterranean-diet': {
+    id: 'mediterranean-diet',
     title: 'Средиземноморская диета'
   },
   detox: {
