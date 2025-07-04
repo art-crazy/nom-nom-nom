@@ -2,9 +2,10 @@
 
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { recipes } from '../data/recipes.js';
 import { dishCategories, cuisineCategories, dietCategories } from '../data/categories.js';
 import { siteConfig } from '../config/site.js';
+import { getRecipes } from '../services/api.js';
+import type { Recipe } from '../types/recipe.js';
 
 const baseUrl = siteConfig.url.current;
 const sitemapDir = join(process.cwd(), 'public', 'sitemaps');
@@ -29,8 +30,18 @@ function generateMainUrls() {
 }
 
 // Функция для генерации URL рецептов
-function generateRecipeUrls() {
-    return Object.values(recipes).map(recipe => 
+async function generateRecipeUrls() {
+    let allRecipes: Recipe[] = [];
+    let page = 1;
+    const limit = 100; // Можно увеличить лимит, если backend поддерживает
+    let total = 0;
+    do {
+        const { items, total: totalCount } = await getRecipes({ page, limit });
+        allRecipes = allRecipes.concat(items);
+        total = totalCount;
+        page++;
+    } while (allRecipes.length < total);
+    return allRecipes.map(recipe => 
         `${baseUrl}/recept/${recipe.name}-${recipe.id}`
     );
 }
@@ -162,33 +173,25 @@ ${sitemaps.map(({ filename }) => `  <sitemap>
 }
 
 // Функция для генерации всех sitemap
-function generateAllSitemaps() {
+async function generateAllSitemaps() {
     try {
-        const allSitemaps: { filename: string; count: number }[] = [];
-
+        const allSitemaps = [];
         // Генерируем sitemap для основных страниц
         allSitemaps.push(...generateSitemapFile(generateMainUrls(), 'sitemap-main.xml', '1.0'));
-
         // Генерируем sitemap для рецептов
-        allSitemaps.push(...generateSitemapFile(generateRecipeUrls(), 'sitemap-recipes.xml', '0.9'));
-
+        const recipeUrls = await generateRecipeUrls();
+        allSitemaps.push(...generateSitemapFile(recipeUrls, 'sitemap-recipes.xml', '0.9'));
         // Генерируем sitemap для категорий
         allSitemaps.push(...generateSitemapFile(generateCategoryUrls(), 'sitemap-categories.xml', '0.8'));
-
         // Генерируем sitemap для подкатегорий
         allSitemaps.push(...generateSitemapFile(generateSubcategoryUrls(), 'sitemap-subcategories.xml', '0.7'));
-
         // Генерируем sitemap для кухонь
         allSitemaps.push(...generateSitemapFile(generateCuisineUrls(), 'sitemap-cuisines.xml', '0.7'));
-
         // Генерируем sitemap для диет
         allSitemaps.push(...generateSitemapFile(generateDietUrls(), 'sitemap-diets.xml', '0.7'));
-
         // Генерируем sitemap для комбинаций (будет разбит на части если нужно)
         allSitemaps.push(...generateSitemapFile(generateCombinationUrls(), 'sitemap-combinations.xml', '0.6'));
-
         generateSitemapIndex(allSitemaps);
-
         // Выводим статистику
         console.log('\n📊 Статистика сгенерированных sitemap:');
         console.log('----------------------------------------');
@@ -211,6 +214,7 @@ const command = process.argv[2];
 
 switch (command) {
     case 'create-file':
+        // Учитываем асинхронность
         generateAllSitemaps();
         break;
     default:
