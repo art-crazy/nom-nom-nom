@@ -24,14 +24,16 @@ export default function FeaturedCollection({ collection }: FeaturedCollectionPro
               <Link href={recipe?.link ? recipe?.link : `/recept/${recipe.name}-${recipe.id}`}
                     key={recipe.id}
                     className={styles.featuredCard}>
-                  <div>{recipe.imageMain &&
-                      <Image
-                          src={recipe.imageMain}
-                          alt={recipe.title}
-                          width={400}
-                          height={300}
-                          className={styles.featuredCardImage}
-                      />}
+                  <div className={styles.featuredCardImageContainer}>
+                      {recipe.imageMain &&
+                          <Image
+                              src={recipe.imageMain}
+                              alt={recipe.title}
+                              width={400}
+                              height={300}
+                              className={styles.featuredCardImage}
+                          />
+                      }
                       <div className={styles.featuredCardContent}>
                           <h3 className={styles.featuredCardTitle}>{recipe.title}</h3>
                           <p className={styles.featuredCardDescription}>{recipe.description}</p>

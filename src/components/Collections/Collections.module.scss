@@ -316,9 +316,14 @@
       gap: 16px;
       padding: 16px 0;
 
+
       .featuredCard {
         flex: 0 0 320px;
         aspect-ratio: 4/3;
+
+        .featuredCardImageContainer {
+          height: 100%;
+        }
 
         .featuredCardContent {
           padding: 20px;
