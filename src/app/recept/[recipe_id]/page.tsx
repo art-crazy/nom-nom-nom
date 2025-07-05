@@ -4,7 +4,6 @@ import Image from 'next/image';
 import ShareButton from '@/components/ShareButton/ShareButton';
 import { SaveRecipeButton } from '@/components/UI/SaveRecipeButton/SaveRecipeButton';
 import { Breadcrumbs } from '@/components/Breadcrumbs/Breadcrumbs';
-import { VideoPlayer } from '@/components/VideoPlayer/VideoPlayer';
 import { notFound } from 'next/navigation';
 import { generateMetadata } from './metadata';
 import { getRecipeById } from '@/services/api';
