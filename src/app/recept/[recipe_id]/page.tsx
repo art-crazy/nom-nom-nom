@@ -9,6 +9,7 @@ import { notFound } from 'next/navigation';
 import { generateMetadata } from './metadata';
 import { getRecipeById } from '@/services/api';
 import {Recipe} from "@/types/recipe";
+import { MediaGallery, MediaItem } from '@/components/RecipeCard/MediaGallery';
 
 export { generateMetadata };
 
@@ -43,19 +44,22 @@ export default async function RecipePage({ params }: PageProps) {
         />
         <article itemScope itemType="https://schema.org/Recipe" className={styles.topSection}>
           <div className={styles.imageColumn}>
-            {recipe.imageMain && (
-              <div className={styles.mainImage}>
-                <Image
-                    className={styles.imageMain}
-                    src={recipe.imageMain}
-                    alt={recipe.title}
-                    width={800}
-                    height={600}
-                    style={{ objectFit: 'cover' }}
-                    itemProp="image"
-                />
-              </div>
-            )}
+            {(() => {
+              const media: MediaItem[] = [];
+              if (recipe.videoUrl) {
+                media.push({ type: 'video', src: recipe.videoUrl, alt: recipe.title + ' (видео)' });
+              }
+              if (recipe.imageMain) {
+                media.push({ type: 'image', src: recipe.imageMain, alt: recipe.title });
+              }
+              recipe.steps.forEach((step) => {
+                if (step.image) {
+                  media.push({ type: 'image', src: step.image, alt: step.title });
+                }
+              });
+              if (media.length === 0) return null;
+              return <MediaGallery media={media} mainImageSize={{ width: 800, height: 600 }} />;
+            })()}
           </div>
           <div className={styles.infoBlock}>
             <h1 itemProp="name">{recipe.title}</h1>
@@ -81,13 +85,6 @@ export default async function RecipePage({ params }: PageProps) {
             </div>
           </div>
         </article>
-        
-        {recipe.videoUrl && (
-          <section className={styles.videoSection}>
-            <h2>Видео рецепта</h2>
-            <VideoPlayer videoUrl={recipe.videoUrl} title={recipe.title} />
-          </section>
-        )}
 
         <section className={styles.instructions}>
           <h2>Инструкция</h2>
