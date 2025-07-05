@@ -5,6 +5,7 @@ import "@/styles/globals.scss";
 import LayoutWrapper from "@/components/hoc/LayoutWrapper";
 import { metadata as rootMetadata } from "./metadata";
 import YandexMetrika from "@/components/YandexMetrika/YandexMetrika";
+import StagewiseToolbar from "@/components/StagewiseToolbar";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -27,6 +28,7 @@ export default function RootLayout({
                 <Suspense fallback={null}>
                     <YandexMetrika />
                 </Suspense>
+                <StagewiseToolbar />
             </body>
         </html>
     );
