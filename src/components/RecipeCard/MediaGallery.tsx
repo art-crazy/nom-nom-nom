@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './MediaGallery.module.scss';
 import Image from 'next/image';
 import { VideoPlayer } from '@/components/VideoPlayer/VideoPlayer';
+import { getRutubeThumbnail } from '@/utils/videoThumbnails';
 
 export type MediaItem = {
   type: 'image' | 'video';
@@ -42,7 +43,7 @@ export const MediaGallery: React.FC<MediaGalleryProps> = ({ media, mainImageSize
               <div className={styles.videoThumb}>
                 <span className={styles.videoIcon}>▶</span>
                 <Image
-                  src={item.src}
+                  src={item.src.includes('rutube.ru') ? getRutubeThumbnail(item.src) || item.src : item.src}
                   alt={item.alt || 'Видео'}
                   width={80}
                   height={60}
