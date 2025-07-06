@@ -30,7 +30,7 @@
 }
 
 .active {
-  box-shadow: 0 0 0 2px #0070f3 !important;
+  box-shadow: 0 0 0 2px #0070f3;
 }
 
 .thumbnailImg {
@@ -78,18 +78,130 @@
   object-fit: cover;
 }
 
-@media (max-width: 700px) {
+// Десктопная версия
+.desktopMedia {
+  display: block;
+  width: 100%;
+}
+
+// Мобильная версия
+.mobileMedia {
+  display: none;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.swipeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: transparent;
+  pointer-events: auto;
+}
+
+// Точки-индикаторы (скрыты на десктопе)
+.dotsContainer {
+  display: none;
+}
+
+@media (max-width: 650px) {
   .galleryWrapper {
     flex-direction: column;
     gap: 12px;
+    align-items: center;
   }
+
   .thumbnails {
-    flex-direction: row;
+    display: none; // Скрываем боковые превью на мобильных
+  }
+
+  // Скрываем десктопную версию
+  .desktopMedia {
+    display: none;
+  }
+
+  // Показываем мобильную версию
+  .mobileMedia {
+    display: block;
+  }
+
+  .mainMedia {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .mediaList {
+    display: flex;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    gap: 16px;
+  }
+
+  .mediaList.dragging {
+    transition: none;
+  }
+
+  .mediaItem {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .mainImg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .videoWrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .swipeOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: transparent;
+    pointer-events: auto;
+  }
+
+  // Показываем точки-индикаторы на мобильных
+  .dotsContainer {
+    display: flex;
     gap: 8px;
     justify-content: center;
+    margin-top: 12px;
   }
-  .mainImg {
-    max-width: 100vw;
-    max-height: 50vw;
+
+  .dot {
+    background-color: rgba(204, 214, 228, .6);
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+    &.active {
+      background-color: $primary-color-hover;
+      box-shadow: none;
+    }
   }
 }
