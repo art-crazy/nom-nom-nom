@@ -1,3 +1,5 @@
+@use '@/styles/vars.scss' as *;
+
 .galleryWrapper {
   display: flex;
   flex-direction: row;
@@ -68,7 +70,7 @@
 }
 
 .mainImg {
-  border-radius: 16px;
+  border-radius: $border-radius-m;
   width: 100%;
   height: auto;
   max-width: 800px;
@@ -90,4 +92,4 @@
     max-width: 100vw;
     max-height: 50vw;
   }
-} 
+}

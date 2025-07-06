@@ -13,7 +13,7 @@
 }
 
 .imageColumn {
-  flex: 1;
+  flex: 1.4;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -178,7 +178,6 @@
 }
 
 .stepImage {
-  border-radius: 12px;
   margin-bottom: 24px;
   position: relative;
   width: 100%;
