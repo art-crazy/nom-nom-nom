@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/vegan</loc>
+    <loc>https://chto-prigotovit.ru/recepty/veganskaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/keto</loc>
+    <loc>https://chto-prigotovit.ru/recepty/keto-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/paleo</loc>
+    <loc>https://chto-prigotovit.ru/recepty/paleo-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/vegetarian</loc>
+    <loc>https://chto-prigotovit.ru/recepty/vegetarianskaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/gluten-free</loc>
+    <loc>https://chto-prigotovit.ru/recepty/bezglyutenovaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/dairy-free</loc>
+    <loc>https://chto-prigotovit.ru/recepty/bezlaktoznaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/kids-menu</loc>
+    <loc>https://chto-prigotovit.ru/recepty/detskoe-menyu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/low-calorie</loc>
+    <loc>https://chto-prigotovit.ru/recepty/nizkokaloriynaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/lean</loc>
+    <loc>https://chto-prigotovit.ru/recepty/postnaya-eda</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/diabetic</loc>
+    <loc>https://chto-prigotovit.ru/recepty/menyu-pri-diabete</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/low-carb</loc>
+    <loc>https://chto-prigotovit.ru/recepty/nizkouglevodnaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/mediterranean-diet</loc>
+    <loc>https://chto-prigotovit.ru/recepty/sredizemnomorskaya-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://chto-prigotovit.ru/recepty/detox</loc>
+    <loc>https://chto-prigotovit.ru/recepty/detoks-dieta</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
