@@ -813,395 +813,396 @@ export const dishCategories: DishCategories = {
 // Кухни (уровень 2)
 export const cuisineCategories: CuisineCategories = {
   italian: {
-    id: 'italian',
+    id: 'italyanskaya-kuhnya',
     title: 'Итальянская кухня'
   },
   chinese: {
-    id: 'chinese',
+    id: 'kitayskaya-kuhnya',
     title: 'Китайская кухня'
   },
   japanese: {
-    id: 'japanese',
+    id: 'yaponskaya-kuhnya',
     title: 'Японская кухня'
   },
   russian: {
-    id: 'russian',
+    id: 'russkaya-kuhnya',
     title: 'Русская кухня'
   },
   georgian: {
-    id: 'georgian',
+    id: 'gruzinskaya-kuhnya',
     title: 'Грузинская кухня'
   },
   indian: {
-    id: 'indian',
+    id: 'indiyskaya-kuhnya',
     title: 'Индийская кухня'
   },
   mexican: {
-    id: 'mexican',
+    id: 'meksikanskaya-kuhnya',
     title: 'Мексиканская кухня'
   },
   french: {
-    id: 'french',
+    id: 'frantsuzskaya-kuhnya',
     title: 'Французская кухня'
   },
   turkish: {
-    id: 'turkish',
+    id: 'turetskaya-kuhnya',
     title: 'Турецкая кухня'
   },
   korean: {
-    id: 'korean',
+    id: 'koreyskaya-kuhnya',
     title: 'Корейская кухня'
   },
   armenian: {
-    id: 'armenian',
+    id: 'armyanskaya-kuhnya',
     title: 'Армянская кухня'
   },
   azerbaijani: {
-    id: 'azerbaijani',
+    id: 'azerbaydzhanskaya-kuhnya',
     title: 'Азербайджанская кухня'
   },
   spanish: {
-    id: 'spanish',
+    id: 'ispanskaya-kuhnya',
     title: 'Испанская кухня'
   },
   thai: {
-    id: 'thai',
+    id: 'tayskaya-kuhnya',
     title: 'Тайская кухня'
   },
   'mediterranean-cuisine': {
-    id: 'mediterranean-cuisine',
+    id: 'sredizemnomorskaya-kuhnya',
     title: 'Средиземноморская кухня'
   },
   greek: {
-    id: 'greek',
+    id: 'grecheskaya-kuhnya',
     title: 'Греческая кухня'
   },
   ukrainian: {
-    id: 'ukrainian',
+    id: 'ukrainskaya-kuhnya',
     title: 'Украинская кухня'
   },
   polish: {
-    id: 'polish',
+    id: 'polysskaya-kuhnya',
     title: 'Польская кухня'
   },
   british: {
-    id: 'british',
+    id: 'britanskaya-kuhnya',
     title: 'Британская кухня'
   },
   german: {
-    id: 'german',
+    id: 'nemetskaya-kuhnya',
     title: 'Немецкая кухня'
   },
   lebanese: {
-    id: 'lebanese',
+    id: 'livanskaya-kuhnya',
     title: 'Ливанская кухня'
   },
   brazilian: {
-    id: 'brazilian',
+    id: 'braziliyskaya-kuhnya',
     title: 'Бразильская кухня'
   },
   vietnamese: {
-    id: 'vietnamese',
+    id: 'vetnamskaya-kuhnya',
     title: 'Вьетнамская кухня'
   },
   swiss: {
-    id: 'swiss',
+    id: 'shveytsarskaya-kuhnya',
     title: 'Швейцарская кухня'
   },
   finnish: {
-    id: 'finnish',
+    id: 'finskaya-kuhnya',
     title: 'Финская кухня'
   },
   scandinavian: {
-    id: 'scandinavian',
+    id: 'skandinavskaya-kuhnya',
     title: 'Скандинавская кухня'
   },
   dutch: {
-    id: 'dutch',
+    id: 'gollandskaya-kuhnya',
     title: 'Голландская кухня'
   },
   czech: {
-    id: 'czech',
+    id: 'cheshskaya-kuhnya',
     title: 'Чешская кухня'
   },
   norwegian: {
-    id: 'norwegian',
+    id: 'norvezhskaya-kuhnya',
     title: 'Норвежская кухня'
   },
   swedish: {
-    id: 'swedish',
+    id: 'shvedskaya-kuhnya',
     title: 'Шведская кухня'
   },
   austrian: {
-    id: 'austrian',
+    id: 'avstriyskaya-kuhnya',
     title: 'Австрийская кухня'
   },
   hungarian: {
-    id: 'hungarian',
+    id: 'vengerskaya-kuhnya',
     title: 'Венгерская кухня'
   },
   serbian: {
-    id: 'serbian',
+    id: 'serbskaya-kuhnya',
     title: 'Сербская кухня'
   },
   belarusian: {
-    id: 'belarusian',
+    id: 'belorusskaya-kuhnya',
     title: 'Белорусская кухня'
   },
   moldovan: {
-    id: 'moldovan',
+    id: 'moldavskaya-kuhnya',
     title: 'Молдавская кухня'
   },
   kazakh: {
-    id: 'kazakh',
+    id: 'kazakhskaya-kuhnya',
     title: 'Казахская кухня'
   },
   uzbek: {
-    id: 'uzbek',
+    id: 'uzbekskaya-kuhnya',
     title: 'Узбекская кухня'
   },
   kyrgyz: {
-    id: 'kyrgyz',
+    id: 'kirgizskaya-kuhnya',
     title: 'Киргизская кухня'
   },
   turkmen: {
-    id: 'turkmen',
+    id: 'turkmenskaya-kuhnya',
     title: 'Туркменская кухня'
   },
   tajik: {
-    id: 'tajik',
+    id: 'tadzhikskaya-kuhnya',
     title: 'Таджикская кухня'
   },
   abkhazian: {
-    id: 'abkhazian',
+    id: 'abkhazskaya-kuhnya',
     title: 'Абхазская кухня'
   },
   ossetian: {
-    id: 'ossetian',
+    id: 'osetinskaya-kuhnya',
     title: 'Осетинская кухня'
   },
   bashkirian: {
-    id: 'bashkirian',
+    id: 'bashkirskaya-kuhnya',
     title: 'Башкирская кухня'
   },
   cossack: {
-    id: 'cossack',
+    id: 'kazachya-kuhnya',
     title: 'Казачья кухня'
   },
   kalmyk: {
-    id: 'kalmyk',
+    id: 'kalmytskaya-kuhnya',
     title: 'Калмыцкая кухня'
   },
   chukchi: {
-    id: 'chukchi',
+    id: 'chukotskaya-kuhnya',
     title: 'Чукотская кухня'
   },
   yakut: {
-    id: 'yakut',
+    id: 'yakutskaya-kuhnya',
     title: 'Якутская кухня'
   },
   mari: {
-    id: 'mari',
+    id: 'mariyskaya-kuhnya',
     title: 'Марийская кухня'
   },
   udmurt: {
-    id: 'udmurt',
+    id: 'udmurtskaya-kuhnya',
     title: 'Удмуртская кухня'
   },
   komi: {
-    id: 'komi',
+    id: 'komi-kuhnya',
     title: 'Коми кухня'
   },
   sakha: {
-    id: 'sakha',
+    id: 'sakha-kuhnya',
     title: 'Саха кухня'
   },
   slovak: {
-    id: 'slovak',
+    id: 'slovatskaya-kuhnya',
     title: 'Словацкая кухня'
   },
   croatian: {
-    id: 'croatian',
+    id: 'khorvatskaya-kuhnya',
     title: 'Хорватская кухня'
   },
   montenegrin: {
-    id: 'montenegrin',
+    id: 'chernogorskaya-kuhnya',
     title: 'Черногорская кухня'
   },
   bosnian: {
-    id: 'bosnian',
+    id: 'bosniyskaya-kuhnya',
     title: 'Боснийская кухня'
   },
   macedonian: {
-    id: 'macedonian',
+    id: 'makedonskaya-kuhnya',
     title: 'Македонская кухня'
   },
   albanian: {
-    id: 'albanian',
+    id: 'albanskaya-kuhnya',
     title: 'Албанская кухня'
   },
   maltese: {
-    id: 'maltese',
+    id: 'maltiyskaya-kuhnya',
     title: 'Мальтийская кухня'
   },
   cypriot: {
-    id: 'cypriot',
+    id: 'kiprskaya-kuhnya',
     title: 'Кипрская кухня'
   },
   romanian: {
-    id: 'romanian',
+    id: 'rumynskaya-kuhnya',
     title: 'Румынская кухня'
   },
   bulgarian: {
-    id: 'bulgarian',
+    id: 'bolgarskaya-kuhnya',
     title: 'Болгарская кухня'
   },
   algerian: {
-    id: 'algerian',
+    id: 'alzhirskaya-kuhnya',
     title: 'Алжирская кухня'
   },
   egyptian: {
-    id: 'egyptian',
+    id: 'egipetskaya-kuhnya',
     title: 'Египетская кухня'
   },
   syrian: {
-    id: 'syrian',
+    id: 'siriyskaya-kuhnya',
     title: 'Сирийская кухня'
   },
   israeli: {
-    id: 'israeli',
+    id: 'izrailskaya-kuhnya',
     title: 'Израильская кухня'
   },
   palestinian: {
-    id: 'palestinian',
+    id: 'palestinskaya-kuhnya',
     title: 'Палестинская кухня'
   },
   jordanian: {
-    id: 'jordanian',
+    id: 'iordanskaya-kuhnya',
     title: 'Иорданская кухня'
   },
   tunisian: {
-    id: 'tunisian',
+    id: 'tunisskaya-kuhnya',
     title: 'Тунисская кухня'
   },
   libyan: {
-    id: 'libyan',
+    id: 'liviyskaya-kuhnya',
     title: 'Ливийская кухня'
   },
   moroccan: {
-    id: 'moroccan',
+    id: 'marokkanskaya-kuhnya',
     title: 'Марокканская кухня'
   },
   ethiopian: {
-    id: 'ethiopian',
+    id: 'efiopskaya-kuhnya',
     title: 'Эфиопская кухня'
   },
   somali: {
-    id: 'somali',
+    id: 'somaliyskaya-kuhnya',
     title: 'Сомалийская кухня'
   },
   kenyan: {
-    id: 'kenyan',
+    id: 'keniyskaya-kuhnya',
     title: 'Кенийская кухня'
   },
   nigerian: {
-    id: 'nigerian',
+    id: 'nigeriyskaya-kuhnya',
     title: 'Нигерийская кухня'
   },
   ghanaian: {
-    id: 'ghanaian',
+    id: 'ganskaya-kuhnya',
     title: 'Ганская кухня'
   },
   senegalese: {
-    id: 'senegalese',
+    id: 'senegalskaya-kuhnya',
     title: 'Сенегальская кухня'
   },
   southafrican: {
-    id: 'southafrican',
+    id: 'yuzhnoafrikanskaya-kuhnya',
     title: 'Южноафриканская кухня'
   },
   zimbabwean: {
-    id: 'zimbabwean',
+    id: 'zimbabviyskaya-kuhnya',
     title: 'Зимбабвийская кухня'
   },
   malawian: {
-    id: 'malawian',
+    id: 'malaviyskaya-kuhnya',
     title: 'Малавийская кухня'
   },
 
+
   // Ближний Восток (частично добавлены, для полноты)
   iraqi: {
-    id: 'iraqi',
+    id: 'irakskaya-kuhnya',
     title: 'Иракская кухня'
   },
   iranian: {
-    id: 'iranian',
+    id: 'iranskaya-kuhnya',
     title: 'Иранская кухня'
   },
   saudi: {
-    id: 'saudi',
+    id: 'saudovskaya-kuhnya',
     title: 'Саудовская кухня'
   },
   qatar: {
-    id: 'qatar',
+    id: 'katarskaya-kuhnya',
     title: 'Катарская кухня'
   },
   emirates: {
-    id: 'emirates',
+    id: 'kuhnya-oae',
     title: 'Кухня ОАЭ'
   },
 
-  // Океания
+// Океания
   australian: {
-    id: 'australian',
+    id: 'avstraliyskaya-kuhnya',
     title: 'Австралийская кухня'
   },
   newzealand: {
-    id: 'newzealand',
+    id: 'novaya-zelandiya-kuhnya',
     title: 'Новая Зеландия кухня'
   },
   fiji: {
-    id: 'fiji',
+    id: 'fidzhi-kuhnya',
     title: 'Фиджи кухня'
   },
 
-  // Латинская Америка (продолжение)
+// Латинская Америка (продолжение)
   argentinian: {
-    id: 'argentinian',
+    id: 'argentinskaya-kuhnya',
     title: 'Аргентинская кухня'
   },
   peruvian: {
-    id: 'peruvian',
+    id: 'peruanskaya-kuhnya',
     title: 'Перуанская кухня'
   },
   colombian: {
-    id: 'colombian',
+    id: 'kolumbiyskaya-kuhnya',
     title: 'Колумбийская кухня'
   },
   venezuelan: {
-    id: 'venezuelan',
+    id: 'venesuelska-kuhnya',
     title: 'Венесуэльская кухня'
   },
   cuban: {
-    id: 'cuban',
+    id: 'kubinskaya-kuhnya',
     title: 'Кубинская кухня'
   },
 
-  // Фантазийные (мифические) кухни — в самый конец
+// Фантазийные (мифические) кухни — в самый конец
   elven: {
-    id: 'elven',
+    id: 'elfiyskaya-kuhnya',
     title: 'Эльфийская кухня'
   },
   dwarven: {
-    id: 'dwarven',
+    id: 'gnomya-kuhnya',
     title: 'Гномья кухня'
   },
   hobbit: {
-    id: 'hobbit',
+    id: 'hobbitskaya-kuhnya',
     title: 'Хоббитская кухня'
   },
   wizard: {
-    id: 'wizard',
+    id: 'volshebnaya-kuhnya',
     title: 'Волшебная кухня'
   }
 };
@@ -1209,55 +1210,55 @@ export const cuisineCategories: CuisineCategories = {
 // Диеты (уровень 3)
 export const dietCategories: DietCategories = {
   vegan: {
-    id: 'vegan',
+    id: 'veganskaya-dieta',
     title: 'Веганская диета'
   },
   keto: {
-    id: 'keto',
+    id: 'keto-dieta',
     title: 'Кето-диета'
   },
   paleo: {
-    id: 'paleo',
+    id: 'paleo-dieta',
     title: 'Палео-диета'
   },
   vegetarian: {
-    id: 'vegetarian',
+    id: 'vegetarianskaya-dieta',
     title: 'Вегетарианская диета'
   },
   'gluten-free': {
-    id: 'gluten-free',
+    id: 'bezglyutenovaya-dieta',
     title: 'Безглютеновая диета'
   },
   'dairy-free': {
-    id: 'dairy-free',
+    id: 'bezlaktoznaya-dieta',
     title: 'Безлактозная диета'
   },
   'kids-menu': {
-    id: 'kids-menu',
+    id: 'detskoe-menyu',
     title: 'Детское меню'
   },
   'low-calorie': {
-    id: 'low-calorie',
+    id: 'nizkokaloriynaya-dieta',
     title: 'Низкокалорийная диета'
   },
   lean: {
-    id: 'lean',
+    id: 'postnaya-eda',
     title: 'Постная еда'
   },
   diabetic: {
-    id: 'diabetic',
+    id: 'menyu-pri-diabete',
     title: 'Меню при диабете'
   },
   'low-carb': {
-    id: 'low-carb',
+    id: 'nizkouglevodnaya-dieta',
     title: 'Низкоуглеводная диета'
   },
   'mediterranean-diet': {
-    id: 'mediterranean-diet',
+    id: 'sredizemnomorskaya-dieta',
     title: 'Средиземноморская диета'
   },
   detox: {
-    id: 'detox',
+    id: 'detoks-dieta',
     title: 'Детокс-диета'
   }
 };
