@@ -5,7 +5,9 @@ import { RecipeList } from '@/components/RecipeList/RecipeList';
 import { Pagination } from '@/components/Pagination/Pagination';
 import { getRecipes } from '@/services/api';
 import styles from '../page.module.scss';
-import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
+import {dishCategories} from "@/data/categories/dishCategories";
+import {dietCategories} from "@/data/categories/dietCategories";
+import {cuisineCategories} from "@/data/categories/cuisineCategories";
 import { LIMIT } from '@/config/limit.constants';
 import { generateMetadata } from './metadata';
 

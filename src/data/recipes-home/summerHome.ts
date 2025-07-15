@@ -1,6 +1,6 @@
-import {Recipe, Unit} from "./recipes";
+import {Recipe, Unit} from "../recipes";
 
-export const summerRecipes: Record<number, Recipe> = {
+export const summerHome: Record<number, Recipe> = {
     // Подборка 1: Летние супы без заморочек
     364: {
         id: 364,

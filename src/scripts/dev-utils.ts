@@ -2,7 +2,9 @@
 
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { dishCategories, cuisineCategories, dietCategories } from '../data/categories.js';
+import {dishCategories} from "@/data/categories/dishCategories";
+import {dietCategories} from "@/data/categories/dietCategories";
+import {cuisineCategories} from "@/data/categories/cuisineCategories";
 import { siteConfig } from '../config/site.js';
 import { getRecipes } from '../services/api.js';
 import type { Recipe } from '../types/recipe.js';
@@ -41,7 +43,7 @@ async function generateRecipeUrls() {
         total = totalCount;
         page++;
     } while (allRecipes.length < total);
-    return allRecipes.map(recipe => 
+    return allRecipes.map(recipe =>
         `${baseUrl}/recept/${recipe.name}-${recipe.id}`
     );
 }
@@ -50,47 +52,47 @@ async function generateRecipeUrls() {
 function generateCategoryUrls() {
     const urls: string[] = [];
     urls.push(`${baseUrl}/recepty`);
-    
+
     // Основные категории
     Object.keys(dishCategories).forEach(category => {
         urls.push(`${baseUrl}/recepty/${category}`);
     });
-    
+
     return urls;
 }
 
 // Функция для генерации URL подкатегорий
 function generateSubcategoryUrls() {
     const urls: string[] = [];
-    
+
     Object.entries(dishCategories).forEach(([categoryKey, categoryObj]) => {
         Object.keys(categoryObj.subcategories).forEach(subKey => {
             urls.push(`${baseUrl}/recepty/${categoryKey}/${subKey}`);
         });
     });
-    
+
     return urls;
 }
 
 // Функция для генерации URL кухонь
 function generateCuisineUrls() {
     const urls: string[] = [];
-    
+
     Object.keys(cuisineCategories).forEach(cuisine => {
         urls.push(`${baseUrl}/recepty/${cuisine}`);
     });
-    
+
     return urls;
 }
 
 // Функция для генерации URL диет
 function generateDietUrls() {
     const urls: string[] = [];
-    
+
     Object.keys(dietCategories).forEach(diet => {
         urls.push(`${baseUrl}/recepty/${diet}`);
     });
-    
+
     return urls;
 }
 
@@ -99,19 +101,19 @@ function generateCombinationUrls() {
     const urls: string[] = [];
     const dietKeys = Object.keys(dietCategories);
     const cuisineKeys = Object.keys(cuisineCategories);
-    
+
     Object.entries(dishCategories).forEach(([categoryKey, categoryObj]) => {
         Object.keys(categoryObj.subcategories).forEach(subKey => {
             // Комбинации с кухней
             cuisineKeys.forEach(cuisine => {
                 urls.push(`${baseUrl}/recepty/${cuisine}/${categoryKey}/${subKey}`);
             });
-            
+
             // Комбинации с диетой
             dietKeys.forEach(diet => {
                 urls.push(`${baseUrl}/recepty/${diet}/${categoryKey}/${subKey}`);
             });
-            
+
             // Комбинации диета + кухня
             dietKeys.forEach(diet => {
                 cuisineKeys.forEach(cuisine => {
@@ -120,7 +122,7 @@ function generateCombinationUrls() {
             });
         });
     });
-    
+
     return urls;
 }
 

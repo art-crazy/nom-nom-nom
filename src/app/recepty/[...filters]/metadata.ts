@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { siteConfig } from '@/config/site';
-import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
+import {dishCategories} from "@/data/categories/dishCategories";
+import {dietCategories} from "@/data/categories/dietCategories";
+import {cuisineCategories} from "@/data/categories/cuisineCategories";
 import { notFound } from 'next/navigation';
 
 type Props = {

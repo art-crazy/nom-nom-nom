@@ -4,7 +4,9 @@ import React, { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import styles from './RecipeFilters.module.scss';
 import { FilterGroup } from './FilterGroup';
-import { dietCategories, cuisineCategories, dishCategories } from '@/data/categories';
+import {dishCategories} from "@/data/categories/dishCategories";
+import {dietCategories} from "@/data/categories/dietCategories";
+import {cuisineCategories} from "@/data/categories/cuisineCategories";
 
 interface RecipeFiltersProps {
   currentPath: {

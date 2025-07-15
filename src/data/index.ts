@@ -1,6 +1,6 @@
 import { Recipe } from './recipes';
-import { summerRecipes } from './summer-recipes';
+import { summerHome } from './recipes-home/summerHome';
 
 export const recipes: Record<number, Recipe> = {
-    ...summerRecipes
-}; 
+    ...summerHome
+};
