@@ -27,4 +27,19 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
+    icons: {
+        icon: [
+            { url: "/favicon.svg", type: "image/svg+xml" },
+            { url: "/favicon.ico", type: "image/x-icon" },
+            { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+            { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" }
+        ],
+        apple: [
+            { url: "/apple-touch-icon.png", sizes: "180x180" }
+        ],
+        other: [
+            { rel: "android-chrome", url: "/android-chrome-192x192.png", sizes: "192x192" },
+            { rel: "android-chrome", url: "/android-chrome-512x512.png", sizes: "512x512" }
+        ]
+    },
 };
