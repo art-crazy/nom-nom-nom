@@ -32,7 +32,7 @@ export default function Home() {
           name: 'chinese-cuisine',
           title: 'Китайская кухня',
           description: 'Традиционные рецепты китайской кухни',
-          link: '/recepty/chinese',
+          link: '/recepty/kitayskaya-kuhnya',
           imageMain: '/recepies/kitayskaya.webp'
         },
         {
@@ -48,7 +48,7 @@ export default function Home() {
           name: 'vegetarian',
           title: 'Вегетарианские блюда',
           description: 'Блюда без мяса',
-          link: '/recepty/vegetarian',
+          link: '/recepty/vegetarianskaya-dieta',
           imageMain: '/recepies/vegan.jpg'
         },
         {
@@ -56,7 +56,7 @@ export default function Home() {
           name: 'fast-cooking',
           title: 'Быстрые рецепты',
           description: 'Блюда, которые можно приготовить быстро',
-          link: '/recepty/fast-slow-cooking',
+          link: '/recepty/fast-slow-cooking/fast',
           imageMain: '/recepies/bistro.png'
         },
         {
@@ -72,7 +72,7 @@ export default function Home() {
           name: 'low-calorie',
           title: 'Низкокалорийные блюда',
           description: 'Блюда для поддержания формы',
-          link: '/recepty/low-calorie',
+          link: '/recepty/nizkokaloriynaya-dieta',
           imageMain: '/recepies/lowkkal.jpg'
         },
         {
@@ -80,7 +80,7 @@ export default function Home() {
           name: 'kids-menu',
           title: 'Детское меню',
           description: 'Блюда для детей',
-          link: '/recepty/kids-menu',
+          link: '/recepty/detskoe-menyu',
           imageMain: '/recepies/children.jpg'
         },
         {
