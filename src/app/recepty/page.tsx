@@ -44,6 +44,7 @@ export default async function RecipesContent({
   const { items: recipes, total, limit, fallbackTriggered } = await getRecipes(apiParams);
   const totalPages = Math.ceil(total / limit);
 
+  console.log('totalPage', totalPages)
   return (
     <div className={styles.container}>
       <Breadcrumbs
