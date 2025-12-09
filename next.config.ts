@@ -13,8 +13,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  poweredByHeader: false,
-  swcMinify: true
+  poweredByHeader: false
 };
 
 export default nextConfig;
