@@ -51,12 +51,26 @@ jobs:
 
       - name: Configure SSH
         run: |
+          set -e
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+
+          # Write SSH key
+          cat > ~/.ssh/id_rsa << 'EOF'
+          ${{ secrets.SSH_PRIVATE_KEY }}
+          EOF
           chmod 600 ~/.ssh/id_rsa
-          touch ~/.ssh/config
-          echo "StrictHostKeyChecking no" >> ~/.ssh/config
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+          # Create SSH config
+          cat > ~/.ssh/config << 'EOF'
+          Host *
+              StrictHostKeyChecking no
+              UserKnownHostsFile=/dev/null
+          EOF
+          chmod 600 ~/.ssh/config
+
+          # Add server to known hosts
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts 2>/dev/null || true
 
       - name: Check and Setup Node.js on Server
         run: |
