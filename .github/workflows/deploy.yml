@@ -57,6 +57,21 @@ jobs:
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
+      - name: Check and Setup Node.js on Server
+        run: |
+          ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
+          set -e
+          NODE_VERSION=$(node -v 2>/dev/null | cut -d'v' -f2 | cut -d'.' -f1 || echo "0")
+          if [ "$NODE_VERSION" -lt 20 ]; then
+            echo "Node.js version is $NODE_VERSION, upgrading to v20..."
+            curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            echo "Node.js updated to $(node -v)"
+          else
+            echo "Node.js version is sufficient: $(node -v)"
+          fi
+          EOT
+
       - name: Deploy and Verify
         run: |
           scp -i ~/.ssh/id_rsa deploy.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/tmp/
@@ -76,7 +91,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
           cd /var/www/nom-nom-nom
-          npm ci --production
+          npm ci --omit=dev
           pm2 delete nom-nom-nom || true
           pm2 start npm --name "nom-nom-nom" -- start
           pm2 save
