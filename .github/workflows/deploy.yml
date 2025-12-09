@@ -24,10 +24,14 @@ jobs:
           echo "Build output:"
           ls -la .next
 
+      - name: Install production dependencies
+        run: |
+          npm ci --omit=dev
+
       - name: Create deployment package
         run: |
           mkdir -p deploy
-          cp -r .next package.json package-lock.json public next.config.ts deploy/
+          cp -r .next node_modules package.json package-lock.json public next.config.ts deploy/
           cd deploy
           tar -czf ../deploy.tar.gz .
           cd ..
@@ -103,17 +107,17 @@ jobs:
           rm deploy.tar.gz
 
       - name: Start Next.js application
-        timeout-minutes: 10
+        timeout-minutes: 5
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
           set -e
           cd /var/www/nom-nom-nom
 
-          echo "Installing production dependencies..."
-          npm ci --omit=dev
-
           echo "Checking Node.js version..."
           node -v
+
+          echo "Verifying deployment files..."
+          ls -la
 
           echo "Stopping existing PM2 process..."
           pm2 delete nom-nom-nom || true
