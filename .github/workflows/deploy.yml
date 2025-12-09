@@ -89,11 +89,27 @@ jobs:
           rm deploy.tar.gz
 
       - name: Start Next.js application
+        timeout-minutes: 10
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOT'
+          set -e
           cd /var/www/nom-nom-nom
+
+          echo "Installing production dependencies..."
           npm ci --omit=dev
+
+          echo "Checking Node.js version..."
+          node -v
+
+          echo "Stopping existing PM2 process..."
           pm2 delete nom-nom-nom || true
+
+          echo "Starting Next.js application..."
           pm2 start npm --name "nom-nom-nom" -- start
+
+          echo "Saving PM2 configuration..."
           pm2 save
+
+          echo "Deployment complete!"
+          pm2 list
           EOT
